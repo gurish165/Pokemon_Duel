@@ -1,37 +1,53 @@
+import os
 import pandas as pd
 from selenium import webdriver
+from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
+from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from bs4 import BeautifulSoup
 
+def setup_chromedriver():
+    chrome_options = Options()
+    chrome_options.add_argument("--headless") # Ensure GUI is off
+    chrome_options.add_argument("--no-sandbox")
+
+    # Set path to chromedriver as per your configuration
+    homedir = os.path.expanduser("~")
+    webdriver_service = Service(f"{homedir}/chromedriver/stable/chromedriver")
+
+    # Choose Chrome Browser
+    driver = webdriver.Chrome(service=webdriver_service, options=chrome_options)
+
+    return driver
+
 def get_hrefs_from_table(url):
-    # Set up the web driver
-    driver = webdriver.Chrome()  # Change this to the path of your Chrome driver if needed
+    driver = setup_chromedriver()
     driver.get(url)
 
     # Find the table with class="dextable"
-    table = driver.find_element_by_class_name('dextable')
+    table = driver.find_element(By.CLASS_NAME, 'dextable')
 
     # Find all the <tr>s inside the table
-    rows = table.find_elements_by_tag_name('tr')
+    rows = table.find_elements(By.TAG_NAME, 'tr')
 
     hrefs = []
-    for row in rows:
+    for row in rows[1:]:
         # Find the <td> with class="fooinfo"
-        td = row.find_element_by_class_name('fooinfo')
+        td = row.find_element(By.CLASS_NAME, 'fooinfo')
         # Find the href inside the <a> tag inside the <td>
-        href = td.find_element_by_tag_name('a').get_attribute('href')
+        href = td.find_element(By.TAG_NAME, 'a').get_attribute('href')
         hrefs.append(href)
 
     return hrefs
 
 def extract_pokemon_name(driver):
     # Find the fooleft class
-    fooleft = driver.find_element_by_class_name('fooleft')
+    fooleft = driver.find_element(By.CLASS_NAME, 'fooleft')
 
     # Find the Name <b> tag
-    name_tag = fooleft.find_element_by_tag_name('b')
+    name_tag = fooleft.find_element(By.TAG_NAME, 'b')
 
     # Extract the Name text and remove the ID-# prefix
     name = name_tag.text.split(' - ')[-1]
@@ -104,7 +120,7 @@ def process_pokemon_urls(url_list):
           attack_move_type = attack['Attack Type']
           attack_add_notes = ['Additional Notes']
           attack_damage = ['Damage']
-          row = [name, movement, type, special_ability, attack_wheel_size, attack_name, attack_move_type, attack_add_notes, attack_damage]
+          row = [name, movement, rarity, type, special_ability, attack_wheel_size, attack_name, attack_move_type, attack_add_notes, attack_damage]
           result_df.loc[len(result_df)] = row
 
     # Clean up
@@ -112,12 +128,38 @@ def process_pokemon_urls(url_list):
 
     return result_df
 
+def save_df_as_csv(df):
+    # Set the folder name and file name prefix
+    folder_name = "Pokemon_Duel_Characters"
+    file_name_prefix = "pokemon_duel_characters_v"
+
+    # Get the list of existing file names and determine the latest version number
+    file_names = os.listdir(folder_name)
+    version_numbers = [int(file_name[len(file_name_prefix):]) for file_name in file_names if file_name.startswith(file_name_prefix)]
+    if len(version_numbers) > 0:
+        latest_version_number = max(version_numbers)
+    else:
+        latest_version_number = 0
+
+    # Increment the latest version number and create the new file name
+    new_version_number = latest_version_number + 1
+    new_file_name = f"{file_name_prefix}{new_version_number}.csv"
+
+    # Create the folder if it doesn't exist
+    if not os.path.exists(folder_name):
+        os.mkdir(folder_name)
+
+    # Export the pandas dataframe as a CSV file with the new file name
+    df.to_csv(os.path.join(folder_name, new_file_name), index=False)
+
 
 def main():
   # Get all links to every Pokemon
   pokemon_duel_listing_url = "https://www.serebii.net/duel/figures.shtml"
   href_list = get_hrefs_from_table(pokemon_duel_listing_url)
-  process_pokemon_urls(href_list)
+  print(href_list[:10])
+#   df = process_pokemon_urls(href_list)
+#   save_df_as_csv(df)
   
 
 if __name__ == "__main__":
