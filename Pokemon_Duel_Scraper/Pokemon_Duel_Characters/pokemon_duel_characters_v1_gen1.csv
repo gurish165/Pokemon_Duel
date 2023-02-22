@@ -1,0 +1,464 @@
+Name,Movement,Rarity,Type,Special Ability,Attack Wheel Size,Attack Name,Attack Type,Attack Value,Attack Ability,is Gen 1
+Tauros,2,C,Normal,None,8.0,Tackle,White,,30,True
+Tauros,2,C,Normal,None,16.0,Miss,Red,,,True
+Tauros,2,C,Normal,None,24.0,Take Down,White,,80,True
+Tauros,2,C,Normal,None,12.0,Miss,Red,,,True
+Tauros,2,C,Normal,None,8.0,Tackle,White,,30,True
+Tauros,2,C,Normal,None,28.0,Kick Away,Purple,The battle opponent is knocked 2 steps back (the opponent chooses the point) and gains Wait,☆,True
+Charmander,3,UC,Fire,None,24.0,Flame Tail,White,,40,True
+Charmander,3,UC,Fire,None,28.0,Smokescreen,Purple,The battle opponent now has Wait.,☆,True
+Charmander,3,UC,Fire,None,32.0,Scratch,White,,10,True
+Charmander,3,UC,Fire,None,12.0,Miss,Red,,,True
+Ekans,3,C,Poison,None,24.0,Wrap,White,,20,True
+Ekans,3,C,Poison,None,28.0,Spit Poison,Purple,The battle opponent becomes poisoned.,☆☆,True
+Ekans,3,C,Poison,None,24.0,Wrap,White,,20,True
+Ekans,3,C,Poison,None,20.0,Miss,Red,,,True
+Golem,1,UC,Rock / Ground,None,24.0,Rock Throw,White,,40,True
+Golem,1,UC,Rock / Ground,None,40.0,Rock Blast,White,Spin again until Rock Blast does not land - damage is multiplied by the number of Rock Blast spins,60x,True
+Golem,1,UC,Rock / Ground,None,24.0,Rockwall,White,"If the battle opponent's Attack is below 120 damage, this Pokémon cannot be Knocked out.",30,True
+Golem,1,UC,Rock / Ground,None,8.0,Miss,Red,,,True
+Sandshrew,2,C,Ground,"Sand Veil - If this Pokémon is to be attacked, it may slip past the attacking Pokémon",24.0,Slash,White,,40,True
+Sandshrew,2,C,Ground,"Sand Veil - If this Pokémon is to be attacked, it may slip past the attacking Pokémon",16.0,Scratch,White,,10,True
+Sandshrew,2,C,Ground,"Sand Veil - If this Pokémon is to be attacked, it may slip past the attacking Pokémon",28.0,Slash,White,,40,True
+Sandshrew,2,C,Ground,"Sand Veil - If this Pokémon is to be attacked, it may slip past the attacking Pokémon",24.0,Defense Curl,White,"If the battle opponent's Attack is below 50 damage, this Pokémon cannot be Knocked out.",0,True
+Sandshrew,2,C,Ground,"Sand Veil - If this Pokémon is to be attacked, it may slip past the attacking Pokémon",4.0,Miss,Red,,,True
+Caterpie,1,UC,Bug,None,8.0,Miss,Red,,,True
+Caterpie,1,UC,Bug,None,52.0,String Wrap,Purple,Attaches an MP-1 marker to the battle opponent,☆,True
+Caterpie,1,UC,Bug,None,4.0,Miss,Red,,,True
+Caterpie,1,UC,Bug,None,32.0,Tackle,White,,10,True
+Raticate,2,C,Normal,None,28.0,Hyper Fang,White,,70,True
+Raticate,2,C,Normal,None,64.0,Tackle,White,,10,True
+Raticate,2,C,Normal,None,4.0,Miss,Red,,,True
+Machop,2,C,Fighting,None,8.0,Miss,Red,,,True
+Machop,2,C,Fighting,None,56.0,Focus Punch,White,,40,True
+Machop,2,C,Fighting,None,4.0,Miss,Red,,,True
+Machop,2,C,Fighting,None,28.0,Dodge,Blue,,,True
+Poliwag,3,C,Water,None,24.0,Bubble,White,,20,True
+Poliwag,3,C,Water,None,28.0,Hypnosis,Purple,The battle opponent falls asleep.,☆☆,True
+Poliwag,3,C,Water,None,24.0,Bubble,White,,20,True
+Poliwag,3,C,Water,None,16.0,Dodge,Blue,,,True
+Poliwag,3,C,Water,None,4.0,Miss,Red,,,True
+Doduo,3,C,Normal / Flying,None,16.0,Peck,White,,20,True
+Doduo,3,C,Normal / Flying,None,48.0,Fury Attack,White,Spin again until Fury Attack does not land - damage is multiplied by the number of Fury Attack spins,20x,True
+Doduo,3,C,Normal / Flying,None,16.0,Peck,White,,10,True
+Doduo,3,C,Normal / Flying,None,12.0,Dodge,Blue,,,True
+Doduo,3,C,Normal / Flying,None,4.0,Miss,Red,,,True
+Squirtle,3,UC,Water,None,12.0,Miss,Red,,,True
+Squirtle,3,UC,Water,None,44.0,Bubble,White,,30,True
+Squirtle,3,UC,Water,None,40.0,Withdraw,Blue,This Pokémon gains Wait.,,True
+Meowth,2,R,Normal,None,32.0,Fake Out,Purple,This Pokémon switches places with its battle opponent.,☆☆☆,True
+Meowth,2,R,Normal,None,36.0,Scratch,White,,40,True
+Meowth,2,R,Normal,None,20.0,Dodge,Blue,,,True
+Meowth,2,R,Normal,None,8.0,Miss,Red,,,True
+Zubat,3,C,Poison / Flying,None,32.0,Leech Life,White,,20,True
+Zubat,3,C,Poison / Flying,None,12.0,Air Cutter,White,,40,True
+Zubat,3,C,Poison / Flying,None,32.0,Supersonic,Purple,The battle opponent becomes confused,☆☆,True
+Zubat,3,C,Poison / Flying,None,20.0,Miss,Red,,,True
+Machamp,2,R,Fighting,"Guts - If this Pokémon has a special condition, it deals +50 damage",4.0,Miss,Red,,,True
+Machamp,2,R,Fighting,"Guts - If this Pokémon has a special condition, it deals +50 damage",24.0,Karate Chop,White,,60,True
+Machamp,2,R,Fighting,"Guts - If this Pokémon has a special condition, it deals +50 damage",28.0,Submission,White,,80,True
+Machamp,2,R,Fighting,"Guts - If this Pokémon has a special condition, it deals +50 damage",24.0,Karate Chop,White,,60,True
+Machamp,2,R,Fighting,"Guts - If this Pokémon has a special condition, it deals +50 damage",4.0,Miss,Red,,,True
+Machamp,2,R,Fighting,"Guts - If this Pokémon has a special condition, it deals +50 damage",12.0,Dodge,Blue,,,True
+Psyduck,2,UC,Water,"Migraine - If your opponent spins a Purple Attack, you can force them to respin once a turn.",24.0,Water Pulse,White,,60,True
+Psyduck,2,UC,Water,"Migraine - If your opponent spins a Purple Attack, you can force them to respin once a turn.",32.0,Super Psy,White,"If this Pokémon is knocked out, the battle opponent becomes confused.",40,True
+Psyduck,2,UC,Water,"Migraine - If your opponent spins a Purple Attack, you can force them to respin once a turn.",28.0,Disable,Purple,The battle opponent now has Wait.,☆☆,True
+Psyduck,2,UC,Water,"Migraine - If your opponent spins a Purple Attack, you can force them to respin once a turn.",12.0,Miss,Red,,,True
+Charizard,2,EX,Fire / Flying,None,8.0,Miss,Red,,,True
+Charizard,2,EX,Fire / Flying,None,56.0,Fire Spin,White,Spin again until Fire Spin does not land - damage is multiplied by the number of Fire Spin spins,60x,True
+Charizard,2,EX,Fire / Flying,None,4.0,Miss,Red,,,True
+Charizard,2,EX,Fire / Flying,None,28.0,Dragon Tail,White,Benches your battle opponent (except when opponent has fainted). Your battle opponent must then Wait.,100,True
+Pikachu,2,UC,Electric,None,24.0,Thunder Shock,White,,40,True
+Pikachu,2,UC,Electric,None,12.0,Miss,Red,,,True
+Pikachu,2,UC,Electric,None,24.0,Thunderbolt,White,,100,True
+Pikachu,2,UC,Electric,None,8.0,Miss,Red,,,True
+Pikachu,2,UC,Electric,None,24.0,Thunder Shock,White,,40,True
+Pikachu,2,UC,Electric,None,4.0,Dodge,Blue,,,True
+Dratini,2,R,Dragon,None,20.0,Dragon Rage,White,,80,True
+Dratini,2,R,Dragon,None,24.0,Push Aside,Purple,The battle opponent is moved to the bench and gains Wait.,☆☆,True
+Dratini,2,R,Dragon,None,8.0,Miss,Red,,,True
+Dratini,2,R,Dragon,None,44.0,Freeze Tail,White,"If this Pokémon is knocked out, the battle opponent becomes frozen.",30,True
+Eevee,3,R,Normal,"Spontaneous Evolution - Whenever this Pokémon moves from the P.C. to the bench, it can evolve.",8.0,Dodge,Blue,,,True
+Eevee,3,R,Normal,"Spontaneous Evolution - Whenever this Pokémon moves from the P.C. to the bench, it can evolve.",24.0,Tackle,White,,30,True
+Eevee,3,R,Normal,"Spontaneous Evolution - Whenever this Pokémon moves from the P.C. to the bench, it can evolve.",28.0,Focus Energy,White,"Spin again until an attack other than Focus Energy is spun. Damage attacks deal x2 damage,",0,True
+Eevee,3,R,Normal,"Spontaneous Evolution - Whenever this Pokémon moves from the P.C. to the bench, it can evolve.",16.0,Quick Attack,Gold,,20,True
+Eevee,3,R,Normal,"Spontaneous Evolution - Whenever this Pokémon moves from the P.C. to the bench, it can evolve.",12.0,Dodge,Blue,,,True
+Eevee,3,R,Normal,"Spontaneous Evolution - Whenever this Pokémon moves from the P.C. to the bench, it can evolve.",8.0,Miss,Red,,,True
+Pinsir,2,R,Bug,None,8.0,Miss,Red,,,True
+Pinsir,2,R,Bug,None,20.0,Guillotine,Purple,The battle opponent is knocked out,☆,True
+Pinsir,2,R,Bug,None,8.0,Miss,Red,,,True
+Pinsir,2,R,Bug,None,28.0,Scissor Toss,Purple,The battle opponent is knocked back 1 step and gains Wait.,☆,True
+Pinsir,2,R,Bug,None,32.0,Vice Grip,White,,110,True
+Kabuto,2,UC,Rock / Water,"Battle Armor - If your battle opponent spins an Attack with 10 or more damage, you can force them top spin again once per turn",4.0,Miss,Red,,,True
+Kabuto,2,UC,Rock / Water,"Battle Armor - If your battle opponent spins an Attack with 10 or more damage, you can force them top spin again once per turn",16.0,Protect,Blue,This Pokémon gains Wait.,,True
+Kabuto,2,UC,Rock / Water,"Battle Armor - If your battle opponent spins an Attack with 10 or more damage, you can force them top spin again once per turn",40.0,Mud Shot,White,Attach MP -1 to battle opponent,40,True
+Kabuto,2,UC,Rock / Water,"Battle Armor - If your battle opponent spins an Attack with 10 or more damage, you can force them top spin again once per turn",16.0,Protect,Blue,This Pokémon gains Wait.,,True
+Kabuto,2,UC,Rock / Water,"Battle Armor - If your battle opponent spins an Attack with 10 or more damage, you can force them top spin again once per turn",20.0,Aqua Jet,Gold,,30,True
+Geodude,2,C,Rock / Ground,None,24.0,Self-Destruct,Purple,This Pokémon and the battle opponent are knocked out,☆☆☆,True
+Geodude,2,C,Rock / Ground,None,40.0,Rollout,White,Spin again until Rollout does not land - damage is multiplied by the number of Rollout spins,30x,True
+Geodude,2,C,Rock / Ground,None,24.0,Rock Throw,White,,40,True
+Geodude,2,C,Rock / Ground,None,8.0,Miss,Red,,,True
+Bulbasaur,3,UC,Grass / Poison,"Healing Seed - When this Pokémon is on the field, your Grass-type and Poison-type Pokémon cannot become poisoned or noxious.",24.0,Poison Powder,Purple,The battle opponent becomes poisoned,☆,True
+Bulbasaur,3,UC,Grass / Poison,"Healing Seed - When this Pokémon is on the field, your Grass-type and Poison-type Pokémon cannot become poisoned or noxious.",20.0,Seed Bomb,White,,50,True
+Bulbasaur,3,UC,Grass / Poison,"Healing Seed - When this Pokémon is on the field, your Grass-type and Poison-type Pokémon cannot become poisoned or noxious.",24.0,Sleep Powder,Purple,The battle opponent falls asleep.,☆,True
+Bulbasaur,3,UC,Grass / Poison,"Healing Seed - When this Pokémon is on the field, your Grass-type and Poison-type Pokémon cannot become poisoned or noxious.",28.0,Miss,Red,,,True
+Magnemite,3,C,Electric / Steel,None,8.0,Miss,Red,,,True
+Magnemite,3,C,Electric / Steel,None,40.0,Thunder Wave,Purple,The battle opponent becomes paralyzed.,☆☆,True
+Magnemite,3,C,Electric / Steel,None,8.0,Dodge,Blue,,,True
+Magnemite,3,C,Electric / Steel,None,40.0,Spark,White,,20,True
+Drowzee,1,C,Psychic,Insomnia - This Pokémon can't be Asleep,4.0,Miss,Red,,,True
+Drowzee,1,C,Psychic,Insomnia - This Pokémon can't be Asleep,40.0,Hypnosis,Purple,The battle opponent falls asleep.,☆☆,True
+Drowzee,1,C,Psychic,Insomnia - This Pokémon can't be Asleep,52.0,Confusion,White,,20,True
+Exeggcute,2,C,Grass / Psychic,None,12.0,Barrage,White,,90,True
+Exeggcute,2,C,Grass / Psychic,None,20.0,Miss,Red,,,True
+Exeggcute,2,C,Grass / Psychic,None,16.0,Barrage,White,,10,True
+Exeggcute,2,C,Grass / Psychic,None,16.0,Barrage,White,,30,True
+Exeggcute,2,C,Grass / Psychic,None,16.0,Barrage,White,,50,True
+Exeggcute,2,C,Grass / Psychic,None,16.0,Barrage,White,,70,True
+Scyther,2,UC,Bug / Flying,None,24.0,False Swipe,White,,20,True
+Scyther,2,UC,Bug / Flying,None,32.0,Slash,White,,50,True
+Scyther,2,UC,Bug / Flying,None,36.0,Swords Dance,White,Spin again until an attack other than Swords Dance is spun. Damage Attacks deal x2 damage,0,True
+Scyther,2,UC,Bug / Flying,None,4.0,Miss,Red,,,True
+Spearow,2,C,Normal / Flying,None,20.0,Miss,Red,,,True
+Spearow,2,C,Normal / Flying,None,16.0,Peck,White,,40,True
+Spearow,2,C,Normal / Flying,None,16.0,Miss,Red,,,True
+Spearow,2,C,Normal / Flying,None,44.0,Fly Away,Purple,This Pokémon jumps over the battle opponent and lands on a surrounding point.,☆☆☆,True
+Nidoran♂,2,C,Poison,None,28.0,Poison Kick,White,"If this Pokémon is knocked out, the battle opponent becomes poisoned",40,True
+Nidoran♂,2,C,Poison,None,16.0,Horn Attack,White,,70,True
+Nidoran♂,2,C,Poison,None,24.0,Poison Sting,Purple,The battle opponent becomes poisoned,☆,True
+Nidoran♂,2,C,Poison,None,28.0,Miss,Red,,,True
+Beedrill,3,C,Bug / Poison,None,16.0,Miss,Red,,,True
+Beedrill,3,C,Bug / Poison,None,44.0,Pin Missile,White,Spin again until Pin Missile does not land - damage is multiplied by the number of Pin Missile spins,40x,True
+Beedrill,3,C,Bug / Poison,None,12.0,Miss,Red,,,True
+Beedrill,3,C,Bug / Poison,None,24.0,Toxic,Purple,The battle opponent becomes noxious.,☆,True
+Rhyhorn,1,C,Ground / Rock,Onslaught - This Pokémon can move up to 2 steps in a straight line.,12.0,Miss,Red,,,True
+Rhyhorn,1,C,Ground / Rock,Onslaught - This Pokémon can move up to 2 steps in a straight line.,24.0,Hyper Take Down,White,"If the battle opponent is knocked out, this Pokémon claims its previous spot and gains Wait.",90,True
+Rhyhorn,1,C,Ground / Rock,Onslaught - This Pokémon can move up to 2 steps in a straight line.,12.0,Miss,Red,,,True
+Rhyhorn,1,C,Ground / Rock,Onslaught - This Pokémon can move up to 2 steps in a straight line.,48.0,Stomp,White,,70,True
+Mankey,3,C,Fighting,None,12.0,Miss,Red,,,True
+Mankey,3,C,Fighting,None,28.0,Scratch,White,,20,True
+Mankey,3,C,Fighting,None,28.0,Thrash,White,"This Pokémon becomes confused,",50,True
+Mankey,3,C,Fighting,None,28.0,Tease,Purple,Switch this Pokémon with the adjacent opponent Pokémon.,☆,True
+Weedle,1,C,Bug / Poison,None,60.0,Poison Sting,Purple,The battle opponent becomes poisoned,☆,True
+Weedle,1,C,Bug / Poison,None,32.0,Tackle,White,,10,True
+Weedle,1,C,Bug / Poison,None,4.0,Miss,Red,,,True
+Venusaur,1,EX,Grass / Poison,"Chemical Pollen - When this Pokémon is on the field, all poisoned and noxious Pokémon have MP-1. This effect does not stack",20.0,Protect,Blue,,,True
+Venusaur,1,EX,Grass / Poison,"Chemical Pollen - When this Pokémon is on the field, all poisoned and noxious Pokémon have MP-1. This effect does not stack",36.0,Solar Beam,White,,150,True
+Venusaur,1,EX,Grass / Poison,"Chemical Pollen - When this Pokémon is on the field, all poisoned and noxious Pokémon have MP-1. This effect does not stack",32.0,Sleep Powder,Purple,The battle opponent falls asleep.,☆,True
+Venusaur,1,EX,Grass / Poison,"Chemical Pollen - When this Pokémon is on the field, all poisoned and noxious Pokémon have MP-1. This effect does not stack",8.0,Miss,Red,,,True
+Mewtwo,2,EX,Psychic,Rapid Approach - All the Blue Attacks of htis Pokémon's battle opponents become misses,32.0,Psychic Shove,Purple,The battle opponent is knocked as far back as possible in a straight line. Any Pokémon it collides with are also knocked back. All affected Pokémon gain Wait.,☆☆,True
+Mewtwo,2,EX,Psychic,Rapid Approach - All the Blue Attacks of htis Pokémon's battle opponents become misses,16.0,Annihilate,Blue,This Pokémon moves 2 steps away,,True
+Mewtwo,2,EX,Psychic,Rapid Approach - All the Blue Attacks of htis Pokémon's battle opponents become misses,40.0,Psycho Cut,White,"Spin again - if Psycho Cut is spun, it deals +50 damage",70+,True
+Mewtwo,2,EX,Psychic,Rapid Approach - All the Blue Attacks of htis Pokémon's battle opponents become misses,8.0,Miss,Red,,,True
+Weezing,2,UC,Poison,None,56.0,Sludge Bomb,White,"If this Pokémon is knocked out, all Pokémon within 2 steps become Poisoned",50,True
+Weezing,2,UC,Poison,None,32.0,Poison Gas,Purple,The battle opponent becomes poisoned,☆☆,True
+Weezing,2,UC,Poison,None,8.0,Miss,Red,,,True
+Butterfree,2,UC,Bug / Flying,"Compound Eyes - If this Pokémon has evolved, and its Attack lands on Miss, it will shift to an Attack next to it instead.",28.0,Miss,Red,,,True
+Butterfree,2,UC,Bug / Flying,"Compound Eyes - If this Pokémon has evolved, and its Attack lands on Miss, it will shift to an Attack next to it instead.",32.0,Psybeam,White,"If this Pokémon is knocked out, the opponent Pokémon is Confused",70,True
+Butterfree,2,UC,Bug / Flying,"Compound Eyes - If this Pokémon has evolved, and its Attack lands on Miss, it will shift to an Attack next to it instead.",36.0,Startling Powder,Purple,"The battle opponent either becomes poisoned, paralyzed, or fals asleep.",☆,True
+Blastoise,2,EX,Water,None,8.0,Miss,Red,,,True
+Blastoise,2,EX,Water,None,40.0,Hydro Pump,White,,140,True
+Blastoise,2,EX,Water,None,8.0,Miss,Red,,,True
+Blastoise,2,EX,Water,None,40.0,Mirror Coat,Purple,The battle opponent is knocked out if they spin purple.,☆☆,True
+Lapras,2,R,Water / Ice,Ice Wall - This Pokémon cannot be burned or frozen,12.0,Ice Beam,White,The battle opponent is now frozen,50,True
+Lapras,2,R,Water / Ice,Ice Wall - This Pokémon cannot be burned or frozen,36.0,Surf,White,,100,True
+Lapras,2,R,Water / Ice,Ice Wall - This Pokémon cannot be burned or frozen,32.0,Sing,Purple,The battle opponent falls asleep.,☆,True
+Lapras,2,R,Water / Ice,Ice Wall - This Pokémon cannot be burned or frozen,12.0,Dodge,Blue,,,True
+Lapras,2,R,Water / Ice,Ice Wall - This Pokémon cannot be burned or frozen,4.0,Miss,Red,,,True
+Pikachu,2,R,Electric,None,20.0,Quick Attack,Gold,,50,True
+Pikachu,2,R,Electric,None,12.0,Thunder,White,,100,True
+Pikachu,2,R,Electric,None,20.0,Thunder Wave,Purple,The battle opponent becomes paralyzed.,☆☆,True
+Pikachu,2,R,Electric,None,40.0,Thunder Shock,White,,30,True
+Pikachu,2,R,Electric,None,4.0,Miss,Red,,,True
+Mew,3,EX,Psychic,None,4.0,Miss,Red,,,True
+Mew,3,EX,Psychic,None,24.0,Psychic,White,,100,True
+Mew,3,EX,Psychic,None,48.0,Hyper Sonic,Gold,"If the battle opponent's Attack is 100 damage or more, this Pokémon cannot be knocked out.",30,True
+Mew,3,EX,Psychic,None,20.0,Shuttle Flip,Blue,This Pokémon can take 1-2 steps back,,True
+Mew,3,EX,Psychic,None,96.0,Genesis Supernova,White,All opposing Pokémon on the field spin. Those that spin a Purple Attack are knocked out. This Pokémon is excluded from the duel,200,True
+Rattata,2,C,Normal,"(Pre 1.1)Run Away - When this Pokémon is attacked, you may return it to the Bench. This Pokémon waits 1 turn",24.0,Quick Attack,Gold,,40,True
+Rattata,2,C,Normal,"(Pre 1.1)Run Away - When this Pokémon is attacked, you may return it to the Bench. This Pokémon waits 1 turn",68.0,Tackle,White,,10,True
+Rattata,2,C,Normal,"(Pre 1.1)Run Away - When this Pokémon is attacked, you may return it to the Bench. This Pokémon waits 1 turn",4.0,Miss,Red,,,True
+Electabuzz,2,R,Electric,Connection - This Pokémon's damage is increased by +10 for every Electric-type Pokémon it is connected to.,60.0,Thunder Punch,White,"If this Pokémon is knocked out when it uses this attack, the battle opponent becomes paralyzed.",90,True
+Electabuzz,2,R,Electric,Connection - This Pokémon's damage is increased by +10 for every Electric-type Pokémon it is connected to.,24.0,Quick Attack,Gold,,30,True
+Electabuzz,2,R,Electric,Connection - This Pokémon's damage is increased by +10 for every Electric-type Pokémon it is connected to.,12.0,Miss,Red,,,True
+Tentacruel,1,R,Water / Poison,"Speed Booster - When this Pokémon evolves, it will gain +1 MP",8.0,Miss,Red,,,True
+Tentacruel,1,R,Water / Poison,"Speed Booster - When this Pokémon evolves, it will gain +1 MP",56.0,Tentacle Sting,White,"If this Pokémon is knocked out, the battle opponent becomes poisoned or paralyzed",120,True
+Tentacruel,1,R,Water / Poison,"Speed Booster - When this Pokémon evolves, it will gain +1 MP",8.0,Miss,Red,,,True
+Tentacruel,1,R,Water / Poison,"Speed Booster - When this Pokémon evolves, it will gain +1 MP",24.0,Mirror Coat,Purple,The battle opponent is knocked out if they spin purple,☆☆,True
+Snorlax,1,EX,Normal,Still - This Pokémon cannot be moved by other Pokémon's Attacks (except Sweet Scent). This Pokémon can't be affected by any conditions other than Sleep,4.0,Miss,Red,,,True
+Snorlax,1,EX,Normal,Still - This Pokémon cannot be moved by other Pokémon's Attacks (except Sweet Scent). This Pokémon can't be affected by any conditions other than Sleep,36.0,Big Yawn,Purple,This Pokémon and the battle opponent fall asleep.,☆,True
+Snorlax,1,EX,Normal,Still - This Pokémon cannot be moved by other Pokémon's Attacks (except Sweet Scent). This Pokémon can't be affected by any conditions other than Sleep,32.0,Body Slam,White,The battle opponent becomes paralyzed.,150,True
+Snorlax,1,EX,Normal,Still - This Pokémon cannot be moved by other Pokémon's Attacks (except Sweet Scent). This Pokémon can't be affected by any conditions other than Sleep,24.0,Giga Impact,White,,180,True
+Snorlax,1,EX,Normal,Still - This Pokémon cannot be moved by other Pokémon's Attacks (except Sweet Scent). This Pokémon can't be affected by any conditions other than Sleep,96.0,Pulverizing Pancake,Z-Move,Knocks the battle opponent and all Pokémon in a straight line directly behind it as far back as possible (the battle opponent is not knocked out). Those Pokémon gain Wait,360,True
+Bellsprout,2,UC,Grass / Poison,None,32.0,Sweet Scent,Purple,One Pokémon within 3 steps' range is drawn 1-2 steps closer to this Pokémon and gains Wait.,☆,True
+Bellsprout,2,UC,Grass / Poison,None,8.0,Miss,Red,,,True
+Bellsprout,2,UC,Grass / Poison,None,20.0,Sleep Powder,Purple,The battle opponent falls asleep.,☆,True
+Bellsprout,2,UC,Grass / Poison,None,36.0,Vine Whip,White,,20,True
+Voltorb,3,UC,Electric,None,28.0,Tackle,White,,10,True
+Voltorb,3,UC,Electric,None,32.0,Explosion,Purple,This Pokémon and all neighbour Pokémon faint,☆☆,True
+Voltorb,3,UC,Electric,None,32.0,Shock Blast,White,"If the battle opponent spins an Attack of 101 or more damage, the battle opponent is knocked out",30,True
+Voltorb,3,UC,Electric,None,4.0,Miss,Red,,,True
+Haunter,2,UC,Ghost / Poison,"Infiltrator - On the field, this Pokémon can pass through other Pokémon",8.0,Miss,Red,,,True
+Haunter,2,UC,Ghost / Poison,"Infiltrator - On the field, this Pokémon can pass through other Pokémon",32.0,Toxic,Purple,The battle opponent becomes noxious.,☆,True
+Haunter,2,UC,Ghost / Poison,"Infiltrator - On the field, this Pokémon can pass through other Pokémon",16.0,Dodge,Blue,,,True
+Haunter,2,UC,Ghost / Poison,"Infiltrator - On the field, this Pokémon can pass through other Pokémon",40.0,Night Shade,White,,20,True
+Diglett,2,UC,Ground,None,20.0,Faint Attack,White,,40,True
+Diglett,2,UC,Ground,None,40.0,Dig,Purple,This Pokémon moves away from any Pokémon attached to it.,☆☆,True
+Diglett,2,UC,Ground,None,32.0,Scratch,White,,20,True
+Diglett,2,UC,Ground,None,4.0,Miss,Red,,,True
+Jigglypuff,2,R,Normal / Fairy,None,12.0,Miss,Red,,,True
+Jigglypuff,2,R,Normal / Fairy,None,36.0,Lullaby,Purple,All adjacent Pokémon are Asleep,☆,True
+Jigglypuff,2,R,Normal / Fairy,None,12.0,Hyper Voice,White,,140,True
+Jigglypuff,2,R,Normal / Fairy,None,36.0,Double Slap,White,"Spin one more time. If it lands on Double Slap, this attack does 20 more damage",60+,True
+Poliwhirl,2,UC,Water,Spinning Pattern - This Pokémon's spin will miss by two segments in a clockwise direction,8.0,Miss,Red,,,True
+Poliwhirl,2,UC,Water,Spinning Pattern - This Pokémon's spin will miss by two segments in a clockwise direction,16.0,Water Gun,White,,50,True
+Poliwhirl,2,UC,Water,Spinning Pattern - This Pokémon's spin will miss by two segments in a clockwise direction,48.0,Water Gun,White,,70,True
+Poliwhirl,2,UC,Water,Spinning Pattern - This Pokémon's spin will miss by two segments in a clockwise direction,24.0,Hypnosis,Purple,The battle opponent falls asleep,☆☆,True
+Onix,2,R,Rock / Ground,None,8.0,Protect,Blue,This Pokémon gains Wait,,True
+Onix,2,R,Rock / Ground,None,56.0,Rock Slide,White,All neigbour Pokémon spin - those that miss are knocked out,80,True
+Onix,2,R,Rock / Ground,None,4.0,Miss,Red,,,True
+Onix,2,R,Rock / Ground,None,28.0,Dig,Purple,This Pokémon moves away from any Pokémon attached to it.,☆☆,True
+Graveler,1,C,Rock / Ground,None,8.0,Miss,Red,,,True
+Graveler,1,C,Rock / Ground,None,40.0,Rollout,White,Spin again until Rollout does not land - damage is multiplied by the number of Rollout spins,40x,True
+Graveler,1,C,Rock / Ground,None,8.0,Miss,Red,,,True
+Graveler,1,C,Rock / Ground,None,40.0,Landslide,Purple,The battle opponent is knocked 1 step back and gains Wait,☆,True
+Koffing,2,C,Poison,None,8.0,Miss,Red,,,True
+Koffing,2,C,Poison,None,44.0,Smog,Purple,The battle opponent is poisoned.,☆,True
+Koffing,2,C,Poison,None,4.0,Miss,Red,,,True
+Koffing,2,C,Poison,None,40.0,Sludge,White,"If this Pokémon is knocked out, the battle opponent becomes poisoned",30,True
+Gastly,3,R,Ghost / Poison,"Gaseous Form - This Pokémon cannot surround the opponent's Pokémon, and cannot be surrounded itself. It can also move through other Pokémon when making an MP move",32.0,Destiny Bond,White,"If this Pokémon is knocked out, so is the battle opponent",0,True
+Gastly,3,R,Ghost / Poison,"Gaseous Form - This Pokémon cannot surround the opponent's Pokémon, and cannot be surrounded itself. It can also move through other Pokémon when making an MP move",48.0,Astonish,White,,20,True
+Gastly,3,R,Ghost / Poison,"Gaseous Form - This Pokémon cannot surround the opponent's Pokémon, and cannot be surrounded itself. It can also move through other Pokémon when making an MP move",16.0,Miss,Red,,,True
+Metapod,0,UC,Bug,"Metamorphosis - If this Pokémon is not knocked out in battle, it can evolve.",68.0,Harden,White,"If the battle opponent spins an Attack of 100 damage or less, this Pokémon is not knocked out. While this Pokémon is on the field, the Attacks of this Pokémon, other than Harden, deal +10 damage",0,True
+Metapod,0,UC,Bug,"Metamorphosis - If this Pokémon is not knocked out in battle, it can evolve.",24.0,Tackle,White,,10,True
+Metapod,0,UC,Bug,"Metamorphosis - If this Pokémon is not knocked out in battle, it can evolve.",4.0,Miss,Red,,,True
+Tentacool,2,UC,Water / Poison,Form Herd - The 3-Pokémon limit does not apply to this Pokémon,8.0,Miss,Red,,,True
+Tentacool,2,UC,Water / Poison,Form Herd - The 3-Pokémon limit does not apply to this Pokémon,52.0,Tentacle Barrage,White,"This move's damage is boosted by the number of Pokémon on the field that know moves that can cause Poison or Toxic status effect, plus 10.
+If this Pokémon faints, the battle opponent will become Poisoned",40,True
+Tentacool,2,UC,Water / Poison,Form Herd - The 3-Pokémon limit does not apply to this Pokémon,4.0,Miss,Red,,,True
+Tentacool,2,UC,Water / Poison,Form Herd - The 3-Pokémon limit does not apply to this Pokémon,32.0,Poison Sting,Purple,The battle opponent becomes poisoned.,☆,True
+Wartortle,2,C,Water,None,4.0,Miss,Red,,,True
+Wartortle,2,C,Water,None,8.0,Dodge,Blue,,,True
+Wartortle,2,C,Water,None,40.0,Water Gun,White,,40,True
+Wartortle,2,C,Water,None,8.0,Dodge,Blue,,,True
+Wartortle,2,C,Water,None,36.0,Rapid Spin,White,Spin again until Rapid Spin does not land - damage is multiplied by the number of Rapid Spin spins,20x,True
+Gyarados,1,R,Water / Flying,"Speed Booster - When this Pokémon evolves, it will gain +1 MP",8.0,Miss,Red,,,True
+Gyarados,1,R,Water / Flying,"Speed Booster - When this Pokémon evolves, it will gain +1 MP",52.0,Hyper Beam,White,"If the battle opponent is knocked out, the next turn will always be the other player's",110,True
+Gyarados,1,R,Water / Flying,"Speed Booster - When this Pokémon evolves, it will gain +1 MP",8.0,Miss,Red,,,True
+Gyarados,1,R,Water / Flying,"Speed Booster - When this Pokémon evolves, it will gain +1 MP",28.0,Storm,Purple,All neighbour Pokémon are moved to the bench and gain Wait.,☆,True
+Rhydon,1,UC,Ground / Rock,Reckless Charge - This Pokémon can move up to 2 steps in a straight line,12.0,Miss,Red,,,True
+Rhydon,1,UC,Ground / Rock,Reckless Charge - This Pokémon can move up to 2 steps in a straight line,28.0,Horn Drill,Purple,The battle opponent is Knocked Out,☆,True
+Rhydon,1,UC,Ground / Rock,Reckless Charge - This Pokémon can move up to 2 steps in a straight line,8.0,Miss,Red,,,True
+Rhydon,1,UC,Ground / Rock,Reckless Charge - This Pokémon can move up to 2 steps in a straight line,48.0,Stomp,White,,100,True
+Golbat,2,UC,Poison / Flying,None,28.0,Leech Life,White,,30,True
+Golbat,2,UC,Poison / Flying,None,24.0,Bite,White,,60,True
+Golbat,2,UC,Poison / Flying,None,24.0,Confuse Ray,Purple,,☆☆☆,True
+Golbat,2,UC,Poison / Flying,None,20.0,Miss,Red,,,True
+Vaporeon,3,R,Water,None,8.0,Miss,Red,,,True
+Vaporeon,3,R,Water,None,20.0,Dodge,Blue,,,True
+Vaporeon,3,R,Water,None,28.0,Water Slide,Purple,The battle opponent is knocked 1 step back and gains Wait,☆,True
+Vaporeon,3,R,Water,None,40.0,Surf,White,,40,True
+Jolteon,3,R,Electric,Thunder Rush - This Pokémon can MP Move past Paralyzed Pokémon.,20.0,Dodge,Blue,,,True
+Jolteon,3,R,Electric,Thunder Rush - This Pokémon can MP Move past Paralyzed Pokémon.,40.0,Thunder Jolt,White,"If this Pokémon is knocked out when using this move, the battle opponent becomes paralyzed.",40,True
+Jolteon,3,R,Electric,Thunder Rush - This Pokémon can MP Move past Paralyzed Pokémon.,28.0,Quick Attack,Gold,,30,True
+Jolteon,3,R,Electric,Thunder Rush - This Pokémon can MP Move past Paralyzed Pokémon.,8.0,Miss,Red,,,True
+Poliwrath,2,R,Water / Fighting,Hypnotic Stare - Any Pokémon that battles this Pokémon will become confused,8.0,Miss,Red,,,True
+Poliwrath,2,R,Water / Fighting,Hypnotic Stare - Any Pokémon that battles this Pokémon will become confused,36.0,Dynamic Punch,White,,130,True
+Poliwrath,2,R,Water / Fighting,Hypnotic Stare - Any Pokémon that battles this Pokémon will become confused,8.0,R,Red,,,True
+Poliwrath,2,R,Water / Fighting,Hypnotic Stare - Any Pokémon that battles this Pokémon will become confused,44.0,Double Slap,White,"Spin again - if Double Slap is spun, it deals 20+ damage",40+,True
+Hypno,2,R,Psychic,"Spellbind - While this Pokémon is on the field, the Sleep Condition is not removed by the effects of other abilities",24.0,Psychic,White,,100,True
+Hypno,2,R,Psychic,"Spellbind - While this Pokémon is on the field, the Sleep Condition is not removed by the effects of other abilities",36.0,Sleepwalk,Purple,The battle opponent falls asleep. You may move one Pokémon that is asleep to a point within its MP range. The moved Pokémon gains Wait.,☆☆,True
+Hypno,2,R,Psychic,"Spellbind - While this Pokémon is on the field, the Sleep Condition is not removed by the effects of other abilities",24.0,Psybeam,White,"If this Pokémon is knocked out, the battle opponent becomes confused.",40,True
+Hypno,2,R,Psychic,"Spellbind - While this Pokémon is on the field, the Sleep Condition is not removed by the effects of other abilities",12.0,Miss,Red,,,True
+Magikarp,2,C,Water,"Rapid Evolution - When this Pokémon faints in battle, you can evolve it without sending it to the P.C.",48.0,Splash,White,,0,True
+Magikarp,2,C,Water,"Rapid Evolution - When this Pokémon faints in battle, you can evolve it without sending it to the P.C.",44.0,Flail,White,,10,True
+Magikarp,2,C,Water,"Rapid Evolution - When this Pokémon faints in battle, you can evolve it without sending it to the P.C.",4.0,Miss,Red,,,True
+Ivysaur,2,C,Grass / Poison,"Healing Seed - When this Pokémon is on the field, your Grass-type and Poison-type Pokémon cannot become poisoned or noxious.",28.0,Vine Whip,White,,40,True
+Ivysaur,2,C,Grass / Poison,"Healing Seed - When this Pokémon is on the field, your Grass-type and Poison-type Pokémon cannot become poisoned or noxious.",24.0,Razor Leaf,White,,60,True
+Ivysaur,2,C,Grass / Poison,"Healing Seed - When this Pokémon is on the field, your Grass-type and Poison-type Pokémon cannot become poisoned or noxious.",28.0,Sleep Powder,Purple,The battle opponent falls asleep.,☆,True
+Ivysaur,2,C,Grass / Poison,"Healing Seed - When this Pokémon is on the field, your Grass-type and Poison-type Pokémon cannot become poisoned or noxious.",16.0,Miss,Red,,,True
+Raichu,2,UC,Electric,Grounding - This Pokémon cannot be Paralysed,8.0,Miss,Red,,,True
+Raichu,2,UC,Electric,Grounding - This Pokémon cannot be Paralysed,28.0,Thunder,White,,100,True
+Raichu,2,UC,Electric,Grounding - This Pokémon cannot be Paralysed,8.0,Miss,Red,,,True
+Raichu,2,UC,Electric,Grounding - This Pokémon cannot be Paralysed,52.0,Thunder Jolt,White,"If this Pokémon is knocked out when using this move, the battle opponent becomes paralyzed.",40,True
+Kakuna,0,UC,Bug / Poison,"Metamorphosis - If this Pokémon is not knocked out in battle, it can evolve",4.0,Miss,Red,,,True
+Kakuna,0,UC,Bug / Poison,"Metamorphosis - If this Pokémon is not knocked out in battle, it can evolve",64.0,Hard Shelled,White,"Ifthis Pokémon is knocked out, the battle opponent gains an MP-2 marker",0,True
+Kakuna,0,UC,Bug / Poison,"Metamorphosis - If this Pokémon is not knocked out in battle, it can evolve",28.0,Poison Sting,Purple,The opponent Pokémon is now Poisoned,☆,True
+Wigglytuff,2,R,Normal / Fairy,"Hypnotic Voice - The next turn after using this Pokémon, your opponent will be unable to use Plates",8.0,Miss,Red,,,True
+Wigglytuff,2,R,Normal / Fairy,"Hypnotic Voice - The next turn after using this Pokémon, your opponent will be unable to use Plates",24.0,Round,White,Damage is multiplied by the number of your own Pokémon on the field that also have Round,20x,True
+Wigglytuff,2,R,Normal / Fairy,"Hypnotic Voice - The next turn after using this Pokémon, your opponent will be unable to use Plates",32.0,Sing,Purple,The battle opponent falls asleep,☆,True
+Wigglytuff,2,R,Normal / Fairy,"Hypnotic Voice - The next turn after using this Pokémon, your opponent will be unable to use Plates",4.0,Miss,Red,,,True
+Wigglytuff,2,R,Normal / Fairy,"Hypnotic Voice - The next turn after using this Pokémon, your opponent will be unable to use Plates",28.0,Pound,White,,100,True
+Exeggutor,1,UC,Grass / Psychic,"Bigg Eggsplosion - Before battle, allows one of friendly Exeggcute to be choosed. If Barrage is spun, it deals +60 damage. If it does, the Exeggcute is Knocked Out",32.0,Barrage,White,,100,True
+Exeggutor,1,UC,Grass / Psychic,"Bigg Eggsplosion - Before battle, allows one of friendly Exeggcute to be choosed. If Barrage is spun, it deals +60 damage. If it does, the Exeggcute is Knocked Out",32.0,Barrage,White,,110,True
+Exeggutor,1,UC,Grass / Psychic,"Bigg Eggsplosion - Before battle, allows one of friendly Exeggcute to be choosed. If Barrage is spun, it deals +60 damage. If it does, the Exeggcute is Knocked Out",28.0,Stun Spore,Purple,The battle opponent becomes paralyzed.,☆,True
+Exeggutor,1,UC,Grass / Psychic,"Bigg Eggsplosion - Before battle, allows one of friendly Exeggcute to be choosed. If Barrage is spun, it deals +60 damage. If it does, the Exeggcute is Knocked Out",4.0,Miss,Red,,,True
+Mr. Mime,2,R,Psychic / Fairy,Invisible Wall - Opposing Pokémon cannot pass by this Pokémon nor a continuous succession of your Pokémon adjacent to it with an MP move,28.0,Mysterious Wall,Purple,"The battle opponent, or one opposing Pokémon adjacent to a succession of Pokémon adjacent to this Pokémon, become confused.",☆☆☆,True
+Mr. Mime,2,R,Psychic / Fairy,Invisible Wall - Opposing Pokémon cannot pass by this Pokémon nor a continuous succession of your Pokémon adjacent to it with an MP move,4.0,Miss,Red,,,True
+Mr. Mime,2,R,Psychic / Fairy,Invisible Wall - Opposing Pokémon cannot pass by this Pokémon nor a continuous succession of your Pokémon adjacent to it with an MP move,28.0,Dodge,Blue,,,True
+Mr. Mime,2,R,Psychic / Fairy,Invisible Wall - Opposing Pokémon cannot pass by this Pokémon nor a continuous succession of your Pokémon adjacent to it with an MP move,4.0,Miss,Red,,,True
+Mr. Mime,2,R,Psychic / Fairy,Invisible Wall - Opposing Pokémon cannot pass by this Pokémon nor a continuous succession of your Pokémon adjacent to it with an MP move,24.0,Dazzling Gleam,White,"Opposing Pokémon adjacent to this Pokémon spin, and if they spin a Gold Attack, then they are knocked out",50,True
+Mr. Mime,2,R,Psychic / Fairy,Invisible Wall - Opposing Pokémon cannot pass by this Pokémon nor a continuous succession of your Pokémon adjacent to it with an MP move,8.0,Miss,Red,,,True
+Flareon,3,R,Fire,None,12.0,Miss,Red,,,True
+Flareon,3,R,Fire,None,44.0,Flamethrower,White,"If this Pokémon is knocked out when using this move, the battle opponent becomes burned.",40,True
+Flareon,3,R,Fire,None,20.0,Focus Energy,White,"Spin again until an attack other than Focus Energy is spun. Damage attacks deal +20 damage,",,True
+Flareon,3,R,Fire,None,20.0,Dodge,Blue,,,True
+Arbok,2,UC,Poison,"Shed Skin - This Pokémon will recover from any status effect at the start of your turn, and the turn will end",28.0,Dodge,Blue,,,True
+Arbok,2,UC,Poison,"Shed Skin - This Pokémon will recover from any status effect at the start of your turn, and the turn will end",32.0,Glare,Purple,The battle opponent becomes paralyzed.,☆☆,True
+Arbok,2,UC,Poison,"Shed Skin - This Pokémon will recover from any status effect at the start of your turn, and the turn will end",28.0,Poison Fang,White,"If this Pokémon is knocked out, the battle opponent becomes poisoned.",40,True
+Arbok,2,UC,Poison,"Shed Skin - This Pokémon will recover from any status effect at the start of your turn, and the turn will end",8.0,Miss,Red,,,True
+Magmar,2,R,Fire,Lava Therapy - This Pokémon can't be Frozen or put to Sleep.,52.0,Fire Punch,White,"If this Pokémon is knocked out when using this move, the battle opponent becomes burned.",100,True
+Magmar,2,R,Fire,Lava Therapy - This Pokémon can't be Frozen or put to Sleep.,16.0,Miss,Red,,,True
+Magmar,2,R,Fire,Lava Therapy - This Pokémon can't be Frozen or put to Sleep.,28.0,Confuse Ray,Purple,The battle opponent becomes confused,☆☆☆,True
+Seaking,2,UC,Water,"Swift Swim - If there is an adjacent Water-type Pokémon, this Pokémon gains +1MP.",12.0,Dodge,Blue,,,True
+Seaking,2,UC,Water,"Swift Swim - If there is an adjacent Water-type Pokémon, this Pokémon gains +1MP.",28.0,Megahorn,White,,80,True
+Seaking,2,UC,Water,"Swift Swim - If there is an adjacent Water-type Pokémon, this Pokémon gains +1MP.",12.0,Miss,Red,,,True
+Seaking,2,UC,Water,"Swift Swim - If there is an adjacent Water-type Pokémon, this Pokémon gains +1MP.",44.0,Fury Attack,White,Spin again until Fury Attack does not land - damage is multiplied by the number of Fury Attack spins,20x,True
+Charmeleon,2,C,Fire,None,8.0,Miss,Red,,,True
+Charmeleon,2,C,Fire,None,24.0,Flame,Purple,The battle opponent becomes burned,☆☆,True
+Charmeleon,2,C,Fire,None,8.0,Miss,Red,,,True
+Charmeleon,2,C,Fire,None,56.0,Iron Tail,White,,50,True
+Goldeen,2,UC,Water,"Swift Swim - If there is an adjacent Water-type Pokémon, this Pokémon gains +1MP.",8.0,Miss,Red,,,True
+Goldeen,2,UC,Water,"Swift Swim - If there is an adjacent Water-type Pokémon, this Pokémon gains +1MP.",56.0,Waterfall,White,"If the battle opponent is a Water-type Pokémon, this Pokémon takes no damage and moves to a spot beyond the battle opponent.",40,True
+Goldeen,2,UC,Water,"Swift Swim - If there is an adjacent Water-type Pokémon, this Pokémon gains +1MP.",8.0,Miss,Red,,,True
+Goldeen,2,UC,Water,"Swift Swim - If there is an adjacent Water-type Pokémon, this Pokémon gains +1MP.",24.0,Aqua Tail,White,The battle opponent gains Wait,30,True
+Zapdos,2,EX,Electric / Flying,Soar - This Pokémon can fly over Pokémon that don't have Soar using an MP Move,16.0,Steel Wing,White,,50,True
+Zapdos,2,EX,Electric / Flying,Soar - This Pokémon can fly over Pokémon that don't have Soar using an MP Move,32.0,Thunder Crash,Gold,,100,True
+Zapdos,2,EX,Electric / Flying,Soar - This Pokémon can fly over Pokémon that don't have Soar using an MP Move,12.0,Miss,Red,,,True
+Zapdos,2,EX,Electric / Flying,Soar - This Pokémon can fly over Pokémon that don't have Soar using an MP Move,16.0,Roost,Blue,"This Pokémon recovers from all status effects. In exchange, it must then Wait 3",,True
+Zapdos,2,EX,Electric / Flying,Soar - This Pokémon can fly over Pokémon that don't have Soar using an MP Move,20.0,Thunder Charge,Purple,"Attach a Charge Marker to this Pokémon. (Charge Markers can be removed during your turn when a battle starts.) When you remove the Charge Marker, the opposing Pokémon will become Paralyzed, along with any Pokémon in the same row (excluding this one), and the turn will end.",☆☆,True
+Moltres,2,EX,Fire / Flying,Soar - This Pokémon can fly over Pokémon that don't have Soar using an MP Move,16.0,Steel Wing,White,,60,True
+Moltres,2,EX,Fire / Flying,Soar - This Pokémon can fly over Pokémon that don't have Soar using an MP Move,32.0,Crushing Flames,White,,110,True
+Moltres,2,EX,Fire / Flying,Soar - This Pokémon can fly over Pokémon that don't have Soar using an MP Move,12.0,Miss,Red,,,True
+Moltres,2,EX,Fire / Flying,Soar - This Pokémon can fly over Pokémon that don't have Soar using an MP Move,16.0,Roost,Blue,"This Pokémon recovers from all status effects. In exchange, it must then Wait 3",,True
+Moltres,2,EX,Fire / Flying,Soar - This Pokémon can fly over Pokémon that don't have Soar using an MP Move,20.0,Flame Charge,Purple,"Attach a Charge Marker to this Pokémon. (Charge Markers can be removed during your turn when a battle starts.) When you remove the Charge Marker, the opposing Pokémon will become Burned, along with any Pokémon in the same row (excluding this one), and the turn will end.",☆☆,True
+Articuno,2,EX,Ice / Flying,Soar - This Pokémon can fly over Pokémon that don't have Soar using an MP Move,16.0,Steel Wing,White,,130,True
+Articuno,2,EX,Ice / Flying,Soar - This Pokémon can fly over Pokémon that don't have Soar using an MP Move,32.0,Cold Crush,White,,90,True
+Articuno,2,EX,Ice / Flying,Soar - This Pokémon can fly over Pokémon that don't have Soar using an MP Move,12.0,Miss,Red,,,True
+Articuno,2,EX,Ice / Flying,Soar - This Pokémon can fly over Pokémon that don't have Soar using an MP Move,16.0,Roost,Blue,"This Pokémon recovers from all status effects. In exchange, it must then Wait 3",,True
+Articuno,2,EX,Ice / Flying,Soar - This Pokémon can fly over Pokémon that don't have Soar using an MP Move,20.0,Ice Charge,Purple,"Attach a Charge Marker to this Pokémon. (Charge Markers can be removed during your turn when a battle starts.) When you remove the Charge Marker, the opposing Pokémon will become Frozen, along with any Pokémon in the same row (excluding this one), and the turn will end.",☆☆,True
+Dragonair,2,R,Dragon,"Shed Skin - This Pokémon will recover from any status effect at the start of your turn, and the turn will end. When you do, you may evolve this Pokémon, if possible. Your turn ends",4.0,Miss,Red,,,True
+Dragonair,2,R,Dragon,"Shed Skin - This Pokémon will recover from any status effect at the start of your turn, and the turn will end. When you do, you may evolve this Pokémon, if possible. Your turn ends",32.0,Magnetic Storm,Purple,This Pokémon and all neigbour Pokémon become Paralyzed,☆☆,True
+Dragonair,2,R,Dragon,"Shed Skin - This Pokémon will recover from any status effect at the start of your turn, and the turn will end. When you do, you may evolve this Pokémon, if possible. Your turn ends",12.0,Miss,Red,,,True
+Dragonair,2,R,Dragon,"Shed Skin - This Pokémon will recover from any status effect at the start of your turn, and the turn will end. When you do, you may evolve this Pokémon, if possible. Your turn ends",48.0,Dragon Tail,White,Benches your battle opponent (except when opponent has fainted). Your battle opponent must then Wait.,80,True
+Dragonite,1,EX,Dragon / Flying,"Speed Booster - When this Pokémon evolves, it will gain +1 MP",28.0,Extreme Speed,Gold,,100,True
+Dragonite,1,EX,Dragon / Flying,"Speed Booster - When this Pokémon evolves, it will gain +1 MP",12.0,Miss,Red,,,True
+Dragonite,1,EX,Dragon / Flying,"Speed Booster - When this Pokémon evolves, it will gain +1 MP",28.0,Sightseeing,Purple,"This Pokémon jumps over the battle opponent and lands 1-2 steps away, then gains Wait",☆,True
+Dragonite,1,EX,Dragon / Flying,"Speed Booster - When this Pokémon evolves, it will gain +1 MP",28.0,Dragon Tail,White,Benches your battle opponent (except when opponent has fainted). Your battle opponent must then Wait.,140,True
+Gengar,2,EX,Ghost / Poison,"Night Stalker - This Pokémon can pass through other Pokémon when it MP moves. If it passes through Poisoned, noxious or sleeping Pokémon, they will faint.",8.0,Miss,Red,,,True
+Gengar,2,EX,Ghost / Poison,"Night Stalker - This Pokémon can pass through other Pokémon when it MP moves. If it passes through Poisoned, noxious or sleeping Pokémon, they will faint.",32.0,Contagious Terror,Purple,"The battle opponent, and a succession of opposing Pokémon adjacent to it, gain Wait 3",☆☆,True
+Gengar,2,EX,Ghost / Poison,"Night Stalker - This Pokémon can pass through other Pokémon when it MP moves. If it passes through Poisoned, noxious or sleeping Pokémon, they will faint.",16.0,Dodge,Blue,,,True
+Gengar,2,EX,Ghost / Poison,"Night Stalker - This Pokémon can pass through other Pokémon when it MP moves. If it passes through Poisoned, noxious or sleeping Pokémon, they will faint.",40.0,Night Shade,White,,100,True
+Electrode,3,R,Electric,"Aftermath Switch - When this Pokémon is knocked out, you may knock out one of your Voltorb on the field and all Pokémon adjacent to it",4.0,Miss,Red,,,True
+Electrode,3,R,Electric,"Aftermath Switch - When this Pokémon is knocked out, you may knock out one of your Voltorb on the field and all Pokémon adjacent to it",44.0,Shock Blast,White,"If the battle opponent spins an Attack of 101 or more damage, the battle opponent is knocked out",40,True
+Electrode,3,R,Electric,"Aftermath Switch - When this Pokémon is knocked out, you may knock out one of your Voltorb on the field and all Pokémon adjacent to it",48.0,Thunder Wave,Purple,The battle opponent becomes paralyzed,☆☆,True
+Magneton,2,R,Electric / Steel,Electromagnetic Barrier - This Pokémon is not subject to spin-inducing effects of Attacks,24.0,Tri Attack,White,"If this Pokémon is knocked out, the battle opponent becomes paralyzed, burned or frozen.",80,True
+Magneton,2,R,Electric / Steel,Electromagnetic Barrier - This Pokémon is not subject to spin-inducing effects of Attacks,8.0,Dodge,Blue,,,True
+Magneton,2,R,Electric / Steel,Electromagnetic Barrier - This Pokémon is not subject to spin-inducing effects of Attacks,24.0,Tri Attack,White,"If this Pokémon is knocked out, the battle opponent becomes paralyzed, burned or frozen.",100,True
+Magneton,2,R,Electric / Steel,Electromagnetic Barrier - This Pokémon is not subject to spin-inducing effects of Attacks,8.0,Dodge,Blue,,,True
+Magneton,2,R,Electric / Steel,Electromagnetic Barrier - This Pokémon is not subject to spin-inducing effects of Attacks,24.0,Tri Attack,White,"If this Pokémon is knocked out, the battle opponent becomes paralyzed, burned or frozen.",60,True
+Magneton,2,R,Electric / Steel,Electromagnetic Barrier - This Pokémon is not subject to spin-inducing effects of Attacks,8.0,Miss,Red,,,True
+Arcanine,2,EX,Fire,"Flame Turbine - Can MP move past Fire-type Pokémon and Burned Pokémon. If the battle opponent is affected by a special condition,  the battle opponent's spins are shifted by one segment clockwise",8.0,Miss,Red,,,True
+Arcanine,2,EX,Fire,"Flame Turbine - Can MP move past Fire-type Pokémon and Burned Pokémon. If the battle opponent is affected by a special condition,  the battle opponent's spins are shifted by one segment clockwise",20.0,Searing Shot,Purple,The battle opponent becomes burned.,☆☆,True
+Arcanine,2,EX,Fire,"Flame Turbine - Can MP move past Fire-type Pokémon and Burned Pokémon. If the battle opponent is affected by a special condition,  the battle opponent's spins are shifted by one segment clockwise",24.0,Flare Blitz,White,"If this Pokémon is knocked out, the battle opponent becomes burned.",80,True
+Arcanine,2,EX,Fire,"Flame Turbine - Can MP move past Fire-type Pokémon and Burned Pokémon. If the battle opponent is affected by a special condition,  the battle opponent's spins are shifted by one segment clockwise",4.0,Miss,Red,,,True
+Arcanine,2,EX,Fire,"Flame Turbine - Can MP move past Fire-type Pokémon and Burned Pokémon. If the battle opponent is affected by a special condition,  the battle opponent's spins are shifted by one segment clockwise",120.0,Extreme Speed,Gold,,,True
+Growlithe,3,R,Fire,Bite Down - The battle opponent of this Pokémon cannot move by effects other than the Attacks of this Pokémon until the end of battle,8.0,Miss,Red,,,True
+Growlithe,3,R,Fire,Bite Down - The battle opponent of this Pokémon cannot move by effects other than the Attacks of this Pokémon until the end of battle,28.0,Crunch,White,,90,True
+Growlithe,3,R,Fire,Bite Down - The battle opponent of this Pokémon cannot move by effects other than the Attacks of this Pokémon until the end of battle,8.0,Miss,Red,,,True
+Growlithe,3,R,Fire,Bite Down - The battle opponent of this Pokémon cannot move by effects other than the Attacks of this Pokémon until the end of battle,52.0,Flame Wheel,White,"If this Pokémon is knocked out, the battle opponent becomes burned.",70,True
+Tangela,2,UC,Grass,"Regenerator - If one of your other Pokémon is knocked out, and this Pokémon is in the P.C., this Pokémon moves to the bench",60.0,Bind,White,Spin again until Bind does not land - damage is multiplied by the number of Bind spins. The bttle opponent gains Wait X where X is the number of Bind spins,10x,True
+Tangela,2,UC,Grass,"Regenerator - If one of your other Pokémon is knocked out, and this Pokémon is in the P.C., this Pokémon moves to the bench",24.0,Constrict,Purple,The battle opponent now has Wait.,☆☆,True
+Tangela,2,UC,Grass,"Regenerator - If one of your other Pokémon is knocked out, and this Pokémon is in the P.C., this Pokémon moves to the bench",12.0,Miss,Red,,,True
+Eevee,3,UX,Normal,Bright Arrow - Undergoes branching Evolution. This Pokémon's MP cannot be 2 or lower (except through the effects of markers). This Pokémon may evolve when it moves from the P.C. to the Bench,24.0,Baby-Doll Eyes,Purple,The Blue Attacks of the Pokémon hit by this Attack will be misses during the next turn,☆,True
+Eevee,3,UX,Normal,Bright Arrow - Undergoes branching Evolution. This Pokémon's MP cannot be 2 or lower (except through the effects of markers). This Pokémon may evolve when it moves from the P.C. to the Bench,32.0,Take Down,White,,80,True
+Eevee,3,UX,Normal,Bright Arrow - Undergoes branching Evolution. This Pokémon's MP cannot be 2 or lower (except through the effects of markers). This Pokémon may evolve when it moves from the P.C. to the Bench,4.0,Miss,Red,,,True
+Eevee,3,UX,Normal,Bright Arrow - Undergoes branching Evolution. This Pokémon's MP cannot be 2 or lower (except through the effects of markers). This Pokémon may evolve when it moves from the P.C. to the Bench,24.0,Double-Edge,Purple,This Pokémon and the battle opponent are knocked out,☆☆,True
+Eevee,3,UX,Normal,Bright Arrow - Undergoes branching Evolution. This Pokémon's MP cannot be 2 or lower (except through the effects of markers). This Pokémon may evolve when it moves from the P.C. to the Bench,12.0,Last Resort,White,,130,True
+Vaporeon,3,UX,Water,"Water Arrow - It can MP move through your Pokémon and through opposing Fire-type Pokémon and Ground-type Pokémon. If there are opposing Pokémon on all of your entry points, this Pokémon gets +1MP",24.0,Hydro Pump,White,,90,True
+Vaporeon,3,UX,Water,"Water Arrow - It can MP move through your Pokémon and through opposing Fire-type Pokémon and Ground-type Pokémon. If there are opposing Pokémon on all of your entry points, this Pokémon gets +1MP",32.0,Water Slide,Purple,The battle opponent is knocked 1 step back and gains Wait,☆,True
+Vaporeon,3,UX,Water,"Water Arrow - It can MP move through your Pokémon and through opposing Fire-type Pokémon and Ground-type Pokémon. If there are opposing Pokémon on all of your entry points, this Pokémon gets +1MP",4.0,Miss,Red,,,True
+Vaporeon,3,UX,Water,"Water Arrow - It can MP move through your Pokémon and through opposing Fire-type Pokémon and Ground-type Pokémon. If there are opposing Pokémon on all of your entry points, this Pokémon gets +1MP",50.0,Quick Attack,Gold,,24,True
+Vaporeon,3,UX,Water,"Water Arrow - It can MP move through your Pokémon and through opposing Fire-type Pokémon and Ground-type Pokémon. If there are opposing Pokémon on all of your entry points, this Pokémon gets +1MP",12.0,Dodge,Blue,,,True
+Jolteon,3,UX,Electric,"Thunder Spear - It can MP move through your Pokémon and through opposing Water-type Pokémon and Flying-type Pokémon. If there are opposing Pokémon on all of your entry points, this Pokémon gets +1MP",24.0,Volt Switch,Purple,This Pokémon switches with a Pokémon on your bench or in your P.C.,☆,True
+Jolteon,3,UX,Electric,"Thunder Spear - It can MP move through your Pokémon and through opposing Water-type Pokémon and Flying-type Pokémon. If there are opposing Pokémon on all of your entry points, this Pokémon gets +1MP",32.0,Quick Attack,Gold,,80,True
+Jolteon,3,UX,Electric,"Thunder Spear - It can MP move through your Pokémon and through opposing Water-type Pokémon and Flying-type Pokémon. If there are opposing Pokémon on all of your entry points, this Pokémon gets +1MP",4.0,Miss,Red,,,True
+Jolteon,3,UX,Electric,"Thunder Spear - It can MP move through your Pokémon and through opposing Water-type Pokémon and Flying-type Pokémon. If there are opposing Pokémon on all of your entry points, this Pokémon gets +1MP",24.0,Thunder Jolt,White,"If this Pokémon is knocked out, the battle opponent becomes Paralyzed.",50,True
+Jolteon,3,UX,Electric,"Thunder Spear - It can MP move through your Pokémon and through opposing Water-type Pokémon and Flying-type Pokémon. If there are opposing Pokémon on all of your entry points, this Pokémon gets +1MP",12.0,Dodge,Blue,,,True
+Flareon,3,UX,Fire,"Fire Arrow - It can MP move through your Pokémon and through opposing Grass-type Pokémon and Ice-type Pokémon. If there are opposing Pokémon on all of your entry points, this Pokémon gets +1MP",24.0,Will-O-Wisp,Purple,The battle opponent becomes burned.,☆,True
+Flareon,3,UX,Fire,"Fire Arrow - It can MP move through your Pokémon and through opposing Grass-type Pokémon and Ice-type Pokémon. If there are opposing Pokémon on all of your entry points, this Pokémon gets +1MP",32.0,Flare Blitz,White,"If this Pokémon is knocked out, the battle opponent becomes burned.",100,True
+Flareon,3,UX,Fire,"Fire Arrow - It can MP move through your Pokémon and through opposing Grass-type Pokémon and Ice-type Pokémon. If there are opposing Pokémon on all of your entry points, this Pokémon gets +1MP",8.0,Miss,Red,,,True
+Flareon,3,UX,Fire,"Fire Arrow - It can MP move through your Pokémon and through opposing Grass-type Pokémon and Ice-type Pokémon. If there are opposing Pokémon on all of your entry points, this Pokémon gets +1MP",24.0,Quick Attack,Gold,,50,True
+Flareon,3,UX,Fire,"Fire Arrow - It can MP move through your Pokémon and through opposing Grass-type Pokémon and Ice-type Pokémon. If there are opposing Pokémon on all of your entry points, this Pokémon gets +1MP",8.0,Dodge,Blue,,,True
+Pikachu,2,UX,Electric,"Electrical Charge - If this Pokémon is paralyzed, it gains +1 MP and deals +30 damage",4.0,Miss,Red,,,True
+Pikachu,2,UX,Electric,"Electrical Charge - If this Pokémon is paralyzed, it gains +1 MP and deals +30 damage",24.0,Extreme Speed,Gold,,70,True
+Pikachu,2,UX,Electric,"Electrical Charge - If this Pokémon is paralyzed, it gains +1 MP and deals +30 damage",4.0,Dodge,Blue,,,True
+Pikachu,2,UX,Electric,"Electrical Charge - If this Pokémon is paralyzed, it gains +1 MP and deals +30 damage",24.0,Volt Switch,Purple,This Pokémon switches with a Pokémon on your bench or in your P.C.,☆,True
+Pikachu,2,UX,Electric,"Electrical Charge - If this Pokémon is paralyzed, it gains +1 MP and deals +30 damage",40.0,Volt Tackle,White,This Pokémon and its battle opponent become parlyzed,110,True
+Pikachu,2,UX,Electric,"Electrical Charge - If this Pokémon is paralyzed, it gains +1 MP and deals +30 damage",96.0,Catastropika,Z-Move,All opposing Pokémon on the field spin. Those that spin White Attacks become paralyzed,,True
+Alakazam,2,EX,Psychic,"Psychic Amplifier - If this Pokémon is using the Twisted Spoon plate, it can attack Pokémon that are 2 steps away. While it does, this Pokémon's attacks have Range 2",24.0,Stillblind,Purple,Attaches an Mp-2 marker to the battle opponent or one opposing Pokémon adjacent to the battle opponent. That Pokémon gains Wait 5,☆☆,True
+Alakazam,2,EX,Psychic,"Psychic Amplifier - If this Pokémon is using the Twisted Spoon plate, it can attack Pokémon that are 2 steps away. While it does, this Pokémon's attacks have Range 2",4.0,Miss,Red,,,True
+Alakazam,2,EX,Psychic,"Psychic Amplifier - If this Pokémon is using the Twisted Spoon plate, it can attack Pokémon that are 2 steps away. While it does, this Pokémon's attacks have Range 2",40.0,Psychic,White,,110,True
+Alakazam,2,EX,Psychic,"Psychic Amplifier - If this Pokémon is using the Twisted Spoon plate, it can attack Pokémon that are 2 steps away. While it does, this Pokémon's attacks have Range 2",24.0,Psyshock,Purple,"If the battle opponent is affected by a special condition or has Wait, the battle opponent is knocked out. The battle opponent gains Wait 3.",☆☆☆,True
+Alakazam,2,EX,Psychic,"Psychic Amplifier - If this Pokémon is using the Twisted Spoon plate, it can attack Pokémon that are 2 steps away. While it does, this Pokémon's attacks have Range 2",20.0,Psycho Shift,Blue,"If this Pokémon has a special condition, that condition is applied to its battle opponent and removed from this Pokémon instead.",,True
+Kangaskhan,2,EX,Normal,Scrappy - This Pokémon cannot be knocked out if it's not affected by a special condition and its battle opponent is a Ghost-type Pokémon,28.0,Sucker Punch,Gold,,100,True
+Kangaskhan,2,EX,Normal,Scrappy - This Pokémon cannot be knocked out if it's not affected by a special condition and its battle opponent is a Ghost-type Pokémon,8.0,Miss,Red,,,True
+Kangaskhan,2,EX,Normal,Scrappy - This Pokémon cannot be knocked out if it's not affected by a special condition and its battle opponent is a Ghost-type Pokémon,32.0,Facade,White,"If this Pokémon is affected by a special condition, it deals x2 damage",150,True
+Kangaskhan,2,EX,Normal,Scrappy - This Pokémon cannot be knocked out if it's not affected by a special condition and its battle opponent is a Ghost-type Pokémon,28.0,Double-Edge,Purple,This Pokémon and the battle opponent are knocked out,☆☆,True
+Pinsir,2,EX,Bug,King Spike - Opposing Pokémon adjacent to this Pokémon cannot tag or be tagged. Gold Attacks of battle opponents that have an MP-reducing marker become White Attacks,4.0,Miss,Red,,,True
+Pinsir,2,EX,Bug,King Spike - Opposing Pokémon adjacent to this Pokémon cannot tag or be tagged. Gold Attacks of battle opponents that have an MP-reducing marker become White Attacks,24.0,Guillotine,Purple,The battle opponent is knocked out.,☆,True
+Pinsir,2,EX,Bug,King Spike - Opposing Pokémon adjacent to this Pokémon cannot tag or be tagged. Gold Attacks of battle opponents that have an MP-reducing marker become White Attacks,4.0,Miss,Red,,,True
+Pinsir,2,EX,Bug,King Spike - Opposing Pokémon adjacent to this Pokémon cannot tag or be tagged. Gold Attacks of battle opponents that have an MP-reducing marker become White Attacks,28.0,Clamping Vice,Purple,Attaches an MP-2 Marker to the battle opponent. The battle opponent gains Wait 3,☆,True
+Pinsir,2,EX,Bug,King Spike - Opposing Pokémon adjacent to this Pokémon cannot tag or be tagged. Gold Attacks of battle opponents that have an MP-reducing marker become White Attacks,36.0,Quick Attack,Gold,,140,True
+Gyarados,2,EX,Water / Flying,Rampager - This Pokémon may MP move through other Pokémon on the field. Pokémon that are knocked out by the attacks of this Pokémon are temporarily excluded from the duel and can move to their P.C. after 5 turns,8.0,Miss,Red,,,True
+Gyarados,2,EX,Water / Flying,Rampager - This Pokémon may MP move through other Pokémon on the field. Pokémon that are knocked out by the attacks of this Pokémon are temporarily excluded from the duel and can move to their P.C. after 5 turns,36.0,Waterfall,White,"If the battle opponent is a Water-type Pokémon, this Pokémon takes no damage and moves to a spot beyond the battle opponent.",130,True
+Gyarados,2,EX,Water / Flying,Rampager - This Pokémon may MP move through other Pokémon on the field. Pokémon that are knocked out by the attacks of this Pokémon are temporarily excluded from the duel and can move to their P.C. after 5 turns,20.0,Dragon Dance,White,Spin again until an Attack other than Dragon Dance is spun. Damage Attacks deal +50 damage,,True
+Gyarados,2,EX,Water / Flying,Rampager - This Pokémon may MP move through other Pokémon on the field. Pokémon that are knocked out by the attacks of this Pokémon are temporarily excluded from the duel and can move to their P.C. after 5 turns,4.0,Miss,Red,,,True
+Gyarados,2,EX,Water / Flying,Rampager - This Pokémon may MP move through other Pokémon on the field. Pokémon that are knocked out by the attacks of this Pokémon are temporarily excluded from the duel and can move to their P.C. after 5 turns,28.0,Hurricane,Purple,Moves the battle opponent to the bench. The battle opponent and all opposing Flying-type Pokémon on the field gain Wait 3,☆☆,True
+Aerodactyl,2,EX,Rock / Flying,"Air Power - Restored Pokémon. If this Pokémon is not affected by a special condition, it may MP move over Pokémon on the field that don't have Soar. Opposing Pokémon that are not Ghost- or Ground-type Pokémon cannot MP move through this Pokémon using the effect of an ability. If this Pokémon is on the field, opposing  Pokémon cannot use the effect of Air Balloon to MP move over other Pokémon",4.0,Miss,Red,,,True
+Aerodactyl,2,EX,Rock / Flying,"Air Power - Restored Pokémon. If this Pokémon is not affected by a special condition, it may MP move over Pokémon on the field that don't have Soar. Opposing Pokémon that are not Ghost- or Ground-type Pokémon cannot MP move through this Pokémon using the effect of an ability. If this Pokémon is on the field, opposing  Pokémon cannot use the effect of Air Balloon to MP move over other Pokémon",40.0,Stone Edge,White,,150,True
+Aerodactyl,2,EX,Rock / Flying,"Air Power - Restored Pokémon. If this Pokémon is not affected by a special condition, it may MP move over Pokémon on the field that don't have Soar. Opposing Pokémon that are not Ghost- or Ground-type Pokémon cannot MP move through this Pokémon using the effect of an ability. If this Pokémon is on the field, opposing  Pokémon cannot use the effect of Air Balloon to MP move over other Pokémon",20.0,Sky Drop,Blue,"This Pokémon moves to a point 2 steps away and gains Wait. If the battle opponent is a non-Flying-type Pokémon, the battle opponent gains Wait 5.",,True
+Aerodactyl,2,EX,Rock / Flying,"Air Power - Restored Pokémon. If this Pokémon is not affected by a special condition, it may MP move over Pokémon on the field that don't have Soar. Opposing Pokémon that are not Ghost- or Ground-type Pokémon cannot MP move through this Pokémon using the effect of an ability. If this Pokémon is on the field, opposing  Pokémon cannot use the effect of Air Balloon to MP move over other Pokémon",4.0,Miss,Red,,,True
+Aerodactyl,2,EX,Rock / Flying,"Air Power - Restored Pokémon. If this Pokémon is not affected by a special condition, it may MP move over Pokémon on the field that don't have Soar. Opposing Pokémon that are not Ghost- or Ground-type Pokémon cannot MP move through this Pokémon using the effect of an ability. If this Pokémon is on the field, opposing  Pokémon cannot use the effect of Air Balloon to MP move over other Pokémon",28.0,Taunt,Purple,"Until the end of your next turn, if the Pokémon hit by this attack spins a Purple attack or a Blue attack, shift the result clockwise until a non-Purple, non-Blue Attack comes up.",☆☆☆,True
+Abra,2,R,Psychic,"Sturdy - If this Pokémon is not affected by a Special Condition, it is not knocked out by knockout-causing Attack effects",28.0,Teleport,Purple,This Pokémon moves 2 steps away.,☆☆☆,True
+Abra,2,R,Psychic,"Sturdy - If this Pokémon is not affected by a Special Condition, it is not knocked out by knockout-causing Attack effects",4.0,Miss,Red,,,True
+Abra,2,R,Psychic,"Sturdy - If this Pokémon is not affected by a Special Condition, it is not knocked out by knockout-causing Attack effects",16.0,Zen Headbutt,White,The battle opponent gains Wait 3.,20,True
+Abra,2,R,Psychic,"Sturdy - If this Pokémon is not affected by a Special Condition, it is not knocked out by knockout-causing Attack effects",28.0,Teleport,Purple,This Pokémon moves 2 steps away.,☆☆☆,True
+Abra,2,R,Psychic,"Sturdy - If this Pokémon is not affected by a Special Condition, it is not knocked out by knockout-causing Attack effects",20.0,Sense Danger,Blue,This Pokémon switches places with its battle opponent.,,True
+Kadabra,2,R,Psychic,"Psychic Amplifier - If this Pokémon is using the Twisted Spoon plate, it can attack Pokémon that are 2 steps away. While it does, this Pokémon's attacks have Range 2",20.0,Teleport Beam,Purple,Moves the battle opponent to a point 3 steps away. The battle opponent also becomes confused.,☆☆,True
+Kadabra,2,R,Psychic,"Psychic Amplifier - If this Pokémon is using the Twisted Spoon plate, it can attack Pokémon that are 2 steps away. While it does, this Pokémon's attacks have Range 2",4.0,Miss,Red,,,True
+Kadabra,2,R,Psychic,"Psychic Amplifier - If this Pokémon is using the Twisted Spoon plate, it can attack Pokémon that are 2 steps away. While it does, this Pokémon's attacks have Range 2",36.0,Super Psy,White,"If this Pokémon is knocked out, the battle opponent becomes confused.",60,True
+Kadabra,2,R,Psychic,"Psychic Amplifier - If this Pokémon is using the Twisted Spoon plate, it can attack Pokémon that are 2 steps away. While it does, this Pokémon's attacks have Range 2",20.0,Teleport Beam,Purple,Moves the battle opponent to a point 3 steps away. The battle opponent also becomes confused.,☆☆,True
+Kadabra,2,R,Psychic,"Psychic Amplifier - If this Pokémon is using the Twisted Spoon plate, it can attack Pokémon that are 2 steps away. While it does, this Pokémon's attacks have Range 2",16.0,Annihilate,Blue,This Pokémon moves 2 steps away.,,True
+Rapidash,2,R,Fire,"Rush In - At the start of your turn, this Pokémon may route move to a point 1-4 steps away in a straight line instead of an MP move. If it does, this Pokémon counts as having already battled. Your turn ends",4.0,Miss,Red,,,True
+Rapidash,2,R,Fire,"Rush In - At the start of your turn, this Pokémon may route move to a point 1-4 steps away in a straight line instead of an MP move. If it does, this Pokémon counts as having already battled. Your turn ends",32.0,Overheat,White,This attack becomes a Miss for the next turn,130,True
+Rapidash,2,R,Fire,"Rush In - At the start of your turn, this Pokémon may route move to a point 1-4 steps away in a straight line instead of an MP move. If it does, this Pokémon counts as having already battled. Your turn ends",4.0,Miss,Red,,,True
+Rapidash,2,R,Fire,"Rush In - At the start of your turn, this Pokémon may route move to a point 1-4 steps away in a straight line instead of an MP move. If it does, this Pokémon counts as having already battled. Your turn ends",20.0,Horn Drill,Purple,The battle opponent is knocked out,☆,True
+Rapidash,2,R,Fire,"Rush In - At the start of your turn, this Pokémon may route move to a point 1-4 steps away in a straight line instead of an MP move. If it does, this Pokémon counts as having already battled. Your turn ends",4.0,Miss,Red,,,True
+Rapidash,2,R,Fire,"Rush In - At the start of your turn, this Pokémon may route move to a point 1-4 steps away in a straight line instead of an MP move. If it does, this Pokémon counts as having already battled. Your turn ends",32.0,Flare Blitz,White,"If this Pokémon is knocked out, the battle opponent becomes Burned.",80,True
+Omastar,1,R,Rock / Water,"Speed Booster: Omaster - Restored Pokémon. If this Pokémon is evolved, it has MP +1. When this Pokémon is excluded from the duel, it returns to its previous Evolution, if possible",4.0,Miss,Red,,,True
+Omastar,1,R,Rock / Water,"Speed Booster: Omaster - Restored Pokémon. If this Pokémon is evolved, it has MP +1. When this Pokémon is excluded from the duel, it returns to its previous Evolution, if possible",40.0,Bind,White,Spin again until Bind does not land - damage is multiplied by the number of Bind spins. The bttle opponent gains Wait X where X is the number of Bind spins,70x,True
+Omastar,1,R,Rock / Water,"Speed Booster: Omaster - Restored Pokémon. If this Pokémon is evolved, it has MP +1. When this Pokémon is excluded from the duel, it returns to its previous Evolution, if possible",24.0,Toxic,Purple,The battle opponent becomes noxious,☆,True
+Omastar,1,R,Rock / Water,"Speed Booster: Omaster - Restored Pokémon. If this Pokémon is evolved, it has MP +1. When this Pokémon is excluded from the duel, it returns to its previous Evolution, if possible",4.0,Miss,Red,,,True
+Omastar,1,R,Rock / Water,"Speed Booster: Omaster - Restored Pokémon. If this Pokémon is evolved, it has MP +1. When this Pokémon is excluded from the duel, it returns to its previous Evolution, if possible",24.0,Blue Tentacles,Blue,This Pokémon moves to your P.C. The battle opponent moves to your P.C.,,True
+Aerodactyl,3,R,Rock / Flying,Soar: Aerodactyl - Restored Pokémon. This Pokémon may MP move over Pokémon on the field that don't have Soar.,4.0,Miss,Red,,,True
+Aerodactyl,3,R,Rock / Flying,Soar: Aerodactyl - Restored Pokémon. This Pokémon may MP move over Pokémon on the field that don't have Soar.,16.0,Dragon Claw,White,,70,True
+Aerodactyl,3,R,Rock / Flying,Soar: Aerodactyl - Restored Pokémon. This Pokémon may MP move over Pokémon on the field that don't have Soar.,28.0,Ice Fang,White,"If this Pokémon is knocked out, the battle opponent becomes frozen.",40,True
+Aerodactyl,3,R,Rock / Flying,Soar: Aerodactyl - Restored Pokémon. This Pokémon may MP move over Pokémon on the field that don't have Soar.,16.0,Dragon Claw,White,,70,True
+Aerodactyl,3,R,Rock / Flying,Soar: Aerodactyl - Restored Pokémon. This Pokémon may MP move over Pokémon on the field that don't have Soar.,4.0,Miss,Red,,,True
+Aerodactyl,3,R,Rock / Flying,Soar: Aerodactyl - Restored Pokémon. This Pokémon may MP move over Pokémon on the field that don't have Soar.,28.0,Taunt,Purple,"Until the end of your turn, if the Pokémon hit by this Attack spins a Purple attack or Blue Attack, shift the result clockwise until a non-Purple, non-Blue attack comes up.",☆☆☆,True
+Ponyta,3,UC,Fire,"Rush In - At the start of your turn, this Pokémon may route move to a point 1-4 steps away in a straight line instead of an MP move. If it does, this Pokémon counts as having already battled. Your turn ends",4.0,Miss,Red,,,True
+Ponyta,3,UC,Fire,"Rush In - At the start of your turn, this Pokémon may route move to a point 1-4 steps away in a straight line instead of an MP move. If it does, this Pokémon counts as having already battled. Your turn ends",32.0,Flame Wheel,White,"If this Pokémon is knocked out, the battle opponent becomes Burned.",80,True
+Ponyta,3,UC,Fire,"Rush In - At the start of your turn, this Pokémon may route move to a point 1-4 steps away in a straight line instead of an MP move. If it does, this Pokémon counts as having already battled. Your turn ends",4.0,Miss,Red,,,True
+Ponyta,3,UC,Fire,"Rush In - At the start of your turn, this Pokémon may route move to a point 1-4 steps away in a straight line instead of an MP move. If it does, this Pokémon counts as having already battled. Your turn ends",20.0,Dodge,Blue,,,True
+Ponyta,3,UC,Fire,"Rush In - At the start of your turn, this Pokémon may route move to a point 1-4 steps away in a straight line instead of an MP move. If it does, this Pokémon counts as having already battled. Your turn ends",4.0,Miss,Red,,,True
+Ponyta,3,UC,Fire,"Rush In - At the start of your turn, this Pokémon may route move to a point 1-4 steps away in a straight line instead of an MP move. If it does, this Pokémon counts as having already battled. Your turn ends",32.0,Kick Away,Purple,The battle opponent is knocked 2 steps back (the opponent chooses the point) and gains Wait,☆,True
+Slowpoke,1,R,Water / Psychic,Oblivious - This Pokémon cannot be paralyzed. This Pokémon is not affected by Taunt,8.0,Miss,Red,,,True
+Slowpoke,1,R,Water / Psychic,Oblivious - This Pokémon cannot be paralyzed. This Pokémon is not affected by Taunt,24.0,Trick Room,Purple,"For 5 turns, the Gold Attacks of all Pokémon become Misses, the MP of Pokémon that have MP 3 or higher become 1 and the MP of Pokémon that have MP 1 or lower becomes 3 (MP-Increasing or MP-decreasing effects from markers are applied after this)",☆☆,True
+Slowpoke,1,R,Water / Psychic,Oblivious - This Pokémon cannot be paralyzed. This Pokémon is not affected by Taunt,36.0,Yawn,Purple,The battle opponent falls asleep,☆,True
+Slowpoke,1,R,Water / Psychic,Oblivious - This Pokémon cannot be paralyzed. This Pokémon is not affected by Taunt,28.0,Psychic,White,,120,True
+Omanyte,2,UC,Rock / Water,"Emergent Evolution - Restored Pokémon. After this Pokémon battles, it may evolve if it's on the field.",4.0,Miss,Red,,,True
+Omanyte,2,UC,Rock / Water,"Emergent Evolution - Restored Pokémon. After this Pokémon battles, it may evolve if it's on the field.",40.0,Bind,White,Spin again until Bind does not land - damage is multiplied by the number of Bind spins. The bttle opponent gains Wait X where X is the number of Bind spins,40x,True
+Omanyte,2,UC,Rock / Water,"Emergent Evolution - Restored Pokémon. After this Pokémon battles, it may evolve if it's on the field.",24.0,Ancient Power,White,"While they are on the field, your Restored Pokémon deal +10 damage to the battle opponent and gain +1 ☆",70,True
+Omanyte,2,UC,Rock / Water,"Emergent Evolution - Restored Pokémon. After this Pokémon battles, it may evolve if it's on the field.",4.0,Miss,Red,,,True
+Omanyte,2,UC,Rock / Water,"Emergent Evolution - Restored Pokémon. After this Pokémon battles, it may evolve if it's on the field.",24.0,Protect,Blue,This Pokémon gains Wait,,True

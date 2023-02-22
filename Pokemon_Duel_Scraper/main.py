@@ -151,7 +151,7 @@ def process_pokemon_urls(url_list):
     
     return result_df
 
-def save_df_as_csv(df):
+def save_df_as_csv(df, file_name = None):
     # Set the folder name and file name prefix
     folder_name = "Pokemon_Duel_Characters"
     file_name_prefix = "pokemon_duel_characters_v"
@@ -170,20 +170,38 @@ def save_df_as_csv(df):
 
     # Increment the latest version number and create the new file name
     new_version_number = latest_version_number + 1
-    new_file_name = f"{file_name_prefix}{new_version_number}.csv"
+    new_file_name = f"{file_name_prefix}{new_version_number}.csv" if file_name == None else file_name
 
     # Export the pandas dataframe as a CSV file with the new file name
     df.to_csv(os.path.join(folder_name, new_file_name), index=False)
 
+def copy_gen1_rows_to_dataframe(dir, file_name):
+    # Construct the file path
+    file_path = os.path.join(dir, file_name)
+
+    # Check if the file exists
+    if not os.path.exists(file_path):
+        raise FileNotFoundError(f"{file_path} does not exist.")
+    
+    df = pd.read_csv(file_path)
+
+    # Filter the rows where "is_Gen_1" is True and copy them to a new dataframe
+    gen1_df = df[df['is Gen 1'] == True].copy()
+
+    # Return the new dataframe with the filtered rows
+    return gen1_df
+
 
 def main():
   # Get all links to every Pokemon
-  pokemon_duel_listing_url = "https://www.serebii.net/duel/figures.shtml"
+#   pokemon_duel_listing_url = "https://www.serebii.net/duel/figures.shtml"
 #   href_list = get_hrefs_from_table(pokemon_duel_listing_url)
 #   print(href_list[:10])
-  df = process_pokemon_urls(["https://www.serebii.net/duel/figures/614-trubbish.shtml"])
+#   df = process_pokemon_urls(href_list)
 #   print(df)
-  save_df_as_csv(df)
+#   save_df_as_csv(df)
+    gen1_df = copy_gen1_rows_to_dataframe("Pokemon_Duel_Characters", "pokemon_duel_characters_v1.csv")
+    save_df_as_csv(gen1_df, "pokemon_duel_characters_v1_gen1.csv")
   
 
 if __name__ == "__main__":
