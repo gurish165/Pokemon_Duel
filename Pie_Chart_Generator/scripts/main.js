@@ -16,7 +16,7 @@ function createPieChart() {
 
   for (let i = 0; i < fields.length; i++) {
     const field = fields[i];
-    const color = field.querySelector(".pieColor").style.backgroundColor;
+    const color = getComputedStyle(field.querySelector(".pieColor")).backgroundColor;
     const text = field.querySelector(".pieText").innerText;
     const percentage = field.querySelector(".piePercentage").innerText.replace("%", "");
     sections.push({ color, text, percentage: parseInt(percentage) });
@@ -40,18 +40,60 @@ function drawPieChart() {
   let endAngle = 0;
 
   sections.forEach((section) => {
-    const sectionAngle = (section.percentage / 100) * 2 * Math.PI;
-    endAngle = startAngle + sectionAngle;
+    const sectionStartAngle = startAngle;
+    const sectionAngle = (1 / 100) * 2 * Math.PI;
 
+    // Get the RGB values from the background color string
+    const baseColor = section.color;
+    const baseColorArray = section.color.match(/\d+/g);
+    // Subtract 50 from each RGB value and ensure it stays within 0-255 range
+    const newRgbValues = baseColorArray.map(value => Math.max(0, parseInt(value, 10) - 30));
+    // Convert the new RGB values back to a color string
+    const newBackgroundColor = `rgb(${newRgbValues.join(',')})`;
+
+    // Color in the section with alternating colors
+    for (var i = 0; i < section.percentage; i++){
+      endAngle = startAngle + sectionAngle;
+      ctx.beginPath();
+      ctx.moveTo(centerX, centerY);
+      ctx.arc(centerX, centerY, radius, startAngle, endAngle);
+      ctx.closePath();
+
+      if(i % 2 == 0){
+        ctx.fillStyle = baseColor;
+      }
+      else{
+        ctx.fillStyle = newBackgroundColor;
+      }
+      
+      ctx.fill();
+      startAngle = endAngle
+    }
+
+    if (section.percentage >= 10) {
+      const sectionMiddleAngle = sectionStartAngle + endAngle / 2;
+      const textRadius = radius * 0.75; // 75% of the pie chart radius
+      const textX = centerX + Math.cos(sectionMiddleAngle) * textRadius;
+      const textY = centerY + Math.sin(sectionMiddleAngle) * textRadius;
+      const sectionText = section.text;
+      const fontSize = Math.min(Math.max(radius * 0.07, 12), 30); // Scale font size based on radius
+      ctx.font = `${fontSize}px Arial`;
+      ctx.fillStyle = "#ffffff";
+      ctx.textAlign = "center";
+      ctx.textBaseline = "middle";
+      ctx.save();
+      ctx.translate(textX, textY);
+      ctx.rotate(sectionMiddleAngle);
+      ctx.fillText(sectionText, 0, 0);
+      ctx.restore();
+    }
+
+    // Draw border
     ctx.beginPath();
-    ctx.moveTo(centerX, centerY);
-    ctx.arc(centerX, centerY, radius, startAngle, endAngle);
-    ctx.closePath();
-
-    ctx.fillStyle = section.color;
-    ctx.fill();
-
-    startAngle = endAngle;
+    ctx.arc(centerX, centerY, radius - 7, 0, 2 * Math.PI);
+    ctx.strokeStyle = "black";
+    ctx.lineWidth = 4;
+    ctx.stroke();
   });
 }
 
@@ -121,6 +163,8 @@ function addField() {
     pieChart.removeChild(section);
     field.parentNode.removeChild(field);
     totalPercentage -= percentageInt;
+    // update pie chart
+    createPieChart();
   });
   field.appendChild(deleteButton);
 
