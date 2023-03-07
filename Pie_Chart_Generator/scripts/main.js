@@ -19,7 +19,9 @@ function createPieChart() {
     const color = getComputedStyle(field.querySelector(".pieColor")).backgroundColor;
     const text = field.querySelector(".pieText").innerText;
     const percentage = field.querySelector(".piePercentage").innerText.replace("%", "");
-    sections.push({ color, text, percentage: parseInt(percentage) });
+    const attackValue = field.querySelector(".pieAttackValue").innerText;
+    const attackAbility = field.querySelector(".pieAttackAbility").innerText;
+    sections.push({ color, text, percentage: parseInt(percentage), attackValue, attackAbility});
   }
 
   drawPieChart(sections);
@@ -86,12 +88,12 @@ function drawPieChart() {
 function writeAttackNames(section, ctx, sectionStartAngle, endAngle, radius, centerX, centerY) {
   if (section.percentage >= 10) {
     const sectionMiddleAngle = sectionStartAngle + ((endAngle-sectionStartAngle) / 2);
-    const textRadius = radius * 0.85; // 75% of the pie chart radius
+    const textRadius = radius * 0.85; // 85% of the pie chart radius
     const textX = centerX + Math.cos(sectionMiddleAngle) * textRadius;
     const textY = centerY + Math.sin(sectionMiddleAngle) * textRadius;
     const sectionText = section.text;
     let fontSize = 60;
-    ctx.font = fontSize + "px Arial";
+    ctx.font = fontSize + "px Segoe UI";
 
     // Calculate the width of the text
     let textWidth = ctx.measureText(sectionText).width;
@@ -99,8 +101,8 @@ function writeAttackNames(section, ctx, sectionStartAngle, endAngle, radius, cen
     // Calculate the maximum font size that will fit the text inside the outer circle
     let maxFontSize = (textRadius * 2) / Math.sqrt(2 * (1 - Math.cos(textWidth / (textRadius))))/20;
     // Set the font size to the maximum font size or the original font size, whichever is smaller
-    ctx.font = Math.min(fontSize, maxFontSize) + "px Arial";
-    ctx.fillStyle = "#ffffff";
+    ctx.font = Math.min(fontSize, maxFontSize) + "px Segoe UI";
+    ctx.fillStyle = "#000000";
     ctx.textAlign = "center";
     ctx.textBaseline = "middle";
     ctx.save();
@@ -113,7 +115,31 @@ function writeAttackNames(section, ctx, sectionStartAngle, endAngle, radius, cen
 
 
 function writeAttackValues(section, ctx, sectionStartAngle, endAngle, radius, centerX, centerY){
+  if (section.percentage >= 10) {
+    const sectionMiddleAngle = sectionStartAngle + ((endAngle-sectionStartAngle) / 2);
+    const textRadius = radius * 0.55; // 55% of the pie chart radius
+    const textX = centerX + Math.cos(sectionMiddleAngle) * textRadius;
+    const textY = centerY + Math.sin(sectionMiddleAngle) * textRadius;
+    const sectionText = section.attackValue;
+    let fontSize = 80;
+    ctx.font = fontSize + "px Segoe UI";
 
+    // Calculate the width of the text
+    let textWidth = ctx.measureText(sectionText).width;
+
+    // Calculate the maximum font size that will fit the text inside the outer circle
+    let maxFontSize = (textRadius * 2) / Math.sqrt(2 * (1 - Math.cos(textWidth / (textRadius))))/15;
+    // Set the font size to the maximum font size or the original font size, whichever is smaller
+    ctx.font = "bold " + Math.min(fontSize, maxFontSize) + "px Segoe UI";
+    ctx.fillStyle = "#000000";
+    ctx.textAlign = "center";
+    ctx.textBaseline = "middle";
+    ctx.save();
+    ctx.translate(textX, textY);
+    ctx.rotate(sectionMiddleAngle-Math.PI/2);
+    ctx.fillText(sectionText, 0, 0);
+    ctx.restore();
+  }
 }
 
 function drawBorder(ctx, lineWidth, centerX, centerY, radius){
@@ -128,11 +154,13 @@ let totalPercentage = 0;
 
 function addField() {
   const color = document.getElementById("color-field").value;
-  const name = document.getElementById("attack-name-field").value;
+  const attackName = document.getElementById("attack-name-field").value;
   const percentage = document.getElementById("percentage-field").value;
+  const attackValue = document.getElementById("attack-value-field").value;
+  const attackAbility = document.getElementById("attack-ability-field").value;
 
   // check if input is valid
-  if (color === "" || name === "" || percentage === "") {
+  if (color === "" || attackName === "" || percentage === "") {
     alert("Please fill in all fields.");
     return;
   }
@@ -167,7 +195,7 @@ function addField() {
   // create field content
   const fieldName = document.createElement("p");
   fieldName.className = "pieText"
-  fieldName.innerText = name;
+  fieldName.innerText = attackName;
   field.appendChild(fieldName);
 
   const fieldPercentage = document.createElement("p");
@@ -181,6 +209,16 @@ function addField() {
   pieColor.style.height = "50px";
   pieColor.style.width = "50px";
   field.appendChild(pieColor);
+
+  const fieldAttackValue = document.createElement("p");
+  fieldAttackValue.className = "pieAttackValue"
+  fieldAttackValue.innerText = attackValue;
+  field.appendChild(fieldAttackValue);
+
+  const fieldAttackAbility = document.createElement("p");
+  fieldAttackAbility.className = "pieAttackAbility"
+  fieldAttackAbility.innerText = attackAbility;
+  field.appendChild(fieldAttackAbility);
 
   // create delete button
   const deleteButton = document.createElement("button");
