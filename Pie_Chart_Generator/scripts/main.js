@@ -85,65 +85,35 @@ function drawPieChart() {
 
 function writeAttackNames(section, ctx, sectionStartAngle, endAngle, radius, centerX, centerY) {
   if (section.percentage >= 10) {
-    const sectionMiddleAngle = sectionStartAngle + endAngle / 2;
-    const textRadius = radius * 0.75; // 75% of the pie chart radius
-    const sectionText = section.text;
-    const fontSize = Math.min(Math.max(radius * 0.07, 12), 30); // Scale font size based on radius
-    ctx.font = `${fontSize}px Arial`;
-    ctx.fillStyle = "#ffffff";
-    ctx.textAlign = "center";
-    ctx.textBaseline = "middle";
-    
-    // Split the section text into individual characters and create a span element for each character
-    const chars = sectionText.split("");
-    const charSpans = chars.map((char) => {
-      const span = document.createElement("span");
-      span.innerText = char;
-      span.style.position = "absolute";
-      span.style.transformOrigin = "bottom center";
-      return span;
-    });
-    
-    // Position and rotate each character span
-    const charAngle = endAngle / chars.length;
-    const charSpacing = 0.003; // Spacing between characters, in radians
-    let charRotation = sectionMiddleAngle - endAngle / 2 + charAngle / 2;
-    charSpans.forEach((span) => {
-      const charX = centerX - Math.cos(charRotation) * textRadius;
-      const charY = centerY - Math.sin(charRotation) * textRadius;
-      span.style.left = `${charX}px`;
-      span.style.top = `${charY}px`;
-      span.style.transform = `rotate(${charRotation - Math.PI / 2}rad)`;
-      charRotation += charAngle + charSpacing;
-    });
-
-    // Add the span elements to the DOM
-    charSpans.forEach((span) => {
-      pieChartContainer = document.getElementById("pie-chart-container");
-      pieChartContainer.appendChild(span);
-    });
-  }
-}
-
-
-function writeAttackValues(section, ctx, sectionStartAngle, endAngle, radius, centerX, centerY){
-  if (section.percentage >= 10) {
-    const sectionMiddleAngle = sectionStartAngle + endAngle / 2;
-    const textRadius = radius * 0.75; // 75% of the pie chart radius
+    const sectionMiddleAngle = sectionStartAngle + ((endAngle-sectionStartAngle) / 2);
+    const textRadius = radius * 0.85; // 75% of the pie chart radius
     const textX = centerX + Math.cos(sectionMiddleAngle) * textRadius;
     const textY = centerY + Math.sin(sectionMiddleAngle) * textRadius;
     const sectionText = section.text;
-    const fontSize = Math.min(Math.max(radius * 0.07, 12), 30); // Scale font size based on radius
-    ctx.font = `${fontSize}px Arial`;
+    let fontSize = 60;
+    ctx.font = fontSize + "px Arial";
+
+    // Calculate the width of the text
+    let textWidth = ctx.measureText(sectionText).width;
+
+    // Calculate the maximum font size that will fit the text inside the outer circle
+    let maxFontSize = (textRadius * 2) / Math.sqrt(2 * (1 - Math.cos(textWidth / (textRadius))))/20;
+    // Set the font size to the maximum font size or the original font size, whichever is smaller
+    ctx.font = Math.min(fontSize, maxFontSize) + "px Arial";
     ctx.fillStyle = "#ffffff";
     ctx.textAlign = "center";
     ctx.textBaseline = "middle";
     ctx.save();
     ctx.translate(textX, textY);
-    ctx.rotate(sectionMiddleAngle);
+    ctx.rotate(sectionMiddleAngle-Math.PI/2);
     ctx.fillText(sectionText, 0, 0);
     ctx.restore();
   }
+}
+
+
+function writeAttackValues(section, ctx, sectionStartAngle, endAngle, radius, centerX, centerY){
+
 }
 
 function drawBorder(ctx, lineWidth, centerX, centerY, radius){
@@ -158,7 +128,7 @@ let totalPercentage = 0;
 
 function addField() {
   const color = document.getElementById("color-field").value;
-  const name = document.getElementById("text-field").value;
+  const name = document.getElementById("attack-name-field").value;
   const percentage = document.getElementById("percentage-field").value;
 
   // check if input is valid
@@ -231,12 +201,18 @@ function addField() {
 
   // update total percentage and clear input fields
   totalPercentage += percentageInt;
-  document.getElementById("color-field").value = "#000000";
-  document.getElementById("text-field").value = "";
-  document.getElementById("percentage-field").value = "";
+  clearFields();
 
   // update pie chart
   createPieChart();
+}
+
+function clearFields(){
+  document.getElementById("color-field").value = "#000000";
+  document.getElementById("attack-name-field").value = "";
+  document.getElementById("attack-value-field").value = "";
+  document.getElementById("attack-ability-field").value = "";
+  document.getElementById("percentage-field").value = "";
 }
 
 
