@@ -25,6 +25,15 @@ function createPieChart() {
   drawPieChart(sections);
 }
 
+function getDarkerColor(section){
+  const baseColorArray = section.color.match(/\d+/g);
+  // Subtract 50 from each RGB value and ensure it stays within 0-255 range
+  const newRgbValues = baseColorArray.map(value => Math.max(0, parseInt(value, 10) - 30));
+  // Convert the new RGB values back to a color string
+  const newBackgroundColor = `rgb(${newRgbValues.join(',')})`;
+  return newBackgroundColor;
+}
+
 function drawPieChart() {
   const canvas = document.getElementById("pie-chart");
   const ctx = canvas.getContext("2d");
@@ -45,11 +54,7 @@ function drawPieChart() {
 
     // Get the RGB values from the background color string
     const baseColor = section.color;
-    const baseColorArray = section.color.match(/\d+/g);
-    // Subtract 50 from each RGB value and ensure it stays within 0-255 range
-    const newRgbValues = baseColorArray.map(value => Math.max(0, parseInt(value, 10) - 30));
-    // Convert the new RGB values back to a color string
-    const newBackgroundColor = `rgb(${newRgbValues.join(',')})`;
+    const newBackgroundColor = getDarkerColor(section)
 
     // Color in the section with alternating colors
     for (var i = 0; i < section.percentage; i++){
@@ -69,32 +74,84 @@ function drawPieChart() {
       ctx.fill();
       startAngle = endAngle
     }
-
-    if (section.percentage >= 10) {
-      const sectionMiddleAngle = sectionStartAngle + endAngle / 2;
-      const textRadius = radius * 0.75; // 75% of the pie chart radius
-      const textX = centerX + Math.cos(sectionMiddleAngle) * textRadius;
-      const textY = centerY + Math.sin(sectionMiddleAngle) * textRadius;
-      const sectionText = section.text;
-      const fontSize = Math.min(Math.max(radius * 0.07, 12), 30); // Scale font size based on radius
-      ctx.font = `${fontSize}px Arial`;
-      ctx.fillStyle = "#ffffff";
-      ctx.textAlign = "center";
-      ctx.textBaseline = "middle";
-      ctx.save();
-      ctx.translate(textX, textY);
-      ctx.rotate(sectionMiddleAngle);
-      ctx.fillText(sectionText, 0, 0);
-      ctx.restore();
-    }
-
+    // Write Attack Names
+    writeAttackNames(section, ctx, sectionStartAngle, endAngle, radius, centerX, centerY);
+    // Write Attack Values
+    writeAttackValues(section, ctx, sectionStartAngle, endAngle, radius, centerX, centerY);
     // Draw border
-    ctx.beginPath();
-    ctx.arc(centerX, centerY, radius - 7, 0, 2 * Math.PI);
-    ctx.strokeStyle = "black";
-    ctx.lineWidth = 4;
-    ctx.stroke();
+    drawBorder(ctx, 7, centerX, centerY, radius);
   });
+}
+
+function writeAttackNames(section, ctx, sectionStartAngle, endAngle, radius, centerX, centerY) {
+  if (section.percentage >= 10) {
+    const sectionMiddleAngle = sectionStartAngle + endAngle / 2;
+    const textRadius = radius * 0.75; // 75% of the pie chart radius
+    const sectionText = section.text;
+    const fontSize = Math.min(Math.max(radius * 0.07, 12), 30); // Scale font size based on radius
+    ctx.font = `${fontSize}px Arial`;
+    ctx.fillStyle = "#ffffff";
+    ctx.textAlign = "center";
+    ctx.textBaseline = "middle";
+    
+    // Split the section text into individual characters and create a span element for each character
+    const chars = sectionText.split("");
+    const charSpans = chars.map((char) => {
+      const span = document.createElement("span");
+      span.innerText = char;
+      span.style.position = "absolute";
+      span.style.transformOrigin = "bottom center";
+      return span;
+    });
+    
+    // Position and rotate each character span
+    const charAngle = endAngle / chars.length;
+    const charSpacing = 0.003; // Spacing between characters, in radians
+    let charRotation = sectionMiddleAngle - endAngle / 2 + charAngle / 2;
+    charSpans.forEach((span) => {
+      const charX = centerX - Math.cos(charRotation) * textRadius;
+      const charY = centerY - Math.sin(charRotation) * textRadius;
+      span.style.left = `${charX}px`;
+      span.style.top = `${charY}px`;
+      span.style.transform = `rotate(${charRotation - Math.PI / 2}rad)`;
+      charRotation += charAngle + charSpacing;
+    });
+
+    // Add the span elements to the DOM
+    charSpans.forEach((span) => {
+      pieChartContainer = document.getElementById("pie-chart-container");
+      pieChartContainer.appendChild(span);
+    });
+  }
+}
+
+
+function writeAttackValues(section, ctx, sectionStartAngle, endAngle, radius, centerX, centerY){
+  if (section.percentage >= 10) {
+    const sectionMiddleAngle = sectionStartAngle + endAngle / 2;
+    const textRadius = radius * 0.75; // 75% of the pie chart radius
+    const textX = centerX + Math.cos(sectionMiddleAngle) * textRadius;
+    const textY = centerY + Math.sin(sectionMiddleAngle) * textRadius;
+    const sectionText = section.text;
+    const fontSize = Math.min(Math.max(radius * 0.07, 12), 30); // Scale font size based on radius
+    ctx.font = `${fontSize}px Arial`;
+    ctx.fillStyle = "#ffffff";
+    ctx.textAlign = "center";
+    ctx.textBaseline = "middle";
+    ctx.save();
+    ctx.translate(textX, textY);
+    ctx.rotate(sectionMiddleAngle);
+    ctx.fillText(sectionText, 0, 0);
+    ctx.restore();
+  }
+}
+
+function drawBorder(ctx, lineWidth, centerX, centerY, radius){
+  ctx.beginPath();
+  ctx.arc(centerX, centerY, radius - 4, 0, 2 * Math.PI);
+  ctx.strokeStyle = "black";
+  ctx.lineWidth = lineWidth;
+  ctx.stroke();
 }
 
 let totalPercentage = 0;
