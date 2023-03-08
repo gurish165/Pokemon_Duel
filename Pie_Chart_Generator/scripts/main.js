@@ -27,13 +27,39 @@ function createPieChart() {
   drawPieChart(sections);
 }
 
-function getDarkerColor(section){
+function getDarkerColor(section, darkenFactor){
   const baseColorArray = section.color.match(/\d+/g);
   // Subtract 50 from each RGB value and ensure it stays within 0-255 range
-  const newRgbValues = baseColorArray.map(value => Math.max(0, parseInt(value, 10) - 30));
+  const newRgbValues = baseColorArray.map(value => Math.max(0, parseInt(value, 10) - darkenFactor));
   // Convert the new RGB values back to a color string
   const newBackgroundColor = `rgb(${newRgbValues.join(',')})`;
   return newBackgroundColor;
+}
+
+function drawSectionBorder(ctx, centerX, centerY, radius, endAngle){
+  // draw section border
+  ctx.beginPath();
+  ctx.moveTo(centerX, centerY);
+  ctx.arc(centerX, centerY, radius, endAngle-0.005, endAngle);
+  ctx.closePath();
+  ctx.fillStyle = 'rgb(0,0,0)';
+  ctx.fill();
+}
+
+function drawPieCenter(ctx, centerX, centerY, radius){
+  ctx.beginPath();
+  ctx.moveTo(centerX, centerY);
+  ctx.arc(centerX, centerY, radius/5, 0, 2*Math.PI);
+  ctx.closePath();
+  ctx.fillStyle = 'rgb(0,0,0)';
+  ctx.fill();
+
+  ctx.beginPath();
+  ctx.moveTo(centerX, centerY);
+  ctx.arc(centerX, centerY, radius/6, 0, 2*Math.PI);
+  ctx.closePath();
+  ctx.fillStyle = 'rgb(40,40,40)';
+  ctx.fill();
 }
 
 function drawPieChart() {
@@ -56,7 +82,7 @@ function drawPieChart() {
 
     // Get the RGB values from the background color string
     const baseColor = section.color;
-    const newBackgroundColor = getDarkerColor(section)
+    const newBackgroundColor = getDarkerColor(section, 20)
 
     // Color in the section with alternating colors
     for (var i = 0; i < section.percentage; i++){
@@ -72,28 +98,33 @@ function drawPieChart() {
       else{
         ctx.fillStyle = newBackgroundColor;
       }
-      
       ctx.fill();
       startAngle = endAngle
     }
+
+    // Draw section border
+    drawSectionBorder(ctx, centerX, centerY, radius, endAngle);
     // Write Attack Names
-    writeAttackNames(section, ctx, sectionStartAngle, endAngle, radius, centerX, centerY);
+    writeAttackNames(section.text, section.percentage, ctx, sectionStartAngle, endAngle, radius, centerX, centerY);
     // Write Attack Values
-    writeAttackValues(section, ctx, sectionStartAngle, endAngle, radius, centerX, centerY);
-    // Draw border
-    drawBorder(ctx, 7, centerX, centerY, radius);
+    writeAttackValues(section.attackValue, section.percentage, ctx, sectionStartAngle, endAngle, radius, centerX, centerY);
+    
   });
+  // Draw border
+  drawBorder(ctx, 7, centerX, centerY, radius);
+  // Draw pie center
+  drawPieCenter(ctx, centerX, centerY, radius)
 }
 
-function writeAttackNames(section, ctx, sectionStartAngle, endAngle, radius, centerX, centerY) {
-  if (section.percentage >= 10) {
+function writeAttackNames(text, percentage, ctx, sectionStartAngle, endAngle, radius, centerX, centerY) {
+  if (percentage >= 4) {
     const sectionMiddleAngle = sectionStartAngle + ((endAngle-sectionStartAngle) / 2);
     const textRadius = radius * 0.85; // 85% of the pie chart radius
     const textX = centerX + Math.cos(sectionMiddleAngle) * textRadius;
     const textY = centerY + Math.sin(sectionMiddleAngle) * textRadius;
-    const sectionText = section.text;
-    let fontSize = 60;
-    ctx.font = fontSize + "px Segoe UI";
+    const sectionText = text;
+    let fontSize = 50;
+    ctx.font = "bold " + fontSize + "px Segoe UI";
 
     // Calculate the width of the text
     let textWidth = ctx.measureText(sectionText).width;
@@ -114,14 +145,14 @@ function writeAttackNames(section, ctx, sectionStartAngle, endAngle, radius, cen
 }
 
 
-function writeAttackValues(section, ctx, sectionStartAngle, endAngle, radius, centerX, centerY){
-  if (section.percentage >= 10) {
+function writeAttackValues(text, percentage, ctx, sectionStartAngle, endAngle, radius, centerX, centerY){
+  if (percentage >= 4) {
     const sectionMiddleAngle = sectionStartAngle + ((endAngle-sectionStartAngle) / 2);
     const textRadius = radius * 0.55; // 55% of the pie chart radius
     const textX = centerX + Math.cos(sectionMiddleAngle) * textRadius;
     const textY = centerY + Math.sin(sectionMiddleAngle) * textRadius;
-    const sectionText = section.attackValue;
-    let fontSize = 80;
+    const sectionText = text;
+    let fontSize = 90;
     ctx.font = fontSize + "px Segoe UI";
 
     // Calculate the width of the text
