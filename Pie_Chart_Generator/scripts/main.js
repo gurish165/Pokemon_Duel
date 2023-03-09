@@ -111,7 +111,7 @@ function drawPieChart() {
     
   });
   // Draw border
-  drawBorder(ctx, 7, centerX, centerY, radius);
+  drawBorder(ctx, 10, centerX, centerY, radius);
   // Draw pie center
   drawPieCenter(ctx, centerX, centerY, radius)
 }
@@ -130,9 +130,11 @@ function writeAttackNames(text, percentage, ctx, sectionStartAngle, endAngle, ra
     let textWidth = ctx.measureText(sectionText).width;
 
     // Calculate the maximum font size that will fit the text inside the outer circle
-    let maxFontSize = (textRadius * 2) / Math.sqrt(2 * (1 - Math.cos(textWidth / (textRadius))))/20;
+    let arcFactor = 1100 / percentage;
+    let maxFontSize = (textRadius * 2) / Math.sqrt(2 * (1 - Math.cos(textWidth / (textRadius))))/arcFactor;
     // Set the font size to the maximum font size or the original font size, whichever is smaller
     ctx.font = Math.min(fontSize, maxFontSize) + "px Segoe UI";
+    console.log("fontSize: " + fontSize + " maxFontsize: " + maxFontSize);
     ctx.fillStyle = "#000000";
     ctx.textAlign = "center";
     ctx.textBaseline = "middle";
@@ -152,14 +154,15 @@ function writeAttackValues(text, percentage, ctx, sectionStartAngle, endAngle, r
     const textX = centerX + Math.cos(sectionMiddleAngle) * textRadius;
     const textY = centerY + Math.sin(sectionMiddleAngle) * textRadius;
     const sectionText = text;
-    let fontSize = 90;
+    let fontSize = 100;
     ctx.font = fontSize + "px Segoe UI";
 
     // Calculate the width of the text
     let textWidth = ctx.measureText(sectionText).width;
 
     // Calculate the maximum font size that will fit the text inside the outer circle
-    let maxFontSize = (textRadius * 2) / Math.sqrt(2 * (1 - Math.cos(textWidth / (textRadius))))/15;
+    let arcFactor = 150 / percentage;
+    let maxFontSize = (textRadius * 2) / Math.sqrt(2 * (1 - Math.cos(textWidth / (textRadius))))/arcFactor;
     // Set the font size to the maximum font size or the original font size, whichever is smaller
     ctx.font = "bold " + Math.min(fontSize, maxFontSize) + "px Segoe UI";
     ctx.fillStyle = "#000000";
@@ -173,11 +176,11 @@ function writeAttackValues(text, percentage, ctx, sectionStartAngle, endAngle, r
   }
 }
 
-function drawBorder(ctx, lineWidth, centerX, centerY, radius){
+function drawBorder(ctx, borderWidth, centerX, centerY, radius){
   ctx.beginPath();
   ctx.arc(centerX, centerY, radius - 4, 0, 2 * Math.PI);
   ctx.strokeStyle = "black";
-  ctx.lineWidth = lineWidth;
+  ctx.lineWidth = borderWidth;
   ctx.stroke();
 }
 
