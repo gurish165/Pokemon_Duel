@@ -17,7 +17,7 @@ Another way to create a killer team in Pokemon Duel is by looking at figures' st
 ### Attack System
 Pokemon Duel has a unique attack system, and it's based entirely on colors. Where in past Pokémon games, players could choose their attacks, Pokemon Duel utilizes the spin-the-wheel randomness similar to roulette. If you choose to attack an opponent, you spin and your opponent spins, If you have the upper hand, you win and damage your opponent.
 
-![Attack Wheel Example](README_Images/Duel_Spinner.jpg)
+![Attack Wheel Example](README_Images/Duel_spinner.jpg)
 
 In the attack system, certain colors can beat out others similar to rock-paper-scissors. There are five colored attacks on the wheel. 
 * Red attacks are a miss. 
