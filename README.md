@@ -50,6 +50,15 @@ You can also send an opposing Pokemon to their Pokemon Center by surrounding you
 ### The Game Board
 ![Game Baord Image](README_Images/Pokemon_Duel_Game_Board.jpg)
 
+### Pokemon Center (PC)
+The PC is where your Pokemon go after they lose a battle. If there are already two Pokemon in the PC, the first Pokemon gets moved to the Bench and its MP is lowered to 0 for one turn. The Pokemon that lost the battle can now go in the PC. Some Pokemon have special abilities that allow them to move from the PC to the Bench instead of having another Pokemon eject them from the PC.
+
+### Bench
+The Bench is where your Pokemon sit at the start of the match. Any Pokemon on the Bench can be moved into play through the Spawn Points.
+
+### Spawn Point(s)
+These are the points where your Pokemon enter the field. If these points are blocked, either by yourself or by your opponent, you will not be able to move your Pokemon onto the field. If you have no Pokemon on the field and your opponent is blocking your Spawn Points, they will incur a Wait Win.
+
 ## Example Gameplay
 
 ## Additional Features
