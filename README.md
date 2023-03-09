@@ -29,7 +29,7 @@ In the attack system, certain colors can beat out others similar to rock-paper-s
 Some purple attacks will leave an effect on the opposing Pokemon. Here are the possible effects:
 * Poison: Damage -20
 * Confusion: The spun move changes in combat
-* Paralyzed: Turns random wbite attack into a miss
+* Paralyzed: Turns a random white attack into a miss
 * Sleep: Can’t move or attack. Can wake up if a friendly Pokemon moves next to it or if an opponent attacks it.
 * Frozen: Same as Sleep with the additional effect of turning all of a Pokemon's Attacks into Miss.
 * Burned: Same as paralyzed with the additional effect of reducing the damage of a Pokemon's White and Gold Attacks by 10 in battles.
