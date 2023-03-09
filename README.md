@@ -56,7 +56,7 @@ You can also send an opposing Pokemon to their Pokemon Center by surrounding you
 The Bench is where your Pokemon sit at the start of the match. Any Pokemon on the Bench can be moved into play through the Spawn Points.
 
 ### Spawn Point(s)
-These are the points on each corner of the field where your Pokemon enter the field. If these points are blocked on your side, either by yourself or by your opponent, you will not be able to move your Pokemon onto the field. If you have no Pokemon on the field and your opponent is blocking your Spawn Points, they will incur a Wait Win.
+These are the points on each corner of the field where Pokemon can enter the field. Your Pokemon can only enter the field through the Spawn Points on your side of the field. If these points are blocked on your side, either by yourself or by your opponent, you will not be able to move your Pokemon onto the field, unless they have a special ability. If you have no Pokemon on the field and your opponent is blocking your Spawn Points, they will incur a Wait Win.
 
 ![Game Spawn Points Image](README_Images/Game_Board_Spawn_Point_Highlight.jpg)
 
