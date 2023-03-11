@@ -198,6 +198,16 @@ function drawBorder(ctx, borderWidth, centerX, centerY, radius){
   ctx.stroke();
 }
 
+
+
+const fileInput = document.getElementById('file-input');
+const preview = document.getElementById('pokemon-display-container');
+
+document.addEventListener('DOMContentLoaded', function() {
+  
+});
+
+
 let totalPercentage = 0;
 
 function addField() {
@@ -289,8 +299,27 @@ function addField() {
   totalPercentage += percentageInt;
   clearFields();
 
+  // Add image
+  // displayImage();
+
   // update pie chart
   createPieChart();
+}
+
+function displayImage(){
+  if(fileInput){
+    const file = this.files[0];
+    const reader = new FileReader();
+    reader.onload = function() {
+      const image = new Image();
+      image.src = reader.result;
+      image.width = 200;
+      image.height = 200;
+      preview.innerHTML = '';
+      preview.appendChild(image);
+    }
+    reader.readAsDataURL(file);
+  }
 }
 
 function clearFields(){
