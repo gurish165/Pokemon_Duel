@@ -123,18 +123,32 @@ function writeAttackNames(text, percentage, ctx, sectionStartAngle, endAngle, ra
     const textX = centerX + Math.cos(sectionMiddleAngle) * textRadius;
     const textY = centerY + Math.sin(sectionMiddleAngle) * textRadius;
     const sectionText = text;
-    let fontSize = 50;
-    ctx.font = "bold " + fontSize + "px Segoe UI";
+    
+    const font = "Segoe UI";
+    let fontSize = 1; // starting font size
+    ctx.font = "bold " + fontSize + "px " + font;
+    let desiredLength = 0;
 
-    // Calculate the width of the text
-    let textWidth = ctx.measureText(sectionText).width;
+    // Determine chord length the text must fit over
+    if(percentage >= 17) { 
+      const theta17p = (2*Math.PI) * (17 / 100)
+      const maxChordLen = (2 * radius * 0.85) * Math.abs(Math.sin(theta17p/2));
+      desiredLength = maxChordLen;
+    }
+    else{
+      const theta = (2*Math.PI) * (percentage / 100);
+      const smallerRadius = 0.85 * radius;
+      const chordLen = (2 * smallerRadius) * Math.abs(Math.sin(theta/2));
+      desiredLength = chordLen;
+    }
 
-    // Calculate the maximum font size that will fit the text inside the outer circle
-    let arcFactor = 1100 / percentage;
-    let maxFontSize = (textRadius * 2) / Math.sqrt(2 * (1 - Math.cos(textWidth / (textRadius))))/arcFactor;
-    // Set the font size to the maximum font size or the original font size, whichever is smaller
-    ctx.font = Math.min(fontSize, maxFontSize) + "px Segoe UI";
-    console.log("fontSize: " + fontSize + " maxFontsize: " + maxFontSize);
+    // Increase font size until chord length is reached
+    while (ctx.measureText(text).width < desiredLength && fontSize < 50) {
+      fontSize++;
+      ctx.font = "bold " + fontSize + "px " + font;
+    }
+
+    // Write to canvas
     ctx.fillStyle = "#000000";
     ctx.textAlign = "center";
     ctx.textBaseline = "middle";
