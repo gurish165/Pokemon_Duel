@@ -10,54 +10,56 @@
   <body>
     <h1>Pokemon Duel Disk Creator</h1>
     <div class="input-container">
-      <div class="pokemon=-"> </div>
-      <div class="input-field">
-        <input type="text" id="pokemon-name-field" placeholder="Pokemon Name">
+      <div class="pokemon-header-info-column">
+        <div class="input-field">
+          <input type="text" id="pokemon-name-field" placeholder="Pokemon Name">
+        </div>
+        <div class="input-field">
+          <input type="text" id="movement-field" placeholder="Movement">
+        </div>
+        <div class="input-field">
+          <input type="text" id="rarity-field" placeholder="Rarity">
+        </div>
+        <div class="input-field">
+          <input type="text" id="type-field" placeholder="Type">
+        </div>
+        <div class="input-field">
+          <input type="text" id="special-ability-field" placeholder="Special Ability">
+        </div>
       </div>
-      <div class="input-field">
-        <input type="text" id="movement-field" placeholder="Movement">
+      <div class="attack-input-column">
+        <div class="input-field">
+          <label class="input-label">Percentage:</label>
+          <input type="number" id="percentage-field" min="0" max="100">
+        </div>
+        <div class="input-field">
+          <label class="input-label">Attack Name:</label>
+          <input type="text" id="attack-name-field">
+        </div>
+        <div class="input-field">
+          <label class="input-label">Attack Type:</label>
+          <input type="color" id="color-field">
+        </div>
+        <div class="input-field">
+          <label class="input-label">Attack Value:</label>
+          <input type="text" id="attack-value-field">
+        </div>
+        <div class="input-field">
+          <label class="input-label">Attack Ability:</label>
+          <input type="text" id="attack-ability-field">
+        </div>
+        <button onclick="addField()">+</button>
       </div>
-      <div class="input-field">
-        <input type="text" id="rarity-field" placeholder="Rarity">
+      <div class="attack-disk-column">
+        <div id="pie-chart-container">
+          <canvas id="pie-chart" width=1000 height=1000></canvas>
+        </div>
+        <div id="field-list"></div>
+        <div id="download-button-container">
+          <button onclick="downloadDisk()">Download Disk</button>
+        </div>
       </div>
-      <div class="input-field">
-        <input type="text" id="type-field" placeholder="Type">
-      </div>
-      <div class="input-field">
-        <input type="text" id="special-ability-field" placeholder="Special Ability">
-      </div>
-      <div class="input-field">
-        <label class="input-label">Percentage:</label>
-        <input type="number" id="percentage-field" min="0" max="100">
-      </div>
-      <div class="input-field">
-        <label class="input-label">Attack Name:</label>
-        <input type="text" id="attack-name-field">
-      </div>
-      <div class="input-field">
-        <label class="input-label">Attack Type:</label>
-        <input type="color" id="color-field">
-      </div>
-      <div class="input-field">
-        <label class="input-label">Attack Value:</label>
-        <input type="text" id="attack-value-field">
-      </div>
-      <div class="input-field">
-        <label class="input-label">Attack Ability:</label>
-        <input type="text" id="attack-ability-field">
-      </div>
-      <button onclick="addField()">+</button>
     </div>
 
-    <div id="field-list"></div>
-
-    <div id="pie-chart-container">
-      <canvas id="pie-chart" width=1000 height=1000></canvas>
-    </div>
-
-    <div id="download-button-container">
-      <button onclick="downloadDisk()">Download Disk</button>
-    </div>
-    
   </body>
 </html>
