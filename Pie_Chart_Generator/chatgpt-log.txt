@@ -1,0 +1,301 @@
+function addField() {
+  const color = document.getElementById("color-field").value;
+  const attackName = document.getElementById("attack-name-field").value;
+  const percentage = document.getElementById("percentage-field").value;
+  const attackValue = document.getElementById("attack-value-field").value;
+  const attackAbility = document.getElementById("attack-ability-field").value;
+
+  // check if input is valid
+  if (color === "" || attackName === "" || percentage === "") {
+    alert("Please fill in all fields.");
+    return;
+  }
+
+  const percentageInt = parseInt(percentage);
+
+  // check if percentage is valid
+  if (isNaN(percentageInt) || percentageInt <= 0 || percentageInt + totalPercentage > 100) {
+    alert("Please enter a valid percentage.");
+    return;
+  }
+  if (percentageInt + totalPercentage > 100){
+    alert("Pie chart segments must be less than 100");
+    return;
+  }
+
+  const fieldList = document.getElementById("field-list");
+
+  // create table if it doesn't exist yet
+  let table = fieldList.querySelector("table");
+  if (!table) {
+    table = document.createElement("table");
+    table.style.width = "100%";
+    table.style.borderCollapse = "collapse";
+    fieldList.appendChild(table);
+
+    // add table header row
+    const headerRow = table.insertRow();
+    headerRow.style.backgroundColor = "#00EE00";
+
+    const sizeHeader = headerRow.insertCell();
+    sizeHeader.innerHTML = "<b>Size</b>";
+    sizeHeader.style.padding = "10px";
+    sizeHeader.style.border = "1px solid black";
+
+    const attackHeader = headerRow.insertCell();
+    attackHeader.innerHTML = "<b>Attack</b>";
+    attackHeader.style.padding = "10px";
+    attackHeader.style.border = "1px solid black";
+
+    const damageHeader = headerRow.insertCell();
+    damageHeader.innerHTML = "<b>Damage</b>";
+    damageHeader.style.padding = "10px";
+    damageHeader.style.border = "1px solid black";
+  }
+
+  // create new row
+  const row = table.insertRow();
+  row.style.backgroundColor = color;
+
+  // add size cell
+  const sizeCell = row.insertCell();
+  sizeCell.innerHTML = percentage + "%";
+  sizeCell.style.padding = "10px";
+  sizeCell.style.border = "1px solid black";
+
+  // add attack cell
+  const attackCell = row.insertCell();
+  attackCell.innerHTML = attackName;
+  attackCell.style.padding = "10px";
+  attackCell.style.border = "1px solid black";
+
+  // add damage cell
+  const damageCell = row.insertCell();
+  damageCell.innerHTML = attackValue;
+  damageCell.style.padding = "10px";
+  damageCell.style.border = "1px solid black";
+
+  // add ability row if applicable
+  if (attackAbility !== "") {
+    const abilityRow = table.insertRow();
+    abilityRow.style.backgroundColor = color;
+
+    const abilityCell = abilityRow.insertCell();
+    abilityCell.colSpan = 3;
+    abilityCell.innerHTML = attackAbility;
+    abilityCell.style.padding = "10px";
+    abilityCell.style.border = "1px solid black";
+  }
+
+  // update total percentage and clear input fields
+  totalPercentage += percentageInt;
+  clearFields();
+}
+
+
+function addField() {
+    const color = document.getElementById("color-field").value;
+    const attackName = document.getElementById("attack-name-field").value;
+    const percentage = document.getElementById("percentage-field").value;
+    const attackValue = document.getElementById("attack-value-field").value;
+    const attackAbility = document.getElementById("attack-ability-field").value;
+
+    // check if input is valid
+    if (color === "" || attackName === "" || percentage === "") {
+        alert("Please fill in all fields.");
+        return;
+    }
+
+    const percentageInt = parseInt(percentage);
+
+    // check if percentage is valid
+    if (isNaN(percentageInt) || percentageInt <= 0 || percentageInt + totalPercentage > 100) {
+        alert("Please enter a valid percentage.");
+        return;
+    }
+    if (percentageInt + totalPercentage > 100){
+        alert("Pie chart segments must be less than 100");
+        return;
+    }
+
+    const pieChart = document.getElementById("pie-chart");
+
+    // create new section div
+    const section = document.createElement("div");
+    section.className = "section";
+    section.style.backgroundColor = color;
+    section.style.backgroundImage = `conic-gradient(${color} 0% ${percentageInt}%, rgba(0,0,0,0) ${percentageInt}% 100%)`;
+
+    // add new section to pie chart
+    pieChart.appendChild(section);
+
+    // create new field div
+    const field = document.createElement("div");
+    field.className = "field";
+    
+    // create field content
+    const fieldName = document.createElement("p");
+    fieldName.className = "pieText"
+    fieldName.innerText = attackName;
+    field.appendChild(fieldName);
+
+    const fieldPercentage = document.createElement("p");
+    fieldPercentage.className = "piePercentage"
+    fieldPercentage.innerText = percentage + "%";
+    field.appendChild(fieldPercentage);
+
+    const pieColor = document.createElement("div");
+    pieColor.className = "pieColor";
+    pieColor.style.backgroundColor = color;
+    pieColor.style.height = "50px";
+    pieColor.style.width = "50px";
+    field.appendChild(pieColor);
+
+    const fieldAttackValue = document.createElement("p");
+    fieldAttackValue.className = "pieAttackValue"
+    fieldAttackValue.innerText = attackValue;
+    field.appendChild(fieldAttackValue);
+
+    const fieldAttackAbility = document.createElement("p");
+    fieldAttackAbility.className = "pieAttackAbility"
+    fieldAttackAbility.innerText = attackAbility;
+    field.appendChild(fieldAttackAbility);
+
+    // create delete button
+    const deleteButton = document.createElement("button");
+    deleteButton.className = "delete-button";
+    deleteButton.innerText = "x";
+    deleteButton.addEventListener("click", () => {
+        pieChart.removeChild(section);
+        field.parentNode.removeChild(field);
+        totalPercentage -= percentageInt;
+        // update pie chart
+        createPieChart();
+    });
+    field.appendChild(deleteButton);
+
+    // add new field to list
+    const fieldList = document.getElementById("field-list");
+    fieldList.appendChild(field);
+
+    // update total percentage and clear input fields
+    totalPercentage += percentageInt;
+    clearFields();
+
+    // create table row for attack
+    const table = document.createElement("table");
+    const row = document.createElement("tr");
+
+    // create table cells for attack row
+    const cell1 = document.createElement("td");
+    cell1.innerText = `${percentage}%`;
+    row.appendChild(cell1);
+
+    const cell2 = document.createElement("td");
+    cell2.innerText = attackName;
+    row.appendChild(cell2);
+
+    const cell3 = document.createElement("td");
+    cell3.innerText = attackValue;
+    row.appendChild(cell3);
+
+    // add attack row to table body
+    tableBody.appendChild(row);
+
+    // add ability row if attackAbility is not empty
+    if (attackAbility !== "") {
+        const abilityRow = document.createElement("tr");
+        abilityRow.style.backgroundColor = color;
+
+        const abilityCell = document.createElement("td");
+        abilityCell.innerText = attackAbility;
+        abilityCell.colSpan = 3;
+        abilityRow.appendChild(abilityCell);
+
+        tableBody.appendChild(abilityRow);
+    }
+
+    // add table to field list div
+    const fieldList = document.getElementById("field-list");
+    fieldList.appendChild(table);
+
+    // update total percentage and clear input fields
+    totalPercentage += percentageInt;
+    clearFields();
+
+    // update pie chart
+    createPieChart();
+}
+
+
+/* define style for attack ability row */
+.tr-ability {
+  background-color: var(--color);
+}
+
+/* define style for delete button */
+.delete-button {
+  background-color: #ff5f5f;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 1rem;
+  padding: 0.5rem;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+.delete-button:hover {
+  background-color: #ff2f2f;
+}
+
+/* define style for input fields */
+.input-field {
+  display: block;
+  margin-bottom: 1rem;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+/* define style for add button */
+.add-button {
+  background-color: #00bfff;
+  color: white;
+  border: none;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+.add-button:hover {
+  background-color: #00a5c9;
+}
+
+/* define style for table */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+/* define style for table header row */
+th {
+  background-color: #00ee00;
+  color: white;
+  font-weight: bold;
+  text-align: left;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+}
+
+/* define style for table data rows */
+td {
+  background-color: var(--color);
+  color: white;
+  text-align: left;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+}
+

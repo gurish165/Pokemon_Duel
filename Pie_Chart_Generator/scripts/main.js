@@ -201,6 +201,53 @@ function drawBorder(ctx, borderWidth, centerX, centerY, radius){
 
 let totalPercentage = 0;
 
+function validateInput(color, attackName, percentage){
+  if (color === "" || attackName === "" || percentage === "") {
+    alert("Please fill in all fields.");
+    return false;
+  }
+
+  const percentageInt = parseInt(percentage);
+
+  // check if percentage is valid
+  if (isNaN(percentageInt) || percentageInt <= 0 || percentageInt + totalPercentage > 100) {
+    alert("Please enter a valid percentage.");
+    return false;
+  }
+  if (percentageInt + totalPercentage > 100){
+    alert("Pie chart segments must be less than 100");
+    return false;
+  }
+  return true;
+}
+
+function createFieldContent(field, attackName, percentage, color, attackValue, attackAbility){
+  const fieldName = document.createElement("p");
+  fieldName.className = "pieText"
+  fieldName.innerText = attackName;
+  field.appendChild(fieldName);
+
+  const fieldPercentage = document.createElement("p");
+  fieldPercentage.className = "piePercentage"
+  fieldPercentage.innerText = percentage + "%";
+  field.appendChild(fieldPercentage);
+
+  const pieColor = document.createElement("div");
+  pieColor.className = "pieColor";
+  pieColor.style.backgroundColor = color;
+  field.appendChild(pieColor);
+
+  const fieldAttackValue = document.createElement("p");
+  fieldAttackValue.className = "pieAttackValue"
+  fieldAttackValue.innerText = attackValue;
+  field.appendChild(fieldAttackValue);
+
+  const fieldAttackAbility = document.createElement("p");
+  fieldAttackAbility.className = "pieAttackAbility"
+  fieldAttackAbility.innerText = attackAbility;
+  field.appendChild(fieldAttackAbility);
+}
+
 function addField() {
   const color = document.getElementById("color-field").value;
   const attackName = document.getElementById("attack-name-field").value;
@@ -209,23 +256,11 @@ function addField() {
   const attackAbility = document.getElementById("attack-ability-field").value;
 
   // check if input is valid
-  if (color === "" || attackName === "" || percentage === "") {
-    alert("Please fill in all fields.");
+  if (!validateInput(color, attackName, percentage)){
     return;
   }
-
-  const percentageInt = parseInt(percentage);
-
-  // check if percentage is valid
-  if (isNaN(percentageInt) || percentageInt <= 0 || percentageInt + totalPercentage > 100) {
-    alert("Please enter a valid percentage.");
-    return;
-  }
-  if (percentageInt + totalPercentage > 100){
-    alert("Pie chart segments must be less than 100");
-    return;
-  }
-
+  let percentageInt = parseInt(percentage);
+  
   const pieChart = document.getElementById("pie-chart");
 
   // create new section div
@@ -242,32 +277,7 @@ function addField() {
   field.className = "field";
   
   // create field content
-  const fieldName = document.createElement("p");
-  fieldName.className = "pieText"
-  fieldName.innerText = attackName;
-  field.appendChild(fieldName);
-
-  const fieldPercentage = document.createElement("p");
-  fieldPercentage.className = "piePercentage"
-  fieldPercentage.innerText = percentage + "%";
-  field.appendChild(fieldPercentage);
-
-  const pieColor = document.createElement("div");
-  pieColor.className = "pieColor";
-  pieColor.style.backgroundColor = color;
-  pieColor.style.height = "50px";
-  pieColor.style.width = "50px";
-  field.appendChild(pieColor);
-
-  const fieldAttackValue = document.createElement("p");
-  fieldAttackValue.className = "pieAttackValue"
-  fieldAttackValue.innerText = attackValue;
-  field.appendChild(fieldAttackValue);
-
-  const fieldAttackAbility = document.createElement("p");
-  fieldAttackAbility.className = "pieAttackAbility"
-  fieldAttackAbility.innerText = attackAbility;
-  field.appendChild(fieldAttackAbility);
+  createFieldContent(field, attackName, percentage, color, attackValue, attackAbility)
 
   // create delete button
   const deleteButton = document.createElement("button");
@@ -292,6 +302,7 @@ function addField() {
 
   // update pie chart
   createPieChart();
+  
 }
 
 function clearFields(){

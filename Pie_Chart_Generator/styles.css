@@ -30,3 +30,8 @@ h1 {
 .field{
     font-family: Segoe UI;
 }
+
+.pieColor{
+    height: 50px;
+    width: 50px;
+}
