@@ -69,9 +69,10 @@ function drawPieChart() {
   const height = canvas.height;
   const centerX = width / 2;
   const centerY = height / 2;
-  const radius = Math.min(width, height) / 2;
+  const radius = Math.min(width, height)/2 - 15;
 
   ctx.clearRect(0, 0, width, height);
+  ctx.fillStyle = "rgba(0, 0, 0, 0)";
 
   let startAngle = 0;
   let endAngle = 0;
@@ -111,7 +112,7 @@ function drawPieChart() {
     
   });
   // Draw border
-  drawBorder(ctx, 10, centerX, centerY, radius);
+  drawBorder(ctx, 20, centerX, centerY, radius);
   // Draw pie center
   drawPieCenter(ctx, centerX, centerY, radius)
 }
@@ -197,16 +198,6 @@ function drawBorder(ctx, borderWidth, centerX, centerY, radius){
   ctx.lineWidth = borderWidth;
   ctx.stroke();
 }
-
-
-
-const fileInput = document.getElementById('file-input');
-const preview = document.getElementById('pokemon-display-container');
-
-document.addEventListener('DOMContentLoaded', function() {
-  
-});
-
 
 let totalPercentage = 0;
 
@@ -299,27 +290,8 @@ function addField() {
   totalPercentage += percentageInt;
   clearFields();
 
-  // Add image
-  // displayImage();
-
   // update pie chart
   createPieChart();
-}
-
-function displayImage(){
-  if(fileInput){
-    const file = this.files[0];
-    const reader = new FileReader();
-    reader.onload = function() {
-      const image = new Image();
-      image.src = reader.result;
-      image.width = 200;
-      image.height = 200;
-      preview.innerHTML = '';
-      preview.appendChild(image);
-    }
-    reader.readAsDataURL(file);
-  }
 }
 
 function clearFields(){
@@ -330,5 +302,15 @@ function clearFields(){
   document.getElementById("percentage-field").value = "";
 }
 
+function downloadDisk(){
+  // Get the canvas element
+  const canvas = document.getElementById("pie-chart");
+  // Convert the new canvas to an image and download it
+  const dataUrl = canvas.toDataURL("image/jpeg");
+  const link = document.createElement("a");
+  link.download = "pie-chart.jpg";
+  link.href = dataUrl;
+  link.click();
+}
 
 sayHello();

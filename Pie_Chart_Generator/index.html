@@ -2,33 +2,29 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Pie Chart Creator</title>
+    <title>Pokemon Duel Disk Creator</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="shortcut icon" type="image/gif" href="favicon-96x96.ico">
     <script src="scripts/main.js"></script>
   </head>
   <body>
-    <h1>Pie Chart Creator</h1>
+    <h1>Pokemon Duel Disk Creator</h1>
     <div class="input-container">
+      <div class="pokemon=-"> </div>
       <div class="input-field">
-        <label class="input-label">Pokemon Name:</label>
-        <input type="text" id="pokemon-name-field">
+        <input type="text" id="pokemon-name-field" placeholder="Pokemon Name">
       </div>
       <div class="input-field">
-        <label class="input-label">Movement:</label>
-        <input type="text" id="movement-field">
+        <input type="text" id="movement-field" placeholder="Movement">
       </div>
       <div class="input-field">
-        <label class="input-label">Rarity:</label>
-        <input type="text" id="rarity-field">
+        <input type="text" id="rarity-field" placeholder="Rarity">
       </div>
       <div class="input-field">
-        <label class="input-label">Type:</label>
-        <input type="text" id="type-field">
+        <input type="text" id="type-field" placeholder="Type">
       </div>
       <div class="input-field">
-        <label class="input-label">Special Ability:</label>
-        <input type="text" id="special-ability-field">
+        <input type="text" id="special-ability-field" placeholder="Special Ability">
       </div>
       <div class="input-field">
         <label class="input-label">Percentage:</label>
@@ -50,17 +46,18 @@
         <label class="input-label">Attack Ability:</label>
         <input type="text" id="attack-ability-field">
       </div>
-      <div class="input-field">
-        <input type="file" accept="image/png, image/jpeg" id="file-input">
-      </div>
       <button onclick="addField()">+</button>
     </div>
-    <div id="field-list">
 
-    </div>
+    <div id="field-list"></div>
+
     <div id="pie-chart-container">
       <canvas id="pie-chart" width=1000 height=1000></canvas>
     </div>
-    <div id="pokemon-display-container"></div>
+
+    <div id="download-button-container">
+      <button onclick="downloadDisk()">Download Disk</button>
+    </div>
+    
   </body>
 </html>
