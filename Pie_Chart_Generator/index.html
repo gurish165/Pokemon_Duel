@@ -38,7 +38,13 @@
         </div>
         <div class="input-field">
           <label class="input-label">Attack Type:</label>
-          <input type="color" id="color-field">
+          <select id="color-dropdown" selectedIndex=-1>
+            <option value="rgb(240, 240, 240)">White</option>
+            <option value="rgb(192, 113, 226)">Purple</option>
+            <option value="rgb(80, 191, 242)">Blue</option>
+            <option value="rgb(232, 207, 79)">Gold</option>
+            <option value="rgb(241, 77, 88)">Red</option>
+          </select>
         </div>
         <div class="input-field">
           <label class="input-label">Attack Value:</label>
@@ -55,6 +61,7 @@
           <canvas id="pie-chart" width=1000 height=1000></canvas>
         </div>
         <div id="field-list"></div>
+        <table id="attack-table"></table>
         <div id="download-button-container">
           <button onclick="downloadDisk()">Download Disk</button>
         </div>

@@ -79,7 +79,7 @@ function drawPieChart() {
 
   sections.forEach((section) => {
     const sectionStartAngle = startAngle;
-    const sectionAngle = (1 / 100) * 2 * Math.PI;
+    const sectionAngle = (1 / 96) * 2 * Math.PI;
 
     // Get the RGB values from the background color string
     const baseColor = section.color;
@@ -132,12 +132,12 @@ function writeAttackNames(text, percentage, ctx, sectionStartAngle, endAngle, ra
 
     // Determine chord length the text must fit over
     if(percentage >= 17) { 
-      const theta17p = (2*Math.PI) * (17 / 100)
+      const theta17p = (2*Math.PI) * (17 / 96)
       const maxChordLen = (2 * radius * 0.85) * Math.abs(Math.sin(theta17p/2));
       desiredLength = maxChordLen;
     }
     else{
-      const theta = (2*Math.PI) * (percentage / 100);
+      const theta = (2*Math.PI) * (percentage / 96);
       const smallerRadius = 0.85 * radius;
       const chordLen = (2 * smallerRadius) * Math.abs(Math.sin(theta/2));
       desiredLength = chordLen;
@@ -210,12 +210,12 @@ function validateInput(color, attackName, percentage){
   const percentageInt = parseInt(percentage);
 
   // check if percentage is valid
-  if (isNaN(percentageInt) || percentageInt <= 0 || percentageInt + totalPercentage > 100) {
+  if (isNaN(percentageInt) || percentageInt <= 0 || percentageInt + totalPercentage > 96) {
     alert("Please enter a valid percentage.");
     return false;
   }
-  if (percentageInt + totalPercentage > 100){
-    alert("Pie chart segments must be less than 100");
+  if (percentageInt + totalPercentage > 96){
+    alert("Pie chart segments must <= 96");
     return false;
   }
   return true;
@@ -248,8 +248,52 @@ function createFieldContent(field, attackName, percentage, color, attackValue, a
   field.appendChild(fieldAttackAbility);
 }
 
+function addTableHeader(table){
+  if(table.getElementsByClassName("table-header").length == 0){
+    // Create table header
+    let tableHeader = document.createElement("tr");
+    tableHeader.className = "table-header";
+    // Add header fields
+    let percentageHeader = document.createElement("td");
+    percentageHeader.className = "percentage-header";
+    percentageHeader.innerText = "Size";
+    let attackNameHeader = document.createElement("td");
+    attackNameHeader.className = "attack-name-header";
+    attackNameHeader.innerText = "Attack";
+    let attackDamageHeader = document.createElement("td");
+    attackDamageHeader.className = "attack-damage-header";
+    attackDamageHeader.innerText = "Damage";
+    let deleteHeader = document.createElement("td");
+    deleteHeader.className = "delete-header";
+    deleteHeader.innerText = "Delete";
+    // Add header cells to header
+    tableHeader.appendChild(percentageHeader);
+    tableHeader.appendChild(attackNameHeader);
+    tableHeader.appendChild(attackDamageHeader);
+    tableHeader.appendChild(deleteHeader);
+    table.appendChild(tableHeader);
+  }
+}
+
+function createTable(attackName, percentage, color, attackValue, attackAbility){
+  const table = document.getElementById("attack-table");
+  addTableHeader(table);
+  let attackBody = document.createElement("tbody");
+  attackBody.className = "attack-body";
+
+  let attackNameCell = document.createElement("td");
+  attackNameCell.className = "attack-name-cell";
+  attackNameCell.innerText = attackName;
+  let attackValueCell = document.createElement("td");
+  attackValueCell.className = "attack-value-cell";
+  attackValueCell.innerText = attackName;
+
+
+  
+}
+
 function addField() {
-  const color = document.getElementById("color-field").value;
+  const color = document.getElementById("color-dropdown").value;
   const attackName = document.getElementById("attack-name-field").value;
   const percentage = document.getElementById("percentage-field").value;
   const attackValue = document.getElementById("attack-value-field").value;
@@ -267,7 +311,7 @@ function addField() {
   const section = document.createElement("div");
   section.className = "section";
   section.style.backgroundColor = color;
-  section.style.backgroundImage = `conic-gradient(${color} 0% ${percentageInt}%, rgba(0,0,0,0) ${percentageInt}% 100%)`;
+  // section.style.backgroundImage = `conic-gradient(${color} 0% ${percentageInt}%, rgba(0,0,0,0) ${percentageInt}% 100%)`;
 
   // add new section to pie chart
   pieChart.appendChild(section);
@@ -302,11 +346,14 @@ function addField() {
 
   // update pie chart
   createPieChart();
+
+  // Add table
+  createTable();
   
 }
 
 function clearFields(){
-  document.getElementById("color-field").value = "#000000";
+  document.getElementById("color-dropdown").selectedIndex = -1;
   document.getElementById("attack-name-field").value = "";
   document.getElementById("attack-value-field").value = "";
   document.getElementById("attack-ability-field").value = "";
