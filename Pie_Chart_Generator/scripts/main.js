@@ -27,10 +27,19 @@ function createPieChart() {
   drawPieChart(sections);
 }
 
-function getDarkerColor(section, darkenFactor){
-  const baseColorArray = section.color.match(/\d+/g);
-  // Subtract 50 from each RGB value and ensure it stays within 0-255 range
+function getDarkerColor(color, darkenFactor){
+  const baseColorArray = color.match(/\d+/g);
+  // Subtract darkenFactor from each RGB value and ensure it stays within 0-255 range
   const newRgbValues = baseColorArray.map(value => Math.max(0, parseInt(value, 10) - darkenFactor));
+  // Convert the new RGB values back to a color string
+  const newBackgroundColor = `rgb(${newRgbValues.join(',')})`;
+  return newBackgroundColor;
+}
+
+function getLighterColor(color, lightenFactor){
+  const baseColorArray = color.match(/\d+/g);
+  // Add lightenFactor from each RGB value and ensure it stays within 0-255 range
+  const newRgbValues = baseColorArray.map(value => Math.max(0, parseInt(value, 10) + lightenFactor));
   // Convert the new RGB values back to a color string
   const newBackgroundColor = `rgb(${newRgbValues.join(',')})`;
   return newBackgroundColor;
@@ -83,7 +92,7 @@ function drawPieChart() {
 
     // Get the RGB values from the background color string
     const baseColor = section.color;
-    const newBackgroundColor = getDarkerColor(section, 20)
+    const newBackgroundColor = getDarkerColor(section.color, 20)
 
     // Color in the section with alternating colors
     for (var i = 0; i < section.percentage; i++){
@@ -281,15 +290,68 @@ function createTable(attackName, percentage, color, attackValue, attackAbility){
   let attackBody = document.createElement("tbody");
   attackBody.className = "attack-body";
 
+  let attackRow = document.createElement("tr");
+  attackRow.className = "attack-row";
+
+  let percentageCell = document.createElement("td");
+  percentageCell.className = "percentage-cell";
+  percentageCell.innerText = percentage;
+  attackRow.appendChild(percentageCell);
+
   let attackNameCell = document.createElement("td");
   attackNameCell.className = "attack-name-cell";
-  attackNameCell.innerText = attackName;
+  // add stars if attack is purple
+  if(color == "rgb(192, 113, 226)"){
+    attackNameCell.innerText = attackName + " " + attackValue;
+  }
+  else{
+    attackNameCell.innerText = attackName;
+  }
+  attackRow.appendChild(attackNameCell);
+
   let attackValueCell = document.createElement("td");
   attackValueCell.className = "attack-value-cell";
-  attackValueCell.innerText = attackName;
+  // Don't add attack value if it is a purple attack
+  if(color != "rgb(192, 113, 226)"){
+    attackValueCell.innerText = attackValue;
+  }
+  attackRow.appendChild(attackValueCell);
 
+  // Configure and add delete button to first tr in tbody
+  const deleteButton = document.createElement("button");
+  deleteButton.className = "delete-button";
+  deleteButton.innerText = "x";
+  deleteButton.addEventListener("click", () => {
+    attackBody.remove();
+    totalPercentage -= parseInt(percentage);
+    // update pie chart
+    createPieChart();
+  });
+  const deleteCell = document.createElement('td');
+  deleteCell.className = "delete-cell";
+  deleteCell.appendChild(deleteButton);
+  deleteCell.rowSpan = 2;
+  attackRow.appendChild(deleteCell);
 
+  // Add attack row to attack body with color
+  attackRow.style.backgroundColor = color;
+  attackBody.appendChild(attackRow);
+
+  // Create an attack ability row if there is an attack ability 
+  if(attackAbility != ""){
+    let attackAbilityRow = document.createElement("tr");
+    attackAbilityRow.className = "attack-ability-row";
+    let attackAbilityCell = document.createElement("td");
+    attackAbilityCell.className = "attack-ability-cell";
+    attackAbilityCell.innerText = attackAbility;
+    attackAbilityCell.colSpan = 3;
+    attackAbilityRow.appendChild(attackAbilityCell);
+    // Add attack ability row to attack body with color
+    attackAbilityRow.style.backgroundColor = getLighterColor(color, 100);
+    attackBody.appendChild(attackAbilityRow);
+  }
   
+  table.appendChild(attackBody);
 }
 
 function addField() {
@@ -304,17 +366,6 @@ function addField() {
     return;
   }
   let percentageInt = parseInt(percentage);
-  
-  const pieChart = document.getElementById("pie-chart");
-
-  // create new section div
-  const section = document.createElement("div");
-  section.className = "section";
-  section.style.backgroundColor = color;
-  // section.style.backgroundImage = `conic-gradient(${color} 0% ${percentageInt}%, rgba(0,0,0,0) ${percentageInt}% 100%)`;
-
-  // add new section to pie chart
-  pieChart.appendChild(section);
 
   // create new field div
   const field = document.createElement("div");
@@ -328,7 +379,6 @@ function addField() {
   deleteButton.className = "delete-button";
   deleteButton.innerText = "x";
   deleteButton.addEventListener("click", () => {
-    pieChart.removeChild(section);
     field.parentNode.removeChild(field);
     totalPercentage -= percentageInt;
     // update pie chart
@@ -348,8 +398,7 @@ function addField() {
   createPieChart();
 
   // Add table
-  createTable();
-  
+  createTable(attackName, percentage, color, attackValue, attackAbility);
 }
 
 function clearFields(){
