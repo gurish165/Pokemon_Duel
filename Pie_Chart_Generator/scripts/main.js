@@ -11,19 +11,33 @@ function createPieChart() {
   sections = [];
 
   // loop through each field div
-  const fieldList = document.getElementById("field-list");
-  const fields = fieldList.children;
+  const fieldList = document.getElementById("attack-table");
+  const fields = fieldList.querySelectorAll("tbody");
 
   for (let i = 0; i < fields.length; i++) {
-    const field = fields[i];
-    const color = getComputedStyle(field.querySelector(".pieColor")).backgroundColor;
-    const text = field.querySelector(".pieText").innerText;
-    const percentage = field.querySelector(".piePercentage").innerText.replace("%", "");
-    const attackValue = field.querySelector(".pieAttackValue").innerText;
-    const attackAbility = field.querySelector(".pieAttackAbility").innerText;
-    sections.push({ color, text, percentage: parseInt(percentage), attackValue, attackAbility});
-  }
+    const tbody = fields[i];
+    const color = getComputedStyle(tbody.querySelector(".attack-row")).backgroundColor;
+    let attackName = tbody.querySelector(".attack-name-cell").innerText;
+    const percentage = tbody.querySelector(".attack-percentage-cell").innerText;
+    let attackValue = tbody.querySelector(".attack-value-cell").innerText;
+    // Get attack ability if there is one
+    const attackAbilityRow = tbody.querySelector(".attack-ability-row");
+    let attackAbility = "";
+    if(attackAbilityRow){
+      attackAbility = attackAbilityRow.querySelector(".attack-ability-cell").innerText;
+    }
 
+    // Seperate the attack damage from attack name if it is a purple attack
+    if (color == "rgb(192, 113, 226)"){
+      let originalString = attackName;
+      let words = originalString.split(" "); // split the string into an array of words
+      let lastWord = words.pop(); // remove and return the last word from the array
+      let shortenedString = words.join(" "); // join the remaining words back into a string
+      attackName = shortenedString;
+      attackValue = lastWord;
+    }
+    sections.push({ color, attackName, percentage: parseInt(percentage), attackValue, attackAbility});
+  }
   drawPieChart(sections);
 }
 
@@ -71,7 +85,7 @@ function drawPieCenter(ctx, centerX, centerY, radius){
   ctx.fill();
 }
 
-function drawPieChart() {
+function drawPieChart(sections) {
   const canvas = document.getElementById("pie-chart");
   const ctx = canvas.getContext("2d");
   const width = canvas.width;
@@ -115,7 +129,7 @@ function drawPieChart() {
     // Draw section border
     drawSectionBorder(ctx, centerX, centerY, radius, endAngle);
     // Write Attack Names
-    writeAttackNames(section.text, section.percentage, ctx, sectionStartAngle, endAngle, radius, centerX, centerY);
+    writeAttackNames(section.attackName, section.percentage, ctx, sectionStartAngle, endAngle, radius, centerX, centerY);
     // Write Attack Values
     writeAttackValues(section.attackValue, section.percentage, ctx, sectionStartAngle, endAngle, radius, centerX, centerY);
     
@@ -230,33 +244,6 @@ function validateInput(color, attackName, percentage){
   return true;
 }
 
-function createFieldContent(field, attackName, percentage, color, attackValue, attackAbility){
-  const fieldName = document.createElement("p");
-  fieldName.className = "pieText"
-  fieldName.innerText = attackName;
-  field.appendChild(fieldName);
-
-  const fieldPercentage = document.createElement("p");
-  fieldPercentage.className = "piePercentage"
-  fieldPercentage.innerText = percentage + "%";
-  field.appendChild(fieldPercentage);
-
-  const pieColor = document.createElement("div");
-  pieColor.className = "pieColor";
-  pieColor.style.backgroundColor = color;
-  field.appendChild(pieColor);
-
-  const fieldAttackValue = document.createElement("p");
-  fieldAttackValue.className = "pieAttackValue"
-  fieldAttackValue.innerText = attackValue;
-  field.appendChild(fieldAttackValue);
-
-  const fieldAttackAbility = document.createElement("p");
-  fieldAttackAbility.className = "pieAttackAbility"
-  fieldAttackAbility.innerText = attackAbility;
-  field.appendChild(fieldAttackAbility);
-}
-
 function addTableHeader(table){
   if(table.getElementsByClassName("table-header").length == 0){
     // Create table header
@@ -294,7 +281,7 @@ function createTable(attackName, percentage, color, attackValue, attackAbility){
   attackRow.className = "attack-row";
 
   let percentageCell = document.createElement("td");
-  percentageCell.className = "percentage-cell";
+  percentageCell.className = "attack-percentage-cell";
   percentageCell.innerText = percentage;
   attackRow.appendChild(percentageCell);
 
@@ -347,7 +334,7 @@ function createTable(attackName, percentage, color, attackValue, attackAbility){
     attackAbilityCell.colSpan = 3;
     attackAbilityRow.appendChild(attackAbilityCell);
     // Add attack ability row to attack body with color
-    attackAbilityRow.style.backgroundColor = getLighterColor(color, 100);
+    attackAbilityRow.style.backgroundColor = getLighterColor(color, 120);
     attackBody.appendChild(attackAbilityRow);
   }
   
@@ -367,38 +354,16 @@ function addField() {
   }
   let percentageInt = parseInt(percentage);
 
-  // create new field div
-  const field = document.createElement("div");
-  field.className = "field";
-  
-  // create field content
-  createFieldContent(field, attackName, percentage, color, attackValue, attackAbility)
-
-  // create delete button
-  const deleteButton = document.createElement("button");
-  deleteButton.className = "delete-button";
-  deleteButton.innerText = "x";
-  deleteButton.addEventListener("click", () => {
-    field.parentNode.removeChild(field);
-    totalPercentage -= percentageInt;
-    // update pie chart
-    createPieChart();
-  });
-  field.appendChild(deleteButton);
-
-  // add new field to list
-  const fieldList = document.getElementById("field-list");
-  fieldList.appendChild(field);
-
   // update total percentage and clear input fields
   totalPercentage += percentageInt;
   clearFields();
 
+  // Add table
+  createTable(attackName, percentage, color, attackValue, attackAbility);
+
   // update pie chart
   createPieChart();
 
-  // Add table
-  createTable(attackName, percentage, color, attackValue, attackAbility);
 }
 
 function clearFields(){
