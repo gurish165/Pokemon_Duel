@@ -1,17 +1,22 @@
-h1 {
-    font-family: Segoe UI;
+body{
+    background-color: rgb(60,60,60);
 }
 
-.input-container {
-    font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif; 
+h1 {
+    font-family: Segoe UI;
+    color: white;
+}
+
+.all-content-container {
+    font-family: Segoe UI; 
     display: flex;
     flex-direction: row;
     align-items: flex-start;
+
 }
 
 .input-field {
     display: flex;
-    align-items: center;
     flex-direction: column;
     margin: 10px 0;
 }
@@ -19,23 +24,81 @@ h1 {
 .input-label {
     margin-right: 10px;
     font-weight: bold;
+    color: white;
+    font-size: 1.5em;
 }
 
 #pie-chart {
     width: 200px;
     height: 200px;
-    margin-left: 50px;
 }
 
-.field{
-    font-family: Segoe UI;
+.pokemon-header-info-column{
+    padding: 50px;
 }
 
-.pieColor{
-    height: 50px;
-    width: 50px;
+.attack-input-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 50px;
+}
+
+.attack-disk-column{
+    padding: 50px;
 }
 
 table, th, td {
     border:1px solid black;
+}
+
+.pokemon-info-input{
+    display: block;
+    margin: 0;
+    padding: 0 0 0.15em;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid rgba(0,0,0,0.2);
+    background-color: transparent;
+    color: #c4c4c3;
+    text-overflow: ellipsis;
+    font-weight: bold;
+    font-size: 1.5em;
+    border-radius: 0;
+}
+.pokemon-info-input:focus{
+    color: #fffed8;
+}
+
+.atack-input-field{
+    display: block;
+    margin: 0;
+    padding: 0 0 0.15em;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid rgba(0,0,0,0.2);
+    background-color: transparent;
+    color: #c4c4c3;
+    text-overflow: ellipsis;
+    font-weight: bold;
+    font-size: 1em;
+    border-radius: 0;
+}
+.atack-input-field:focus{
+    color: #fffed8;
+}
+
+select{
+    color: #fffed8;
+    background-color: black;
+}
+
+#pie-chart-container {
+    transition: transform 2s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#pie-chart-container:hover{
+    transform: rotate(720deg);
 }

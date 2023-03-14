@@ -8,33 +8,33 @@
     <script src="scripts/main.js"></script>
   </head>
   <body>
-    <h1>Pokemon Duel Disk Creator</h1>
-    <div class="input-container">
+    <!-- <h1>Pokemon Duel Disk Creator</h1> -->
+    <div class="all-content-container">
       <div class="pokemon-header-info-column">
         <div class="input-field">
-          <input type="text" id="pokemon-name-field" placeholder="Pokemon Name">
+          <input type="text" id="pokemon-name-field" placeholder="Pokemon Name" class="pokemon-info-input">
         </div>
         <div class="input-field">
-          <input type="text" id="movement-field" placeholder="Movement">
+          <input type="text" id="movement-field" placeholder="Movement" class="pokemon-info-input">
         </div>
         <div class="input-field">
-          <input type="text" id="rarity-field" placeholder="Rarity">
+          <input type="text" id="rarity-field" placeholder="Rarity" class="pokemon-info-input">
         </div>
         <div class="input-field">
-          <input type="text" id="type-field" placeholder="Type">
+          <input type="text" id="type-field" placeholder="Type" class="pokemon-info-input">
         </div>
         <div class="input-field">
-          <input type="text" id="special-ability-field" placeholder="Special Ability">
+          <input type="text" id="special-ability-field" placeholder="Special Ability" class="pokemon-info-input">
         </div>
       </div>
       <div class="attack-input-column">
         <div class="input-field">
           <label class="input-label">Percentage:</label>
-          <input type="number" id="percentage-field" min="0" max="100">
+          <input type="number" id="percentage-field" min="0" max="100" class="atack-input-field">
         </div>
         <div class="input-field">
           <label class="input-label">Attack Name:</label>
-          <input type="text" id="attack-name-field">
+          <input type="text" id="attack-name-field" class="atack-input-field">
         </div>
         <div class="input-field">
           <label class="input-label">Attack Type:</label>
@@ -46,13 +46,13 @@
             <option value="rgb(241, 77, 88)">Red</option>
           </select>
         </div>
-        <div class="input-field">
+        <div class="input-field" >
           <label class="input-label">Attack Value:</label>
-          <input type="text" id="attack-value-field">
+          <input type="text" id="attack-value-field" class="atack-input-field">
         </div>
         <div class="input-field">
           <label class="input-label">Attack Ability:</label>
-          <input type="text" id="attack-ability-field">
+          <input type="text" id="attack-ability-field" class="atack-input-field">
         </div>
         <button onclick="addField()">+</button>
       </div>
