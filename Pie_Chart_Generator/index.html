@@ -34,7 +34,7 @@
       <div class="attack-input-and-output">
         <div class="attack-input-column">
           <div class="input-field">
-            <label class="input-label">Percentage:</label>
+            <label class="input-label">Wheel Piece Size:</label>
             <input type="number" id="percentage-field" min="0" max="100" class="attack-input-field">
           </div>
           <div class="input-field">
@@ -52,21 +52,21 @@
             </select>
           </div>
           <div class="input-field" >
-            <label class="input-label">Attack Value:</label>
+            <label class="input-label">Damage:</label>
             <input type="text" id="attack-value-field" class="attack-input-field">
           </div>
           <div class="input-field">
             <label class="input-label">Attack Ability:</label>
             <input type="text" id="attack-ability-field" class="attack-input-field">
           </div>
-          <button onclick="addField()" class="add-field-button">+</button>
+          <button onclick="addField()" class="styled-button" id="add-field-button">+</button>
         </div>
         <div class="attack-disk-column">
           <div id="pie-chart-container">
             <canvas id="pie-chart" width=1000 height=1000></canvas>
           </div>
           <div class="download-button-container">
-            <button onclick="downloadDisk()" class="download-disk-button">Download Disk</button>
+            <button onclick="downloadDisk()" class="styled-button">Download Disk</button>
           </div>
         </div>
         <div class="attack-table-wrapper">

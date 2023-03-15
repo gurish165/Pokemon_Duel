@@ -16,7 +16,7 @@ function createPieChart() {
 
   for (let i = 0; i < fields.length; i++) {
     const tbody = fields[i];
-    const color = getComputedStyle(tbody.querySelector(".attack-row")).backgroundColor;
+    const color = getComputedStyle(tbody.querySelector(".attack-name-cell")).backgroundColor;
     let attackName = tbody.querySelector(".attack-name-cell").innerText;
     const percentage = tbody.querySelector(".attack-percentage-cell").innerText;
     let attackValue = tbody.querySelector(".attack-value-cell").innerText;
@@ -283,6 +283,7 @@ function createTable(attackName, percentage, color, attackValue, attackAbility){
   let percentageCell = document.createElement("td");
   percentageCell.className = "attack-percentage-cell";
   percentageCell.innerText = percentage;
+  percentageCell.style.backgroundColor = getDarkerColor(color, 40);
   attackRow.appendChild(percentageCell);
 
   let attackNameCell = document.createElement("td");
@@ -294,6 +295,7 @@ function createTable(attackName, percentage, color, attackValue, attackAbility){
   else{
     attackNameCell.innerText = attackName;
   }
+  attackNameCell.style.backgroundColor = color;
   attackRow.appendChild(attackNameCell);
 
   let attackValueCell = document.createElement("td");
@@ -302,6 +304,7 @@ function createTable(attackName, percentage, color, attackValue, attackAbility){
   if(color != "rgb(192, 113, 226)"){
     attackValueCell.innerText = attackValue;
   }
+  attackValueCell.style.backgroundColor = color;
   attackRow.appendChild(attackValueCell);
 
   // Configure and add delete button to first tr in tbody
@@ -321,7 +324,7 @@ function createTable(attackName, percentage, color, attackValue, attackAbility){
   attackRow.appendChild(deleteCell);
 
   // Add attack row to attack body with color
-  attackRow.style.backgroundColor = color;
+  // attackRow.style.backgroundColor = color;
   attackBody.appendChild(attackRow);
 
   // Create an attack ability row if there is an attack ability 
@@ -380,7 +383,9 @@ function downloadDisk(){
   // Convert the new canvas to an image and download it
   const dataUrl = canvas.toDataURL("image/jpeg");
   const link = document.createElement("a");
-  link.download = "pie-chart.jpg";
+  let pokemonName = document.getElementById("pokemon-name-field").value;
+  if(pokemonName == "") pokemonName = "default-pokemon";
+  link.download = pokemonName +"-wheel.jpg";
   link.href = dataUrl;
   link.click();
 }

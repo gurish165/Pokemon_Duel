@@ -76,10 +76,6 @@ h1 {
     padding-right: 50px;
 }
 
-table, th, td {
-    border:1px solid black;
-}
-
 .pokemon-info-input{
     display: block;
     margin: 0;
@@ -141,14 +137,13 @@ select{
     transform: rotate(720deg);
 }
 
-button{
+.styled-button{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 1em;
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 5px;
     padding-bottom: 5px;
-    margin-bottom: 25px;
     outline: none;
     border-radius: 5px;
     background: white ;
@@ -161,17 +156,42 @@ button{
     cursor: pointer;
     transition: all 0.25s ease;
 }
-button:hover{
+.styled-button:hover{
     color: white;
     background: rgba(0,0,0,0.2);
 }
-button:active{
+.styled-button:active{
     font-size: 1.1em;
     letter-spacing: 2px;
+}
+#add-field-button{
+    margin-bottom: 25px;
 }
 
 .attack-table-wrapper{
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+td{
+    display: inline-block;
+}
+
+.attack-name-cell{
+    width: 400px;
+}
+
+.attack-name-header{
+    width: 400px
+}
+
+.attack-value-cell{
+    text-align: center;
+}
+
+.attack-body{
+    /* display: flex; */
 }
