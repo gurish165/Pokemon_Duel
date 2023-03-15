@@ -24,6 +24,13 @@ h1 {
     flex-direction: row;
 }
 
+@media screen and (max-width: 600px){
+    .attack-input-and-output{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 
 .input-field {
     display: flex;
@@ -141,6 +148,7 @@ button{
     padding-right: 10px;
     padding-top: 5px;
     padding-bottom: 5px;
+    margin-bottom: 25px;
     outline: none;
     border-radius: 5px;
     background: white ;
@@ -160,4 +168,10 @@ button:hover{
 button:active{
     font-size: 1.1em;
     letter-spacing: 2px;
+}
+
+.attack-table-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
 }
