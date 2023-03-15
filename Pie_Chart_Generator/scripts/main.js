@@ -367,7 +367,7 @@ function addField() {
 }
 
 function clearFields(){
-  document.getElementById("color-dropdown").selectedIndex = -1;
+  document.getElementById("color-dropdown").selectedIndex = 0;
   document.getElementById("attack-name-field").value = "";
   document.getElementById("attack-value-field").value = "";
   document.getElementById("attack-ability-field").value = "";
