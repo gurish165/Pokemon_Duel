@@ -22,6 +22,7 @@ h1 {
 .attack-input-and-output{
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
 @media screen and (max-width: 600px){
