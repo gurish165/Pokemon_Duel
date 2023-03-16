@@ -181,6 +181,11 @@ select{
     font-weight: 500;
 }
 
+.table-header{
+    background-color: rgb(0, 50, 103);
+    color: rgb(93, 176, 215);
+}
+
 .attack-damage-header{
     padding-right: 3px;
     padding-left: 3px;
