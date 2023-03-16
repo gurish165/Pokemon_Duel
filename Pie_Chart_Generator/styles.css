@@ -176,22 +176,50 @@ select{
     padding-right: 25px;
 }
 
-td{
-    display: inline-block;
+#attack-table{
+    border-collapse: collapse;
+    font-weight: 500;
 }
 
-.attack-name-cell{
-    width: 400px;
+.attack-damage-header{
+    padding-right: 3px;
+    padding-left: 3px;
 }
 
 .attack-name-header{
-    width: 400px
+    width: 400px;
+    text-align: center;
 }
 
 .attack-value-cell{
     text-align: center;
 }
 
-.attack-body{
-    /* display: flex; */
+.attack-name-cell{
+    width: 400px;
+    padding-left: 5px;
 }
+
+.attack-percentage-cell{
+    text-align: center;
+}
+
+.attack-ability-cell{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.attack-body{
+}
+.attack-row{
+}
+
+.percentage-header{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+
