@@ -396,4 +396,9 @@ function downloadDisk(){
   link.click();
 }
 
+function downloadTable(){
+  // Get the canvas element
+  alert("Does not work yet");
+}
+
 sayHello();
