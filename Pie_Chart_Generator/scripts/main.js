@@ -271,6 +271,19 @@ function addTableHeader(table){
   }
 }
 
+function formatAttackAbility(attackAbilityRow, attackAbility, color){
+  attackAbilityRow.className = "attack-ability-row";
+  let attackAbilityCell = document.createElement("td");
+  attackAbilityCell.className = "attack-ability-cell";
+  attackAbilityCell.innerText = attackAbility;
+  attackAbilityCell.colSpan = 3;
+  attackAbilityCell.style.outline = "2px solid " + getDarkerColor(color, 30);
+  attackAbilityCell.style.outlineOffset = "-2px";
+  attackAbilityRow.appendChild(attackAbilityCell);
+  // Add attack ability row to attack body with color
+  attackAbilityRow.style.backgroundColor = getLighterColor(color, 120);
+}
+
 function createTable(attackName, percentage, color, attackValue, attackAbility){
   const table = document.getElementById("attack-table");
   addTableHeader(table);
@@ -283,7 +296,7 @@ function createTable(attackName, percentage, color, attackValue, attackAbility){
   let percentageCell = document.createElement("td");
   percentageCell.className = "attack-percentage-cell";
   percentageCell.innerText = percentage;
-  percentageCell.style.backgroundColor = getDarkerColor(color, 40);
+  percentageCell.style.backgroundColor = getDarkerColor(color, 30);
   attackRow.appendChild(percentageCell);
 
   let attackNameCell = document.createElement("td");
@@ -330,14 +343,7 @@ function createTable(attackName, percentage, color, attackValue, attackAbility){
   // Create an attack ability row if there is an attack ability 
   if(attackAbility != ""){
     let attackAbilityRow = document.createElement("tr");
-    attackAbilityRow.className = "attack-ability-row";
-    let attackAbilityCell = document.createElement("td");
-    attackAbilityCell.className = "attack-ability-cell";
-    attackAbilityCell.innerText = attackAbility;
-    attackAbilityCell.colSpan = 3;
-    attackAbilityRow.appendChild(attackAbilityCell);
-    // Add attack ability row to attack body with color
-    attackAbilityRow.style.backgroundColor = getLighterColor(color, 120);
+    formatAttackAbility(attackAbilityRow, attackAbility, color);
     attackBody.appendChild(attackAbilityRow);
   }
   

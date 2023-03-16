@@ -191,24 +191,25 @@ select{
     text-align: center;
 }
 
-.attack-value-cell{
+.attack-percentage-cell{
     text-align: center;
+    border-top: 2px transparent;
 }
-
 .attack-name-cell{
     width: 400px;
     padding-left: 5px;
+    border-top: 2px transparent;
 }
-
-.attack-percentage-cell{
+.attack-value-cell{
     text-align: center;
+    border-top: 2px transparent;
+    max-width: 100px;
 }
-
 .attack-ability-cell{
     padding-top: 5px;
     padding-bottom: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .attack-body{
