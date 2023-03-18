@@ -3,7 +3,7 @@ body{
 }
 
 h1 {
-    font-family: Segoe UI;
+    font-family: Segoe UI, 'Segoe UI', Tahoma, 'Tahoma', sans-serif;
     color: white;
 }
 
@@ -13,15 +13,33 @@ h1 {
 }
 
 .all-content-container {
-    font-family: Segoe UI; 
+    font-family: Segoe UI, 'Segoe UI', Tahoma, 'Tahoma', sans-serif;
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
     display: flex;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    box-orient: vertical;
     flex-direction: column;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    box-align: center;
     align-items: center;
 }
 
 .attack-input-and-output{
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -moz-box-orient: horizontal;
+    box-orient: horizontal;
     flex-direction: row;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    box-align: center;
     align-items: center;
 }
 
@@ -181,6 +199,7 @@ select{
 #attack-table{
     border-collapse: collapse;
     font-weight: 500;
+    font-family: Segoe UI, 'Segoe UI', Tahoma, 'Tahoma', sans-serif;
 }
 
 .table-header{
@@ -194,6 +213,7 @@ select{
     padding-right: 15px;
     padding-bottom: 2px;
     text-align: center;
+    vertical-align: middle;
 }
 
 .attack-name-header{
@@ -202,6 +222,7 @@ select{
     width: 400px;
     padding-bottom: 2px;
     text-align: center;
+    vertical-align: middle;
 }
 
 .attack-damage-header{
@@ -211,6 +232,7 @@ select{
     padding-left: 5px;
     padding-bottom: 2px;
     text-align: center;
+    vertical-align: middle;
 }
 
 .delete-header{
@@ -219,22 +241,26 @@ select{
 
 .attack-percentage-cell{
     text-align: center;
+    vertical-align: middle;
 }
 .attack-name-cell{
     width: 400px;
     padding-left: 5px;
     height: 25px;
+    vertical-align: middle;
 }
 .attack-value-cell{
     text-align: center;
     border-top: 2px transparent;
     max-width: 100px;
+    vertical-align: middle;
 }
 .attack-ability-cell{
     padding-top: 5px;
     padding-bottom: 5px;
     padding-left: 15px;
     padding-right: 15px;
+    vertical-align: middle;
 }
 
 .attack-body{
