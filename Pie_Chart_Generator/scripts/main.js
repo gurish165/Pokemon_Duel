@@ -278,6 +278,8 @@ function formatAttackAbility(attackAbilityRow, attackAbility, color){
   attackAbilityCell.innerText = attackAbility;
   attackAbilityCell.colSpan = 3;
   attackAbilityCell.style.outline = "2px solid " + getDarkerColor(color, 30);
+  attackAbilityCell.style.setProperty("-webkit-outline", "2px solid " + getDarkerColor(color, 30));
+  attackAbilityCell.style.setProperty("-moz-outline", "2px solid " + getDarkerColor(color, 30));
   attackAbilityCell.style.outlineOffset = "-2px";
   attackAbilityRow.appendChild(attackAbilityCell);
   // Add attack ability row to attack body with color
@@ -389,16 +391,54 @@ function downloadDisk(){
   // Convert the new canvas to an image and download it
   const dataUrl = canvas.toDataURL("image/jpeg");
   const link = document.createElement("a");
-  let pokemonName = document.getElementById("pokemon-name-field").value;
-  if(pokemonName == "") pokemonName = "default-pokemon";
-  link.download = pokemonName +"-wheel.jpg";
+  let pokemon_name = document.getElementById("pokemon-name-field").value;
+  if(pokemon_name == "") pokemon_name = "default-pokemon";
+  link.download = pokemon_name +"-wheel.jpg";
   link.href = dataUrl;
   link.click();
 }
 
 function downloadTable(){
+  let pokemon_name = document.getElementById("pokemon-name-field").value;
+  if(pokemon_name == "") pokemon_name = "default-pokemon";
   // Get the canvas element
-  alert("Does not work yet");
+  // Get the HTML table element
+  const table = document.querySelector('#attack-table');
+
+  // Clone the table and remove the delete header and cells
+  const tableClone = table.cloneNode(true);
+  const deleteHeader = tableClone.querySelector('.delete-header');
+  deleteHeader.parentNode.removeChild(deleteHeader);
+  const deleteCells = tableClone.querySelectorAll('.delete-cell');
+  deleteCells.forEach(function(cell) {
+    cell.parentNode.removeChild(cell);
+  });
+
+  // Create a new div for the cloned table
+  const tableContainer = document.createElement('div');
+  tableContainer.style.fontFamily = "Segoe UI";
+  tableContainer.style.display = "flex";
+  tableContainer.appendChild(tableClone);
+  document.body.appendChild(tableContainer);
+
+  // Use html2canvas to convert the table to an image
+  const table_name = pokemon_name + "-attack-table.png";
+  html2canvas(tableContainer, {
+    useCORS: true,
+    allowTaint: true,
+    scrollY: -window.scrollY,
+  }).then(function(canvas) {
+    // Create a link to download the image
+    const link = document.createElement('a');
+    link.download = table_name;
+    link.href = canvas.toDataURL('image/png');
+
+    // Click the link to download the image
+    link.click();
+
+    // Remove the wrapper element from the document body
+    document.body.removeChild(tableContainer);
+  });
 }
 
 sayHello();
