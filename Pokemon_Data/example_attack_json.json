@@ -1,0 +1,54 @@
+{
+    "pokemon_name" : "Bulbasaur",
+    "attacks_by_status" : {
+        "base_attack_data" : {
+            "attack_wheel_name" : "bulbasaur_base_attack_wheel.jpg",
+            "attack_table_name" : "bulbasaur_base_attack_table.jpg",
+            "base_attack_moves" : [
+                {
+                    "attack_type" : "purple",
+                    "attack_wheel_size" : 20,
+                    "attack_name" : "name1",
+                    "attack damage" : "**",
+                    "attack_description" : "Does something",
+                    "attack_start_angle_rad" : 0,
+                    "attack_end_angle_rad": 3.1415
+                },
+                {
+                    "attack_type" : "white",
+                    "attack_wheel_size" : 10,
+                    "attack_name" : "name2",
+                    "attack damage" : "50",
+                    "attack_description" : "",
+                    "attack_start_angle_rad" : 3.1416,
+                    "attack_end_angle_rad": 4.2561
+                }
+            ]
+        },
+        "burned_attack_data" : {
+            "attack_wheel_name" : "bulbasaur_burned_attack_wheel.jpg",
+            "attack_table_name" : "bulbasaur_burned_attack_table.jpg",
+            "burned_attack_moves" : [
+                {
+                    "attack_type" : "purple",
+                    "attack_wheel_size" : 20,
+                    "attack_name" : "name1",
+                    "attack damage" : "**",
+                    "attack_description" : "Does something",
+                    "attack_start_angle_rad" : 0,
+                    "attack_end_angle_rad": 3.1415
+                },
+                {
+                    "attack_type" : "red",
+                    "attack_wheel_size" : 10,
+                    "attack_name" : "name2",
+                    "attack damage" : "",
+                    "attack_description" : "",
+                    "attack_start_angle_rad" : 3.1416,
+                    "attack_end_angle_rad": 4.2561
+                }
+            ]
+        }
+    }
+
+}
