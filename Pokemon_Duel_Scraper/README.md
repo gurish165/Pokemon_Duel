@@ -1,5 +1,7 @@
 # Pokemon Duel Scraper
 
+This folder is to generate Pokemone names, attacks, and sprites.
+
 ## Install Python
 Install a recent version of Python.
 ### macOS
