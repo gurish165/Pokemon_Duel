@@ -1,12 +1,13 @@
 {
     "pokemon_name" : "Bulbasaur",
+    "pokemom_sprite_image" : "filename",
     "attacks_by_status" : {
         "base_attack_data" : {
             "attack_wheel_name" : "bulbasaur_base_attack_wheel.jpg",
             "attack_table_name" : "bulbasaur_base_attack_table.jpg",
             "base_attack_moves" : [
                 {
-                    "attack_type" : "purple",
+                    "attack_type" : "purple", 
                     "attack_wheel_size" : 20,
                     "attack_name" : "name1",
                     "attack damage" : "**",

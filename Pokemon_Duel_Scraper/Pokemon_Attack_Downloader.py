@@ -32,7 +32,10 @@ def getDfRowContents(df, row_idx):
 
     return pokemon_name, attack_wheel_size, attack_name, attack_type, attack_value, attack_ability
 
-def addAttackContent():
+def createWheelAndTable(wheel_type, attack_list):
+    pass
+
+def createJSON(wheel_type, attack_list):
     pass
 
 def scrapeWheelsAndTables(pokemon_attacks_df, url):
@@ -40,16 +43,45 @@ def scrapeWheelsAndTables(pokemon_attacks_df, url):
     driver.get(url)
     
     # Loop through DF and fill in content for the same Pokemon
-    # If the Pokemon name changes, refresh the page
     prev_pokemon_name = ""
-    for row_idx in pokemon_attacks_df:
-        pokemon_name, attack_wheel_size, attack_name, attack_type, attack_value, attack_ability = getDfRowContents(pokemon_attacks_df, row_idx)
-        if(pokemon_name != prev_pokemon_name):
-            # refresh page and set Pokemon Name
-            pass
-        # TODO: Create wheels for pokemon that have effect (burned, frozen, etc)
-        pass
+    wheel_types = ['basic', 'poisoned', 'confused', 'paralyzed', 'asleep', 'frozen', 'burned']
+    # Loop through DF and fill in content for the same Pokemon
+    attack_list = []  # initialize an empty list to store attack information for each pokemon
+    for index, row in pokemon_attacks_df.iterrows():
+        pokemon_name = row['Name']
+        attack_name = row['Attack']
+        attack_type = row['Type']
+        attack_value = row['Value']
+        attack_ability = row['Ability']
+        attack_wheel_size = row['Attack Wheel Size']
+        
+        # check if this is a new pokemon and update prev_pokemon_name
+        if prev_pokemon_name != pokemon_name:
+            prev_pokemon_name = pokemon_name
+            # if this is not the first pokemon, create a wheel and table for the previous pokemon
+            if attack_list:
+                for wheel_type in wheel_types:
+                    createWheelAndTable(wheel_type, attack_list)
+                    createJSON(wheel_type, attack_list)
 
+            # clear the attack_list and start a new one for the current pokemon
+            attack_list = []
+
+        # append this attack to the current pokemon's attack_list
+        attack_list.append({
+            'pokemon_name': pokemon_name,
+            'attack_wheel_size': attack_wheel_size,
+            'attack_name': attack_name,
+            'attack_type': attack_type,
+            'attack_value': attack_value,
+            'attack_ability': attack_ability
+        })
+
+    # after the loop, create a wheel and table for the last pokemon
+    if attack_list:
+        for wheel_type in wheel_types:
+            createWheelAndTable(wheel_type, attack_list)
+            createJSON(wheel_type, attack_list)
     driver.quit()
 
 def getPokemon(file_path):

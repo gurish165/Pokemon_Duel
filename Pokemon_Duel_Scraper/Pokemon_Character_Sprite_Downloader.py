@@ -1,56 +1,7 @@
 import os
 import pandas as pd
-from selenium import webdriver
-from selenium.webdriver.chrome.service import Service
-from selenium.webdriver.common.by import By
-from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from bs4 import BeautifulSoup
-
-def setupChromedriver():
-    chrome_options = Options()
-    chrome_options.add_argument("--headless") # Ensure GUI is off
-    chrome_options.add_argument("--no-sandbox")
-
-    # Set path to chromedriver as per your configuration
-    homedir = os.path.expanduser("~")
-    webdriver_service = Service(f"{homedir}/chromedriver/stable/chromedriver")
-
-    # Choose Chrome Browser
-    driver = webdriver.Chrome(service=webdriver_service, options=chrome_options)
-
-    return driver
-
-def getDfRowContents(df, row_idx):
-    pokemon_name = ""
-    attack_wheel_size = ""
-    attack_name = ""
-    attack_type = ""
-    attack_value = ""
-    attack_ability = ""
-
-    return pokemon_name, attack_wheel_size, attack_name, attack_type, attack_value, attack_ability
-
-def addAttackContent():
-    pass
-
-def scrapeWheelsAndTables(pokemon_attacks_df, url):
-    driver = setupChromedriver()
-    driver.get(url)
-    
-    # Loop through DF and fill in content for the same Pokemon
-    # If the Pokemon name changes, refresh the page
-    prev_pokemon_name = ""
-    for row_idx in pokemon_attacks_df:
-        pokemon_name, attack_wheel_size, attack_name, attack_type, attack_value, attack_ability = getDfRowContents(pokemon_attacks_df, row_idx)
-        if(pokemon_name != prev_pokemon_name):
-            # refresh page and set Pokemon Name
-            pass
-        # TODO: Create wheels for pokemon that have effect (burned, frozen, etc)
-        pass
-
-    driver.quit()
+from PIL import Image
+import requests
 
 def getPokemon(file_path):
     # Check if the file exists
@@ -60,14 +11,77 @@ def getPokemon(file_path):
     df = pd.read_csv(file_path)
     return df
 
+def createSpriteFolders(pokemon_attacks_df, filepath):
+    # Check if the filepath exists
+    if not os.path.exists(filepath):
+        raise FileNotFoundError(f"The specified filepath '{filepath}' does not exist.")
+
+    # Get the list of unique names from the 'Name' column
+    unique_names = pokemon_attacks_df['Name'].unique().tolist()
+
+    # Create a folder for each unique name
+    for name in unique_names:
+        folder_path = os.path.join(filepath, name)
+        if not os.path.exists(folder_path):
+            os.makedirs(folder_path)
+            print(f"Folder '{name}' created successfully.")
+        else:
+            print(f"Folder '{name}' already exists, skipping.")
+
+def downloadImages(pokemon_attacks_df, file_path):
+    # Check if the specified file_path exists
+    if not os.path.exists(file_path):
+        raise FileNotFoundError(f"The specified filepath '{file_path}' does not exist.")
+
+    # Iterate over the rows in the dataframe
+    for _, row in pokemon_attacks_df.iterrows():
+        name = row['Name']
+        # Special case for nidoran
+        if name == 'nidoran♂' or name == 'Nidoran♂':
+            name = 'Nidoran-m'
+        if name == 'mr. mime' or name == "Mr. Mime":
+            name = 'Mr-Mime'
+        image_url = f"https://img.pokemondb.net/sprites/x-y/normal/{name.lower()}.png"
+
+        # Check if the folder exists, and create it if it doesn't
+        folder_path = os.path.join(file_path, name)
+        if not os.path.exists(folder_path):
+            os.makedirs(folder_path)
+            print(f"Folder '{name}' created successfully.")
+
+        # Download the image and save it to the folder
+        image_path = os.path.join(folder_path, f"{name.lower()}_sprite.png")
+        if not os.path.exists(image_path):
+            response = requests.get(image_url)
+            try:
+                response.raise_for_status()
+            except requests.exceptions.HTTPError as e:
+                print(f"Error downloading image '{name.lower()}_sprite.png': {e}")
+                continue
+            else:
+                with open(image_path, "wb") as f:
+                    f.write(response.content)
+                    print(f"Image '{name.lower()}_sprite.png' downloaded successfully.")
+        # Resize the image proportional bly to a width of 500 pixels
+        image = Image.open(image_path)
+        width, height = image.size
+        if(width != 500):
+            new_width = 500
+            new_height = int(height * new_width / width)
+            image = image.resize((new_width, new_height))
+            # Save the resized image to the same file
+            image.save(image_path)
+            print(f"Image '{name.lower()}_sprite.png' resized and saved successfully.")
+
 def main():
     print("Beginning main...")
     # Get the Pokemon and attacks from csv
-    file_path = "Pokemon_Duel_Characters/pokemon_duel_characters_v1_gen1.csv"
-    pokemon_attacks_df = getPokemon(file_path)
-    # Use df to scrape content from localhost
-    createSpriteFolders(pokemon_attacks_df)
-
+    csv_file_path = "Pokemon_Duel_Characters/pokemon_duel_characters_v1_gen1.csv"
+    pokemon_attacks_df = getPokemon(csv_file_path)
+    # Check the creation of pokemon folders
+    sprite_folder_filepath = "../Pokemon_Data"
+    createSpriteFolders(pokemon_attacks_df, sprite_folder_filepath)
+    downloadImages(pokemon_attacks_df, sprite_folder_filepath)
 
 if __name__ == "__main__":
     main()
