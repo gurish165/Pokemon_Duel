@@ -11,6 +11,14 @@ def getPokemon(file_path):
     df = pd.read_csv(file_path)
     return df
 
+def handleSpecialPokemonNames(pokemon_name):
+    # Special case for nidoran
+    if pokemon_name == 'nidoran♂' or pokemon_name == 'Nidoran♂':
+        pokemon_name = 'Nidoran-m'
+    if pokemon_name == 'mr. mime' or pokemon_name == "Mr. Mime":
+        pokemon_name = 'Mr-Mime'
+    return pokemon_name
+
 def createSpriteFolders(pokemon_attacks_df, filepath):
     # Check if the filepath exists
     if not os.path.exists(filepath):
@@ -18,7 +26,8 @@ def createSpriteFolders(pokemon_attacks_df, filepath):
 
     # Get the list of unique names from the 'Name' column
     for _, row in pokemon_attacks_df.iterrows():
-        pokemon_name = row['Name']
+        pokemon_name = handleSpecialPokemonNames(row['Name'])
+        
         rarity = row['Rarity']
         num_evolutions = int(row['Num Evolutions'])
         base_folder_name = pokemon_name + "_" + rarity + "_"
@@ -41,15 +50,11 @@ def downloadImages(pokemon_attacks_df, file_path):
     # Iterate over the rows in the dataframe
     for _, row in pokemon_attacks_df.iterrows():
         
-        name = row['Name']
-        # Special case for nidoran
-        if name == 'nidoran♂' or name == 'Nidoran♂':
-            name = 'Nidoran-m'
-        if name == 'mr. mime' or name == "Mr. Mime":
-            name = 'Mr-Mime'
+        name = handleSpecialPokemonNames(row['Name'])
+
         image_url = f"https://img.pokemondb.net/sprites/x-y/normal/{name.lower()}.png"
 
-        pokemon_name = row['Name']
+        pokemon_name = name
         rarity = row['Rarity']
         num_evolutions = int(row['Num Evolutions'])
         base_folder_name = pokemon_name + "_" + rarity + "_"
@@ -94,7 +99,7 @@ def main():
     csv_file_path = "Pokemon_Duel_Characters/pokemon_duel_characters_v1_gen1.csv"
     pokemon_attacks_df = getPokemon(csv_file_path)
     # Check the creation of pokemon folders
-    sprite_folder_filepath = "../Pokemon_Data"
+    sprite_folder_filepath = "../Assets/Pokemon_Data"
     createSpriteFolders(pokemon_attacks_df, sprite_folder_filepath)
     downloadImages(pokemon_attacks_df, sprite_folder_filepath)
 
