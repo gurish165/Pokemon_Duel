@@ -17,16 +17,21 @@ def createSpriteFolders(pokemon_attacks_df, filepath):
         raise FileNotFoundError(f"The specified filepath '{filepath}' does not exist.")
 
     # Get the list of unique names from the 'Name' column
-    unique_names = pokemon_attacks_df['Name'].unique().tolist()
+    for _, row in pokemon_attacks_df.iterrows():
+        pokemon_name = row['Name']
+        rarity = row['Rarity']
+        num_evolutions = int(row['Num Evolutions'])
+        base_folder_name = pokemon_name + "_" + rarity + "_"
+        # Create a folder for each unique name
+        for num in range(num_evolutions + 1):
+            folder_name = base_folder_name + str(num)
+            folder_path = os.path.join(filepath, folder_name)
+            if not os.path.exists(folder_path):
+                os.makedirs(folder_path)
+                print(f"Folder '{folder_name}' created successfully.")
+            else:
+                print(f"Folder '{folder_name}' already exists, skipping.")
 
-    # Create a folder for each unique name
-    for name in unique_names:
-        folder_path = os.path.join(filepath, name)
-        if not os.path.exists(folder_path):
-            os.makedirs(folder_path)
-            print(f"Folder '{name}' created successfully.")
-        else:
-            print(f"Folder '{name}' already exists, skipping.")
 
 def downloadImages(pokemon_attacks_df, file_path):
     # Check if the specified file_path exists
@@ -35,6 +40,7 @@ def downloadImages(pokemon_attacks_df, file_path):
 
     # Iterate over the rows in the dataframe
     for _, row in pokemon_attacks_df.iterrows():
+        
         name = row['Name']
         # Special case for nidoran
         if name == 'nidoran♂' or name == 'Nidoran♂':
@@ -43,35 +49,44 @@ def downloadImages(pokemon_attacks_df, file_path):
             name = 'Mr-Mime'
         image_url = f"https://img.pokemondb.net/sprites/x-y/normal/{name.lower()}.png"
 
-        # Check if the folder exists, and create it if it doesn't
-        folder_path = os.path.join(file_path, name)
-        if not os.path.exists(folder_path):
-            os.makedirs(folder_path)
-            print(f"Folder '{name}' created successfully.")
+        pokemon_name = row['Name']
+        rarity = row['Rarity']
+        num_evolutions = int(row['Num Evolutions'])
+        base_folder_name = pokemon_name + "_" + rarity + "_"
+        # Create a folder for each unique name
+        for num in range(num_evolutions + 1):
+            folder_name = base_folder_name + str(num)
+            folder_path = os.path.join(file_path, folder_name)
 
-        # Download the image and save it to the folder
-        image_path = os.path.join(folder_path, f"{name.lower()}_sprite.png")
-        if not os.path.exists(image_path):
-            response = requests.get(image_url)
-            try:
-                response.raise_for_status()
-            except requests.exceptions.HTTPError as e:
-                print(f"Error downloading image '{name.lower()}_sprite.png': {e}")
-                continue
-            else:
-                with open(image_path, "wb") as f:
-                    f.write(response.content)
-                    print(f"Image '{name.lower()}_sprite.png' downloaded successfully.")
-        # Resize the image proportional bly to a width of 500 pixels
-        image = Image.open(image_path)
-        width, height = image.size
-        if(width != 500):
-            new_width = 500
-            new_height = int(height * new_width / width)
-            image = image.resize((new_width, new_height))
-            # Save the resized image to the same file
-            image.save(image_path)
-            print(f"Image '{name.lower()}_sprite.png' resized and saved successfully.")
+            # Check if the folder exists, and create it if it doesn't
+            folder_path = os.path.join(file_path, folder_name)
+            if not os.path.exists(folder_path):
+                os.makedirs(folder_path)
+                print(f"Folder '{folder_name}' created successfully.")
+
+            # Download the image and save it to the folder
+            image_path = os.path.join(folder_path, f"{name.lower()}_sprite.png")
+            if not os.path.exists(image_path):
+                response = requests.get(image_url)
+                try:
+                    response.raise_for_status()
+                except requests.exceptions.HTTPError as e:
+                    print(f"Error downloading image '{name.lower()}_sprite.png': {e}")
+                    continue
+                else:
+                    with open(image_path, "wb") as f:
+                        f.write(response.content)
+                        print(f"Image '{name.lower()}_sprite.png' downloaded successfully.")
+            # Resize the image proportional bly to a width of 500 pixels
+            image = Image.open(image_path)
+            width, height = image.size
+            if(width != 500):
+                new_width = 500
+                new_height = int(height * new_width / width)
+                image = image.resize((new_width, new_height))
+                # Save the resized image to the same file
+                image.save(image_path)
+                print(f"Image '{name.lower()}_sprite.png' resized and saved successfully.")
 
 def main():
     print("Beginning main...")

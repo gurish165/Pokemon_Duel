@@ -116,7 +116,7 @@ def process_pokemon_urls(url_list):
     # Set up the pandas DataFrame with the specified columns
     columns = ['Name', 'Movement', 'Rarity', 'Type', 'Special Ability', 
                'Attack Wheel Size', 'Attack Name', 'Attack Type', 'Attack Value', 
-               'Attack Ability', 'is Gen 1', 'Evolution', 'Evolves From']
+               'Attack Ability', 'is Gen 1', 'Evolution', 'Evolves From','Num Evolutions']
     result_df = pd.DataFrame(columns=columns)
 
     # Set up the web driver
@@ -145,7 +145,8 @@ def process_pokemon_urls(url_list):
             attack_damage = attack['Damage']
             evolution = ""
             evolves_from = ""
-            row = [name, movement, rarity, type, special_ability, attack_wheel_size, attack_name, attack_move_type, attack_add_notes, attack_damage, is_gen_1, evolution, evolves_from]
+            num_evolutions = ""
+            row = [name, movement, rarity, type, special_ability, attack_wheel_size, attack_name, attack_move_type, attack_add_notes, attack_damage, is_gen_1, evolution, evolves_from, num_evolutions]
             # Add if rarity is not UX
             if rarity != 'UX':
                 result_df.loc[len(result_df)] = row
