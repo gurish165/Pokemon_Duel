@@ -200,6 +200,7 @@ select{
     border-collapse: collapse;
     font-weight: 500;
     font-family: Segoe UI, 'Segoe UI', Tahoma, 'Tahoma', sans-serif;
+    /* outline: 2px solid rgb(40, 250, 0) */
 }
 
 .table-header{
@@ -211,7 +212,8 @@ select{
     color: rgb(93, 176, 215);
     padding-left: 15px;
     padding-right: 15px;
-    padding-bottom: 2px;
+    padding-top: 3px;
+    padding-bottom: 3px;
     text-align: center;
     vertical-align: middle;
 }
@@ -220,7 +222,8 @@ select{
     background-color: rgb(0, 50, 103);
     color: rgb(93, 176, 215);
     width: 400px;
-    padding-bottom: 2px;
+    padding-top: 3px;
+    padding-bottom: 3px;
     text-align: center;
     vertical-align: middle;
 }
@@ -230,7 +233,8 @@ select{
     color: rgb(93, 176, 215);
     padding-right: 5px;
     padding-left: 5px;
-    padding-bottom: 2px;
+    padding-top: 3px;
+    padding-bottom: 3px;
     text-align: center;
     vertical-align: middle;
 }
@@ -242,6 +246,7 @@ select{
 .attack-percentage-cell{
     text-align: center;
     vertical-align: middle;
+    width: 20px;
 }
 .attack-name-cell{
     width: 400px;
@@ -252,7 +257,7 @@ select{
 .attack-value-cell{
     text-align: center;
     border-top: 2px transparent;
-    max-width: 100px;
+    width: 100px;
     vertical-align: middle;
 }
 .attack-ability-cell{

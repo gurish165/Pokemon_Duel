@@ -266,7 +266,7 @@ function addTableHeader(table){
     tableHeader.appendChild(percentageHeader);
     tableHeader.appendChild(attackNameHeader);
     tableHeader.appendChild(attackDamageHeader);
-    tableHeader.appendChild(deleteHeader);
+    // tableHeader.appendChild(deleteHeader);
     table.appendChild(tableHeader);
   }
 }
@@ -336,7 +336,7 @@ function createTable(attackName, percentage, color, attackValue, attackAbility){
   deleteCell.className = "delete-cell";
   deleteCell.appendChild(deleteButton);
   deleteCell.rowSpan = 2;
-  attackRow.appendChild(deleteCell);
+  // attackRow.appendChild(deleteCell);
 
   // Add attack row to attack body with color
   // attackRow.style.backgroundColor = color;

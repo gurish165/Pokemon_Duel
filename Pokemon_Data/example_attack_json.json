@@ -1,6 +1,8 @@
 {
     "pokemon_name" : "Bulbasaur",
     "pokemom_sprite_image" : "filename",
+    "evolution" : "Ivysaur",
+    "evolved_from" : "",
     "attacks_by_status" : {
         "base_attack_data" : {
             "attack_wheel_name" : "bulbasaur_base_attack_wheel.jpg",
