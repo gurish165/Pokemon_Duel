@@ -33,18 +33,18 @@ def getDfRowContents(df, row_idx):
     return pokemon_name, attack_wheel_size, attack_name, attack_type, attack_value, attack_ability
 
 def createWheelAndTable(wheel_type, attack_list):
-    pass
+    driver = setupChromedriver()
+    driver.get("http://127.0.0.1:8080")
+
 
 def createJSON(wheel_type, attack_list):
     pass
 
 def scrapeWheelsAndTables(pokemon_attacks_df, url):
-    driver = setupChromedriver()
-    driver.get(url)
     
     # Loop through DF and fill in content for the same Pokemon
     prev_pokemon_name = ""
-    wheel_types = ['basic', 'poisoned', 'confused', 'paralyzed', 'asleep', 'frozen', 'burned']
+    wheel_types = ['basic', 'poisoned', 'confused', 'paralyzed', 'asleep', 'frozen', 'burned', 'evolved','evolved_twice']
     # Loop through DF and fill in content for the same Pokemon
     attack_list = []  # initialize an empty list to store attack information for each pokemon
     for index, row in pokemon_attacks_df.iterrows():
@@ -54,6 +54,8 @@ def scrapeWheelsAndTables(pokemon_attacks_df, url):
         attack_value = row['Value']
         attack_ability = row['Ability']
         attack_wheel_size = row['Attack Wheel Size']
+        evolution = row['Evolution']
+        evolved_from = row['evolved_from']
         
         # check if this is a new pokemon and update prev_pokemon_name
         if prev_pokemon_name != pokemon_name:
@@ -74,7 +76,9 @@ def scrapeWheelsAndTables(pokemon_attacks_df, url):
             'attack_name': attack_name,
             'attack_type': attack_type,
             'attack_value': attack_value,
-            'attack_ability': attack_ability
+            'attack_ability': attack_ability,
+            'evolution': evolution,
+            'evolved_from': evolved_from
         })
 
     # after the loop, create a wheel and table for the last pokemon
@@ -82,7 +86,6 @@ def scrapeWheelsAndTables(pokemon_attacks_df, url):
         for wheel_type in wheel_types:
             createWheelAndTable(wheel_type, attack_list)
             createJSON(wheel_type, attack_list)
-    driver.quit()
 
 def getPokemon(file_path):
     # Check if the file exists
