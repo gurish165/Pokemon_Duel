@@ -144,7 +144,9 @@ def process_pokemon_urls(url_list):
             attack_add_notes = attack['Additional Notes']
             attack_damage = attack['Damage']
             row = [name, movement, rarity, type, special_ability, attack_wheel_size, attack_name, attack_move_type, attack_add_notes, attack_damage, is_gen_1]
-            result_df.loc[len(result_df)] = row
+            # Add if rarity is not UX
+            if rarity != 'UX':
+                result_df.loc[len(result_df)] = row
 
     # Clean up
     driver.quit()
