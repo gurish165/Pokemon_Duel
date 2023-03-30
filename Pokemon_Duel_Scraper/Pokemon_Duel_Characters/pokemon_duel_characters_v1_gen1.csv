@@ -174,7 +174,6 @@ Mew,3,EX,Psychic,None,4.0,Miss,Red,,,True,,,0
 Mew,3,EX,Psychic,None,24.0,Psychic,White,,100,True,,,0
 Mew,3,EX,Psychic,None,48.0,Hyper Sonic,Gold,"If the battle opponent's Attack is 100 damage or more, this Pokémon cannot be knocked out.",30,True,,,0
 Mew,3,EX,Psychic,None,20.0,Shuttle Flip,Blue,This Pokémon can take 1-2 steps back,,True,,,0
-Mew,3,EX,Psychic,None,96.0,Genesis Supernova,White,All opposing Pokémon on the field spin. Those that spin a Purple Attack are knocked out. This Pokémon is excluded from the duel,200,True,,,0
 Rattata,2,C,Normal,"(Pre 1.1)Run Away - When this Pokémon is attacked, you may return it to the Bench. This Pokémon waits 1 turn",24.0,Quick Attack,Gold,,40,True,Raticate,,0
 Rattata,2,C,Normal,"(Pre 1.1)Run Away - When this Pokémon is attacked, you may return it to the Bench. This Pokémon waits 1 turn",68.0,Tackle,White,,10,True,Raticate,,0
 Rattata,2,C,Normal,"(Pre 1.1)Run Away - When this Pokémon is attacked, you may return it to the Bench. This Pokémon waits 1 turn",4.0,Miss,Red,,,True,Raticate,,0
@@ -189,7 +188,6 @@ Snorlax,1,EX,Normal,Still - This Pokémon cannot be moved by other Pokémon's At
 Snorlax,1,EX,Normal,Still - This Pokémon cannot be moved by other Pokémon's Attacks (except Sweet Scent). This Pokémon can't be affected by any conditions other than Sleep,36.0,Big Yawn,Purple,This Pokémon and the battle opponent fall asleep.,☆,True,,,0
 Snorlax,1,EX,Normal,Still - This Pokémon cannot be moved by other Pokémon's Attacks (except Sweet Scent). This Pokémon can't be affected by any conditions other than Sleep,32.0,Body Slam,White,The battle opponent becomes paralyzed.,150,True,,,0
 Snorlax,1,EX,Normal,Still - This Pokémon cannot be moved by other Pokémon's Attacks (except Sweet Scent). This Pokémon can't be affected by any conditions other than Sleep,24.0,Giga Impact,White,,180,True,,,0
-Snorlax,1,EX,Normal,Still - This Pokémon cannot be moved by other Pokémon's Attacks (except Sweet Scent). This Pokémon can't be affected by any conditions other than Sleep,96.0,Pulverizing Pancake,Z-Move,Knocks the battle opponent and all Pokémon in a straight line directly behind it as far back as possible (the battle opponent is not knocked out). Those Pokémon gain Wait,360,True,,,0
 Bellsprout,2,UC,Grass / Poison,None,32.0,Sweet Scent,Purple,One Pokémon within 3 steps' range is drawn 1-2 steps closer to this Pokémon and gains Wait.,☆,True,Weepingbell,,0
 Bellsprout,2,UC,Grass / Poison,None,8.0,Miss,Red,,,True,Weepingbell,,0
 Bellsprout,2,UC,Grass / Poison,None,20.0,Sleep Powder,Purple,The battle opponent falls asleep.,☆,True,Weepingbell,,0
