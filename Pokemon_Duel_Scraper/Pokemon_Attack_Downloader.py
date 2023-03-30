@@ -49,7 +49,7 @@ def fillInAllAttacks(attack_list, driver):
         # Fill Attack Values
         attack_value_field = driver.find_element(By.ID, "attack-value-field")
         attack_value_field.click()
-        attack_value_field.send_keys(attack['attack_value'].replace('☆','★'))
+        attack_value_field.send_keys(str(attack['attack_value']).replace('☆','★'))
         attack_ability_field = driver.find_element(By.ID, "attack-ability-field")
         attack_ability_field.click()
         attack_ability_field.send_keys(attack['attack_ability'])
@@ -123,26 +123,27 @@ def modifyAttackswithEvolution(attack_list, evolution_num):
     if evolution_num != 0:
         for attack in attack_list_copy:
             # Increase white price
-            if(attack['attack_type'].lower() == 'white' or attack['attack_type'].lower() == 'gold'):
-                new_value = ""
-                if(str(attack['attack_value'])[-1] == 'x'):
-                    base_value = int(attack['attack_value'][:-1])
-                    new_value = base_value + 10*int(evolution_num)
-                    new_value = str(new_value) + 'x' 
-                elif(str(attack['attack_value'])[-1] == '+'):
-                    base_value = int(attack['attack_value'][:-1])
-                    new_value = base_value + 10*int(evolution_num)
-                    new_value = str(new_value) + '+' 
-                else:
-                    base_value = int(attack['attack_value'])
-                    new_value = base_value + 10*int(evolution_num)
-                attack['attack_value'] = new_value
-            # Add stars to pruple attack
-            elif(attack['attack_type'].lower() == 'purple'):
-                new_value = attack['attack_value'].replace('☆','★')
-                for _ in range(evolution_num):
-                    new_value += '★'
+            if(len(str(attack['attack_value'])) > 0):
+                if(attack['attack_type'].lower() == 'white' or attack['attack_type'].lower() == 'gold'):
+                    new_value = ""
+                    if(str(attack['attack_value'])[-1] == 'x'):
+                        base_value = int(attack['attack_value'][:-1])
+                        new_value = base_value + 10*int(evolution_num)
+                        new_value = str(new_value) + 'x' 
+                    elif(str(attack['attack_value'])[-1] == '+'):
+                        base_value = int(attack['attack_value'][:-1])
+                        new_value = base_value + 10*int(evolution_num)
+                        new_value = str(new_value) + '+' 
+                    else:
+                        base_value = int(attack['attack_value'])
+                        new_value = base_value + 10*int(evolution_num)
                     attack['attack_value'] = new_value
+                # Add stars to pruple attack
+                elif(attack['attack_type'].lower() == 'purple'):
+                    new_value = attack['attack_value'].replace('☆','★')
+                    for _ in range(evolution_num):
+                        new_value += '★'
+                        attack['attack_value'] = new_value
     return attack_list_copy
 
 

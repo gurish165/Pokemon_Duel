@@ -103,7 +103,7 @@ def extract_attack_info(driver):
             info['Attack Type'] = tds[2].text.strip()
             info['Additional Notes'] = tds[3].text.strip()
             info['Damage'] = tds[4].text.strip()
-            if info['Attack Type'].lower() == "white" or info['Attack Type'].lower() == "purple" or ['Attack Type'].lower() == "gold" or info['Attack Type'].lower() == "blue" or ['Attack Type'].lower() == "red":
+            if info['Attack Type'].lower() == "white" or info['Attack Type'].lower() == "purple" or ['Attack Type'].lower() == "gold" or info['Attack Type'].lower() == "blue" or info['Attack Type'].lower() == "red" and int(info['Wheel Size']) <= 96:
                 info_list.append(info)
 
         # Return the list of dictionaries

@@ -291,6 +291,8 @@ function createTable(attackName, percentage, color, attackValue, attackAbility){
   addTableHeader(table);
   let attackBody = document.createElement("tbody");
   attackBody.className = "attack-body";
+  let top_border_color = "1px solid " + getDarkerColor(color, 60);
+  attackBody.style.borderTop = top_border_color;
 
   let attackRow = document.createElement("tr");
   attackRow.className = "attack-row";

@@ -5,10 +5,10 @@
     "evolved_from" : "",
     "base_movement_points" : 0,
     "rarity" : "R",
+    "attack_table_name" : "bulbasaur_base_attack_table.jpg",
     "attacks_by_status" : {
         "base_attack_data" : {
             "attack_wheel_name" : "bulbasaur_base_attack_wheel.jpg",
-            "attack_table_name" : "bulbasaur_base_attack_table.jpg",
             "base_attack_moves" : [
                 {
                     "attack_type" : "purple", 
@@ -34,7 +34,6 @@
         },
         "burned_attack_data" : {
             "attack_wheel_name" : "bulbasaur_burned_attack_wheel.jpg",
-            "attack_table_name" : "bulbasaur_burned_attack_table.jpg",
             "burned_attack_moves" : [
                 {
                     "attack_type" : "purple",
