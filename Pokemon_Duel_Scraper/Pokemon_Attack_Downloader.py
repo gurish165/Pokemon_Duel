@@ -119,7 +119,7 @@ def saveTable(attack_list, folder_path, file_name):
 #         })
 def modifyAttackswithEvolution(attack_list, evolution_num):
     # print(f"Before evolving: {attack_list[0]}")
-    attack_list_copy = attack_list
+    attack_list_copy = copy.deepcopy(attack_list)
     if evolution_num != 0:
         for attack in attack_list_copy:
             # Increase white price
@@ -237,13 +237,14 @@ def scrapeWheelsAndTables(pokemon_attacks_df):
             prev_pokemon_name = pokemon_name
             # if this is not the first pokemon, create a wheel and table for the previous pokemon
             if attack_list:
-                # !! Use for testing if prev_pokemon_name == 'Charizard':
+                # !! Use for testing 
+                # if prev_pokemon_name == 'Psyduck':
                 curr_num_evolutions = int(attack_list[0]['num_evolutions'])
                 for evolution_num in range(curr_num_evolutions + 1):
                     # print(f"Before createWheelsAndTable: {attack_list[0]}")
                     print(f"Creating Wheels and Table for: {attack_list[0]['pokemon_name']}")
                     # Last term indicates if we want to overwrite existing files
-                    createWheelsAndTable(attack_list, evolution_num, False)
+                    createWheelsAndTable(attack_list, evolution_num, True)
                     createJSON(attack_list, evolution_num)
 
             # clear the attack_list and start a new one for the current pokemon
@@ -270,7 +271,7 @@ def scrapeWheelsAndTables(pokemon_attacks_df):
     if attack_list:
         curr_num_evolutions = int(attack_list[0]['num_evolutions'])
         for evolution_num in range(curr_num_evolutions + 1):
-            createWheelsAndTable(attack_list, evolution_num, False)
+            createWheelsAndTable(attack_list, evolution_num, True)
             createJSON(attack_list, evolution_num)
 
 def getPokemon(file_path):
