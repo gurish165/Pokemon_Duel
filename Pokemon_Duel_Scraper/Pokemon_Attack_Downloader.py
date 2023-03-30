@@ -1,12 +1,16 @@
 import os
 import pandas as pd
+import math
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.support.ui import Select
 from bs4 import BeautifulSoup
+from PIL import Image
+import io
 
 def setupChromedriver():
     chrome_options = Options()
@@ -22,15 +26,75 @@ def setupChromedriver():
 
     return driver
 
-def getDfRowContents(df, row_idx):
-    pokemon_name = ""
-    attack_wheel_size = ""
-    attack_name = ""
-    attack_type = ""
-    attack_value = ""
-    attack_ability = ""
 
-    return pokemon_name, attack_wheel_size, attack_name, attack_type, attack_value, attack_ability
+def fillInAllAttacks(attack_list, driver):
+    # print(f"Atack list: {attack_list}")
+    for attack in attack_list:
+        # Fill in elements
+        wheel_size_field = driver.find_element(By.ID, "percentage-field")
+        wheel_size_field.click()
+        wheel_size_field.clear()
+        wheel_size_field.send_keys(str(int(attack['attack_wheel_size'])))
+        attack_name_field = driver.find_element(By.ID, "attack-name-field")
+        attack_name_field.click()
+        attack_name_field.send_keys(attack['attack_name'].capitalize())
+        attack_value_field = driver.find_element(By.ID, "attack-value-field")
+        attack_value_field.click()
+        attack_value_field.send_keys(attack['attack_value'])
+        attack_ability_field = driver.find_element(By.ID, "attack-ability-field")
+        attack_ability_field.click()
+        attack_ability_field.send_keys(attack['attack_ability'])
+        # Select color
+        select = Select(driver.find_element(By.ID, 'color-dropdown'))
+        attack_type = str(attack['attack_type'].capitalize())
+        select.select_by_visible_text(attack_type)
+        # Add to table
+        add_button = driver.find_element(By.ID, "add-field-button")
+        add_button.click()
+        driver.implicitly_wait(2)
+
+def saveWheel(attack_list, folder_path, file_name):
+    pass
+
+def saveTable(attack_list, folder_path, file_name):
+     # set up the webdriver
+    driver = setupChromedriver()
+    driver.set_window_size(1920, 1080) # set the window size to the desired dimensions
+
+    # navigate to the URL and wait for the page to load
+    url = "http://127.0.0.1:8080" # replace with your URL
+    driver.get(url)
+    driver.implicitly_wait(2) # wait up to 10 seconds for page elements to load
+    fillInAllAttacks(attack_list, driver)
+    # find the table rectangle on the page
+    table_element = driver.find_element(By.ID, "attack-table")
+
+    # get the location and dimensions of the rectangle
+    location = table_element.location
+    size = table_element.size
+
+    # take a screenshot of the entire page
+    screenshot = driver.get_screenshot_as_png()
+    screenshot = Image.open(io.BytesIO(screenshot))
+
+    # crop the screenshot to the contents inside the rectangle
+    left = location['x']
+    top = location['y']
+    right = location['x'] + size['width']
+    bottom = location['y'] + size['height']
+    screenshot = screenshot.crop((left, top, right, bottom))
+
+    # resize the image with a width of 1000 pixels
+    width, height = screenshot.size
+    new_width = 1000
+    new_height = int(height * (new_width / width))
+    screenshot = screenshot.resize((new_width, new_height))
+
+    # save the cropped screenshot to a file
+    print(f"Saving {folder_path}/{file_name}...")
+    screenshot.save(f"{folder_path}/{file_name}")
+
+
 
 #               Attack Format           #
 # attack_list.append({
@@ -45,59 +109,77 @@ def getDfRowContents(df, row_idx):
 #             'num_evolutions':num_evolutions
 #         })
 def modifyAttackswithEvolution(attack_list, evolution_num):
+    # print(f"Before evolving: {attack_list[0]}")
     attack_list_copy = attack_list
-    for attack in attack_list_copy:
-        # Increase white price
-        if(attack['attack_type'].lower() == 'white' or attack['attack_type'].lower() == 'gold'):
-            new_value = ""
-            if(attack['attack_value'][-1] == 'x'):
-                base_value = int(attack['attack_value'][:-1])
-                new_value = base_value + 10*int(evolution_num)
-                new_value = str(new_value) + 'x' 
-            else:
-                base_value = int(attack['attack_value'])
-                new_value = base_value + 10*int(evolution_num)
-            attack['attack_value'] = new_value
-        # Add stars to pruple attack
-        elif(attack['attack_type'].lower() == 'purple'):
-            new_value = attack['attack_value'].replace('☆','★')
-            for _ in range(evolution_num):
-                new_value += '★'
+    if evolution_num != 0:
+        for attack in attack_list_copy:
+            # Increase white price
+            if(attack['attack_type'].lower() == 'white' or attack['attack_type'].lower() == 'gold'):
+                new_value = ""
+                if(attack['attack_value'][-1] == 'x'):
+                    base_value = int(attack['attack_value'][:-1])
+                    new_value = base_value + 10*int(evolution_num)
+                    new_value = str(new_value) + 'x' 
+                else:
+                    base_value = int(attack['attack_value'])
+                    new_value = base_value + 10*int(evolution_num)
                 attack['attack_value'] = new_value
+            # Add stars to pruple attack
+            elif(attack['attack_type'].lower() == 'purple'):
+                new_value = attack['attack_value'].replace('☆','★')
+                for _ in range(evolution_num):
+                    new_value += '★'
+                    attack['attack_value'] = new_value
     return attack_list_copy
 
 # This function handles creating the wheel and creates all evolution levels
-def createWheelAndTable(attack_list, evolution_num):
+def createWheelsAndTable(attack_list, evolution_num):
     driver = setupChromedriver()
     driver.get("http://127.0.0.1:8080")
     # Modify the attack list with evolution
     evolved_attack_list = modifyAttackswithEvolution(attack_list, evolution_num)
-    # TODO: Modify the attack_list using wheel_type. Most effects will modify the attack value in battle
+    # print(f"Evolved list: {evolved_attack_list[0]}")
+    pokemon_name = attack_list[0]['pokemon_name'].capitalize()
+    parent_folder_path = f"../Assets/Pokemon_Data/{pokemon_name}_{attack_list[0]['pokemon_rarity']}_{evolution_num}"
+    parent_folders = os.path.dirname(parent_folder_path)
+    if not os.path.exists(parent_folders):
+        raise FileNotFoundError(f"{parent_folder_path} does not exist.")
+    folder_path = f"{parent_folder_path}"
+    file_name = f"{pokemon_name}_{attack_list[0]['pokemon_rarity']}_{evolution_num}_attack_table.png"
+    saveTable(evolved_attack_list, folder_path, file_name)
     # * Poison: Damage -20
     # * Confusion: The spun move changes in combat
-    # * Paralyze: Turns a random white attack into a miss
+    # ** Paralyze: Turns a random white attack into a miss
     # * Sleep: Can’t move or attack. Can wake up if a friendly Pokemon moves next to it or if an opponent attacks it.
-    # * Frozen: Same as Sleep with the additional effect of turning all of a Pokemon's Attacks into Miss.
-    # * Burned: Same as paralyzed with the additional effect of reducing the damage of a Pokemon's White and Gold Attacks by 10 in battles.
+    # ** Frozen: Same as Sleep with the additional effect of turning all of a Pokemon's Attacks into Miss.
+    # ** Burned: Same as paralyzed with the additional effect of reducing the damage of a Pokemon's White and Gold Attacks by 10 in battles.
     wheel_types = ['basic', 'poisoned', 'confused', 'paralyzed', 'asleep', 'frozen', 'burned']
     for wheel_type in wheel_types:
-        if(wheel_type == "paralyzed"):
+        if(wheel_type == "paralyzed" or wheel_type == "burned"):
             # TODO: Generate all combinations of misses
-            pass
+            # Get index of all attacks that are white
+            idxs_of_white_attacks = []
+            for idx, attack in enumerate(evolved_attack_list):
+                if attack['attack_type'].lower() == 'white':
+                    idxs_of_white_attacks.append(idx)
+            # Make an attack list for each white
+            for white_idx in idxs_of_white_attacks:
+                evolved_copy = evolved_attack_list[:]
+                evolved_copy[white_idx]['attack_name'] = 'Miss'
+                evolved_copy[white_idx]['attack_type'] = 'Red'
+                evolved_copy[white_idx]['value'] = ''
+                evolved_copy[white_idx]['attack_ability'] = ''
         elif(wheel_type == "frozen"):
-            pass
-        elif(wheel_type == "burned"):
-            # TODO: Generate all combinations of misses
+            # Generate all miss
             pass
         else:
             # No changes to the wheel, but include the effect in the name
             pass
-        # TODO: Use selenium to fill in the attacks
         # TODO: Save wheel and table to the correct file path
         # TODO: resize the wheel
 
 
-def createJSON(wheel_type, attack_list, evolution_num):
+def createJSON(attack_list, evolution_num):
     pass
 
 def scrapeWheelsAndTables(pokemon_attacks_df, url):
@@ -109,10 +191,17 @@ def scrapeWheelsAndTables(pokemon_attacks_df, url):
     attack_list = []  # initialize an empty list to store attack information for each pokemon
     for index, row in pokemon_attacks_df.iterrows():
         pokemon_name = row['Name']
-        attack_name = row['Attack']
-        attack_type = row['Type']
-        attack_value = row['Value']
-        attack_ability = row['Ability']
+        pokemon_movement = row['Movement']
+        pokemon_rarity = row['Rarity']
+        pokemon_type = row['Type']
+        attack_name = row['Attack Name']
+        attack_type = row['Attack Type']
+        attack_value = row['Attack Value']
+        if(pd.isnull(attack_value)):
+            attack_value = ""
+        attack_ability = row['Attack Ability']
+        if(pd.isnull(attack_ability)):
+            attack_ability = ""
         attack_wheel_size = row['Attack Wheel Size']
         evolution = row['Evolution']
         evolved_from = row['Evolved From']
@@ -123,10 +212,11 @@ def scrapeWheelsAndTables(pokemon_attacks_df, url):
             prev_pokemon_name = pokemon_name
             # if this is not the first pokemon, create a wheel and table for the previous pokemon
             if attack_list:
-                curr_num_evolutions = int(attack_list[0][num_evolutions])
+                curr_num_evolutions = int(attack_list[0]['num_evolutions'])
                 for evolution_num in range(curr_num_evolutions + 1):
-                    createWheelAndTable(wheel_type, attack_list, evolution_num)
-                    createJSON(wheel_type, attack_list, evolution_num)
+                    # print(f"Before createWheelsAndTable: {attack_list[0]}")
+                    createWheelsAndTable(attack_list, evolution_num)
+                    createJSON(attack_list, evolution_num)
 
             # clear the attack_list and start a new one for the current pokemon
             attack_list = []
@@ -134,6 +224,9 @@ def scrapeWheelsAndTables(pokemon_attacks_df, url):
         # append this attack to the current pokemon's attack_list
         attack_list.append({
             'pokemon_name': pokemon_name,
+            'pokemon_movement': pokemon_movement,
+            'pokemon_rarity' : pokemon_rarity,
+            'pokemon_type' : pokemon_type,
             'attack_wheel_size': attack_wheel_size,
             'attack_name': attack_name,
             'attack_type': attack_type,
@@ -143,12 +236,14 @@ def scrapeWheelsAndTables(pokemon_attacks_df, url):
             'evolved_from': evolved_from,
             'num_evolutions':num_evolutions
         })
+        # print(f"Appended: {attack_list[-1]}")
 
     # after the loop, create a wheel and table for the last pokemon
     if attack_list:
-        for wheel_type in wheel_types:
-            createWheelsAndTables(wheel_type, attack_list)
-            createJSONs(wheel_type, attack_list)
+        curr_num_evolutions = int(attack_list[0][num_evolutions])
+        for evolution_num in range(curr_num_evolutions + 1):
+            createWheelsAndTable(attack_list, evolution_num)
+            createJSON(attack_list, evolution_num)
 
 def getPokemon(file_path):
     # Check if the file exists
