@@ -10,6 +10,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import Select
 from bs4 import BeautifulSoup
 from PIL import Image
+import time
 import io
 
 def handleSpecialPokemonNames(pokemon_name):
@@ -20,10 +21,12 @@ def handleSpecialPokemonNames(pokemon_name):
         pokemon_name = 'Mr-Mime'
     return pokemon_name
 
-def setupChromedriver():
+def setupChromedriver(download_dir = "/home/gurish/Downloads/Attack_Wheels"):
     chrome_options = Options()
     chrome_options.add_argument("--headless") # Ensure GUI is off
     chrome_options.add_argument("--no-sandbox")
+    chrome_options.add_experimental_option('prefs', {'download.default_directory': download_dir})
+    chrome_options.add_argument('--disable-dev-shm-usage')
 
     # Set path to chromedriver as per your configuration
     homedir = os.path.expanduser("~")
@@ -63,7 +66,40 @@ def fillInAllAttacks(attack_list, driver):
         driver.implicitly_wait(2)
 
 def saveWheel(attack_list, folder_path, file_name):
-    pass
+    # set up the webdriver
+    driver = setupChromedriver()
+    driver.set_window_size(1920, 1080) # set the window size to the desired dimensions
+
+    # navigate to the URL and wait for the page to load
+    url = "http://127.0.0.1:8080" # replace with your URL
+    driver.get(url)
+    driver.implicitly_wait(2) # wait up to 10 seconds for page elements to load
+    fillInAllAttacks(attack_list, driver)
+    # find the download button and click it
+    download_button = driver.find_element(By.XPATH, "//button[contains(text(), 'Download Disk')]")
+    download_button.click()
+
+    # wait for the download to complete
+    wait_time = 10 # set a maximum wait time for the download to complete (in seconds)
+    start_time = time.time()
+    while time.time() - start_time < wait_time:
+        # check if the file has been downloaded
+        downloads_path = os.path.join(os.path.expanduser("~"), "Downloads/Attack_Wheels")
+        print(f"WTFFF: {downloads_path}")
+        files = os.listdir(downloads_path)
+        for file in files:
+            if file.endswith(".png"):
+                # move the file to the specified folder path
+                os.replace(os.path.join(downloads_path, file), os.path.join(folder_path, file_name))
+                print(f"Successfully downloaded and saved {os.path.join(folder_path, file_name)}")
+                break
+        else:
+            # sleep for a short time and check again
+            time.sleep(1)
+    else:
+        print(f"Failed to download {file_name} within {wait_time} seconds")
+    driver.quit()
+    
 
 def saveTable(attack_list, folder_path, file_name):
     # set up the webdriver
@@ -156,51 +192,68 @@ def createWheelsAndTable(attack_list, evolution_num, overwrite):
     if not os.path.exists(parent_folders):
         raise FileNotFoundError(f"{parent_folder_path} does not exist.")
     folder_path = f"{parent_folder_path}"
-    file_name = f"{pokemon_name}_{attack_list[0]['pokemon_rarity']}_{evolution_num}_attack_table.png"
-    full_path = f"{folder_path}/{file_name}"
+    table_file_name = f"{pokemon_name}_{attack_list[0]['pokemon_rarity']}_{evolution_num}_attack_table.png"
+    table_full_path = f"{folder_path}/{table_file_name}"
+    # Modify the attack list with evolution
+    evolved_attack_list = modifyAttackswithEvolution(attack_list, evolution_num)
 
     # Create the table if we need to overwrite or the table hasnt been made
-    if overwrite or not os.path.exists(full_path):
-        
-        driver = setupChromedriver()
-        driver.get("http://127.0.0.1:8080")
-        # Modify the attack list with evolution
-        evolved_attack_list = modifyAttackswithEvolution(attack_list, evolution_num)
-
+    if overwrite or not os.path.exists(table_full_path):
         # Last term indicates if we want to overwrite existing tables
-        saveTable(evolved_attack_list, folder_path, file_name)
-        # * Poison: Damage -20
-        # * Confusion: The spun move changes in combat
-        # ** Paralyze: Turns a random white attack into a miss
-        # * Sleep: Can’t move or attack. Can wake up if a friendly Pokemon moves next to it or if an opponent attacks it.
-        # ** Frozen: Same as Sleep with the additional effect of turning all of a Pokemon's Attacks into Miss.
-        # ** Burned: Same as paralyzed with the additional effect of reducing the damage of a Pokemon's White and Gold Attacks by 10 in battles.
-        wheel_types = ['basic', 'poisoned', 'confused', 'paralyzed', 'asleep', 'frozen', 'burned']
-        for wheel_type in wheel_types:
-            if(wheel_type == "paralyzed" or wheel_type == "burned"):
-                # TODO: Generate all combinations of misses
-                # Get index of all attacks that are white
-                idxs_of_white_attacks = []
-                for idx, attack in enumerate(evolved_attack_list):
-                    if attack['attack_type'].lower() == 'white':
-                        idxs_of_white_attacks.append(idx)
-                # Make an attack list for each white
-                for white_idx in idxs_of_white_attacks:
-                    evolved_copy = copy.deepcopy(evolved_attack_list)
-                    evolved_copy[white_idx]['attack_name'] = 'Miss'
-                    evolved_copy[white_idx]['attack_type'] = 'Red'
-                    evolved_copy[white_idx]['value'] = ''
-                    evolved_copy[white_idx]['attack_ability'] = ''
-            elif(wheel_type == "frozen"):
-                # Generate all miss
-                pass
-            else:
-                # No changes to the wheel, but include the effect in the name
-                pass
-            # TODO: Save wheel and table to the correct file path
-            # TODO: resize the wheel
-    # else:
-        # print(f"Apparently: {full_path} exists or Value: {overwrite}")
+        saveTable(evolved_attack_list, folder_path, table_file_name)
+
+    # Create Wheel Folder
+    attack_wheels_folder_path = os.path.join(parent_folder_path, "Attack_Wheels")
+    if not os.path.exists(attack_wheels_folder_path):
+        os.makedirs(attack_wheels_folder_path)
+
+    # * Poison: Damage -20
+    # * Confusion: The spun move changes in combat
+    # ** Paralyze: Turns a random white attack into a miss
+    # * Sleep: Can’t move or attack. Can wake up if a friendly Pokemon moves next to it or if an opponent attacks it.
+    # ** Frozen: Same as Sleep with the additional effect of turning all of a Pokemon's Attacks into Miss.
+    # ** Burned: Same as paralyzed with the additional effect of reducing the damage of a Pokemon's White and Gold Attacks by 10 in battles.
+    wheel_types = ['basic', 'poisoned', 'confused', 'paralyzed', 'asleep', 'frozen', 'burned']
+    for wheel_type in wheel_types:
+        # Create wheel file name
+        attack_wheel_file_name = f"{pokemon_name}_{attack_list[0]['pokemon_rarity']}_{evolution_num}_{wheel_type}_attack_wheel.png"
+        print(f"Attempting to save: {attack_wheel_file_name}")
+
+        if(wheel_type == "paralyzed" or wheel_type == "burned"):
+            # Get index of all attacks that are white
+            idxs_of_white_attacks = []
+            for idx, attack in enumerate(evolved_attack_list):
+                if attack['attack_type'].lower() == 'white':
+                    idxs_of_white_attacks.append(idx)
+            # Make an attack list for each white
+            attack_version = 0
+            for white_idx in idxs_of_white_attacks:
+                evolved_copy = copy.deepcopy(evolved_attack_list)
+                for idx, attack in enumerate(evolved_copy):
+                    if(idx == white_idx):
+                        # Set the attack to a miss
+                        evolved_copy[white_idx]['attack_name'] = 'Miss'
+                        evolved_copy[white_idx]['attack_type'] = 'Red'
+                        evolved_copy[white_idx]['value'] = ''
+                        evolved_copy[white_idx]['attack_ability'] = ''
+                # Paralyzed and burned wheels need a special file name
+                modified_file_name = f"{pokemon_name}_{attack_list[0]['pokemon_rarity']}_{evolution_num}_{wheel_type}_{attack_version}_attack_wheel.png"
+                saveWheel(evolved_copy, attack_wheels_folder_path, modified_file_name)
+                attack_version += 1
+                
+        elif(wheel_type == "frozen"):
+            # Generate all miss
+            evolved_copy = copy.deepcopy(evolved_attack_list)
+            for idx, attack in enumerate(evolved_copy):
+                # Set the all attacks to a miss
+                evolved_copy[idx]['attack_name'] = 'Miss'
+                evolved_copy[idx]['attack_type'] = 'Red'
+                evolved_copy[idx]['value'] = ''
+                evolved_copy[idx]['attack_ability'] = ''
+            saveWheel(evolved_copy, attack_wheels_folder_path, attack_wheel_file_name)
+        else:
+            # No changes to the wheel, but include the effect in the name
+            saveWheel(evolved_attack_list, attack_wheels_folder_path, attack_wheel_file_name)
 
 
 def createJSON(attack_list, evolution_num):
@@ -244,7 +297,7 @@ def scrapeWheelsAndTables(pokemon_attacks_df):
                     # print(f"Before createWheelsAndTable: {attack_list[0]}")
                     print(f"Creating Wheels and Table for: {attack_list[0]['pokemon_name']}")
                     # Last term indicates if we want to overwrite existing files
-                    createWheelsAndTable(attack_list, evolution_num, True)
+                    createWheelsAndTable(attack_list, evolution_num, False)
                     createJSON(attack_list, evolution_num)
 
             # clear the attack_list and start a new one for the current pokemon
@@ -271,7 +324,7 @@ def scrapeWheelsAndTables(pokemon_attacks_df):
     if attack_list:
         curr_num_evolutions = int(attack_list[0]['num_evolutions'])
         for evolution_num in range(curr_num_evolutions + 1):
-            createWheelsAndTable(attack_list, evolution_num, True)
+            createWheelsAndTable(attack_list, evolution_num, False)
             createJSON(attack_list, evolution_num)
 
 def getPokemon(file_path):
