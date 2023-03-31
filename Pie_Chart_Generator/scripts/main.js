@@ -167,7 +167,7 @@ function writeAttackNames(text, percentage, ctx, sectionStartAngle, endAngle, ra
     }
 
     // Increase font size until chord length is reached
-    while (ctx.measureText(text).width < desiredLength && fontSize < 50) {
+    while (ctx.measureText(text).width < desiredLength && fontSize < 80) {
       fontSize++;
       ctx.font = "bold " + fontSize + "px " + font;
     }
@@ -192,7 +192,7 @@ function writeAttackValues(text, percentage, ctx, sectionStartAngle, endAngle, r
     const textX = centerX + Math.cos(sectionMiddleAngle) * textRadius;
     const textY = centerY + Math.sin(sectionMiddleAngle) * textRadius;
     const sectionText = text;
-    let fontSize = 100;
+    let fontSize = 175;
     ctx.font = fontSize + "px 'Segoe UI', Tahoma, 'Tahoma', sans-serif";
 
     // Calculate the width of the text

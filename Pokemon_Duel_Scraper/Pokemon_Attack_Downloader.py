@@ -9,7 +9,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import Select
 from bs4 import BeautifulSoup
-from PIL import Image
+from PIL import Image, ImageDraw
 import time
 import io
 
@@ -68,36 +68,39 @@ def fillInAllAttacks(attack_list, driver):
 def saveWheel(attack_list, folder_path, file_name):
     # set up the webdriver
     driver = setupChromedriver()
-    driver.set_window_size(1920, 1080) # set the window size to the desired dimensions
+    driver.set_window_size(3840, 2160) # set the window size to the desired dimensions
 
     # navigate to the URL and wait for the page to load
     url = "http://127.0.0.1:8080" # replace with your URL
     driver.get(url)
     driver.implicitly_wait(2) # wait up to 10 seconds for page elements to load
     fillInAllAttacks(attack_list, driver)
-    # find the download button and click it
-    download_button = driver.find_element(By.XPATH, "//button[contains(text(), 'Download Disk')]")
-    download_button.click()
+ 
+    # find the canvas element
+    canvas = driver.find_element(By.ID, "pie-chart")
+    canvas_size = canvas.size
+    width, height = canvas_size['width'], canvas_size['height']
+    canvas_screenshot = canvas.screenshot_as_png
+    pil_image = Image.open(io.BytesIO(canvas_screenshot)).convert('RGBA')
+    ## create a new image for the alpha mask and fill it with a transparent color
+    alpha_mask = Image.new('L', (width, height), 0)
+    alpha_mask_draw = ImageDraw.Draw(alpha_mask)
 
-    # wait for the download to complete
-    wait_time = 10 # set a maximum wait time for the download to complete (in seconds)
-    start_time = time.time()
-    while time.time() - start_time < wait_time:
-        # check if the file has been downloaded
-        downloads_path = os.path.join(os.path.expanduser("~"), "Downloads/Attack_Wheels")
-        print(f"WTFFF: {downloads_path}")
-        files = os.listdir(downloads_path)
-        for file in files:
-            if file.endswith(".png"):
-                # move the file to the specified folder path
-                os.replace(os.path.join(downloads_path, file), os.path.join(folder_path, file_name))
-                print(f"Successfully downloaded and saved {os.path.join(folder_path, file_name)}")
-                break
-        else:
-            # sleep for a short time and check again
-            time.sleep(1)
-    else:
-        print(f"Failed to download {file_name} within {wait_time} seconds")
+    # calculate the center of the pie chart and the radius of the pie chart
+    center_x, center_y = width / 2, height / 2
+    radius = 247
+    
+    # draw the pie chart on the alpha mask
+    alpha_mask_draw.pieslice((center_x - radius, center_y - radius, center_x + radius, center_y + radius), 0, 360, fill=255)
+    
+    # paste the original image onto the new image with the alpha mask
+    pil_image.putalpha(alpha_mask)
+
+    # save the image to a file
+    dpi = 800 # set the pixel density to a higher value
+
+    print(f"Saving {folder_path}/{file_name}...")
+    pil_image.save(f"{folder_path}/{file_name}", dpi=(dpi, dpi))
     driver.quit()
     
 
@@ -234,7 +237,7 @@ def createWheelsAndTable(attack_list, evolution_num, overwrite):
                         # Set the attack to a miss
                         evolved_copy[white_idx]['attack_name'] = 'Miss'
                         evolved_copy[white_idx]['attack_type'] = 'Red'
-                        evolved_copy[white_idx]['value'] = ''
+                        evolved_copy[white_idx]['attack_value'] = ''
                         evolved_copy[white_idx]['attack_ability'] = ''
                 # Paralyzed and burned wheels need a special file name
                 modified_file_name = f"{pokemon_name}_{attack_list[0]['pokemon_rarity']}_{evolution_num}_{wheel_type}_{attack_version}_attack_wheel.png"
@@ -248,7 +251,7 @@ def createWheelsAndTable(attack_list, evolution_num, overwrite):
                 # Set the all attacks to a miss
                 evolved_copy[idx]['attack_name'] = 'Miss'
                 evolved_copy[idx]['attack_type'] = 'Red'
-                evolved_copy[idx]['value'] = ''
+                evolved_copy[idx]['attack_value'] = ''
                 evolved_copy[idx]['attack_ability'] = ''
             saveWheel(evolved_copy, attack_wheels_folder_path, attack_wheel_file_name)
         else:
