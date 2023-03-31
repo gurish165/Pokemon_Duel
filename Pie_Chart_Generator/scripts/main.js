@@ -148,7 +148,7 @@ function writeAttackNames(text, percentage, ctx, sectionStartAngle, endAngle, ra
     const textY = centerY + Math.sin(sectionMiddleAngle) * textRadius;
     const sectionText = text;
     
-    const font = "Segoe UI";
+    const font = "'Segoe UI', Tahoma, 'Tahoma', sans-serif";
     let fontSize = 1; // starting font size
     ctx.font = "bold " + fontSize + "px " + font;
     let desiredLength = 0;
@@ -193,7 +193,7 @@ function writeAttackValues(text, percentage, ctx, sectionStartAngle, endAngle, r
     const textY = centerY + Math.sin(sectionMiddleAngle) * textRadius;
     const sectionText = text;
     let fontSize = 100;
-    ctx.font = fontSize + "px Segoe UI";
+    ctx.font = fontSize + "px 'Segoe UI', Tahoma, 'Tahoma', sans-serif";
 
     // Calculate the width of the text
     let textWidth = ctx.measureText(sectionText).width;
@@ -202,7 +202,7 @@ function writeAttackValues(text, percentage, ctx, sectionStartAngle, endAngle, r
     let arcFactor = 150 / percentage;
     let maxFontSize = (textRadius * 2) / Math.sqrt(2 * (1 - Math.cos(textWidth / (textRadius))))/arcFactor;
     // Set the font size to the maximum font size or the original font size, whichever is smaller
-    ctx.font = "bold " + Math.min(fontSize, maxFontSize) + "px Segoe UI";
+    ctx.font = "bold " + Math.min(fontSize, maxFontSize) + "px 'Segoe UI', Tahoma, 'Tahoma', sans-serif";
     ctx.fillStyle = "#000000";
     ctx.textAlign = "center";
     ctx.textBaseline = "middle";
