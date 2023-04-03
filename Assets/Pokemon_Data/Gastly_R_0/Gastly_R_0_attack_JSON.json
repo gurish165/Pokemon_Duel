@@ -1,0 +1,313 @@
+{
+    "pokemon_name": "Gastly",
+    "pokemon_sprite_image": "gastly_sprite.png",
+    "attack_table_file_name": "Gastly_R_0_attack_table.png",
+    "base_movement_points": 3,
+    "rarity": "R",
+    "pokemon_type": "Ghost / Poison",
+    "evolution": "Haunter",
+    "evolved_from": "",
+    "evolution_num": 0,
+    "attack_lists_by_type": {
+        "basic": [
+            {
+                "attack_wheel_size": 32,
+                "attack_name": "Destiny Bond",
+                "attack_type": "White",
+                "attack_value": "0",
+                "attack_ability": "If this Pok\u00e9mon is knocked out, so is the battle opponent",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 119.9999,
+                "attack_wheel_file_name": "Gastly_R_0_basic_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 48,
+                "attack_name": "Astonish",
+                "attack_type": "White",
+                "attack_value": "20",
+                "attack_ability": "",
+                "attack_start_angle_deg": 120.0,
+                "attack_end_angle_deg": 299.9999,
+                "attack_wheel_file_name": "Gastly_R_0_basic_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 16,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 300.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Gastly_R_0_basic_attack_wheel.png"
+            }
+        ],
+        "poisoned": [
+            {
+                "attack_wheel_size": 32,
+                "attack_name": "Destiny Bond",
+                "attack_type": "White",
+                "attack_value": "0",
+                "attack_ability": "If this Pok\u00e9mon is knocked out, so is the battle opponent",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 119.9999,
+                "attack_wheel_file_name": "Gastly_R_0_poisoned_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 48,
+                "attack_name": "Astonish",
+                "attack_type": "White",
+                "attack_value": "20",
+                "attack_ability": "",
+                "attack_start_angle_deg": 120.0,
+                "attack_end_angle_deg": 299.9999,
+                "attack_wheel_file_name": "Gastly_R_0_poisoned_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 16,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 300.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Gastly_R_0_poisoned_attack_wheel.png"
+            }
+        ],
+        "confused": [
+            {
+                "attack_wheel_size": 32,
+                "attack_name": "Destiny Bond",
+                "attack_type": "White",
+                "attack_value": "0",
+                "attack_ability": "If this Pok\u00e9mon is knocked out, so is the battle opponent",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 119.9999,
+                "attack_wheel_file_name": "Gastly_R_0_confused_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 48,
+                "attack_name": "Astonish",
+                "attack_type": "White",
+                "attack_value": "20",
+                "attack_ability": "",
+                "attack_start_angle_deg": 120.0,
+                "attack_end_angle_deg": 299.9999,
+                "attack_wheel_file_name": "Gastly_R_0_confused_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 16,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 300.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Gastly_R_0_confused_attack_wheel.png"
+            }
+        ],
+        "paralyzed_list": [
+            {
+                "paralyzed_0": [
+                    {
+                        "attack_wheel_size": 32,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 0,
+                        "attack_end_angle_deg": 119.9999,
+                        "attack_wheel_file_name": "Gastly_R_0_paralyzed_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 48,
+                        "attack_name": "Astonish",
+                        "attack_type": "White",
+                        "attack_value": "20",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 120.0,
+                        "attack_end_angle_deg": 299.9999,
+                        "attack_wheel_file_name": "Gastly_R_0_paralyzed_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 16,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 300.0,
+                        "attack_end_angle_deg": 359.9999,
+                        "attack_wheel_file_name": "Gastly_R_0_paralyzed_0_attack_wheel.png"
+                    }
+                ]
+            },
+            {
+                "paralyzed_1": [
+                    {
+                        "attack_wheel_size": 32,
+                        "attack_name": "Destiny Bond",
+                        "attack_type": "White",
+                        "attack_value": "0",
+                        "attack_ability": "If this Pok\u00e9mon is knocked out, so is the battle opponent",
+                        "attack_start_angle_deg": 0,
+                        "attack_end_angle_deg": 119.9999,
+                        "attack_wheel_file_name": "Gastly_R_0_paralyzed_1_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 48,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 120.0,
+                        "attack_end_angle_deg": 299.9999,
+                        "attack_wheel_file_name": "Gastly_R_0_paralyzed_1_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 16,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 300.0,
+                        "attack_end_angle_deg": 359.9999,
+                        "attack_wheel_file_name": "Gastly_R_0_paralyzed_1_attack_wheel.png"
+                    }
+                ]
+            }
+        ],
+        "asleep": [
+            {
+                "attack_wheel_size": 32,
+                "attack_name": "Destiny Bond",
+                "attack_type": "White",
+                "attack_value": "0",
+                "attack_ability": "If this Pok\u00e9mon is knocked out, so is the battle opponent",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 119.9999,
+                "attack_wheel_file_name": "Gastly_R_0_asleep_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 48,
+                "attack_name": "Astonish",
+                "attack_type": "White",
+                "attack_value": "20",
+                "attack_ability": "",
+                "attack_start_angle_deg": 120.0,
+                "attack_end_angle_deg": 299.9999,
+                "attack_wheel_file_name": "Gastly_R_0_asleep_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 16,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 300.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Gastly_R_0_asleep_attack_wheel.png"
+            }
+        ],
+        "frozen": [
+            {
+                "attack_wheel_size": 32,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 119.9999,
+                "attack_wheel_file_name": "Gastly_R_0_frozen_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 48,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 120.0,
+                "attack_end_angle_deg": 299.9999,
+                "attack_wheel_file_name": "Gastly_R_0_frozen_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 16,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 300.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Gastly_R_0_frozen_attack_wheel.png"
+            }
+        ],
+        "burned_list": [
+            {
+                "burned_0": [
+                    {
+                        "attack_wheel_size": 32,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 0,
+                        "attack_end_angle_deg": 119.9999,
+                        "attack_wheel_file_name": "Gastly_R_0_burned_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 48,
+                        "attack_name": "Astonish",
+                        "attack_type": "White",
+                        "attack_value": "20",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 120.0,
+                        "attack_end_angle_deg": 299.9999,
+                        "attack_wheel_file_name": "Gastly_R_0_burned_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 16,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 300.0,
+                        "attack_end_angle_deg": 359.9999,
+                        "attack_wheel_file_name": "Gastly_R_0_burned_0_attack_wheel.png"
+                    }
+                ]
+            },
+            {
+                "burned_1": [
+                    {
+                        "attack_wheel_size": 32,
+                        "attack_name": "Destiny Bond",
+                        "attack_type": "White",
+                        "attack_value": "0",
+                        "attack_ability": "If this Pok\u00e9mon is knocked out, so is the battle opponent",
+                        "attack_start_angle_deg": 0,
+                        "attack_end_angle_deg": 119.9999,
+                        "attack_wheel_file_name": "Gastly_R_0_burned_1_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 48,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 120.0,
+                        "attack_end_angle_deg": 299.9999,
+                        "attack_wheel_file_name": "Gastly_R_0_burned_1_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 16,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 300.0,
+                        "attack_end_angle_deg": 359.9999,
+                        "attack_wheel_file_name": "Gastly_R_0_burned_1_attack_wheel.png"
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,315 @@
+{
+    "pokemon_name": "Tentacruel",
+    "pokemon_sprite_image": "tentacruel_sprite.png",
+    "attack_table_file_name": "Tentacruel_R_1_attack_table.png",
+    "base_movement_points": 1,
+    "rarity": "R",
+    "pokemon_type": "Water / Poison",
+    "evolution": "",
+    "evolved_from": "Tentacool",
+    "evolution_num": 1,
+    "attack_lists_by_type": {
+        "basic": [
+            {
+                "attack_wheel_size": 8,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 29.9999,
+                "attack_wheel_file_name": "Tentacruel_R_0_basic_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 56,
+                "attack_name": "Tentacle Sting",
+                "attack_type": "White",
+                "attack_value": "120",
+                "attack_ability": "If this Pok\u00e9mon is knocked out, the battle opponent becomes poisoned or paralyzed",
+                "attack_start_angle_deg": 30.0,
+                "attack_end_angle_deg": 239.9999,
+                "attack_wheel_file_name": "Tentacruel_R_0_basic_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 8,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 240.0,
+                "attack_end_angle_deg": 269.9999,
+                "attack_wheel_file_name": "Tentacruel_R_0_basic_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 24,
+                "attack_name": "Mirror Coat",
+                "attack_type": "Purple",
+                "attack_value": "\u2606\u2606",
+                "attack_ability": "The battle opponent is knocked out if they spin purple",
+                "attack_start_angle_deg": 270.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Tentacruel_R_0_basic_attack_wheel.png"
+            }
+        ],
+        "poisoned": [
+            {
+                "attack_wheel_size": 8,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 29.9999,
+                "attack_wheel_file_name": "Tentacruel_R_0_poisoned_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 56,
+                "attack_name": "Tentacle Sting",
+                "attack_type": "White",
+                "attack_value": "120",
+                "attack_ability": "If this Pok\u00e9mon is knocked out, the battle opponent becomes poisoned or paralyzed",
+                "attack_start_angle_deg": 30.0,
+                "attack_end_angle_deg": 239.9999,
+                "attack_wheel_file_name": "Tentacruel_R_0_poisoned_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 8,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 240.0,
+                "attack_end_angle_deg": 269.9999,
+                "attack_wheel_file_name": "Tentacruel_R_0_poisoned_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 24,
+                "attack_name": "Mirror Coat",
+                "attack_type": "Purple",
+                "attack_value": "\u2606\u2606",
+                "attack_ability": "The battle opponent is knocked out if they spin purple",
+                "attack_start_angle_deg": 270.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Tentacruel_R_0_poisoned_attack_wheel.png"
+            }
+        ],
+        "confused": [
+            {
+                "attack_wheel_size": 8,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 29.9999,
+                "attack_wheel_file_name": "Tentacruel_R_0_confused_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 56,
+                "attack_name": "Tentacle Sting",
+                "attack_type": "White",
+                "attack_value": "120",
+                "attack_ability": "If this Pok\u00e9mon is knocked out, the battle opponent becomes poisoned or paralyzed",
+                "attack_start_angle_deg": 30.0,
+                "attack_end_angle_deg": 239.9999,
+                "attack_wheel_file_name": "Tentacruel_R_0_confused_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 8,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 240.0,
+                "attack_end_angle_deg": 269.9999,
+                "attack_wheel_file_name": "Tentacruel_R_0_confused_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 24,
+                "attack_name": "Mirror Coat",
+                "attack_type": "Purple",
+                "attack_value": "\u2606\u2606",
+                "attack_ability": "The battle opponent is knocked out if they spin purple",
+                "attack_start_angle_deg": 270.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Tentacruel_R_0_confused_attack_wheel.png"
+            }
+        ],
+        "paralyzed_list": [
+            {
+                "paralyzed_0": [
+                    {
+                        "attack_wheel_size": 8,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 0,
+                        "attack_end_angle_deg": 29.9999,
+                        "attack_wheel_file_name": "Tentacruel_R_0_paralyzed_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 56,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 30.0,
+                        "attack_end_angle_deg": 239.9999,
+                        "attack_wheel_file_name": "Tentacruel_R_0_paralyzed_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 8,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 240.0,
+                        "attack_end_angle_deg": 269.9999,
+                        "attack_wheel_file_name": "Tentacruel_R_0_paralyzed_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 24,
+                        "attack_name": "Mirror Coat",
+                        "attack_type": "Purple",
+                        "attack_value": "\u2606\u2606",
+                        "attack_ability": "The battle opponent is knocked out if they spin purple",
+                        "attack_start_angle_deg": 270.0,
+                        "attack_end_angle_deg": 359.9999,
+                        "attack_wheel_file_name": "Tentacruel_R_0_paralyzed_0_attack_wheel.png"
+                    }
+                ]
+            }
+        ],
+        "asleep": [
+            {
+                "attack_wheel_size": 8,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 29.9999,
+                "attack_wheel_file_name": "Tentacruel_R_0_asleep_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 56,
+                "attack_name": "Tentacle Sting",
+                "attack_type": "White",
+                "attack_value": "120",
+                "attack_ability": "If this Pok\u00e9mon is knocked out, the battle opponent becomes poisoned or paralyzed",
+                "attack_start_angle_deg": 30.0,
+                "attack_end_angle_deg": 239.9999,
+                "attack_wheel_file_name": "Tentacruel_R_0_asleep_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 8,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 240.0,
+                "attack_end_angle_deg": 269.9999,
+                "attack_wheel_file_name": "Tentacruel_R_0_asleep_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 24,
+                "attack_name": "Mirror Coat",
+                "attack_type": "Purple",
+                "attack_value": "\u2606\u2606",
+                "attack_ability": "The battle opponent is knocked out if they spin purple",
+                "attack_start_angle_deg": 270.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Tentacruel_R_0_asleep_attack_wheel.png"
+            }
+        ],
+        "frozen": [
+            {
+                "attack_wheel_size": 8,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 29.9999,
+                "attack_wheel_file_name": "Tentacruel_R_0_frozen_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 56,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 30.0,
+                "attack_end_angle_deg": 239.9999,
+                "attack_wheel_file_name": "Tentacruel_R_0_frozen_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 8,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 240.0,
+                "attack_end_angle_deg": 269.9999,
+                "attack_wheel_file_name": "Tentacruel_R_0_frozen_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 24,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 270.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Tentacruel_R_0_frozen_attack_wheel.png"
+            }
+        ],
+        "burned_list": [
+            {
+                "burned_0": [
+                    {
+                        "attack_wheel_size": 8,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 0,
+                        "attack_end_angle_deg": 29.9999,
+                        "attack_wheel_file_name": "Tentacruel_R_0_burned_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 56,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 30.0,
+                        "attack_end_angle_deg": 239.9999,
+                        "attack_wheel_file_name": "Tentacruel_R_0_burned_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 8,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 240.0,
+                        "attack_end_angle_deg": 269.9999,
+                        "attack_wheel_file_name": "Tentacruel_R_0_burned_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 24,
+                        "attack_name": "Mirror Coat",
+                        "attack_type": "Purple",
+                        "attack_value": "\u2606\u2606",
+                        "attack_ability": "The battle opponent is knocked out if they spin purple",
+                        "attack_start_angle_deg": 270.0,
+                        "attack_end_angle_deg": 359.9999,
+                        "attack_wheel_file_name": "Tentacruel_R_0_burned_0_attack_wheel.png"
+                    }
+                ]
+            }
+        ]
+    }
+}

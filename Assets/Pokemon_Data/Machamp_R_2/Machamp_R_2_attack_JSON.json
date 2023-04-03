@@ -1,0 +1,711 @@
+{
+    "pokemon_name": "Machamp",
+    "pokemon_sprite_image": "machamp_sprite.png",
+    "attack_table_file_name": "Machamp_R_2_attack_table.png",
+    "base_movement_points": 2,
+    "rarity": "R",
+    "pokemon_type": "Fighting",
+    "evolution": "",
+    "evolved_from": "Machoke",
+    "evolution_num": 2,
+    "attack_lists_by_type": {
+        "basic": [
+            {
+                "attack_wheel_size": 4,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 14.9999,
+                "attack_wheel_file_name": "Machamp_R_2_basic_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 24,
+                "attack_name": "Karate Chop",
+                "attack_type": "White",
+                "attack_value": 80,
+                "attack_ability": "",
+                "attack_start_angle_deg": 15.0,
+                "attack_end_angle_deg": 104.9999,
+                "attack_wheel_file_name": "Machamp_R_2_basic_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 28,
+                "attack_name": "Submission",
+                "attack_type": "White",
+                "attack_value": 100,
+                "attack_ability": "",
+                "attack_start_angle_deg": 105.0,
+                "attack_end_angle_deg": 209.9999,
+                "attack_wheel_file_name": "Machamp_R_2_basic_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 24,
+                "attack_name": "Karate Chop",
+                "attack_type": "White",
+                "attack_value": 80,
+                "attack_ability": "",
+                "attack_start_angle_deg": 210.0,
+                "attack_end_angle_deg": 299.9999,
+                "attack_wheel_file_name": "Machamp_R_2_basic_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 4,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 300.0,
+                "attack_end_angle_deg": 314.9999,
+                "attack_wheel_file_name": "Machamp_R_2_basic_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 12,
+                "attack_name": "Dodge",
+                "attack_type": "Blue",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 315.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Machamp_R_2_basic_attack_wheel.png"
+            }
+        ],
+        "poisoned": [
+            {
+                "attack_wheel_size": 4,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 14.9999,
+                "attack_wheel_file_name": "Machamp_R_2_poisoned_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 24,
+                "attack_name": "Karate Chop",
+                "attack_type": "White",
+                "attack_value": 80,
+                "attack_ability": "",
+                "attack_start_angle_deg": 15.0,
+                "attack_end_angle_deg": 104.9999,
+                "attack_wheel_file_name": "Machamp_R_2_poisoned_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 28,
+                "attack_name": "Submission",
+                "attack_type": "White",
+                "attack_value": 100,
+                "attack_ability": "",
+                "attack_start_angle_deg": 105.0,
+                "attack_end_angle_deg": 209.9999,
+                "attack_wheel_file_name": "Machamp_R_2_poisoned_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 24,
+                "attack_name": "Karate Chop",
+                "attack_type": "White",
+                "attack_value": 80,
+                "attack_ability": "",
+                "attack_start_angle_deg": 210.0,
+                "attack_end_angle_deg": 299.9999,
+                "attack_wheel_file_name": "Machamp_R_2_poisoned_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 4,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 300.0,
+                "attack_end_angle_deg": 314.9999,
+                "attack_wheel_file_name": "Machamp_R_2_poisoned_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 12,
+                "attack_name": "Dodge",
+                "attack_type": "Blue",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 315.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Machamp_R_2_poisoned_attack_wheel.png"
+            }
+        ],
+        "confused": [
+            {
+                "attack_wheel_size": 4,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 14.9999,
+                "attack_wheel_file_name": "Machamp_R_2_confused_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 24,
+                "attack_name": "Karate Chop",
+                "attack_type": "White",
+                "attack_value": 80,
+                "attack_ability": "",
+                "attack_start_angle_deg": 15.0,
+                "attack_end_angle_deg": 104.9999,
+                "attack_wheel_file_name": "Machamp_R_2_confused_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 28,
+                "attack_name": "Submission",
+                "attack_type": "White",
+                "attack_value": 100,
+                "attack_ability": "",
+                "attack_start_angle_deg": 105.0,
+                "attack_end_angle_deg": 209.9999,
+                "attack_wheel_file_name": "Machamp_R_2_confused_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 24,
+                "attack_name": "Karate Chop",
+                "attack_type": "White",
+                "attack_value": 80,
+                "attack_ability": "",
+                "attack_start_angle_deg": 210.0,
+                "attack_end_angle_deg": 299.9999,
+                "attack_wheel_file_name": "Machamp_R_2_confused_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 4,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 300.0,
+                "attack_end_angle_deg": 314.9999,
+                "attack_wheel_file_name": "Machamp_R_2_confused_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 12,
+                "attack_name": "Dodge",
+                "attack_type": "Blue",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 315.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Machamp_R_2_confused_attack_wheel.png"
+            }
+        ],
+        "paralyzed_list": [
+            {
+                "paralyzed_0": [
+                    {
+                        "attack_wheel_size": 4,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 0,
+                        "attack_end_angle_deg": 14.9999,
+                        "attack_wheel_file_name": "Machamp_R_2_paralyzed_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 24,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 15.0,
+                        "attack_end_angle_deg": 104.9999,
+                        "attack_wheel_file_name": "Machamp_R_2_paralyzed_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 28,
+                        "attack_name": "Submission",
+                        "attack_type": "White",
+                        "attack_value": 100,
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 105.0,
+                        "attack_end_angle_deg": 209.9999,
+                        "attack_wheel_file_name": "Machamp_R_2_paralyzed_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 24,
+                        "attack_name": "Karate Chop",
+                        "attack_type": "White",
+                        "attack_value": 80,
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 210.0,
+                        "attack_end_angle_deg": 299.9999,
+                        "attack_wheel_file_name": "Machamp_R_2_paralyzed_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 4,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 300.0,
+                        "attack_end_angle_deg": 314.9999,
+                        "attack_wheel_file_name": "Machamp_R_2_paralyzed_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 12,
+                        "attack_name": "Dodge",
+                        "attack_type": "Blue",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 315.0,
+                        "attack_end_angle_deg": 359.9999,
+                        "attack_wheel_file_name": "Machamp_R_2_paralyzed_0_attack_wheel.png"
+                    }
+                ]
+            },
+            {
+                "paralyzed_1": [
+                    {
+                        "attack_wheel_size": 4,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 0,
+                        "attack_end_angle_deg": 14.9999,
+                        "attack_wheel_file_name": "Machamp_R_2_paralyzed_1_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 24,
+                        "attack_name": "Karate Chop",
+                        "attack_type": "White",
+                        "attack_value": 80,
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 15.0,
+                        "attack_end_angle_deg": 104.9999,
+                        "attack_wheel_file_name": "Machamp_R_2_paralyzed_1_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 28,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 105.0,
+                        "attack_end_angle_deg": 209.9999,
+                        "attack_wheel_file_name": "Machamp_R_2_paralyzed_1_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 24,
+                        "attack_name": "Karate Chop",
+                        "attack_type": "White",
+                        "attack_value": 80,
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 210.0,
+                        "attack_end_angle_deg": 299.9999,
+                        "attack_wheel_file_name": "Machamp_R_2_paralyzed_1_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 4,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 300.0,
+                        "attack_end_angle_deg": 314.9999,
+                        "attack_wheel_file_name": "Machamp_R_2_paralyzed_1_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 12,
+                        "attack_name": "Dodge",
+                        "attack_type": "Blue",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 315.0,
+                        "attack_end_angle_deg": 359.9999,
+                        "attack_wheel_file_name": "Machamp_R_2_paralyzed_1_attack_wheel.png"
+                    }
+                ]
+            },
+            {
+                "paralyzed_2": [
+                    {
+                        "attack_wheel_size": 4,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 0,
+                        "attack_end_angle_deg": 14.9999,
+                        "attack_wheel_file_name": "Machamp_R_2_paralyzed_2_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 24,
+                        "attack_name": "Karate Chop",
+                        "attack_type": "White",
+                        "attack_value": 80,
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 15.0,
+                        "attack_end_angle_deg": 104.9999,
+                        "attack_wheel_file_name": "Machamp_R_2_paralyzed_2_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 28,
+                        "attack_name": "Submission",
+                        "attack_type": "White",
+                        "attack_value": 100,
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 105.0,
+                        "attack_end_angle_deg": 209.9999,
+                        "attack_wheel_file_name": "Machamp_R_2_paralyzed_2_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 24,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 210.0,
+                        "attack_end_angle_deg": 299.9999,
+                        "attack_wheel_file_name": "Machamp_R_2_paralyzed_2_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 4,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 300.0,
+                        "attack_end_angle_deg": 314.9999,
+                        "attack_wheel_file_name": "Machamp_R_2_paralyzed_2_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 12,
+                        "attack_name": "Dodge",
+                        "attack_type": "Blue",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 315.0,
+                        "attack_end_angle_deg": 359.9999,
+                        "attack_wheel_file_name": "Machamp_R_2_paralyzed_2_attack_wheel.png"
+                    }
+                ]
+            }
+        ],
+        "asleep": [
+            {
+                "attack_wheel_size": 4,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 14.9999,
+                "attack_wheel_file_name": "Machamp_R_2_asleep_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 24,
+                "attack_name": "Karate Chop",
+                "attack_type": "White",
+                "attack_value": 80,
+                "attack_ability": "",
+                "attack_start_angle_deg": 15.0,
+                "attack_end_angle_deg": 104.9999,
+                "attack_wheel_file_name": "Machamp_R_2_asleep_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 28,
+                "attack_name": "Submission",
+                "attack_type": "White",
+                "attack_value": 100,
+                "attack_ability": "",
+                "attack_start_angle_deg": 105.0,
+                "attack_end_angle_deg": 209.9999,
+                "attack_wheel_file_name": "Machamp_R_2_asleep_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 24,
+                "attack_name": "Karate Chop",
+                "attack_type": "White",
+                "attack_value": 80,
+                "attack_ability": "",
+                "attack_start_angle_deg": 210.0,
+                "attack_end_angle_deg": 299.9999,
+                "attack_wheel_file_name": "Machamp_R_2_asleep_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 4,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 300.0,
+                "attack_end_angle_deg": 314.9999,
+                "attack_wheel_file_name": "Machamp_R_2_asleep_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 12,
+                "attack_name": "Dodge",
+                "attack_type": "Blue",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 315.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Machamp_R_2_asleep_attack_wheel.png"
+            }
+        ],
+        "frozen": [
+            {
+                "attack_wheel_size": 4,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 14.9999,
+                "attack_wheel_file_name": "Machamp_R_2_frozen_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 24,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 15.0,
+                "attack_end_angle_deg": 104.9999,
+                "attack_wheel_file_name": "Machamp_R_2_frozen_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 28,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 105.0,
+                "attack_end_angle_deg": 209.9999,
+                "attack_wheel_file_name": "Machamp_R_2_frozen_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 24,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 210.0,
+                "attack_end_angle_deg": 299.9999,
+                "attack_wheel_file_name": "Machamp_R_2_frozen_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 4,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 300.0,
+                "attack_end_angle_deg": 314.9999,
+                "attack_wheel_file_name": "Machamp_R_2_frozen_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 12,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 315.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Machamp_R_2_frozen_attack_wheel.png"
+            }
+        ],
+        "burned_list": [
+            {
+                "burned_0": [
+                    {
+                        "attack_wheel_size": 4,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 0,
+                        "attack_end_angle_deg": 14.9999,
+                        "attack_wheel_file_name": "Machamp_R_2_burned_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 24,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 15.0,
+                        "attack_end_angle_deg": 104.9999,
+                        "attack_wheel_file_name": "Machamp_R_2_burned_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 28,
+                        "attack_name": "Submission",
+                        "attack_type": "White",
+                        "attack_value": 100,
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 105.0,
+                        "attack_end_angle_deg": 209.9999,
+                        "attack_wheel_file_name": "Machamp_R_2_burned_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 24,
+                        "attack_name": "Karate Chop",
+                        "attack_type": "White",
+                        "attack_value": 80,
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 210.0,
+                        "attack_end_angle_deg": 299.9999,
+                        "attack_wheel_file_name": "Machamp_R_2_burned_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 4,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 300.0,
+                        "attack_end_angle_deg": 314.9999,
+                        "attack_wheel_file_name": "Machamp_R_2_burned_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 12,
+                        "attack_name": "Dodge",
+                        "attack_type": "Blue",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 315.0,
+                        "attack_end_angle_deg": 359.9999,
+                        "attack_wheel_file_name": "Machamp_R_2_burned_0_attack_wheel.png"
+                    }
+                ]
+            },
+            {
+                "burned_1": [
+                    {
+                        "attack_wheel_size": 4,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 0,
+                        "attack_end_angle_deg": 14.9999,
+                        "attack_wheel_file_name": "Machamp_R_2_burned_1_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 24,
+                        "attack_name": "Karate Chop",
+                        "attack_type": "White",
+                        "attack_value": 80,
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 15.0,
+                        "attack_end_angle_deg": 104.9999,
+                        "attack_wheel_file_name": "Machamp_R_2_burned_1_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 28,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 105.0,
+                        "attack_end_angle_deg": 209.9999,
+                        "attack_wheel_file_name": "Machamp_R_2_burned_1_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 24,
+                        "attack_name": "Karate Chop",
+                        "attack_type": "White",
+                        "attack_value": 80,
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 210.0,
+                        "attack_end_angle_deg": 299.9999,
+                        "attack_wheel_file_name": "Machamp_R_2_burned_1_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 4,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 300.0,
+                        "attack_end_angle_deg": 314.9999,
+                        "attack_wheel_file_name": "Machamp_R_2_burned_1_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 12,
+                        "attack_name": "Dodge",
+                        "attack_type": "Blue",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 315.0,
+                        "attack_end_angle_deg": 359.9999,
+                        "attack_wheel_file_name": "Machamp_R_2_burned_1_attack_wheel.png"
+                    }
+                ]
+            },
+            {
+                "burned_2": [
+                    {
+                        "attack_wheel_size": 4,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 0,
+                        "attack_end_angle_deg": 14.9999,
+                        "attack_wheel_file_name": "Machamp_R_2_burned_2_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 24,
+                        "attack_name": "Karate Chop",
+                        "attack_type": "White",
+                        "attack_value": 80,
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 15.0,
+                        "attack_end_angle_deg": 104.9999,
+                        "attack_wheel_file_name": "Machamp_R_2_burned_2_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 28,
+                        "attack_name": "Submission",
+                        "attack_type": "White",
+                        "attack_value": 100,
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 105.0,
+                        "attack_end_angle_deg": 209.9999,
+                        "attack_wheel_file_name": "Machamp_R_2_burned_2_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 24,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 210.0,
+                        "attack_end_angle_deg": 299.9999,
+                        "attack_wheel_file_name": "Machamp_R_2_burned_2_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 4,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 300.0,
+                        "attack_end_angle_deg": 314.9999,
+                        "attack_wheel_file_name": "Machamp_R_2_burned_2_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 12,
+                        "attack_name": "Dodge",
+                        "attack_type": "Blue",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 315.0,
+                        "attack_end_angle_deg": 359.9999,
+                        "attack_wheel_file_name": "Machamp_R_2_burned_2_attack_wheel.png"
+                    }
+                ]
+            }
+        ]
+    }
+}

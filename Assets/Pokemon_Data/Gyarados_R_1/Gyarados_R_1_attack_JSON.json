@@ -1,0 +1,315 @@
+{
+    "pokemon_name": "Gyarados",
+    "pokemon_sprite_image": "gyarados_sprite.png",
+    "attack_table_file_name": "Gyarados_R_1_attack_table.png",
+    "base_movement_points": 1,
+    "rarity": "R",
+    "pokemon_type": "Water / Flying",
+    "evolution": "",
+    "evolved_from": "Magikarp",
+    "evolution_num": 1,
+    "attack_lists_by_type": {
+        "basic": [
+            {
+                "attack_wheel_size": 8,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 29.9999,
+                "attack_wheel_file_name": "Gyarados_R_1_basic_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 52,
+                "attack_name": "Hyper Beam",
+                "attack_type": "White",
+                "attack_value": 120,
+                "attack_ability": "If the battle opponent is knocked out, the next turn will always be the other player's",
+                "attack_start_angle_deg": 30.0,
+                "attack_end_angle_deg": 224.9999,
+                "attack_wheel_file_name": "Gyarados_R_1_basic_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 8,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 225.0,
+                "attack_end_angle_deg": 254.9999,
+                "attack_wheel_file_name": "Gyarados_R_1_basic_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 28,
+                "attack_name": "Storm",
+                "attack_type": "Purple",
+                "attack_value": "\u2605\u2605",
+                "attack_ability": "All neighbour Pok\u00e9mon are moved to the bench and gain Wait.",
+                "attack_start_angle_deg": 255.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Gyarados_R_1_basic_attack_wheel.png"
+            }
+        ],
+        "poisoned": [
+            {
+                "attack_wheel_size": 8,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 29.9999,
+                "attack_wheel_file_name": "Gyarados_R_1_poisoned_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 52,
+                "attack_name": "Hyper Beam",
+                "attack_type": "White",
+                "attack_value": 120,
+                "attack_ability": "If the battle opponent is knocked out, the next turn will always be the other player's",
+                "attack_start_angle_deg": 30.0,
+                "attack_end_angle_deg": 224.9999,
+                "attack_wheel_file_name": "Gyarados_R_1_poisoned_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 8,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 225.0,
+                "attack_end_angle_deg": 254.9999,
+                "attack_wheel_file_name": "Gyarados_R_1_poisoned_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 28,
+                "attack_name": "Storm",
+                "attack_type": "Purple",
+                "attack_value": "\u2605\u2605",
+                "attack_ability": "All neighbour Pok\u00e9mon are moved to the bench and gain Wait.",
+                "attack_start_angle_deg": 255.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Gyarados_R_1_poisoned_attack_wheel.png"
+            }
+        ],
+        "confused": [
+            {
+                "attack_wheel_size": 8,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 29.9999,
+                "attack_wheel_file_name": "Gyarados_R_1_confused_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 52,
+                "attack_name": "Hyper Beam",
+                "attack_type": "White",
+                "attack_value": 120,
+                "attack_ability": "If the battle opponent is knocked out, the next turn will always be the other player's",
+                "attack_start_angle_deg": 30.0,
+                "attack_end_angle_deg": 224.9999,
+                "attack_wheel_file_name": "Gyarados_R_1_confused_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 8,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 225.0,
+                "attack_end_angle_deg": 254.9999,
+                "attack_wheel_file_name": "Gyarados_R_1_confused_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 28,
+                "attack_name": "Storm",
+                "attack_type": "Purple",
+                "attack_value": "\u2605\u2605",
+                "attack_ability": "All neighbour Pok\u00e9mon are moved to the bench and gain Wait.",
+                "attack_start_angle_deg": 255.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Gyarados_R_1_confused_attack_wheel.png"
+            }
+        ],
+        "paralyzed_list": [
+            {
+                "paralyzed_0": [
+                    {
+                        "attack_wheel_size": 8,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 0,
+                        "attack_end_angle_deg": 29.9999,
+                        "attack_wheel_file_name": "Gyarados_R_1_paralyzed_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 52,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 30.0,
+                        "attack_end_angle_deg": 224.9999,
+                        "attack_wheel_file_name": "Gyarados_R_1_paralyzed_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 8,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 225.0,
+                        "attack_end_angle_deg": 254.9999,
+                        "attack_wheel_file_name": "Gyarados_R_1_paralyzed_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 28,
+                        "attack_name": "Storm",
+                        "attack_type": "Purple",
+                        "attack_value": "\u2605\u2605",
+                        "attack_ability": "All neighbour Pok\u00e9mon are moved to the bench and gain Wait.",
+                        "attack_start_angle_deg": 255.0,
+                        "attack_end_angle_deg": 359.9999,
+                        "attack_wheel_file_name": "Gyarados_R_1_paralyzed_0_attack_wheel.png"
+                    }
+                ]
+            }
+        ],
+        "asleep": [
+            {
+                "attack_wheel_size": 8,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 29.9999,
+                "attack_wheel_file_name": "Gyarados_R_1_asleep_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 52,
+                "attack_name": "Hyper Beam",
+                "attack_type": "White",
+                "attack_value": 120,
+                "attack_ability": "If the battle opponent is knocked out, the next turn will always be the other player's",
+                "attack_start_angle_deg": 30.0,
+                "attack_end_angle_deg": 224.9999,
+                "attack_wheel_file_name": "Gyarados_R_1_asleep_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 8,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 225.0,
+                "attack_end_angle_deg": 254.9999,
+                "attack_wheel_file_name": "Gyarados_R_1_asleep_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 28,
+                "attack_name": "Storm",
+                "attack_type": "Purple",
+                "attack_value": "\u2605\u2605",
+                "attack_ability": "All neighbour Pok\u00e9mon are moved to the bench and gain Wait.",
+                "attack_start_angle_deg": 255.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Gyarados_R_1_asleep_attack_wheel.png"
+            }
+        ],
+        "frozen": [
+            {
+                "attack_wheel_size": 8,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 29.9999,
+                "attack_wheel_file_name": "Gyarados_R_1_frozen_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 52,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 30.0,
+                "attack_end_angle_deg": 224.9999,
+                "attack_wheel_file_name": "Gyarados_R_1_frozen_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 8,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 225.0,
+                "attack_end_angle_deg": 254.9999,
+                "attack_wheel_file_name": "Gyarados_R_1_frozen_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 28,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 255.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Gyarados_R_1_frozen_attack_wheel.png"
+            }
+        ],
+        "burned_list": [
+            {
+                "burned_0": [
+                    {
+                        "attack_wheel_size": 8,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 0,
+                        "attack_end_angle_deg": 29.9999,
+                        "attack_wheel_file_name": "Gyarados_R_1_burned_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 52,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 30.0,
+                        "attack_end_angle_deg": 224.9999,
+                        "attack_wheel_file_name": "Gyarados_R_1_burned_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 8,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 225.0,
+                        "attack_end_angle_deg": 254.9999,
+                        "attack_wheel_file_name": "Gyarados_R_1_burned_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 28,
+                        "attack_name": "Storm",
+                        "attack_type": "Purple",
+                        "attack_value": "\u2605\u2605",
+                        "attack_ability": "All neighbour Pok\u00e9mon are moved to the bench and gain Wait.",
+                        "attack_start_angle_deg": 255.0,
+                        "attack_end_angle_deg": 359.9999,
+                        "attack_wheel_file_name": "Gyarados_R_1_burned_0_attack_wheel.png"
+                    }
+                ]
+            }
+        ]
+    }
+}

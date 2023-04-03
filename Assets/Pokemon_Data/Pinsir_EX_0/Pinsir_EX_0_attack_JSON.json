@@ -1,0 +1,275 @@
+{
+    "pokemon_name": "Pinsir",
+    "pokemon_sprite_image": "pinsir_sprite.png",
+    "attack_table_file_name": "Pinsir_EX_0_attack_table.png",
+    "base_movement_points": 2,
+    "rarity": "EX",
+    "pokemon_type": "Bug",
+    "evolution": "",
+    "evolved_from": "",
+    "evolution_num": 0,
+    "attack_lists_by_type": {
+        "basic": [
+            {
+                "attack_wheel_size": 4,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 14.9999,
+                "attack_wheel_file_name": "Pinsir_EX_0_basic_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 24,
+                "attack_name": "Guillotine",
+                "attack_type": "Purple",
+                "attack_value": "\u2606",
+                "attack_ability": "The battle opponent is knocked out.",
+                "attack_start_angle_deg": 15.0,
+                "attack_end_angle_deg": 104.9999,
+                "attack_wheel_file_name": "Pinsir_EX_0_basic_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 4,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 105.0,
+                "attack_end_angle_deg": 119.9999,
+                "attack_wheel_file_name": "Pinsir_EX_0_basic_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 28,
+                "attack_name": "Clamping Vice",
+                "attack_type": "Purple",
+                "attack_value": "\u2606",
+                "attack_ability": "Attaches an MP-2 Marker to the battle opponent. The battle opponent gains Wait 3",
+                "attack_start_angle_deg": 120.0,
+                "attack_end_angle_deg": 224.9999,
+                "attack_wheel_file_name": "Pinsir_EX_0_basic_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 36,
+                "attack_name": "Quick Attack",
+                "attack_type": "Gold",
+                "attack_value": "140",
+                "attack_ability": "",
+                "attack_start_angle_deg": 225.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Pinsir_EX_0_basic_attack_wheel.png"
+            }
+        ],
+        "poisoned": [
+            {
+                "attack_wheel_size": 4,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 14.9999,
+                "attack_wheel_file_name": "Pinsir_EX_0_poisoned_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 24,
+                "attack_name": "Guillotine",
+                "attack_type": "Purple",
+                "attack_value": "\u2606",
+                "attack_ability": "The battle opponent is knocked out.",
+                "attack_start_angle_deg": 15.0,
+                "attack_end_angle_deg": 104.9999,
+                "attack_wheel_file_name": "Pinsir_EX_0_poisoned_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 4,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 105.0,
+                "attack_end_angle_deg": 119.9999,
+                "attack_wheel_file_name": "Pinsir_EX_0_poisoned_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 28,
+                "attack_name": "Clamping Vice",
+                "attack_type": "Purple",
+                "attack_value": "\u2606",
+                "attack_ability": "Attaches an MP-2 Marker to the battle opponent. The battle opponent gains Wait 3",
+                "attack_start_angle_deg": 120.0,
+                "attack_end_angle_deg": 224.9999,
+                "attack_wheel_file_name": "Pinsir_EX_0_poisoned_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 36,
+                "attack_name": "Quick Attack",
+                "attack_type": "Gold",
+                "attack_value": "140",
+                "attack_ability": "",
+                "attack_start_angle_deg": 225.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Pinsir_EX_0_poisoned_attack_wheel.png"
+            }
+        ],
+        "confused": [
+            {
+                "attack_wheel_size": 4,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 14.9999,
+                "attack_wheel_file_name": "Pinsir_EX_0_confused_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 24,
+                "attack_name": "Guillotine",
+                "attack_type": "Purple",
+                "attack_value": "\u2606",
+                "attack_ability": "The battle opponent is knocked out.",
+                "attack_start_angle_deg": 15.0,
+                "attack_end_angle_deg": 104.9999,
+                "attack_wheel_file_name": "Pinsir_EX_0_confused_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 4,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 105.0,
+                "attack_end_angle_deg": 119.9999,
+                "attack_wheel_file_name": "Pinsir_EX_0_confused_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 28,
+                "attack_name": "Clamping Vice",
+                "attack_type": "Purple",
+                "attack_value": "\u2606",
+                "attack_ability": "Attaches an MP-2 Marker to the battle opponent. The battle opponent gains Wait 3",
+                "attack_start_angle_deg": 120.0,
+                "attack_end_angle_deg": 224.9999,
+                "attack_wheel_file_name": "Pinsir_EX_0_confused_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 36,
+                "attack_name": "Quick Attack",
+                "attack_type": "Gold",
+                "attack_value": "140",
+                "attack_ability": "",
+                "attack_start_angle_deg": 225.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Pinsir_EX_0_confused_attack_wheel.png"
+            }
+        ],
+        "paralyzed_list": [],
+        "asleep": [
+            {
+                "attack_wheel_size": 4,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 14.9999,
+                "attack_wheel_file_name": "Pinsir_EX_0_asleep_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 24,
+                "attack_name": "Guillotine",
+                "attack_type": "Purple",
+                "attack_value": "\u2606",
+                "attack_ability": "The battle opponent is knocked out.",
+                "attack_start_angle_deg": 15.0,
+                "attack_end_angle_deg": 104.9999,
+                "attack_wheel_file_name": "Pinsir_EX_0_asleep_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 4,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 105.0,
+                "attack_end_angle_deg": 119.9999,
+                "attack_wheel_file_name": "Pinsir_EX_0_asleep_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 28,
+                "attack_name": "Clamping Vice",
+                "attack_type": "Purple",
+                "attack_value": "\u2606",
+                "attack_ability": "Attaches an MP-2 Marker to the battle opponent. The battle opponent gains Wait 3",
+                "attack_start_angle_deg": 120.0,
+                "attack_end_angle_deg": 224.9999,
+                "attack_wheel_file_name": "Pinsir_EX_0_asleep_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 36,
+                "attack_name": "Quick Attack",
+                "attack_type": "Gold",
+                "attack_value": "140",
+                "attack_ability": "",
+                "attack_start_angle_deg": 225.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Pinsir_EX_0_asleep_attack_wheel.png"
+            }
+        ],
+        "frozen": [
+            {
+                "attack_wheel_size": 4,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 14.9999,
+                "attack_wheel_file_name": "Pinsir_EX_0_frozen_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 24,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 15.0,
+                "attack_end_angle_deg": 104.9999,
+                "attack_wheel_file_name": "Pinsir_EX_0_frozen_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 4,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 105.0,
+                "attack_end_angle_deg": 119.9999,
+                "attack_wheel_file_name": "Pinsir_EX_0_frozen_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 28,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 120.0,
+                "attack_end_angle_deg": 224.9999,
+                "attack_wheel_file_name": "Pinsir_EX_0_frozen_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 36,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 225.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Pinsir_EX_0_frozen_attack_wheel.png"
+            }
+        ],
+        "burned_list": []
+    }
+}

@@ -1,0 +1,385 @@
+{
+    "pokemon_name": "Aerodactyl",
+    "pokemon_sprite_image": "aerodactyl_sprite.png",
+    "attack_table_file_name": "Aerodactyl_EX_0_attack_table.png",
+    "base_movement_points": 2,
+    "rarity": "EX",
+    "pokemon_type": "Rock / Flying",
+    "evolution": "",
+    "evolved_from": "",
+    "evolution_num": 0,
+    "attack_lists_by_type": {
+        "basic": [
+            {
+                "attack_wheel_size": 4,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 14.9999,
+                "attack_wheel_file_name": "Aerodactyl_EX_0_basic_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 40,
+                "attack_name": "Stone Edge",
+                "attack_type": "White",
+                "attack_value": "150",
+                "attack_ability": "",
+                "attack_start_angle_deg": 15.0,
+                "attack_end_angle_deg": 164.9999,
+                "attack_wheel_file_name": "Aerodactyl_EX_0_basic_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 20,
+                "attack_name": "Sky Drop",
+                "attack_type": "Blue",
+                "attack_value": "",
+                "attack_ability": "This Pok\u00e9mon moves to a point 2 steps away and gains Wait. If the battle opponent is a non-Flying-type Pok\u00e9mon, the battle opponent gains Wait 5.",
+                "attack_start_angle_deg": 165.0,
+                "attack_end_angle_deg": 239.9999,
+                "attack_wheel_file_name": "Aerodactyl_EX_0_basic_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 4,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 240.0,
+                "attack_end_angle_deg": 254.9999,
+                "attack_wheel_file_name": "Aerodactyl_EX_0_basic_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 28,
+                "attack_name": "Taunt",
+                "attack_type": "Purple",
+                "attack_value": "\u2606\u2606\u2606",
+                "attack_ability": "Until the end of your next turn, if the Pok\u00e9mon hit by this attack spins a Purple attack or a Blue attack, shift the result clockwise until a non-Purple, non-Blue Attack comes up.",
+                "attack_start_angle_deg": 255.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Aerodactyl_EX_0_basic_attack_wheel.png"
+            }
+        ],
+        "poisoned": [
+            {
+                "attack_wheel_size": 4,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 14.9999,
+                "attack_wheel_file_name": "Aerodactyl_EX_0_poisoned_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 40,
+                "attack_name": "Stone Edge",
+                "attack_type": "White",
+                "attack_value": "150",
+                "attack_ability": "",
+                "attack_start_angle_deg": 15.0,
+                "attack_end_angle_deg": 164.9999,
+                "attack_wheel_file_name": "Aerodactyl_EX_0_poisoned_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 20,
+                "attack_name": "Sky Drop",
+                "attack_type": "Blue",
+                "attack_value": "",
+                "attack_ability": "This Pok\u00e9mon moves to a point 2 steps away and gains Wait. If the battle opponent is a non-Flying-type Pok\u00e9mon, the battle opponent gains Wait 5.",
+                "attack_start_angle_deg": 165.0,
+                "attack_end_angle_deg": 239.9999,
+                "attack_wheel_file_name": "Aerodactyl_EX_0_poisoned_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 4,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 240.0,
+                "attack_end_angle_deg": 254.9999,
+                "attack_wheel_file_name": "Aerodactyl_EX_0_poisoned_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 28,
+                "attack_name": "Taunt",
+                "attack_type": "Purple",
+                "attack_value": "\u2606\u2606\u2606",
+                "attack_ability": "Until the end of your next turn, if the Pok\u00e9mon hit by this attack spins a Purple attack or a Blue attack, shift the result clockwise until a non-Purple, non-Blue Attack comes up.",
+                "attack_start_angle_deg": 255.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Aerodactyl_EX_0_poisoned_attack_wheel.png"
+            }
+        ],
+        "confused": [
+            {
+                "attack_wheel_size": 4,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 14.9999,
+                "attack_wheel_file_name": "Aerodactyl_EX_0_confused_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 40,
+                "attack_name": "Stone Edge",
+                "attack_type": "White",
+                "attack_value": "150",
+                "attack_ability": "",
+                "attack_start_angle_deg": 15.0,
+                "attack_end_angle_deg": 164.9999,
+                "attack_wheel_file_name": "Aerodactyl_EX_0_confused_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 20,
+                "attack_name": "Sky Drop",
+                "attack_type": "Blue",
+                "attack_value": "",
+                "attack_ability": "This Pok\u00e9mon moves to a point 2 steps away and gains Wait. If the battle opponent is a non-Flying-type Pok\u00e9mon, the battle opponent gains Wait 5.",
+                "attack_start_angle_deg": 165.0,
+                "attack_end_angle_deg": 239.9999,
+                "attack_wheel_file_name": "Aerodactyl_EX_0_confused_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 4,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 240.0,
+                "attack_end_angle_deg": 254.9999,
+                "attack_wheel_file_name": "Aerodactyl_EX_0_confused_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 28,
+                "attack_name": "Taunt",
+                "attack_type": "Purple",
+                "attack_value": "\u2606\u2606\u2606",
+                "attack_ability": "Until the end of your next turn, if the Pok\u00e9mon hit by this attack spins a Purple attack or a Blue attack, shift the result clockwise until a non-Purple, non-Blue Attack comes up.",
+                "attack_start_angle_deg": 255.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Aerodactyl_EX_0_confused_attack_wheel.png"
+            }
+        ],
+        "paralyzed_list": [
+            {
+                "paralyzed_0": [
+                    {
+                        "attack_wheel_size": 4,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 0,
+                        "attack_end_angle_deg": 14.9999,
+                        "attack_wheel_file_name": "Aerodactyl_EX_0_paralyzed_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 40,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 15.0,
+                        "attack_end_angle_deg": 164.9999,
+                        "attack_wheel_file_name": "Aerodactyl_EX_0_paralyzed_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 20,
+                        "attack_name": "Sky Drop",
+                        "attack_type": "Blue",
+                        "attack_value": "",
+                        "attack_ability": "This Pok\u00e9mon moves to a point 2 steps away and gains Wait. If the battle opponent is a non-Flying-type Pok\u00e9mon, the battle opponent gains Wait 5.",
+                        "attack_start_angle_deg": 165.0,
+                        "attack_end_angle_deg": 239.9999,
+                        "attack_wheel_file_name": "Aerodactyl_EX_0_paralyzed_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 4,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 240.0,
+                        "attack_end_angle_deg": 254.9999,
+                        "attack_wheel_file_name": "Aerodactyl_EX_0_paralyzed_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 28,
+                        "attack_name": "Taunt",
+                        "attack_type": "Purple",
+                        "attack_value": "\u2606\u2606\u2606",
+                        "attack_ability": "Until the end of your next turn, if the Pok\u00e9mon hit by this attack spins a Purple attack or a Blue attack, shift the result clockwise until a non-Purple, non-Blue Attack comes up.",
+                        "attack_start_angle_deg": 255.0,
+                        "attack_end_angle_deg": 359.9999,
+                        "attack_wheel_file_name": "Aerodactyl_EX_0_paralyzed_0_attack_wheel.png"
+                    }
+                ]
+            }
+        ],
+        "asleep": [
+            {
+                "attack_wheel_size": 4,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 14.9999,
+                "attack_wheel_file_name": "Aerodactyl_EX_0_asleep_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 40,
+                "attack_name": "Stone Edge",
+                "attack_type": "White",
+                "attack_value": "150",
+                "attack_ability": "",
+                "attack_start_angle_deg": 15.0,
+                "attack_end_angle_deg": 164.9999,
+                "attack_wheel_file_name": "Aerodactyl_EX_0_asleep_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 20,
+                "attack_name": "Sky Drop",
+                "attack_type": "Blue",
+                "attack_value": "",
+                "attack_ability": "This Pok\u00e9mon moves to a point 2 steps away and gains Wait. If the battle opponent is a non-Flying-type Pok\u00e9mon, the battle opponent gains Wait 5.",
+                "attack_start_angle_deg": 165.0,
+                "attack_end_angle_deg": 239.9999,
+                "attack_wheel_file_name": "Aerodactyl_EX_0_asleep_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 4,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 240.0,
+                "attack_end_angle_deg": 254.9999,
+                "attack_wheel_file_name": "Aerodactyl_EX_0_asleep_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 28,
+                "attack_name": "Taunt",
+                "attack_type": "Purple",
+                "attack_value": "\u2606\u2606\u2606",
+                "attack_ability": "Until the end of your next turn, if the Pok\u00e9mon hit by this attack spins a Purple attack or a Blue attack, shift the result clockwise until a non-Purple, non-Blue Attack comes up.",
+                "attack_start_angle_deg": 255.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Aerodactyl_EX_0_asleep_attack_wheel.png"
+            }
+        ],
+        "frozen": [
+            {
+                "attack_wheel_size": 4,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 14.9999,
+                "attack_wheel_file_name": "Aerodactyl_EX_0_frozen_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 40,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 15.0,
+                "attack_end_angle_deg": 164.9999,
+                "attack_wheel_file_name": "Aerodactyl_EX_0_frozen_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 20,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 165.0,
+                "attack_end_angle_deg": 239.9999,
+                "attack_wheel_file_name": "Aerodactyl_EX_0_frozen_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 4,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 240.0,
+                "attack_end_angle_deg": 254.9999,
+                "attack_wheel_file_name": "Aerodactyl_EX_0_frozen_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 28,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 255.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Aerodactyl_EX_0_frozen_attack_wheel.png"
+            }
+        ],
+        "burned_list": [
+            {
+                "burned_0": [
+                    {
+                        "attack_wheel_size": 4,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 0,
+                        "attack_end_angle_deg": 14.9999,
+                        "attack_wheel_file_name": "Aerodactyl_EX_0_burned_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 40,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 15.0,
+                        "attack_end_angle_deg": 164.9999,
+                        "attack_wheel_file_name": "Aerodactyl_EX_0_burned_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 20,
+                        "attack_name": "Sky Drop",
+                        "attack_type": "Blue",
+                        "attack_value": "",
+                        "attack_ability": "This Pok\u00e9mon moves to a point 2 steps away and gains Wait. If the battle opponent is a non-Flying-type Pok\u00e9mon, the battle opponent gains Wait 5.",
+                        "attack_start_angle_deg": 165.0,
+                        "attack_end_angle_deg": 239.9999,
+                        "attack_wheel_file_name": "Aerodactyl_EX_0_burned_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 4,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 240.0,
+                        "attack_end_angle_deg": 254.9999,
+                        "attack_wheel_file_name": "Aerodactyl_EX_0_burned_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 28,
+                        "attack_name": "Taunt",
+                        "attack_type": "Purple",
+                        "attack_value": "\u2606\u2606\u2606",
+                        "attack_ability": "Until the end of your next turn, if the Pok\u00e9mon hit by this attack spins a Purple attack or a Blue attack, shift the result clockwise until a non-Purple, non-Blue Attack comes up.",
+                        "attack_start_angle_deg": 255.0,
+                        "attack_end_angle_deg": 359.9999,
+                        "attack_wheel_file_name": "Aerodactyl_EX_0_burned_0_attack_wheel.png"
+                    }
+                ]
+            }
+        ]
+    }
+}

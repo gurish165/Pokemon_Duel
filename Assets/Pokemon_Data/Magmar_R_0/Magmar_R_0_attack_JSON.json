@@ -1,0 +1,245 @@
+{
+    "pokemon_name": "Magmar",
+    "pokemon_sprite_image": "magmar_sprite.png",
+    "attack_table_file_name": "Magmar_R_0_attack_table.png",
+    "base_movement_points": 2,
+    "rarity": "R",
+    "pokemon_type": "Fire",
+    "evolution": "",
+    "evolved_from": "",
+    "evolution_num": 0,
+    "attack_lists_by_type": {
+        "basic": [
+            {
+                "attack_wheel_size": 52,
+                "attack_name": "Fire Punch",
+                "attack_type": "White",
+                "attack_value": "100",
+                "attack_ability": "If this Pok\u00e9mon is knocked out when using this move, the battle opponent becomes burned.",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 194.9999,
+                "attack_wheel_file_name": "Magmar_R_0_basic_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 16,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 195.0,
+                "attack_end_angle_deg": 254.9999,
+                "attack_wheel_file_name": "Magmar_R_0_basic_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 28,
+                "attack_name": "Confuse Ray",
+                "attack_type": "Purple",
+                "attack_value": "\u2606\u2606\u2606",
+                "attack_ability": "The battle opponent becomes confused",
+                "attack_start_angle_deg": 255.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Magmar_R_0_basic_attack_wheel.png"
+            }
+        ],
+        "poisoned": [
+            {
+                "attack_wheel_size": 52,
+                "attack_name": "Fire Punch",
+                "attack_type": "White",
+                "attack_value": "100",
+                "attack_ability": "If this Pok\u00e9mon is knocked out when using this move, the battle opponent becomes burned.",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 194.9999,
+                "attack_wheel_file_name": "Magmar_R_0_poisoned_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 16,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 195.0,
+                "attack_end_angle_deg": 254.9999,
+                "attack_wheel_file_name": "Magmar_R_0_poisoned_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 28,
+                "attack_name": "Confuse Ray",
+                "attack_type": "Purple",
+                "attack_value": "\u2606\u2606\u2606",
+                "attack_ability": "The battle opponent becomes confused",
+                "attack_start_angle_deg": 255.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Magmar_R_0_poisoned_attack_wheel.png"
+            }
+        ],
+        "confused": [
+            {
+                "attack_wheel_size": 52,
+                "attack_name": "Fire Punch",
+                "attack_type": "White",
+                "attack_value": "100",
+                "attack_ability": "If this Pok\u00e9mon is knocked out when using this move, the battle opponent becomes burned.",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 194.9999,
+                "attack_wheel_file_name": "Magmar_R_0_confused_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 16,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 195.0,
+                "attack_end_angle_deg": 254.9999,
+                "attack_wheel_file_name": "Magmar_R_0_confused_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 28,
+                "attack_name": "Confuse Ray",
+                "attack_type": "Purple",
+                "attack_value": "\u2606\u2606\u2606",
+                "attack_ability": "The battle opponent becomes confused",
+                "attack_start_angle_deg": 255.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Magmar_R_0_confused_attack_wheel.png"
+            }
+        ],
+        "paralyzed_list": [
+            {
+                "paralyzed_0": [
+                    {
+                        "attack_wheel_size": 52,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 0,
+                        "attack_end_angle_deg": 194.9999,
+                        "attack_wheel_file_name": "Magmar_R_0_paralyzed_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 16,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 195.0,
+                        "attack_end_angle_deg": 254.9999,
+                        "attack_wheel_file_name": "Magmar_R_0_paralyzed_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 28,
+                        "attack_name": "Confuse Ray",
+                        "attack_type": "Purple",
+                        "attack_value": "\u2606\u2606\u2606",
+                        "attack_ability": "The battle opponent becomes confused",
+                        "attack_start_angle_deg": 255.0,
+                        "attack_end_angle_deg": 359.9999,
+                        "attack_wheel_file_name": "Magmar_R_0_paralyzed_0_attack_wheel.png"
+                    }
+                ]
+            }
+        ],
+        "asleep": [
+            {
+                "attack_wheel_size": 52,
+                "attack_name": "Fire Punch",
+                "attack_type": "White",
+                "attack_value": "100",
+                "attack_ability": "If this Pok\u00e9mon is knocked out when using this move, the battle opponent becomes burned.",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 194.9999,
+                "attack_wheel_file_name": "Magmar_R_0_asleep_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 16,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 195.0,
+                "attack_end_angle_deg": 254.9999,
+                "attack_wheel_file_name": "Magmar_R_0_asleep_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 28,
+                "attack_name": "Confuse Ray",
+                "attack_type": "Purple",
+                "attack_value": "\u2606\u2606\u2606",
+                "attack_ability": "The battle opponent becomes confused",
+                "attack_start_angle_deg": 255.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Magmar_R_0_asleep_attack_wheel.png"
+            }
+        ],
+        "frozen": [
+            {
+                "attack_wheel_size": 52,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 194.9999,
+                "attack_wheel_file_name": "Magmar_R_0_frozen_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 16,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 195.0,
+                "attack_end_angle_deg": 254.9999,
+                "attack_wheel_file_name": "Magmar_R_0_frozen_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 28,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 255.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Magmar_R_0_frozen_attack_wheel.png"
+            }
+        ],
+        "burned_list": [
+            {
+                "burned_0": [
+                    {
+                        "attack_wheel_size": 52,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 0,
+                        "attack_end_angle_deg": 194.9999,
+                        "attack_wheel_file_name": "Magmar_R_0_burned_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 16,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 195.0,
+                        "attack_end_angle_deg": 254.9999,
+                        "attack_wheel_file_name": "Magmar_R_0_burned_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 28,
+                        "attack_name": "Confuse Ray",
+                        "attack_type": "Purple",
+                        "attack_value": "\u2606\u2606\u2606",
+                        "attack_ability": "The battle opponent becomes confused",
+                        "attack_start_angle_deg": 255.0,
+                        "attack_end_angle_deg": 359.9999,
+                        "attack_wheel_file_name": "Magmar_R_0_burned_0_attack_wheel.png"
+                    }
+                ]
+            }
+        ]
+    }
+}

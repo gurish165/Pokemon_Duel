@@ -1,0 +1,493 @@
+{
+    "pokemon_name": "Omanyte",
+    "pokemon_sprite_image": "omanyte_sprite.png",
+    "attack_table_file_name": "Omanyte_UC_0_attack_table.png",
+    "base_movement_points": 2,
+    "rarity": "UC",
+    "pokemon_type": "Rock / Water",
+    "evolution": "Omastar",
+    "evolved_from": "",
+    "evolution_num": 0,
+    "attack_lists_by_type": {
+        "basic": [
+            {
+                "attack_wheel_size": 4,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 14.9999,
+                "attack_wheel_file_name": "Omanyte_UC_0_basic_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 40,
+                "attack_name": "Bind",
+                "attack_type": "White",
+                "attack_value": "40x",
+                "attack_ability": "Spin again until Bind does not land - damage is multiplied by the number of Bind spins. The bttle opponent gains Wait X where X is the number of Bind spins",
+                "attack_start_angle_deg": 15.0,
+                "attack_end_angle_deg": 164.9999,
+                "attack_wheel_file_name": "Omanyte_UC_0_basic_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 24,
+                "attack_name": "Ancient Power",
+                "attack_type": "White",
+                "attack_value": "70",
+                "attack_ability": "While they are on the field, your Restored Pok\u00e9mon deal +10 damage to the battle opponent and gain +1 \u2606",
+                "attack_start_angle_deg": 165.0,
+                "attack_end_angle_deg": 254.9999,
+                "attack_wheel_file_name": "Omanyte_UC_0_basic_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 4,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 255.0,
+                "attack_end_angle_deg": 269.9999,
+                "attack_wheel_file_name": "Omanyte_UC_0_basic_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 24,
+                "attack_name": "Protect",
+                "attack_type": "Blue",
+                "attack_value": "",
+                "attack_ability": "This Pok\u00e9mon gains Wait",
+                "attack_start_angle_deg": 270.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Omanyte_UC_0_basic_attack_wheel.png"
+            }
+        ],
+        "poisoned": [
+            {
+                "attack_wheel_size": 4,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 14.9999,
+                "attack_wheel_file_name": "Omanyte_UC_0_poisoned_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 40,
+                "attack_name": "Bind",
+                "attack_type": "White",
+                "attack_value": "40x",
+                "attack_ability": "Spin again until Bind does not land - damage is multiplied by the number of Bind spins. The bttle opponent gains Wait X where X is the number of Bind spins",
+                "attack_start_angle_deg": 15.0,
+                "attack_end_angle_deg": 164.9999,
+                "attack_wheel_file_name": "Omanyte_UC_0_poisoned_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 24,
+                "attack_name": "Ancient Power",
+                "attack_type": "White",
+                "attack_value": "70",
+                "attack_ability": "While they are on the field, your Restored Pok\u00e9mon deal +10 damage to the battle opponent and gain +1 \u2606",
+                "attack_start_angle_deg": 165.0,
+                "attack_end_angle_deg": 254.9999,
+                "attack_wheel_file_name": "Omanyte_UC_0_poisoned_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 4,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 255.0,
+                "attack_end_angle_deg": 269.9999,
+                "attack_wheel_file_name": "Omanyte_UC_0_poisoned_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 24,
+                "attack_name": "Protect",
+                "attack_type": "Blue",
+                "attack_value": "",
+                "attack_ability": "This Pok\u00e9mon gains Wait",
+                "attack_start_angle_deg": 270.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Omanyte_UC_0_poisoned_attack_wheel.png"
+            }
+        ],
+        "confused": [
+            {
+                "attack_wheel_size": 4,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 14.9999,
+                "attack_wheel_file_name": "Omanyte_UC_0_confused_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 40,
+                "attack_name": "Bind",
+                "attack_type": "White",
+                "attack_value": "40x",
+                "attack_ability": "Spin again until Bind does not land - damage is multiplied by the number of Bind spins. The bttle opponent gains Wait X where X is the number of Bind spins",
+                "attack_start_angle_deg": 15.0,
+                "attack_end_angle_deg": 164.9999,
+                "attack_wheel_file_name": "Omanyte_UC_0_confused_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 24,
+                "attack_name": "Ancient Power",
+                "attack_type": "White",
+                "attack_value": "70",
+                "attack_ability": "While they are on the field, your Restored Pok\u00e9mon deal +10 damage to the battle opponent and gain +1 \u2606",
+                "attack_start_angle_deg": 165.0,
+                "attack_end_angle_deg": 254.9999,
+                "attack_wheel_file_name": "Omanyte_UC_0_confused_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 4,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 255.0,
+                "attack_end_angle_deg": 269.9999,
+                "attack_wheel_file_name": "Omanyte_UC_0_confused_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 24,
+                "attack_name": "Protect",
+                "attack_type": "Blue",
+                "attack_value": "",
+                "attack_ability": "This Pok\u00e9mon gains Wait",
+                "attack_start_angle_deg": 270.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Omanyte_UC_0_confused_attack_wheel.png"
+            }
+        ],
+        "paralyzed_list": [
+            {
+                "paralyzed_0": [
+                    {
+                        "attack_wheel_size": 4,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 0,
+                        "attack_end_angle_deg": 14.9999,
+                        "attack_wheel_file_name": "Omanyte_UC_0_paralyzed_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 40,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 15.0,
+                        "attack_end_angle_deg": 164.9999,
+                        "attack_wheel_file_name": "Omanyte_UC_0_paralyzed_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 24,
+                        "attack_name": "Ancient Power",
+                        "attack_type": "White",
+                        "attack_value": "70",
+                        "attack_ability": "While they are on the field, your Restored Pok\u00e9mon deal +10 damage to the battle opponent and gain +1 \u2606",
+                        "attack_start_angle_deg": 165.0,
+                        "attack_end_angle_deg": 254.9999,
+                        "attack_wheel_file_name": "Omanyte_UC_0_paralyzed_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 4,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 255.0,
+                        "attack_end_angle_deg": 269.9999,
+                        "attack_wheel_file_name": "Omanyte_UC_0_paralyzed_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 24,
+                        "attack_name": "Protect",
+                        "attack_type": "Blue",
+                        "attack_value": "",
+                        "attack_ability": "This Pok\u00e9mon gains Wait",
+                        "attack_start_angle_deg": 270.0,
+                        "attack_end_angle_deg": 359.9999,
+                        "attack_wheel_file_name": "Omanyte_UC_0_paralyzed_0_attack_wheel.png"
+                    }
+                ]
+            },
+            {
+                "paralyzed_1": [
+                    {
+                        "attack_wheel_size": 4,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 0,
+                        "attack_end_angle_deg": 14.9999,
+                        "attack_wheel_file_name": "Omanyte_UC_0_paralyzed_1_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 40,
+                        "attack_name": "Bind",
+                        "attack_type": "White",
+                        "attack_value": "40x",
+                        "attack_ability": "Spin again until Bind does not land - damage is multiplied by the number of Bind spins. The bttle opponent gains Wait X where X is the number of Bind spins",
+                        "attack_start_angle_deg": 15.0,
+                        "attack_end_angle_deg": 164.9999,
+                        "attack_wheel_file_name": "Omanyte_UC_0_paralyzed_1_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 24,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 165.0,
+                        "attack_end_angle_deg": 254.9999,
+                        "attack_wheel_file_name": "Omanyte_UC_0_paralyzed_1_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 4,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 255.0,
+                        "attack_end_angle_deg": 269.9999,
+                        "attack_wheel_file_name": "Omanyte_UC_0_paralyzed_1_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 24,
+                        "attack_name": "Protect",
+                        "attack_type": "Blue",
+                        "attack_value": "",
+                        "attack_ability": "This Pok\u00e9mon gains Wait",
+                        "attack_start_angle_deg": 270.0,
+                        "attack_end_angle_deg": 359.9999,
+                        "attack_wheel_file_name": "Omanyte_UC_0_paralyzed_1_attack_wheel.png"
+                    }
+                ]
+            }
+        ],
+        "asleep": [
+            {
+                "attack_wheel_size": 4,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 14.9999,
+                "attack_wheel_file_name": "Omanyte_UC_0_asleep_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 40,
+                "attack_name": "Bind",
+                "attack_type": "White",
+                "attack_value": "40x",
+                "attack_ability": "Spin again until Bind does not land - damage is multiplied by the number of Bind spins. The bttle opponent gains Wait X where X is the number of Bind spins",
+                "attack_start_angle_deg": 15.0,
+                "attack_end_angle_deg": 164.9999,
+                "attack_wheel_file_name": "Omanyte_UC_0_asleep_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 24,
+                "attack_name": "Ancient Power",
+                "attack_type": "White",
+                "attack_value": "70",
+                "attack_ability": "While they are on the field, your Restored Pok\u00e9mon deal +10 damage to the battle opponent and gain +1 \u2606",
+                "attack_start_angle_deg": 165.0,
+                "attack_end_angle_deg": 254.9999,
+                "attack_wheel_file_name": "Omanyte_UC_0_asleep_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 4,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 255.0,
+                "attack_end_angle_deg": 269.9999,
+                "attack_wheel_file_name": "Omanyte_UC_0_asleep_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 24,
+                "attack_name": "Protect",
+                "attack_type": "Blue",
+                "attack_value": "",
+                "attack_ability": "This Pok\u00e9mon gains Wait",
+                "attack_start_angle_deg": 270.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Omanyte_UC_0_asleep_attack_wheel.png"
+            }
+        ],
+        "frozen": [
+            {
+                "attack_wheel_size": 4,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 14.9999,
+                "attack_wheel_file_name": "Omanyte_UC_0_frozen_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 40,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 15.0,
+                "attack_end_angle_deg": 164.9999,
+                "attack_wheel_file_name": "Omanyte_UC_0_frozen_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 24,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 165.0,
+                "attack_end_angle_deg": 254.9999,
+                "attack_wheel_file_name": "Omanyte_UC_0_frozen_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 4,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 255.0,
+                "attack_end_angle_deg": 269.9999,
+                "attack_wheel_file_name": "Omanyte_UC_0_frozen_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 24,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 270.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Omanyte_UC_0_frozen_attack_wheel.png"
+            }
+        ],
+        "burned_list": [
+            {
+                "burned_0": [
+                    {
+                        "attack_wheel_size": 4,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 0,
+                        "attack_end_angle_deg": 14.9999,
+                        "attack_wheel_file_name": "Omanyte_UC_0_burned_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 40,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 15.0,
+                        "attack_end_angle_deg": 164.9999,
+                        "attack_wheel_file_name": "Omanyte_UC_0_burned_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 24,
+                        "attack_name": "Ancient Power",
+                        "attack_type": "White",
+                        "attack_value": "70",
+                        "attack_ability": "While they are on the field, your Restored Pok\u00e9mon deal +10 damage to the battle opponent and gain +1 \u2606",
+                        "attack_start_angle_deg": 165.0,
+                        "attack_end_angle_deg": 254.9999,
+                        "attack_wheel_file_name": "Omanyte_UC_0_burned_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 4,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 255.0,
+                        "attack_end_angle_deg": 269.9999,
+                        "attack_wheel_file_name": "Omanyte_UC_0_burned_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 24,
+                        "attack_name": "Protect",
+                        "attack_type": "Blue",
+                        "attack_value": "",
+                        "attack_ability": "This Pok\u00e9mon gains Wait",
+                        "attack_start_angle_deg": 270.0,
+                        "attack_end_angle_deg": 359.9999,
+                        "attack_wheel_file_name": "Omanyte_UC_0_burned_0_attack_wheel.png"
+                    }
+                ]
+            },
+            {
+                "burned_1": [
+                    {
+                        "attack_wheel_size": 4,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 0,
+                        "attack_end_angle_deg": 14.9999,
+                        "attack_wheel_file_name": "Omanyte_UC_0_burned_1_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 40,
+                        "attack_name": "Bind",
+                        "attack_type": "White",
+                        "attack_value": "40x",
+                        "attack_ability": "Spin again until Bind does not land - damage is multiplied by the number of Bind spins. The bttle opponent gains Wait X where X is the number of Bind spins",
+                        "attack_start_angle_deg": 15.0,
+                        "attack_end_angle_deg": 164.9999,
+                        "attack_wheel_file_name": "Omanyte_UC_0_burned_1_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 24,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 165.0,
+                        "attack_end_angle_deg": 254.9999,
+                        "attack_wheel_file_name": "Omanyte_UC_0_burned_1_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 4,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 255.0,
+                        "attack_end_angle_deg": 269.9999,
+                        "attack_wheel_file_name": "Omanyte_UC_0_burned_1_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 24,
+                        "attack_name": "Protect",
+                        "attack_type": "Blue",
+                        "attack_value": "",
+                        "attack_ability": "This Pok\u00e9mon gains Wait",
+                        "attack_start_angle_deg": 270.0,
+                        "attack_end_angle_deg": 359.9999,
+                        "attack_wheel_file_name": "Omanyte_UC_0_burned_1_attack_wheel.png"
+                    }
+                ]
+            }
+        ]
+    }
+}

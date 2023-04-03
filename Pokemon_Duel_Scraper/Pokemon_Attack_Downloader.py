@@ -1,17 +1,19 @@
+import json
 import os
-import pandas as pd
+import time
 import copy
-from selenium import webdriver
-from selenium.webdriver.chrome.service import Service
-from selenium.webdriver.common.by import By
-from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.support.ui import Select
+import io
+
 from bs4 import BeautifulSoup
 from PIL import Image, ImageDraw
-import time
-import io
+import pandas as pd
+
+from selenium import webdriver
+from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.support.ui import Select, WebDriverWait
 
 def handleSpecialPokemonNames(pokemon_name):
     # Special case for nidoran
@@ -261,35 +263,41 @@ def createWheelsAndTable(attack_list, evolution_num, overwrite_table, overwrite_
         # end for wheel_type in wheel_types
     # end if overwrite_wheels
 
-def saveJSON(attack_list, wheel_type, folder_path, file_name):
-    if wheel_type.lower() == 'basic':
-        # Create the file and write to it
-        # TODO:
-        pass
-        # Generate header info for json
-        jsonObject = {}
-        pokemon_name = handleSpecialPokemonNames(attack_list[0]["pokemon_name"])
-        pokemon_sprite_image = f"{pokemon_name.lower()}_sprite.png"
-        attack_table_file_name = f"{pokemon_name}_{attack_list[0]['pokemon_rarity']}_{evolution_num}_attack_table.png"
-        base_movement_points = int(attack_list[0]["pokemon_movement"])
-        rarity = attack_list[0]["pokemon_rarity"].upper()
-        evolution = attack_list[0]["evolution"].capitalize()
-        evolved_from = attack_list[0]["evolved_from"].capitalize()
-        evolution_num = int(attack_list[0]["num_evolutions"])
-        status = wheel_type.lower()
-        attack_wheel_name = f"{file_name[:-9]}_wheel.png"
-        # Add this header info to the jsonObject
-        jsonObject['pokemon_name'] = pokemon_name
-        jsonObject['pokemon_sprite_image'] = pokemon_sprite_image
-        jsonObject['attack_table_file_name'] = attack_table_file_name
-        jsonObject['base_movement_points'] = base_movement_points
-        jsonObject['rarity'] = rarity
-        jsonObject['evolution'] = evolution
-        jsonObject['evolved_from'] = evolved_from
-        jsonObject['evolution_num'] = evolution_num
-        jsonObject['status'] = status
-        jsonObject['attack_wheel_name'] = attack_wheel_name
+def saveJSON(attack_lists_by_type, attack_list, folder_path, file_name):
+    # Generate header info for json
+    jsonObject = {}
+    pokemon_name = handleSpecialPokemonNames(attack_list[0]["pokemon_name"])
+    pokemon_type = attack_list[0]["pokemon_type"]
+    pokemon_sprite_image = f"{pokemon_name.lower()}_sprite.png"
+    evolution_num = int(attack_list[0]["num_evolutions"])
+    attack_table_file_name = f"{pokemon_name}_{attack_list[0]['pokemon_rarity']}_{evolution_num}_attack_table.png"
+    base_movement_points = int(attack_list[0]["pokemon_movement"])
+    rarity = attack_list[0]["pokemon_rarity"].upper()
+    evolution = attack_list[0]["evolution"].capitalize()
+    evolved_from = attack_list[0]["evolved_from"].capitalize()
+    # Add this header info to the jsonObject
+    jsonObject['pokemon_name'] = pokemon_name
+    jsonObject['pokemon_sprite_image'] = pokemon_sprite_image
+    jsonObject['attack_table_file_name'] = attack_table_file_name
+    jsonObject['base_movement_points'] = base_movement_points
+    jsonObject['rarity'] = rarity
+    jsonObject['pokemon_type'] = pokemon_type
+    jsonObject['evolution'] = evolution
+    jsonObject['evolved_from'] = evolved_from
+    jsonObject['evolution_num'] = evolution_num
+    jsonObject['attack_lists_by_type'] = attack_lists_by_type
 
+    # Write to file
+    # create folder if it doesn't exist
+    if not os.path.exists(folder_path):
+        os.makedirs(folder_path)
+    file_path = os.path.join(folder_path, file_name)
+
+    print(f"Saving {file_path} ...")
+    with open(file_path, 'w') as outfile:
+        json.dump(jsonObject, outfile, indent=4)
+
+def modifyAttackswithAngles(attack_list):
     # Add attack info to json Object
     new_attack_list = copy.deepcopy(attack_list)
     curr_end_deg = 0
@@ -301,12 +309,24 @@ def saveJSON(attack_list, wheel_type, folder_path, file_name):
         curr_end_deg += attack_size_deg
         # Set the end of this attack a bit behind so there is no overlap
         new_attack_list[idx]['attack_end_angle_deg'] = curr_end_deg - 0.0001
-    jsonObject['attack_list'] = new_attack_list
+    return new_attack_list
 
-    # TODO: Write the jsonObject to the appropriate file
+def modifyAttackswithFileName(attack_list, wheel_file_name):
+    for attack in attack_list:
+        attack['attack_wheel_file_name'] = wheel_file_name
+    return attack_list
 
-def modifyAttackswithAngles(attack_list):
-    pass
+def removeHeaderPokemonLabels(attack_list):
+    attack_list_copy = copy.deepcopy(attack_list)
+    for attack in attack_list_copy:
+        attack.pop('pokemon_name')
+        attack.pop('pokemon_movement')
+        attack.pop('pokemon_rarity')
+        attack.pop('pokemon_type')
+        attack.pop('evolution')
+        attack.pop('evolved_from')
+        attack.pop('num_evolutions')
+    return attack_list_copy
 
 def createJSONs(attack_list, evolution_num):
     # Setup file names and folders
@@ -326,6 +346,8 @@ def createJSONs(attack_list, evolution_num):
     # Modify the attack list with evolution
     evolved_attack_list = modifyAttackswithEvolution(attack_list, evolution_num)
     evolved_attack_list = modifyAttackswithAngles(evolved_attack_list)
+    header_attack_copy = copy.deepcopy(evolved_attack_list)
+    evolved_attack_list = removeHeaderPokemonLabels(evolved_attack_list)
     wheel_types = ['basic', 'poisoned', 'confused', 'paralyzed', 'asleep', 'frozen', 'burned']
     attack_lists_by_type = {}
     for wheel_type in wheel_types:
@@ -343,6 +365,7 @@ def createJSONs(attack_list, evolution_num):
             attack_version = 0
             for white_idx in idxs_of_white_attacks:
                 evolved_copy = copy.deepcopy(evolved_attack_list)
+                
                 for idx, attack in enumerate(evolved_copy):
                     if(idx == white_idx):
                         # Set the attack to a miss
@@ -352,6 +375,10 @@ def createJSONs(attack_list, evolution_num):
                         evolved_copy[white_idx]['attack_ability'] = ''
                 # paralyzed and burned attacks need a special type name
                 # burned_list also needs its own lists
+                # Spearow_C_0_burned_0_attack_wheel.png
+                wheel_file_name = f"{pokemon_name}_{attack_list[0]['pokemon_rarity']}_{evolution_num}_{wheel_type}_{attack_version}_attack_wheel.png"
+                evolved_copy = modifyAttackswithFileName(evolved_copy, wheel_file_name)
+                # Add to list of lists
                 attack_list_type_name = f"{wheel_type}_{attack_version}" # burned_0
                 attack_lists_by_type[list_of_lists_name].append({attack_list_type_name : evolved_copy})
                 attack_version += 1
@@ -364,15 +391,19 @@ def createJSONs(attack_list, evolution_num):
                 evolved_copy[idx]['attack_type'] = 'Red'
                 evolved_copy[idx]['attack_value'] = ''
                 evolved_copy[idx]['attack_ability'] = ''
+            wheel_file_name = f"{pokemon_name}_{attack_list[0]['pokemon_rarity']}_{evolution_num}_{wheel_type}_attack_wheel.png"
+            evolved_copy = modifyAttackswithFileName(evolved_copy, wheel_file_name)
             # Add attack list to the json
             attack_lists_by_type[wheel_type] = evolved_copy
         else:
             # No changes to the wheel, but include the effect in the name
-            # TODO
-            pass
-    
+            wheel_file_name = f"{pokemon_name}_{attack_list[0]['pokemon_rarity']}_{evolution_num}_{wheel_type}_attack_wheel.png"
+            evolved_copy = copy.deepcopy(evolved_attack_list)
+            evolved_copy = modifyAttackswithFileName(evolved_copy, wheel_file_name)
+            attack_lists_by_type[wheel_type] = evolved_copy
+            
     # end for wheel_type in wheel_types
-    saveJSON(evolved_attack_list, wheel_type, parent_folder_path, attack_json_file_name)
+    saveJSON(attack_lists_by_type, header_attack_copy, parent_folder_path, attack_json_file_name)
 
 
 def scrapeWheelsAndTables(pokemon_attacks_df):
@@ -397,7 +428,11 @@ def scrapeWheelsAndTables(pokemon_attacks_df):
             attack_ability = ""
         attack_wheel_size = row['Attack Wheel Size']
         evolution = row['Evolution']
+        if(pd.isnull(evolution)):
+            evolution = ""
         evolved_from = row['Evolved From']
+        if(pd.isnull(evolved_from)):
+            evolved_from = ""
         num_evolutions = row['Num Evolutions']
         
         # check if this is a new pokemon and update prev_pokemon_name

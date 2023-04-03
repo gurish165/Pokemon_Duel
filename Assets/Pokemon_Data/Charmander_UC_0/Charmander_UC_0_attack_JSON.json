@@ -1,0 +1,403 @@
+{
+    "pokemon_name": "Charmander",
+    "pokemon_sprite_image": "charmander_sprite.png",
+    "attack_table_file_name": "Charmander_UC_0_attack_table.png",
+    "base_movement_points": 3,
+    "rarity": "UC",
+    "pokemon_type": "Fire",
+    "evolution": "Charmeleon",
+    "evolved_from": "",
+    "evolution_num": 0,
+    "attack_lists_by_type": {
+        "basic": [
+            {
+                "attack_wheel_size": 24,
+                "attack_name": "Flame Tail",
+                "attack_type": "White",
+                "attack_value": "40",
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 89.9999,
+                "attack_wheel_file_name": "Charmander_UC_0_basic_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 28,
+                "attack_name": "Smokescreen",
+                "attack_type": "Purple",
+                "attack_value": "\u2606",
+                "attack_ability": "The battle opponent now has Wait.",
+                "attack_start_angle_deg": 90.0,
+                "attack_end_angle_deg": 194.9999,
+                "attack_wheel_file_name": "Charmander_UC_0_basic_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 32,
+                "attack_name": "Scratch",
+                "attack_type": "White",
+                "attack_value": "10",
+                "attack_ability": "",
+                "attack_start_angle_deg": 195.0,
+                "attack_end_angle_deg": 314.9999,
+                "attack_wheel_file_name": "Charmander_UC_0_basic_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 12,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 315.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Charmander_UC_0_basic_attack_wheel.png"
+            }
+        ],
+        "poisoned": [
+            {
+                "attack_wheel_size": 24,
+                "attack_name": "Flame Tail",
+                "attack_type": "White",
+                "attack_value": "40",
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 89.9999,
+                "attack_wheel_file_name": "Charmander_UC_0_poisoned_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 28,
+                "attack_name": "Smokescreen",
+                "attack_type": "Purple",
+                "attack_value": "\u2606",
+                "attack_ability": "The battle opponent now has Wait.",
+                "attack_start_angle_deg": 90.0,
+                "attack_end_angle_deg": 194.9999,
+                "attack_wheel_file_name": "Charmander_UC_0_poisoned_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 32,
+                "attack_name": "Scratch",
+                "attack_type": "White",
+                "attack_value": "10",
+                "attack_ability": "",
+                "attack_start_angle_deg": 195.0,
+                "attack_end_angle_deg": 314.9999,
+                "attack_wheel_file_name": "Charmander_UC_0_poisoned_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 12,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 315.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Charmander_UC_0_poisoned_attack_wheel.png"
+            }
+        ],
+        "confused": [
+            {
+                "attack_wheel_size": 24,
+                "attack_name": "Flame Tail",
+                "attack_type": "White",
+                "attack_value": "40",
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 89.9999,
+                "attack_wheel_file_name": "Charmander_UC_0_confused_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 28,
+                "attack_name": "Smokescreen",
+                "attack_type": "Purple",
+                "attack_value": "\u2606",
+                "attack_ability": "The battle opponent now has Wait.",
+                "attack_start_angle_deg": 90.0,
+                "attack_end_angle_deg": 194.9999,
+                "attack_wheel_file_name": "Charmander_UC_0_confused_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 32,
+                "attack_name": "Scratch",
+                "attack_type": "White",
+                "attack_value": "10",
+                "attack_ability": "",
+                "attack_start_angle_deg": 195.0,
+                "attack_end_angle_deg": 314.9999,
+                "attack_wheel_file_name": "Charmander_UC_0_confused_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 12,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 315.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Charmander_UC_0_confused_attack_wheel.png"
+            }
+        ],
+        "paralyzed_list": [
+            {
+                "paralyzed_0": [
+                    {
+                        "attack_wheel_size": 24,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 0,
+                        "attack_end_angle_deg": 89.9999,
+                        "attack_wheel_file_name": "Charmander_UC_0_paralyzed_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 28,
+                        "attack_name": "Smokescreen",
+                        "attack_type": "Purple",
+                        "attack_value": "\u2606",
+                        "attack_ability": "The battle opponent now has Wait.",
+                        "attack_start_angle_deg": 90.0,
+                        "attack_end_angle_deg": 194.9999,
+                        "attack_wheel_file_name": "Charmander_UC_0_paralyzed_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 32,
+                        "attack_name": "Scratch",
+                        "attack_type": "White",
+                        "attack_value": "10",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 195.0,
+                        "attack_end_angle_deg": 314.9999,
+                        "attack_wheel_file_name": "Charmander_UC_0_paralyzed_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 12,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 315.0,
+                        "attack_end_angle_deg": 359.9999,
+                        "attack_wheel_file_name": "Charmander_UC_0_paralyzed_0_attack_wheel.png"
+                    }
+                ]
+            },
+            {
+                "paralyzed_1": [
+                    {
+                        "attack_wheel_size": 24,
+                        "attack_name": "Flame Tail",
+                        "attack_type": "White",
+                        "attack_value": "40",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 0,
+                        "attack_end_angle_deg": 89.9999,
+                        "attack_wheel_file_name": "Charmander_UC_0_paralyzed_1_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 28,
+                        "attack_name": "Smokescreen",
+                        "attack_type": "Purple",
+                        "attack_value": "\u2606",
+                        "attack_ability": "The battle opponent now has Wait.",
+                        "attack_start_angle_deg": 90.0,
+                        "attack_end_angle_deg": 194.9999,
+                        "attack_wheel_file_name": "Charmander_UC_0_paralyzed_1_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 32,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 195.0,
+                        "attack_end_angle_deg": 314.9999,
+                        "attack_wheel_file_name": "Charmander_UC_0_paralyzed_1_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 12,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 315.0,
+                        "attack_end_angle_deg": 359.9999,
+                        "attack_wheel_file_name": "Charmander_UC_0_paralyzed_1_attack_wheel.png"
+                    }
+                ]
+            }
+        ],
+        "asleep": [
+            {
+                "attack_wheel_size": 24,
+                "attack_name": "Flame Tail",
+                "attack_type": "White",
+                "attack_value": "40",
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 89.9999,
+                "attack_wheel_file_name": "Charmander_UC_0_asleep_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 28,
+                "attack_name": "Smokescreen",
+                "attack_type": "Purple",
+                "attack_value": "\u2606",
+                "attack_ability": "The battle opponent now has Wait.",
+                "attack_start_angle_deg": 90.0,
+                "attack_end_angle_deg": 194.9999,
+                "attack_wheel_file_name": "Charmander_UC_0_asleep_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 32,
+                "attack_name": "Scratch",
+                "attack_type": "White",
+                "attack_value": "10",
+                "attack_ability": "",
+                "attack_start_angle_deg": 195.0,
+                "attack_end_angle_deg": 314.9999,
+                "attack_wheel_file_name": "Charmander_UC_0_asleep_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 12,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 315.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Charmander_UC_0_asleep_attack_wheel.png"
+            }
+        ],
+        "frozen": [
+            {
+                "attack_wheel_size": 24,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 89.9999,
+                "attack_wheel_file_name": "Charmander_UC_0_frozen_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 28,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 90.0,
+                "attack_end_angle_deg": 194.9999,
+                "attack_wheel_file_name": "Charmander_UC_0_frozen_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 32,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 195.0,
+                "attack_end_angle_deg": 314.9999,
+                "attack_wheel_file_name": "Charmander_UC_0_frozen_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 12,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 315.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Charmander_UC_0_frozen_attack_wheel.png"
+            }
+        ],
+        "burned_list": [
+            {
+                "burned_0": [
+                    {
+                        "attack_wheel_size": 24,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 0,
+                        "attack_end_angle_deg": 89.9999,
+                        "attack_wheel_file_name": "Charmander_UC_0_burned_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 28,
+                        "attack_name": "Smokescreen",
+                        "attack_type": "Purple",
+                        "attack_value": "\u2606",
+                        "attack_ability": "The battle opponent now has Wait.",
+                        "attack_start_angle_deg": 90.0,
+                        "attack_end_angle_deg": 194.9999,
+                        "attack_wheel_file_name": "Charmander_UC_0_burned_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 32,
+                        "attack_name": "Scratch",
+                        "attack_type": "White",
+                        "attack_value": "10",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 195.0,
+                        "attack_end_angle_deg": 314.9999,
+                        "attack_wheel_file_name": "Charmander_UC_0_burned_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 12,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 315.0,
+                        "attack_end_angle_deg": 359.9999,
+                        "attack_wheel_file_name": "Charmander_UC_0_burned_0_attack_wheel.png"
+                    }
+                ]
+            },
+            {
+                "burned_1": [
+                    {
+                        "attack_wheel_size": 24,
+                        "attack_name": "Flame Tail",
+                        "attack_type": "White",
+                        "attack_value": "40",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 0,
+                        "attack_end_angle_deg": 89.9999,
+                        "attack_wheel_file_name": "Charmander_UC_0_burned_1_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 28,
+                        "attack_name": "Smokescreen",
+                        "attack_type": "Purple",
+                        "attack_value": "\u2606",
+                        "attack_ability": "The battle opponent now has Wait.",
+                        "attack_start_angle_deg": 90.0,
+                        "attack_end_angle_deg": 194.9999,
+                        "attack_wheel_file_name": "Charmander_UC_0_burned_1_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 32,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 195.0,
+                        "attack_end_angle_deg": 314.9999,
+                        "attack_wheel_file_name": "Charmander_UC_0_burned_1_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 12,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 315.0,
+                        "attack_end_angle_deg": 359.9999,
+                        "attack_wheel_file_name": "Charmander_UC_0_burned_1_attack_wheel.png"
+                    }
+                ]
+            }
+        ]
+    }
+}

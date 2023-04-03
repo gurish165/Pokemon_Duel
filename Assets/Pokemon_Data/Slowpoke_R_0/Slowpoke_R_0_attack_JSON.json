@@ -1,0 +1,315 @@
+{
+    "pokemon_name": "Slowpoke",
+    "pokemon_sprite_image": "slowpoke_sprite.png",
+    "attack_table_file_name": "Slowpoke_R_0_attack_table.png",
+    "base_movement_points": 1,
+    "rarity": "R",
+    "pokemon_type": "Water / Psychic",
+    "evolution": "Slowking",
+    "evolved_from": "",
+    "evolution_num": 0,
+    "attack_lists_by_type": {
+        "basic": [
+            {
+                "attack_wheel_size": 8,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 29.9999,
+                "attack_wheel_file_name": "Slowpoke_R_0_basic_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 24,
+                "attack_name": "Trick Room",
+                "attack_type": "Purple",
+                "attack_value": "\u2606\u2606",
+                "attack_ability": "For 5 turns, the Gold Attacks of all Pok\u00e9mon become Misses, the MP of Pok\u00e9mon that have MP 3 or higher become 1 and the MP of Pok\u00e9mon that have MP 1 or lower becomes 3 (MP-Increasing or MP-decreasing effects from markers are applied after this)",
+                "attack_start_angle_deg": 30.0,
+                "attack_end_angle_deg": 119.9999,
+                "attack_wheel_file_name": "Slowpoke_R_0_basic_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 36,
+                "attack_name": "Yawn",
+                "attack_type": "Purple",
+                "attack_value": "\u2606",
+                "attack_ability": "The battle opponent falls asleep",
+                "attack_start_angle_deg": 120.0,
+                "attack_end_angle_deg": 254.9999,
+                "attack_wheel_file_name": "Slowpoke_R_0_basic_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 28,
+                "attack_name": "Psychic",
+                "attack_type": "White",
+                "attack_value": "120",
+                "attack_ability": "",
+                "attack_start_angle_deg": 255.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Slowpoke_R_0_basic_attack_wheel.png"
+            }
+        ],
+        "poisoned": [
+            {
+                "attack_wheel_size": 8,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 29.9999,
+                "attack_wheel_file_name": "Slowpoke_R_0_poisoned_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 24,
+                "attack_name": "Trick Room",
+                "attack_type": "Purple",
+                "attack_value": "\u2606\u2606",
+                "attack_ability": "For 5 turns, the Gold Attacks of all Pok\u00e9mon become Misses, the MP of Pok\u00e9mon that have MP 3 or higher become 1 and the MP of Pok\u00e9mon that have MP 1 or lower becomes 3 (MP-Increasing or MP-decreasing effects from markers are applied after this)",
+                "attack_start_angle_deg": 30.0,
+                "attack_end_angle_deg": 119.9999,
+                "attack_wheel_file_name": "Slowpoke_R_0_poisoned_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 36,
+                "attack_name": "Yawn",
+                "attack_type": "Purple",
+                "attack_value": "\u2606",
+                "attack_ability": "The battle opponent falls asleep",
+                "attack_start_angle_deg": 120.0,
+                "attack_end_angle_deg": 254.9999,
+                "attack_wheel_file_name": "Slowpoke_R_0_poisoned_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 28,
+                "attack_name": "Psychic",
+                "attack_type": "White",
+                "attack_value": "120",
+                "attack_ability": "",
+                "attack_start_angle_deg": 255.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Slowpoke_R_0_poisoned_attack_wheel.png"
+            }
+        ],
+        "confused": [
+            {
+                "attack_wheel_size": 8,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 29.9999,
+                "attack_wheel_file_name": "Slowpoke_R_0_confused_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 24,
+                "attack_name": "Trick Room",
+                "attack_type": "Purple",
+                "attack_value": "\u2606\u2606",
+                "attack_ability": "For 5 turns, the Gold Attacks of all Pok\u00e9mon become Misses, the MP of Pok\u00e9mon that have MP 3 or higher become 1 and the MP of Pok\u00e9mon that have MP 1 or lower becomes 3 (MP-Increasing or MP-decreasing effects from markers are applied after this)",
+                "attack_start_angle_deg": 30.0,
+                "attack_end_angle_deg": 119.9999,
+                "attack_wheel_file_name": "Slowpoke_R_0_confused_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 36,
+                "attack_name": "Yawn",
+                "attack_type": "Purple",
+                "attack_value": "\u2606",
+                "attack_ability": "The battle opponent falls asleep",
+                "attack_start_angle_deg": 120.0,
+                "attack_end_angle_deg": 254.9999,
+                "attack_wheel_file_name": "Slowpoke_R_0_confused_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 28,
+                "attack_name": "Psychic",
+                "attack_type": "White",
+                "attack_value": "120",
+                "attack_ability": "",
+                "attack_start_angle_deg": 255.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Slowpoke_R_0_confused_attack_wheel.png"
+            }
+        ],
+        "paralyzed_list": [
+            {
+                "paralyzed_0": [
+                    {
+                        "attack_wheel_size": 8,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 0,
+                        "attack_end_angle_deg": 29.9999,
+                        "attack_wheel_file_name": "Slowpoke_R_0_paralyzed_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 24,
+                        "attack_name": "Trick Room",
+                        "attack_type": "Purple",
+                        "attack_value": "\u2606\u2606",
+                        "attack_ability": "For 5 turns, the Gold Attacks of all Pok\u00e9mon become Misses, the MP of Pok\u00e9mon that have MP 3 or higher become 1 and the MP of Pok\u00e9mon that have MP 1 or lower becomes 3 (MP-Increasing or MP-decreasing effects from markers are applied after this)",
+                        "attack_start_angle_deg": 30.0,
+                        "attack_end_angle_deg": 119.9999,
+                        "attack_wheel_file_name": "Slowpoke_R_0_paralyzed_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 36,
+                        "attack_name": "Yawn",
+                        "attack_type": "Purple",
+                        "attack_value": "\u2606",
+                        "attack_ability": "The battle opponent falls asleep",
+                        "attack_start_angle_deg": 120.0,
+                        "attack_end_angle_deg": 254.9999,
+                        "attack_wheel_file_name": "Slowpoke_R_0_paralyzed_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 28,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 255.0,
+                        "attack_end_angle_deg": 359.9999,
+                        "attack_wheel_file_name": "Slowpoke_R_0_paralyzed_0_attack_wheel.png"
+                    }
+                ]
+            }
+        ],
+        "asleep": [
+            {
+                "attack_wheel_size": 8,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 29.9999,
+                "attack_wheel_file_name": "Slowpoke_R_0_asleep_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 24,
+                "attack_name": "Trick Room",
+                "attack_type": "Purple",
+                "attack_value": "\u2606\u2606",
+                "attack_ability": "For 5 turns, the Gold Attacks of all Pok\u00e9mon become Misses, the MP of Pok\u00e9mon that have MP 3 or higher become 1 and the MP of Pok\u00e9mon that have MP 1 or lower becomes 3 (MP-Increasing or MP-decreasing effects from markers are applied after this)",
+                "attack_start_angle_deg": 30.0,
+                "attack_end_angle_deg": 119.9999,
+                "attack_wheel_file_name": "Slowpoke_R_0_asleep_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 36,
+                "attack_name": "Yawn",
+                "attack_type": "Purple",
+                "attack_value": "\u2606",
+                "attack_ability": "The battle opponent falls asleep",
+                "attack_start_angle_deg": 120.0,
+                "attack_end_angle_deg": 254.9999,
+                "attack_wheel_file_name": "Slowpoke_R_0_asleep_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 28,
+                "attack_name": "Psychic",
+                "attack_type": "White",
+                "attack_value": "120",
+                "attack_ability": "",
+                "attack_start_angle_deg": 255.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Slowpoke_R_0_asleep_attack_wheel.png"
+            }
+        ],
+        "frozen": [
+            {
+                "attack_wheel_size": 8,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 29.9999,
+                "attack_wheel_file_name": "Slowpoke_R_0_frozen_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 24,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 30.0,
+                "attack_end_angle_deg": 119.9999,
+                "attack_wheel_file_name": "Slowpoke_R_0_frozen_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 36,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 120.0,
+                "attack_end_angle_deg": 254.9999,
+                "attack_wheel_file_name": "Slowpoke_R_0_frozen_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 28,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 255.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Slowpoke_R_0_frozen_attack_wheel.png"
+            }
+        ],
+        "burned_list": [
+            {
+                "burned_0": [
+                    {
+                        "attack_wheel_size": 8,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 0,
+                        "attack_end_angle_deg": 29.9999,
+                        "attack_wheel_file_name": "Slowpoke_R_0_burned_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 24,
+                        "attack_name": "Trick Room",
+                        "attack_type": "Purple",
+                        "attack_value": "\u2606\u2606",
+                        "attack_ability": "For 5 turns, the Gold Attacks of all Pok\u00e9mon become Misses, the MP of Pok\u00e9mon that have MP 3 or higher become 1 and the MP of Pok\u00e9mon that have MP 1 or lower becomes 3 (MP-Increasing or MP-decreasing effects from markers are applied after this)",
+                        "attack_start_angle_deg": 30.0,
+                        "attack_end_angle_deg": 119.9999,
+                        "attack_wheel_file_name": "Slowpoke_R_0_burned_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 36,
+                        "attack_name": "Yawn",
+                        "attack_type": "Purple",
+                        "attack_value": "\u2606",
+                        "attack_ability": "The battle opponent falls asleep",
+                        "attack_start_angle_deg": 120.0,
+                        "attack_end_angle_deg": 254.9999,
+                        "attack_wheel_file_name": "Slowpoke_R_0_burned_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 28,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 255.0,
+                        "attack_end_angle_deg": 359.9999,
+                        "attack_wheel_file_name": "Slowpoke_R_0_burned_0_attack_wheel.png"
+                    }
+                ]
+            }
+        ]
+    }
+}

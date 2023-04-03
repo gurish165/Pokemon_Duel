@@ -1,0 +1,385 @@
+{
+    "pokemon_name": "Alakazam",
+    "pokemon_sprite_image": "alakazam_sprite.png",
+    "attack_table_file_name": "Alakazam_EX_2_attack_table.png",
+    "base_movement_points": 2,
+    "rarity": "EX",
+    "pokemon_type": "Psychic",
+    "evolution": "",
+    "evolved_from": "Kadabra",
+    "evolution_num": 2,
+    "attack_lists_by_type": {
+        "basic": [
+            {
+                "attack_wheel_size": 24,
+                "attack_name": "Stillblind",
+                "attack_type": "Purple",
+                "attack_value": "\u2605\u2605\u2605\u2605",
+                "attack_ability": "Attaches an Mp-2 marker to the battle opponent or one opposing Pok\u00e9mon adjacent to the battle opponent. That Pok\u00e9mon gains Wait 5",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 89.9999,
+                "attack_wheel_file_name": "Alakazam_EX_2_basic_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 4,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 90.0,
+                "attack_end_angle_deg": 104.9999,
+                "attack_wheel_file_name": "Alakazam_EX_2_basic_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 24,
+                "attack_name": "Psychic",
+                "attack_type": "White",
+                "attack_value": 130,
+                "attack_ability": "",
+                "attack_start_angle_deg": 105.0,
+                "attack_end_angle_deg": 194.9999,
+                "attack_wheel_file_name": "Alakazam_EX_2_basic_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 24,
+                "attack_name": "Psyshock",
+                "attack_type": "Purple",
+                "attack_value": "\u2605\u2605\u2605\u2605\u2605",
+                "attack_ability": "If the battle opponent is affected by a special condition or has Wait, the battle opponent is knocked out. The battle opponent gains Wait 3.",
+                "attack_start_angle_deg": 195.0,
+                "attack_end_angle_deg": 284.9999,
+                "attack_wheel_file_name": "Alakazam_EX_2_basic_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 20,
+                "attack_name": "Psycho Shift",
+                "attack_type": "Blue",
+                "attack_value": "",
+                "attack_ability": "If this Pok\u00e9mon has a special condition, that condition is applied to its battle opponent and removed from this Pok\u00e9mon instead.",
+                "attack_start_angle_deg": 285.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Alakazam_EX_2_basic_attack_wheel.png"
+            }
+        ],
+        "poisoned": [
+            {
+                "attack_wheel_size": 24,
+                "attack_name": "Stillblind",
+                "attack_type": "Purple",
+                "attack_value": "\u2605\u2605\u2605\u2605",
+                "attack_ability": "Attaches an Mp-2 marker to the battle opponent or one opposing Pok\u00e9mon adjacent to the battle opponent. That Pok\u00e9mon gains Wait 5",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 89.9999,
+                "attack_wheel_file_name": "Alakazam_EX_2_poisoned_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 4,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 90.0,
+                "attack_end_angle_deg": 104.9999,
+                "attack_wheel_file_name": "Alakazam_EX_2_poisoned_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 24,
+                "attack_name": "Psychic",
+                "attack_type": "White",
+                "attack_value": 130,
+                "attack_ability": "",
+                "attack_start_angle_deg": 105.0,
+                "attack_end_angle_deg": 194.9999,
+                "attack_wheel_file_name": "Alakazam_EX_2_poisoned_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 24,
+                "attack_name": "Psyshock",
+                "attack_type": "Purple",
+                "attack_value": "\u2605\u2605\u2605\u2605\u2605",
+                "attack_ability": "If the battle opponent is affected by a special condition or has Wait, the battle opponent is knocked out. The battle opponent gains Wait 3.",
+                "attack_start_angle_deg": 195.0,
+                "attack_end_angle_deg": 284.9999,
+                "attack_wheel_file_name": "Alakazam_EX_2_poisoned_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 20,
+                "attack_name": "Psycho Shift",
+                "attack_type": "Blue",
+                "attack_value": "",
+                "attack_ability": "If this Pok\u00e9mon has a special condition, that condition is applied to its battle opponent and removed from this Pok\u00e9mon instead.",
+                "attack_start_angle_deg": 285.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Alakazam_EX_2_poisoned_attack_wheel.png"
+            }
+        ],
+        "confused": [
+            {
+                "attack_wheel_size": 24,
+                "attack_name": "Stillblind",
+                "attack_type": "Purple",
+                "attack_value": "\u2605\u2605\u2605\u2605",
+                "attack_ability": "Attaches an Mp-2 marker to the battle opponent or one opposing Pok\u00e9mon adjacent to the battle opponent. That Pok\u00e9mon gains Wait 5",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 89.9999,
+                "attack_wheel_file_name": "Alakazam_EX_2_confused_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 4,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 90.0,
+                "attack_end_angle_deg": 104.9999,
+                "attack_wheel_file_name": "Alakazam_EX_2_confused_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 24,
+                "attack_name": "Psychic",
+                "attack_type": "White",
+                "attack_value": 130,
+                "attack_ability": "",
+                "attack_start_angle_deg": 105.0,
+                "attack_end_angle_deg": 194.9999,
+                "attack_wheel_file_name": "Alakazam_EX_2_confused_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 24,
+                "attack_name": "Psyshock",
+                "attack_type": "Purple",
+                "attack_value": "\u2605\u2605\u2605\u2605\u2605",
+                "attack_ability": "If the battle opponent is affected by a special condition or has Wait, the battle opponent is knocked out. The battle opponent gains Wait 3.",
+                "attack_start_angle_deg": 195.0,
+                "attack_end_angle_deg": 284.9999,
+                "attack_wheel_file_name": "Alakazam_EX_2_confused_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 20,
+                "attack_name": "Psycho Shift",
+                "attack_type": "Blue",
+                "attack_value": "",
+                "attack_ability": "If this Pok\u00e9mon has a special condition, that condition is applied to its battle opponent and removed from this Pok\u00e9mon instead.",
+                "attack_start_angle_deg": 285.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Alakazam_EX_2_confused_attack_wheel.png"
+            }
+        ],
+        "paralyzed_list": [
+            {
+                "paralyzed_0": [
+                    {
+                        "attack_wheel_size": 24,
+                        "attack_name": "Stillblind",
+                        "attack_type": "Purple",
+                        "attack_value": "\u2605\u2605\u2605\u2605",
+                        "attack_ability": "Attaches an Mp-2 marker to the battle opponent or one opposing Pok\u00e9mon adjacent to the battle opponent. That Pok\u00e9mon gains Wait 5",
+                        "attack_start_angle_deg": 0,
+                        "attack_end_angle_deg": 89.9999,
+                        "attack_wheel_file_name": "Alakazam_EX_2_paralyzed_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 4,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 90.0,
+                        "attack_end_angle_deg": 104.9999,
+                        "attack_wheel_file_name": "Alakazam_EX_2_paralyzed_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 24,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 105.0,
+                        "attack_end_angle_deg": 194.9999,
+                        "attack_wheel_file_name": "Alakazam_EX_2_paralyzed_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 24,
+                        "attack_name": "Psyshock",
+                        "attack_type": "Purple",
+                        "attack_value": "\u2605\u2605\u2605\u2605\u2605",
+                        "attack_ability": "If the battle opponent is affected by a special condition or has Wait, the battle opponent is knocked out. The battle opponent gains Wait 3.",
+                        "attack_start_angle_deg": 195.0,
+                        "attack_end_angle_deg": 284.9999,
+                        "attack_wheel_file_name": "Alakazam_EX_2_paralyzed_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 20,
+                        "attack_name": "Psycho Shift",
+                        "attack_type": "Blue",
+                        "attack_value": "",
+                        "attack_ability": "If this Pok\u00e9mon has a special condition, that condition is applied to its battle opponent and removed from this Pok\u00e9mon instead.",
+                        "attack_start_angle_deg": 285.0,
+                        "attack_end_angle_deg": 359.9999,
+                        "attack_wheel_file_name": "Alakazam_EX_2_paralyzed_0_attack_wheel.png"
+                    }
+                ]
+            }
+        ],
+        "asleep": [
+            {
+                "attack_wheel_size": 24,
+                "attack_name": "Stillblind",
+                "attack_type": "Purple",
+                "attack_value": "\u2605\u2605\u2605\u2605",
+                "attack_ability": "Attaches an Mp-2 marker to the battle opponent or one opposing Pok\u00e9mon adjacent to the battle opponent. That Pok\u00e9mon gains Wait 5",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 89.9999,
+                "attack_wheel_file_name": "Alakazam_EX_2_asleep_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 4,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 90.0,
+                "attack_end_angle_deg": 104.9999,
+                "attack_wheel_file_name": "Alakazam_EX_2_asleep_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 24,
+                "attack_name": "Psychic",
+                "attack_type": "White",
+                "attack_value": 130,
+                "attack_ability": "",
+                "attack_start_angle_deg": 105.0,
+                "attack_end_angle_deg": 194.9999,
+                "attack_wheel_file_name": "Alakazam_EX_2_asleep_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 24,
+                "attack_name": "Psyshock",
+                "attack_type": "Purple",
+                "attack_value": "\u2605\u2605\u2605\u2605\u2605",
+                "attack_ability": "If the battle opponent is affected by a special condition or has Wait, the battle opponent is knocked out. The battle opponent gains Wait 3.",
+                "attack_start_angle_deg": 195.0,
+                "attack_end_angle_deg": 284.9999,
+                "attack_wheel_file_name": "Alakazam_EX_2_asleep_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 20,
+                "attack_name": "Psycho Shift",
+                "attack_type": "Blue",
+                "attack_value": "",
+                "attack_ability": "If this Pok\u00e9mon has a special condition, that condition is applied to its battle opponent and removed from this Pok\u00e9mon instead.",
+                "attack_start_angle_deg": 285.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Alakazam_EX_2_asleep_attack_wheel.png"
+            }
+        ],
+        "frozen": [
+            {
+                "attack_wheel_size": 24,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 89.9999,
+                "attack_wheel_file_name": "Alakazam_EX_2_frozen_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 4,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 90.0,
+                "attack_end_angle_deg": 104.9999,
+                "attack_wheel_file_name": "Alakazam_EX_2_frozen_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 24,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 105.0,
+                "attack_end_angle_deg": 194.9999,
+                "attack_wheel_file_name": "Alakazam_EX_2_frozen_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 24,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 195.0,
+                "attack_end_angle_deg": 284.9999,
+                "attack_wheel_file_name": "Alakazam_EX_2_frozen_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 20,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 285.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Alakazam_EX_2_frozen_attack_wheel.png"
+            }
+        ],
+        "burned_list": [
+            {
+                "burned_0": [
+                    {
+                        "attack_wheel_size": 24,
+                        "attack_name": "Stillblind",
+                        "attack_type": "Purple",
+                        "attack_value": "\u2605\u2605\u2605\u2605",
+                        "attack_ability": "Attaches an Mp-2 marker to the battle opponent or one opposing Pok\u00e9mon adjacent to the battle opponent. That Pok\u00e9mon gains Wait 5",
+                        "attack_start_angle_deg": 0,
+                        "attack_end_angle_deg": 89.9999,
+                        "attack_wheel_file_name": "Alakazam_EX_2_burned_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 4,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 90.0,
+                        "attack_end_angle_deg": 104.9999,
+                        "attack_wheel_file_name": "Alakazam_EX_2_burned_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 24,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 105.0,
+                        "attack_end_angle_deg": 194.9999,
+                        "attack_wheel_file_name": "Alakazam_EX_2_burned_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 24,
+                        "attack_name": "Psyshock",
+                        "attack_type": "Purple",
+                        "attack_value": "\u2605\u2605\u2605\u2605\u2605",
+                        "attack_ability": "If the battle opponent is affected by a special condition or has Wait, the battle opponent is knocked out. The battle opponent gains Wait 3.",
+                        "attack_start_angle_deg": 195.0,
+                        "attack_end_angle_deg": 284.9999,
+                        "attack_wheel_file_name": "Alakazam_EX_2_burned_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 20,
+                        "attack_name": "Psycho Shift",
+                        "attack_type": "Blue",
+                        "attack_value": "",
+                        "attack_ability": "If this Pok\u00e9mon has a special condition, that condition is applied to its battle opponent and removed from this Pok\u00e9mon instead.",
+                        "attack_start_angle_deg": 285.0,
+                        "attack_end_angle_deg": 359.9999,
+                        "attack_wheel_file_name": "Alakazam_EX_2_burned_0_attack_wheel.png"
+                    }
+                ]
+            }
+        ]
+    }
+}

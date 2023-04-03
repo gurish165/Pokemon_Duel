@@ -7,11 +7,10 @@
     "evolution" : "Ivysaur",
     "evolved_from" : "",
     "evolution_num" : 2,
-    "status" : "basic",
-    "attack_wheel_name" : "bulbasaur_base_attack_wheel.jpg",
     "attack_lists_by_type" : {
         "basic": [
             { 
+                "attack_wheel_file_name" : "somefilename",
                 "attack_wheel_size" : 20,
                 "attack_name" : "name1",
                 "attack_type" : "purple",
@@ -34,6 +33,7 @@
             {
                 "burned_0" : [
                     {
+                        "attack_wheel_file_name" : "somefilename",
                         "attack_wheel_size" : 10,
                         "attack_name" : "name2",
                         "attack_type" : "white",
@@ -43,6 +43,7 @@
                         "attack_end_angle_deg": 4.2561
                     },
                     {
+                        "attack_wheel_file_name" : "somefilename",
                         "attack_wheel_size" : 10,
                         "attack_name" : "name2",
                         "attack_type" : "white",
@@ -56,6 +57,7 @@
             {
                 "burned_1" : [
                     {
+                        "attack_wheel_file_name" : "somefilename",
                         "attack_wheel_size" : 10,
                         "attack_name" : "name2",
                         "attack_type" : "white",
@@ -65,6 +67,7 @@
                         "attack_end_angle_deg": 4.2561
                     },
                     {
+                        "attack_wheel_file_name" : "somefilename",
                         "attack_wheel_size" : 10,
                         "attack_name" : "name2",
                         "attack_type" : "white",

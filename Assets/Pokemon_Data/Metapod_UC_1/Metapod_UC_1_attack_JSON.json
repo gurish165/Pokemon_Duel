@@ -1,0 +1,313 @@
+{
+    "pokemon_name": "Metapod",
+    "pokemon_sprite_image": "metapod_sprite.png",
+    "attack_table_file_name": "Metapod_UC_1_attack_table.png",
+    "base_movement_points": 0,
+    "rarity": "UC",
+    "pokemon_type": "Bug",
+    "evolution": "Butterfree",
+    "evolved_from": "Caterpie",
+    "evolution_num": 1,
+    "attack_lists_by_type": {
+        "basic": [
+            {
+                "attack_wheel_size": 68,
+                "attack_name": "Harden",
+                "attack_type": "White",
+                "attack_value": 10,
+                "attack_ability": "If the battle opponent spins an Attack of 100 damage or less, this Pok\u00e9mon is not knocked out. While this Pok\u00e9mon is on the field, the Attacks of this Pok\u00e9mon, other than Harden, deal +10 damage",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 254.9999,
+                "attack_wheel_file_name": "Metapod_UC_1_basic_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 24,
+                "attack_name": "Tackle",
+                "attack_type": "White",
+                "attack_value": 20,
+                "attack_ability": "",
+                "attack_start_angle_deg": 255.0,
+                "attack_end_angle_deg": 344.9999,
+                "attack_wheel_file_name": "Metapod_UC_1_basic_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 4,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 345.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Metapod_UC_1_basic_attack_wheel.png"
+            }
+        ],
+        "poisoned": [
+            {
+                "attack_wheel_size": 68,
+                "attack_name": "Harden",
+                "attack_type": "White",
+                "attack_value": 10,
+                "attack_ability": "If the battle opponent spins an Attack of 100 damage or less, this Pok\u00e9mon is not knocked out. While this Pok\u00e9mon is on the field, the Attacks of this Pok\u00e9mon, other than Harden, deal +10 damage",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 254.9999,
+                "attack_wheel_file_name": "Metapod_UC_1_poisoned_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 24,
+                "attack_name": "Tackle",
+                "attack_type": "White",
+                "attack_value": 20,
+                "attack_ability": "",
+                "attack_start_angle_deg": 255.0,
+                "attack_end_angle_deg": 344.9999,
+                "attack_wheel_file_name": "Metapod_UC_1_poisoned_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 4,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 345.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Metapod_UC_1_poisoned_attack_wheel.png"
+            }
+        ],
+        "confused": [
+            {
+                "attack_wheel_size": 68,
+                "attack_name": "Harden",
+                "attack_type": "White",
+                "attack_value": 10,
+                "attack_ability": "If the battle opponent spins an Attack of 100 damage or less, this Pok\u00e9mon is not knocked out. While this Pok\u00e9mon is on the field, the Attacks of this Pok\u00e9mon, other than Harden, deal +10 damage",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 254.9999,
+                "attack_wheel_file_name": "Metapod_UC_1_confused_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 24,
+                "attack_name": "Tackle",
+                "attack_type": "White",
+                "attack_value": 20,
+                "attack_ability": "",
+                "attack_start_angle_deg": 255.0,
+                "attack_end_angle_deg": 344.9999,
+                "attack_wheel_file_name": "Metapod_UC_1_confused_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 4,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 345.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Metapod_UC_1_confused_attack_wheel.png"
+            }
+        ],
+        "paralyzed_list": [
+            {
+                "paralyzed_0": [
+                    {
+                        "attack_wheel_size": 68,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 0,
+                        "attack_end_angle_deg": 254.9999,
+                        "attack_wheel_file_name": "Metapod_UC_1_paralyzed_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 24,
+                        "attack_name": "Tackle",
+                        "attack_type": "White",
+                        "attack_value": 20,
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 255.0,
+                        "attack_end_angle_deg": 344.9999,
+                        "attack_wheel_file_name": "Metapod_UC_1_paralyzed_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 4,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 345.0,
+                        "attack_end_angle_deg": 359.9999,
+                        "attack_wheel_file_name": "Metapod_UC_1_paralyzed_0_attack_wheel.png"
+                    }
+                ]
+            },
+            {
+                "paralyzed_1": [
+                    {
+                        "attack_wheel_size": 68,
+                        "attack_name": "Harden",
+                        "attack_type": "White",
+                        "attack_value": 10,
+                        "attack_ability": "If the battle opponent spins an Attack of 100 damage or less, this Pok\u00e9mon is not knocked out. While this Pok\u00e9mon is on the field, the Attacks of this Pok\u00e9mon, other than Harden, deal +10 damage",
+                        "attack_start_angle_deg": 0,
+                        "attack_end_angle_deg": 254.9999,
+                        "attack_wheel_file_name": "Metapod_UC_1_paralyzed_1_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 24,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 255.0,
+                        "attack_end_angle_deg": 344.9999,
+                        "attack_wheel_file_name": "Metapod_UC_1_paralyzed_1_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 4,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 345.0,
+                        "attack_end_angle_deg": 359.9999,
+                        "attack_wheel_file_name": "Metapod_UC_1_paralyzed_1_attack_wheel.png"
+                    }
+                ]
+            }
+        ],
+        "asleep": [
+            {
+                "attack_wheel_size": 68,
+                "attack_name": "Harden",
+                "attack_type": "White",
+                "attack_value": 10,
+                "attack_ability": "If the battle opponent spins an Attack of 100 damage or less, this Pok\u00e9mon is not knocked out. While this Pok\u00e9mon is on the field, the Attacks of this Pok\u00e9mon, other than Harden, deal +10 damage",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 254.9999,
+                "attack_wheel_file_name": "Metapod_UC_1_asleep_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 24,
+                "attack_name": "Tackle",
+                "attack_type": "White",
+                "attack_value": 20,
+                "attack_ability": "",
+                "attack_start_angle_deg": 255.0,
+                "attack_end_angle_deg": 344.9999,
+                "attack_wheel_file_name": "Metapod_UC_1_asleep_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 4,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 345.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Metapod_UC_1_asleep_attack_wheel.png"
+            }
+        ],
+        "frozen": [
+            {
+                "attack_wheel_size": 68,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 254.9999,
+                "attack_wheel_file_name": "Metapod_UC_1_frozen_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 24,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 255.0,
+                "attack_end_angle_deg": 344.9999,
+                "attack_wheel_file_name": "Metapod_UC_1_frozen_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 4,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 345.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Metapod_UC_1_frozen_attack_wheel.png"
+            }
+        ],
+        "burned_list": [
+            {
+                "burned_0": [
+                    {
+                        "attack_wheel_size": 68,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 0,
+                        "attack_end_angle_deg": 254.9999,
+                        "attack_wheel_file_name": "Metapod_UC_1_burned_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 24,
+                        "attack_name": "Tackle",
+                        "attack_type": "White",
+                        "attack_value": 20,
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 255.0,
+                        "attack_end_angle_deg": 344.9999,
+                        "attack_wheel_file_name": "Metapod_UC_1_burned_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 4,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 345.0,
+                        "attack_end_angle_deg": 359.9999,
+                        "attack_wheel_file_name": "Metapod_UC_1_burned_0_attack_wheel.png"
+                    }
+                ]
+            },
+            {
+                "burned_1": [
+                    {
+                        "attack_wheel_size": 68,
+                        "attack_name": "Harden",
+                        "attack_type": "White",
+                        "attack_value": 10,
+                        "attack_ability": "If the battle opponent spins an Attack of 100 damage or less, this Pok\u00e9mon is not knocked out. While this Pok\u00e9mon is on the field, the Attacks of this Pok\u00e9mon, other than Harden, deal +10 damage",
+                        "attack_start_angle_deg": 0,
+                        "attack_end_angle_deg": 254.9999,
+                        "attack_wheel_file_name": "Metapod_UC_1_burned_1_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 24,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 255.0,
+                        "attack_end_angle_deg": 344.9999,
+                        "attack_wheel_file_name": "Metapod_UC_1_burned_1_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 4,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 345.0,
+                        "attack_end_angle_deg": 359.9999,
+                        "attack_wheel_file_name": "Metapod_UC_1_burned_1_attack_wheel.png"
+                    }
+                ]
+            }
+        ]
+    }
+}

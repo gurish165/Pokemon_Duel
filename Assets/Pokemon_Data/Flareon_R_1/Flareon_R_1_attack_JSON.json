@@ -1,0 +1,403 @@
+{
+    "pokemon_name": "Flareon",
+    "pokemon_sprite_image": "flareon_sprite.png",
+    "attack_table_file_name": "Flareon_R_1_attack_table.png",
+    "base_movement_points": 3,
+    "rarity": "R",
+    "pokemon_type": "Fire",
+    "evolution": "",
+    "evolved_from": "Eevee",
+    "evolution_num": 1,
+    "attack_lists_by_type": {
+        "basic": [
+            {
+                "attack_wheel_size": 12,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 44.9999,
+                "attack_wheel_file_name": "Flareon_R_1_basic_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 44,
+                "attack_name": "Flamethrower",
+                "attack_type": "White",
+                "attack_value": 50,
+                "attack_ability": "If this Pok\u00e9mon is knocked out when using this move, the battle opponent becomes burned.",
+                "attack_start_angle_deg": 45.0,
+                "attack_end_angle_deg": 209.9999,
+                "attack_wheel_file_name": "Flareon_R_1_basic_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 20,
+                "attack_name": "Focus Energy",
+                "attack_type": "White",
+                "attack_value": "",
+                "attack_ability": "Spin again until an attack other than Focus Energy is spun. Damage attacks deal +20 damage,",
+                "attack_start_angle_deg": 210.0,
+                "attack_end_angle_deg": 284.9999,
+                "attack_wheel_file_name": "Flareon_R_1_basic_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 20,
+                "attack_name": "Dodge",
+                "attack_type": "Blue",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 285.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Flareon_R_1_basic_attack_wheel.png"
+            }
+        ],
+        "poisoned": [
+            {
+                "attack_wheel_size": 12,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 44.9999,
+                "attack_wheel_file_name": "Flareon_R_1_poisoned_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 44,
+                "attack_name": "Flamethrower",
+                "attack_type": "White",
+                "attack_value": 50,
+                "attack_ability": "If this Pok\u00e9mon is knocked out when using this move, the battle opponent becomes burned.",
+                "attack_start_angle_deg": 45.0,
+                "attack_end_angle_deg": 209.9999,
+                "attack_wheel_file_name": "Flareon_R_1_poisoned_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 20,
+                "attack_name": "Focus Energy",
+                "attack_type": "White",
+                "attack_value": "",
+                "attack_ability": "Spin again until an attack other than Focus Energy is spun. Damage attacks deal +20 damage,",
+                "attack_start_angle_deg": 210.0,
+                "attack_end_angle_deg": 284.9999,
+                "attack_wheel_file_name": "Flareon_R_1_poisoned_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 20,
+                "attack_name": "Dodge",
+                "attack_type": "Blue",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 285.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Flareon_R_1_poisoned_attack_wheel.png"
+            }
+        ],
+        "confused": [
+            {
+                "attack_wheel_size": 12,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 44.9999,
+                "attack_wheel_file_name": "Flareon_R_1_confused_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 44,
+                "attack_name": "Flamethrower",
+                "attack_type": "White",
+                "attack_value": 50,
+                "attack_ability": "If this Pok\u00e9mon is knocked out when using this move, the battle opponent becomes burned.",
+                "attack_start_angle_deg": 45.0,
+                "attack_end_angle_deg": 209.9999,
+                "attack_wheel_file_name": "Flareon_R_1_confused_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 20,
+                "attack_name": "Focus Energy",
+                "attack_type": "White",
+                "attack_value": "",
+                "attack_ability": "Spin again until an attack other than Focus Energy is spun. Damage attacks deal +20 damage,",
+                "attack_start_angle_deg": 210.0,
+                "attack_end_angle_deg": 284.9999,
+                "attack_wheel_file_name": "Flareon_R_1_confused_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 20,
+                "attack_name": "Dodge",
+                "attack_type": "Blue",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 285.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Flareon_R_1_confused_attack_wheel.png"
+            }
+        ],
+        "paralyzed_list": [
+            {
+                "paralyzed_0": [
+                    {
+                        "attack_wheel_size": 12,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 0,
+                        "attack_end_angle_deg": 44.9999,
+                        "attack_wheel_file_name": "Flareon_R_1_paralyzed_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 44,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 45.0,
+                        "attack_end_angle_deg": 209.9999,
+                        "attack_wheel_file_name": "Flareon_R_1_paralyzed_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 20,
+                        "attack_name": "Focus Energy",
+                        "attack_type": "White",
+                        "attack_value": "",
+                        "attack_ability": "Spin again until an attack other than Focus Energy is spun. Damage attacks deal +20 damage,",
+                        "attack_start_angle_deg": 210.0,
+                        "attack_end_angle_deg": 284.9999,
+                        "attack_wheel_file_name": "Flareon_R_1_paralyzed_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 20,
+                        "attack_name": "Dodge",
+                        "attack_type": "Blue",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 285.0,
+                        "attack_end_angle_deg": 359.9999,
+                        "attack_wheel_file_name": "Flareon_R_1_paralyzed_0_attack_wheel.png"
+                    }
+                ]
+            },
+            {
+                "paralyzed_1": [
+                    {
+                        "attack_wheel_size": 12,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 0,
+                        "attack_end_angle_deg": 44.9999,
+                        "attack_wheel_file_name": "Flareon_R_1_paralyzed_1_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 44,
+                        "attack_name": "Flamethrower",
+                        "attack_type": "White",
+                        "attack_value": 50,
+                        "attack_ability": "If this Pok\u00e9mon is knocked out when using this move, the battle opponent becomes burned.",
+                        "attack_start_angle_deg": 45.0,
+                        "attack_end_angle_deg": 209.9999,
+                        "attack_wheel_file_name": "Flareon_R_1_paralyzed_1_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 20,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 210.0,
+                        "attack_end_angle_deg": 284.9999,
+                        "attack_wheel_file_name": "Flareon_R_1_paralyzed_1_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 20,
+                        "attack_name": "Dodge",
+                        "attack_type": "Blue",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 285.0,
+                        "attack_end_angle_deg": 359.9999,
+                        "attack_wheel_file_name": "Flareon_R_1_paralyzed_1_attack_wheel.png"
+                    }
+                ]
+            }
+        ],
+        "asleep": [
+            {
+                "attack_wheel_size": 12,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 44.9999,
+                "attack_wheel_file_name": "Flareon_R_1_asleep_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 44,
+                "attack_name": "Flamethrower",
+                "attack_type": "White",
+                "attack_value": 50,
+                "attack_ability": "If this Pok\u00e9mon is knocked out when using this move, the battle opponent becomes burned.",
+                "attack_start_angle_deg": 45.0,
+                "attack_end_angle_deg": 209.9999,
+                "attack_wheel_file_name": "Flareon_R_1_asleep_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 20,
+                "attack_name": "Focus Energy",
+                "attack_type": "White",
+                "attack_value": "",
+                "attack_ability": "Spin again until an attack other than Focus Energy is spun. Damage attacks deal +20 damage,",
+                "attack_start_angle_deg": 210.0,
+                "attack_end_angle_deg": 284.9999,
+                "attack_wheel_file_name": "Flareon_R_1_asleep_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 20,
+                "attack_name": "Dodge",
+                "attack_type": "Blue",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 285.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Flareon_R_1_asleep_attack_wheel.png"
+            }
+        ],
+        "frozen": [
+            {
+                "attack_wheel_size": 12,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 44.9999,
+                "attack_wheel_file_name": "Flareon_R_1_frozen_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 44,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 45.0,
+                "attack_end_angle_deg": 209.9999,
+                "attack_wheel_file_name": "Flareon_R_1_frozen_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 20,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 210.0,
+                "attack_end_angle_deg": 284.9999,
+                "attack_wheel_file_name": "Flareon_R_1_frozen_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 20,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 285.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Flareon_R_1_frozen_attack_wheel.png"
+            }
+        ],
+        "burned_list": [
+            {
+                "burned_0": [
+                    {
+                        "attack_wheel_size": 12,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 0,
+                        "attack_end_angle_deg": 44.9999,
+                        "attack_wheel_file_name": "Flareon_R_1_burned_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 44,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 45.0,
+                        "attack_end_angle_deg": 209.9999,
+                        "attack_wheel_file_name": "Flareon_R_1_burned_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 20,
+                        "attack_name": "Focus Energy",
+                        "attack_type": "White",
+                        "attack_value": "",
+                        "attack_ability": "Spin again until an attack other than Focus Energy is spun. Damage attacks deal +20 damage,",
+                        "attack_start_angle_deg": 210.0,
+                        "attack_end_angle_deg": 284.9999,
+                        "attack_wheel_file_name": "Flareon_R_1_burned_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 20,
+                        "attack_name": "Dodge",
+                        "attack_type": "Blue",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 285.0,
+                        "attack_end_angle_deg": 359.9999,
+                        "attack_wheel_file_name": "Flareon_R_1_burned_0_attack_wheel.png"
+                    }
+                ]
+            },
+            {
+                "burned_1": [
+                    {
+                        "attack_wheel_size": 12,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 0,
+                        "attack_end_angle_deg": 44.9999,
+                        "attack_wheel_file_name": "Flareon_R_1_burned_1_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 44,
+                        "attack_name": "Flamethrower",
+                        "attack_type": "White",
+                        "attack_value": 50,
+                        "attack_ability": "If this Pok\u00e9mon is knocked out when using this move, the battle opponent becomes burned.",
+                        "attack_start_angle_deg": 45.0,
+                        "attack_end_angle_deg": 209.9999,
+                        "attack_wheel_file_name": "Flareon_R_1_burned_1_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 20,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 210.0,
+                        "attack_end_angle_deg": 284.9999,
+                        "attack_wheel_file_name": "Flareon_R_1_burned_1_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 20,
+                        "attack_name": "Dodge",
+                        "attack_type": "Blue",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 285.0,
+                        "attack_end_angle_deg": 359.9999,
+                        "attack_wheel_file_name": "Flareon_R_1_burned_1_attack_wheel.png"
+                    }
+                ]
+            }
+        ]
+    }
+}
