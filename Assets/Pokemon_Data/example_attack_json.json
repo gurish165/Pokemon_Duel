@@ -1,60 +1,80 @@
 {
     "pokemon_name" : "Bulbasaur",
-    "pokemom_sprite_image" : "filename",
-    "evolution" : "Ivysaur",
-    "evolved_from" : "",
+    "pokemon_sprite_image" : "bulbasaur_sprite.png",
+    "attack_table_file_name" : "Bulbasaur_attack_table.jpg",
     "base_movement_points" : 0,
     "rarity" : "R",
-    "attack_table_name" : "bulbasaur_base_attack_table.jpg",
-    "attacks_by_status" : {
-        "base_attack_data" : {
-            "attack_wheel_name" : "bulbasaur_base_attack_wheel.jpg",
-            "base_attack_moves" : [
-                {
-                    "attack_type" : "purple", 
-                    "attack_wheel_size" : 20,
-                    "attack_name" : "name1",
-                    "attack damage" : "**",
-                    "attack_description" : "Does something",
-                    "attack_respins":false,
-                    "attack_start_angle_rad" : 0,
-                    "attack_end_angle_rad": 3.1415
-                },
-                {
-                    "attack_type" : "white",
-                    "attack_wheel_size" : 10,
-                    "attack_name" : "name2",
-                    "attack damage" : "50",
-                    "attack_description" : "",
-                    "attackk_respins":false,
-                    "attack_start_angle_rad" : 3.1416,
-                    "attack_end_angle_rad": 4.2561
-                }
-            ]
-        },
-        "burned_attack_data" : {
-            "attack_wheel_name" : "bulbasaur_burned_attack_wheel.jpg",
-            "burned_attack_moves" : [
-                {
-                    "attack_type" : "purple",
-                    "attack_wheel_size" : 20,
-                    "attack_name" : "name1",
-                    "attack damage" : "**",
-                    "attack_description" : "Does something",
-                    "attack_start_angle_rad" : 0,
-                    "attack_end_angle_rad": 3.1415
-                },
-                {
-                    "attack_type" : "red",
-                    "attack_wheel_size" : 10,
-                    "attack_name" : "name2",
-                    "attack damage" : "",
-                    "attack_description" : "",
-                    "attack_start_angle_rad" : 3.1416,
-                    "attack_end_angle_rad": 4.2561
-                }
-            ]
-        }
+    "evolution" : "Ivysaur",
+    "evolved_from" : "",
+    "evolution_num" : 2,
+    "status" : "basic",
+    "attack_wheel_name" : "bulbasaur_base_attack_wheel.jpg",
+    "attack_lists_by_type" : {
+        "basic": [
+            { 
+                "attack_wheel_size" : 20,
+                "attack_name" : "name1",
+                "attack_type" : "purple",
+                "attack_value" : "**",
+                "attack_ability" : "Does something",
+                "attack_start_angle_deg" : 0,
+                "attack_end_angle_deg": 3.1415
+            },
+            {
+                "attack_wheel_size" : 10,
+                "attack_name" : "name2",
+                "attack_type" : "white",
+                "attack_value" : "50",
+                "attack_ability" : "",
+                "attack_start_angle_deg" : 3.1416,
+                "attack_end_angle_deg": 4.2561
+            }
+        ],
+        "burned_list" : [
+            {
+                "burned_0" : [
+                    {
+                        "attack_wheel_size" : 10,
+                        "attack_name" : "name2",
+                        "attack_type" : "white",
+                        "attack_value" : "50",
+                        "attack_ability" : "",
+                        "attack_start_angle_deg" : 3.1416,
+                        "attack_end_angle_deg": 4.2561
+                    },
+                    {
+                        "attack_wheel_size" : 10,
+                        "attack_name" : "name2",
+                        "attack_type" : "white",
+                        "attack_value" : "50",
+                        "attack_ability" : "",
+                        "attack_start_angle_deg" : 3.1416,
+                        "attack_end_angle_deg": 4.2561
+                    }
+                ]
+            },
+            {
+                "burned_1" : [
+                    {
+                        "attack_wheel_size" : 10,
+                        "attack_name" : "name2",
+                        "attack_type" : "white",
+                        "attack_value" : "50",
+                        "attack_ability" : "",
+                        "attack_start_angle_deg" : 3.1416,
+                        "attack_end_angle_deg": 4.2561
+                    },
+                    {
+                        "attack_wheel_size" : 10,
+                        "attack_name" : "name2",
+                        "attack_type" : "white",
+                        "attack_value" : "50",
+                        "attack_ability" : "",
+                        "attack_start_angle_deg" : 3.1416,
+                        "attack_end_angle_deg": 4.2561
+                    }
+                ]
+            }
+        ]
     }
-
 }

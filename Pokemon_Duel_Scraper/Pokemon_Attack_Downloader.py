@@ -187,7 +187,7 @@ def modifyAttackswithEvolution(attack_list, evolution_num):
 
 
 # This function handles creating the wheel and creates all evolution levels
-def createWheelsAndTable(attack_list, evolution_num, overwrite):
+def createWheelsAndTable(attack_list, evolution_num, overwrite_table, overwrite_wheels):
     # Setup file names and folders
     pokemon_name = attack_list[0]['pokemon_name'].capitalize()
     parent_folder_path = f"../Assets/Pokemon_Data/{pokemon_name}_{attack_list[0]['pokemon_rarity']}_{evolution_num}"
@@ -200,9 +200,9 @@ def createWheelsAndTable(attack_list, evolution_num, overwrite):
     # Modify the attack list with evolution
     evolved_attack_list = modifyAttackswithEvolution(attack_list, evolution_num)
 
-    # Create the table if we need to overwrite or the table hasnt been made
-    if overwrite or not os.path.exists(table_full_path):
-        # Last term indicates if we want to overwrite existing tables
+    # Create the table if we need to overwrite_table or the table hasnt been made
+    if overwrite_table or not os.path.exists(table_full_path):
+        # Last term indicates if we want to overwrite_table existing tables
         saveTable(evolved_attack_list, folder_path, table_file_name)
 
     # Create Wheel Folder
@@ -217,12 +217,123 @@ def createWheelsAndTable(attack_list, evolution_num, overwrite):
     # ** Frozen: Same as Sleep with the additional effect of turning all of a Pokemon's Attacks into Miss.
     # ** Burned: Same as paralyzed with the additional effect of reducing the damage of a Pokemon's White and Gold Attacks by 10 in battles.
     wheel_types = ['basic', 'poisoned', 'confused', 'paralyzed', 'asleep', 'frozen', 'burned']
+    if overwrite_wheels:
+        for wheel_type in wheel_types:
+            # Create wheel file name
+            attack_wheel_file_name = f"{pokemon_name}_{attack_list[0]['pokemon_rarity']}_{evolution_num}_{wheel_type}_attack_wheel.png"
+            print(f"Attempting to save: {attack_wheel_file_name}")
+
+            if(wheel_type == "paralyzed" or wheel_type == "burned"):
+                # Get index of all attacks that are white
+                idxs_of_white_attacks = []
+                for idx, attack in enumerate(evolved_attack_list):
+                    if attack['attack_type'].lower() == 'white':
+                        idxs_of_white_attacks.append(idx)
+                # Make an attack list for each white
+                attack_version = 0
+                for white_idx in idxs_of_white_attacks:
+                    evolved_copy = copy.deepcopy(evolved_attack_list)
+                    for idx, attack in enumerate(evolved_copy):
+                        if(idx == white_idx):
+                            # Set the attack to a miss
+                            evolved_copy[white_idx]['attack_name'] = 'Miss'
+                            evolved_copy[white_idx]['attack_type'] = 'Red'
+                            evolved_copy[white_idx]['attack_value'] = ''
+                            evolved_copy[white_idx]['attack_ability'] = ''
+                    # Paralyzed and burned wheels need a special file name
+                    modified_file_name = f"{pokemon_name}_{attack_list[0]['pokemon_rarity']}_{evolution_num}_{wheel_type}_{attack_version}_attack_wheel.png"
+                    saveWheel(evolved_copy, attack_wheels_folder_path, modified_file_name)
+                    attack_version += 1
+                    
+            elif(wheel_type == "frozen"):
+                # Generate all miss
+                evolved_copy = copy.deepcopy(evolved_attack_list)
+                for idx, attack in enumerate(evolved_copy):
+                    # Set the all attacks to a miss
+                    evolved_copy[idx]['attack_name'] = 'Miss'
+                    evolved_copy[idx]['attack_type'] = 'Red'
+                    evolved_copy[idx]['attack_value'] = ''
+                    evolved_copy[idx]['attack_ability'] = ''
+                saveWheel(evolved_copy, attack_wheels_folder_path, attack_wheel_file_name)
+            else:
+                # No changes to the wheel, but include the effect in the name
+                saveWheel(evolved_attack_list, attack_wheels_folder_path, attack_wheel_file_name)
+        # end for wheel_type in wheel_types
+    # end if overwrite_wheels
+
+def saveJSON(attack_list, wheel_type, folder_path, file_name):
+    if wheel_type.lower() == 'basic':
+        # Create the file and write to it
+        # TODO:
+        pass
+        # Generate header info for json
+        jsonObject = {}
+        pokemon_name = handleSpecialPokemonNames(attack_list[0]["pokemon_name"])
+        pokemon_sprite_image = f"{pokemon_name.lower()}_sprite.png"
+        attack_table_file_name = f"{pokemon_name}_{attack_list[0]['pokemon_rarity']}_{evolution_num}_attack_table.png"
+        base_movement_points = int(attack_list[0]["pokemon_movement"])
+        rarity = attack_list[0]["pokemon_rarity"].upper()
+        evolution = attack_list[0]["evolution"].capitalize()
+        evolved_from = attack_list[0]["evolved_from"].capitalize()
+        evolution_num = int(attack_list[0]["num_evolutions"])
+        status = wheel_type.lower()
+        attack_wheel_name = f"{file_name[:-9]}_wheel.png"
+        # Add this header info to the jsonObject
+        jsonObject['pokemon_name'] = pokemon_name
+        jsonObject['pokemon_sprite_image'] = pokemon_sprite_image
+        jsonObject['attack_table_file_name'] = attack_table_file_name
+        jsonObject['base_movement_points'] = base_movement_points
+        jsonObject['rarity'] = rarity
+        jsonObject['evolution'] = evolution
+        jsonObject['evolved_from'] = evolved_from
+        jsonObject['evolution_num'] = evolution_num
+        jsonObject['status'] = status
+        jsonObject['attack_wheel_name'] = attack_wheel_name
+
+    # Add attack info to json Object
+    new_attack_list = copy.deepcopy(attack_list)
+    curr_end_deg = 0
+    for idx, attack in enumerate(new_attack_list):
+        attack_wheel_size = int(attack['attack_wheel_size'])
+        new_attack_list[idx]['attack_wheel_size'] = attack_wheel_size
+        new_attack_list[idx]['attack_start_angle_deg'] = curr_end_deg
+        attack_size_deg = 360 * (attack_wheel_size / 96)
+        curr_end_deg += attack_size_deg
+        # Set the end of this attack a bit behind so there is no overlap
+        new_attack_list[idx]['attack_end_angle_deg'] = curr_end_deg - 0.0001
+    jsonObject['attack_list'] = new_attack_list
+
+    # TODO: Write the jsonObject to the appropriate file
+
+def modifyAttackswithAngles(attack_list):
+    pass
+
+def createJSONs(attack_list, evolution_num):
+    # Setup file names and folders
+    pokemon_name = attack_list[0]['pokemon_name'].capitalize()
+    parent_folder_path = f"../Assets/Pokemon_Data/{pokemon_name}_{attack_list[0]['pokemon_rarity']}_{evolution_num}"
+    parent_folders = os.path.dirname(parent_folder_path)
+    if not os.path.exists(parent_folders):
+        raise FileNotFoundError(f"{parent_folder_path} does not exist.")
+    
+    # Create wheel file name
+    attack_json_file_name = f"{pokemon_name}_{attack_list[0]['pokemon_rarity']}_{evolution_num}_attack_JSON.json"
+    # Create JSON Folder
+    # attack_jsons_folder_path = os.path.join(parent_folder_path, "Attack_JSONs")
+    # if not os.path.exists(attack_jsons_folder_path):
+    #     os.makedirs(attack_jsons_folder_path)
+
+    # Modify the attack list with evolution
+    evolved_attack_list = modifyAttackswithEvolution(attack_list, evolution_num)
+    evolved_attack_list = modifyAttackswithAngles(evolved_attack_list)
+    wheel_types = ['basic', 'poisoned', 'confused', 'paralyzed', 'asleep', 'frozen', 'burned']
+    attack_lists_by_type = {}
     for wheel_type in wheel_types:
-        # Create wheel file name
-        attack_wheel_file_name = f"{pokemon_name}_{attack_list[0]['pokemon_rarity']}_{evolution_num}_{wheel_type}_attack_wheel.png"
-        print(f"Attempting to save: {attack_wheel_file_name}")
+        attack_list_type_name = wheel_type
 
         if(wheel_type == "paralyzed" or wheel_type == "burned"):
+            list_of_lists_name = f"{wheel_type}_list" # burned_list : []
+            attack_lists_by_type[list_of_lists_name] = []
             # Get index of all attacks that are white
             idxs_of_white_attacks = []
             for idx, attack in enumerate(evolved_attack_list):
@@ -239,31 +350,32 @@ def createWheelsAndTable(attack_list, evolution_num, overwrite):
                         evolved_copy[white_idx]['attack_type'] = 'Red'
                         evolved_copy[white_idx]['attack_value'] = ''
                         evolved_copy[white_idx]['attack_ability'] = ''
-                # Paralyzed and burned wheels need a special file name
-                modified_file_name = f"{pokemon_name}_{attack_list[0]['pokemon_rarity']}_{evolution_num}_{wheel_type}_{attack_version}_attack_wheel.png"
-                saveWheel(evolved_copy, attack_wheels_folder_path, modified_file_name)
+                # paralyzed and burned attacks need a special type name
+                # burned_list also needs its own lists
+                attack_list_type_name = f"{wheel_type}_{attack_version}" # burned_0
+                attack_lists_by_type[list_of_lists_name].append({attack_list_type_name : evolved_copy})
                 attack_version += 1
-                
         elif(wheel_type == "frozen"):
-            # Generate all miss
             evolved_copy = copy.deepcopy(evolved_attack_list)
+            # Generate all miss
             for idx, attack in enumerate(evolved_copy):
                 # Set the all attacks to a miss
                 evolved_copy[idx]['attack_name'] = 'Miss'
                 evolved_copy[idx]['attack_type'] = 'Red'
                 evolved_copy[idx]['attack_value'] = ''
                 evolved_copy[idx]['attack_ability'] = ''
-            saveWheel(evolved_copy, attack_wheels_folder_path, attack_wheel_file_name)
+            # Add attack list to the json
+            attack_lists_by_type[wheel_type] = evolved_copy
         else:
             # No changes to the wheel, but include the effect in the name
-            saveWheel(evolved_attack_list, attack_wheels_folder_path, attack_wheel_file_name)
+            # TODO
+            pass
+    
+    # end for wheel_type in wheel_types
+    saveJSON(evolved_attack_list, wheel_type, parent_folder_path, attack_json_file_name)
 
-
-def createJSON(attack_list, evolution_num):
-    pass
 
 def scrapeWheelsAndTables(pokemon_attacks_df):
-    
     # Loop through DF and fill in content for the same Pokemon
     prev_pokemon_name = ""
     
@@ -300,8 +412,8 @@ def scrapeWheelsAndTables(pokemon_attacks_df):
                     # print(f"Before createWheelsAndTable: {attack_list[0]}")
                     print(f"Creating Wheels and Table for: {attack_list[0]['pokemon_name']}")
                     # Last term indicates if we want to overwrite existing files
-                    createWheelsAndTable(attack_list, evolution_num, False)
-                    createJSON(attack_list, evolution_num)
+                    createWheelsAndTable(attack_list, evolution_num, False, False)
+                    createJSONs(attack_list, evolution_num)
 
             # clear the attack_list and start a new one for the current pokemon
             attack_list = []
@@ -327,8 +439,8 @@ def scrapeWheelsAndTables(pokemon_attacks_df):
     if attack_list:
         curr_num_evolutions = int(attack_list[0]['num_evolutions'])
         for evolution_num in range(curr_num_evolutions + 1):
-            createWheelsAndTable(attack_list, evolution_num, False)
-            createJSON(attack_list, evolution_num)
+            createWheelsAndTable(attack_list, evolution_num, False, False)
+            createJSONs(attack_list, evolution_num)
 
 def getPokemon(file_path):
     # Check if the file exists
@@ -344,7 +456,6 @@ def main():
     file_path = "Pokemon_Duel_Characters/pokemon_duel_characters_v1_gen1.csv"
     pokemon_attacks_df = getPokemon(file_path)
     # Use df to scrape content from localhost
-    url = "localhost:8080"
     scrapeWheelsAndTables(pokemon_attacks_df)
 
 

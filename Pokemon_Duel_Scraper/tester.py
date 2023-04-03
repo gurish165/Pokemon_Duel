@@ -76,9 +76,13 @@ def takeScreenshot():
     driver.quit()
 
 def main():
-    list = ['a','b','c','d']
-    for index, item in enumerate(list):
-        print(f"{index} : {item}")
+    # list = ['a','b','c','d']
+    # for index, item in enumerate(list):
+    #     print(f"{index} : {item}")
+    file_name = "long_name_pokemon_attack_JSON.json"
+    attack_wheel_name = file_name[:-9]
+    new_name = f"{attack_wheel_name}JSON.json"
+    print(new_name)
 
 if __name__ == "__main__":
     main()
