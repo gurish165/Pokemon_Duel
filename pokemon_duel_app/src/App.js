@@ -1,5 +1,11 @@
 import React, { useState } from 'react';
 import { Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Room from "./pages/Room";
+import Result from "./pages/Result";
+import background_img from "./images/background.png";
+import "./App.css";
+
 import StartScreen from './StartScreen';
 import HomeScreen from './HomeScreen';
 import GameScreen from './GameScreen';
@@ -45,6 +51,11 @@ const App = () => {
           />
         )}
       </div>
+      <img
+        src={background_img}
+        className="background_img"
+        alt="background img"
+      />
       <div className="container">
         <Routes>
           <Route path="/" element={<Home />} />
