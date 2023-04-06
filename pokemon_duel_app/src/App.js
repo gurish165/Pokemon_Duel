@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Routes, Route } from "react-router-dom";
 import StartScreen from './StartScreen';
 import HomeScreen from './HomeScreen';
 import GameScreen from './GameScreen';
@@ -28,21 +29,30 @@ const App = () => {
   };
 
   return (
-    <div>
-      {gameState === 'start' && (
-        <StartScreen startNewGame={startNewGame} />
-      )}
-      {gameState === 'home' && (
-        <HomeScreen joinGame={joinGame} />
-      )}
-      {gameState === 'game' && (
-        <GameScreen
-          playerName={playerName}
-          opponentName={opponentName}
-          quitGame={quitGame}
-        />
-      )}
-    </div>
+    <div className="main">
+      <div>
+        {gameState === 'start' && (
+          <StartScreen startNewGame={startNewGame} />
+        )}
+        {gameState === 'home' && (
+          <HomeScreen joinGame={joinGame} />
+        )}
+        {gameState === 'game' && (
+          <GameScreen
+            playerName={playerName}
+            opponentName={opponentName}
+            quitGame={quitGame}
+          />
+        )}
+      </div>
+      <div className="container">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/room/:id" element={<Room />} />
+          <Route path="/result" element={<Result />} />
+        </Routes>
+      </div>
+    </div>    
   );
 };
 

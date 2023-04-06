@@ -1,0 +1,45 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .win_background_img {
+    width: 100;
+  }
+  
+  .rock_hand {
+    position: absolute;
+    width: 400px;
+    transform: rotate(-50deg);
+    left: -50px;
+    bottom: -50px;
+  }
+  
+  .scissors_hand {
+    position: absolute;
+    width: 410px;
+    transform: rotate(50deg);
+    right: -50px;
+    bottom: -10px;
+  }
+  
+  .board_img {
+    width: 400px;
+    position: absolute;
+    left: calc(50% - 200px);
+  }
+  
+  .btn_container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 70px;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    top: 0;
+    left: 0;
+  }
