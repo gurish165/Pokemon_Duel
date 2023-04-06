@@ -1,6 +1,6 @@
 const dotenv = require("dotenv");
 const express = require("express");
-const { createServer } = require("https");
+const { createServer } = require("http");
 const { Server } = require("socket.io");
 const roomHandler = require("./roomHandler");
 
@@ -9,7 +9,7 @@ const app = express();
 
 const httpServer = createServer(app);
 const io = new Server(httpServer, {
-  cors: { origin: "https://pokemon-duel-game.vercel.app/" },
+  cors: { origin: "*" },
 });
 
 const rooms = [];
