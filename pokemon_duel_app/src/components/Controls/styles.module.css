@@ -1,0 +1,36 @@
+.container {
+	position: absolute;
+	width: 260px;
+	display: flex;
+	justify-content: space-between;
+	bottom: 30px;
+	left: calc(50% - 130px);
+}
+
+.option_btn {
+	width: 60px;
+	height: 60px;
+	border: 4px solid white;
+	border-radius: 10px;
+	background-color: black;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+
+.option_btn:hover {
+	scale: 1.1;
+}
+
+.option_btn_active {
+	scale: 1.1;
+	border-color: var(--purple);
+}
+
+.option_btn_img {
+	rotate: 90deg;
+	width: 60px;
+	margin-bottom: -10px;
+}
