@@ -1,25 +1,49 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import StartScreen from './StartScreen';
+import HomeScreen from './HomeScreen';
+import GameScreen from './GameScreen';
 
-function App() {
+const App = () => {
+  const [gameState, setGameState] = useState('start');
+  const [playerName, setPlayerName] = useState('');
+  const [opponentName, setOpponentName] = useState('');
+  const [gameCode, setGameCode] = useState('');
+
+  const startNewGame = () => {
+    setGameState('home');
+  };
+
+  const joinGame = (name, code) => {
+    // TODO: validate name and code
+    setPlayerName(name);
+    setGameCode(code);
+    setGameState('game');
+  };
+
+  const quitGame = () => {
+    setGameState('home');
+    setPlayerName('');
+    setOpponentName('');
+    setGameCode('');
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {gameState === 'start' && (
+        <StartScreen startNewGame={startNewGame} />
+      )}
+      {gameState === 'home' && (
+        <HomeScreen joinGame={joinGame} />
+      )}
+      {gameState === 'game' && (
+        <GameScreen
+          playerName={playerName}
+          opponentName={opponentName}
+          quitGame={quitGame}
+        />
+      )}
     </div>
   );
-}
+};
 
 export default App;
