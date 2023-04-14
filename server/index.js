@@ -1,11 +1,15 @@
 const dotenv = require("dotenv");
 const express = require("express");
+const path = require('path');
 const { createServer } = require("http");
 const { Server } = require("socket.io");
 const roomHandler = require("./roomHandler");
 
 dotenv.config();
 const app = express();
+
+// Add this line to serve static files from the React build folder
+app.use(express.static(path.join(__dirname, 'build')));
 
 const httpServer = createServer(app);
 const io = new Server(httpServer, {
@@ -21,6 +25,11 @@ io.on("connection", (socket) => {
   socket.on("disconnect", () => {
     console.log("disconnected", socket.id);
   });
+});
+
+// Add this to handle client-side routing in React
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
 
 const port = process.env.PORT || 8080;
