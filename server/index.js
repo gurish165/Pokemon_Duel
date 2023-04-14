@@ -8,7 +8,7 @@ const roomHandler = require("./roomHandler");
 dotenv.config();
 const app = express();
 
-// Serve static files from the React build folder
+// Add this line to serve static files from the React build folder
 app.use(express.static(path.join(__dirname, 'build')));
 
 const httpServer = createServer(app);
@@ -27,7 +27,7 @@ io.on("connection", (socket) => {
   });
 });
 
-// Catch-all for other requests and serve the React app
+// Add this to handle client-side routing in React
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
