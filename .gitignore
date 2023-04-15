@@ -10,6 +10,7 @@ __pycache__
 */*.txt
 /*.txt
 *.txt
+!subdir.txt
 */node_modules
 /node_modules
 node_modules

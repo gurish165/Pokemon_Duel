@@ -34,3 +34,8 @@ Open the game:
 ```bash
 $ heroku open --app pokemon-duel-app
 ```
+
+Check Heroku status
+```bash
+heroku logs --tail -a pokemon-duel-app
+```
