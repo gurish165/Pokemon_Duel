@@ -1,7 +1,9 @@
 ## Pushing to Heroku
 Make sure the newest build is in the `server` folder:
 ```bash
+$ cd pokemon_duel_app
 $ npm run build 
+$ cd ..
 $ mv pokemon_duel_app/build server/
 ``` 
 First, make sure you have committed all your changes on the main branch.
@@ -13,6 +15,8 @@ $ cd Java_Game/
 ```
 Merge the changes from the main branch into the heroku-deployment branch:
 ```bash
+$ git branch
+heroku-deployment
 $ git merge main
 ```
 

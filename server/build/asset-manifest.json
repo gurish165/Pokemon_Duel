@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.7444e3c0.css",
+    "main.js": "/static/js/main.d617ca37.js",
+    "static/media/background.png": "/static/media/background.d13dccb0fb709c8be85a.png",
+    "static/media/vs.jpg": "/static/media/vs.810c29cd0597de637b51.jpg",
+    "static/media/lose.png": "/static/media/lose.9682b532aaa4671aeb66.png",
+    "static/media/win.png": "/static/media/win.a0a2e1f6c62a10588908.png",
+    "static/media/rock_right_hand.png": "/static/media/rock_right_hand.1911358770a66c980a7c.png",
+    "static/media/rock_left_hand.png": "/static/media/rock_left_hand.46f7940a94a1248a4a12.png",
+    "static/media/lose_board_2.png": "/static/media/lose_board_2.ef046c2d308229d33f70.png",
+    "static/media/lose_board_1.png": "/static/media/lose_board_1.ac1a81cf37324711d310.png",
+    "static/media/lose_board_3.png": "/static/media/lose_board_3.e1c1ba4a238cc2b57e87.png",
+    "static/media/win_board.png": "/static/media/win_board.a66c04dd0ec0094634c7.png",
+    "static/media/win_background.png": "/static/media/win_background.d0cad2c04fbaf207cffb.png",
+    "static/media/scissors_right_hand.png": "/static/media/scissors_right_hand.116911a717bf3ed6c699.png",
+    "static/media/paper_right_hand.png": "/static/media/paper_right_hand.cc9ff5b92cfd043bce5b.png",
+    "static/media/scissors_left_hand.png": "/static/media/scissors_left_hand.889c9ad58577c1025701.png",
+    "static/media/paper_left_hand.png": "/static/media/paper_left_hand.9a158379b9ede6103cbd.png",
+    "static/media/boom.png": "/static/media/boom.30382683e179a53a200a.png",
+    "index.html": "/index.html",
+    "main.7444e3c0.css.map": "/static/css/main.7444e3c0.css.map",
+    "main.d617ca37.js.map": "/static/js/main.d617ca37.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7444e3c0.css",
+    "static/js/main.d617ca37.js"
+  ]
+}

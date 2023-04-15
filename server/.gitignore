@@ -1,0 +1,16 @@
+*/env
+/env
+env
+*/chrome*
+*/google*
+*/node_modules
+*/__pycache__
+/__pycache__
+__pycache__
+*/*.txt
+/*.txt
+*.txt
+*/node_modules
+/node_modules
+node_modules
+*.env
