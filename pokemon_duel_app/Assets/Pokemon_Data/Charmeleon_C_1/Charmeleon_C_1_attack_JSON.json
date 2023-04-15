@@ -1,0 +1,315 @@
+{
+    "pokemon_name": "Charmeleon",
+    "pokemon_sprite_image": "charmeleon_sprite.png",
+    "attack_table_file_name": "Charmeleon_C_1_attack_table.png",
+    "base_movement_points": 2,
+    "rarity": "C",
+    "pokemon_type": "Fire",
+    "evolution": "Charizard",
+    "evolved_from": "Charmander",
+    "evolution_num": 1,
+    "attack_lists_by_type": {
+        "basic": [
+            {
+                "attack_wheel_size": 8,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 29.9999,
+                "attack_wheel_file_name": "Charmeleon_C_1_basic_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 24,
+                "attack_name": "Flame",
+                "attack_type": "Purple",
+                "attack_value": "\u2605\u2605\u2605",
+                "attack_ability": "The battle opponent becomes burned",
+                "attack_start_angle_deg": 30.0,
+                "attack_end_angle_deg": 119.9999,
+                "attack_wheel_file_name": "Charmeleon_C_1_basic_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 8,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 120.0,
+                "attack_end_angle_deg": 149.9999,
+                "attack_wheel_file_name": "Charmeleon_C_1_basic_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 56,
+                "attack_name": "Iron Tail",
+                "attack_type": "White",
+                "attack_value": 60,
+                "attack_ability": "",
+                "attack_start_angle_deg": 150.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Charmeleon_C_1_basic_attack_wheel.png"
+            }
+        ],
+        "poisoned": [
+            {
+                "attack_wheel_size": 8,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 29.9999,
+                "attack_wheel_file_name": "Charmeleon_C_1_poisoned_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 24,
+                "attack_name": "Flame",
+                "attack_type": "Purple",
+                "attack_value": "\u2605\u2605\u2605",
+                "attack_ability": "The battle opponent becomes burned",
+                "attack_start_angle_deg": 30.0,
+                "attack_end_angle_deg": 119.9999,
+                "attack_wheel_file_name": "Charmeleon_C_1_poisoned_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 8,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 120.0,
+                "attack_end_angle_deg": 149.9999,
+                "attack_wheel_file_name": "Charmeleon_C_1_poisoned_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 56,
+                "attack_name": "Iron Tail",
+                "attack_type": "White",
+                "attack_value": 60,
+                "attack_ability": "",
+                "attack_start_angle_deg": 150.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Charmeleon_C_1_poisoned_attack_wheel.png"
+            }
+        ],
+        "confused": [
+            {
+                "attack_wheel_size": 8,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 29.9999,
+                "attack_wheel_file_name": "Charmeleon_C_1_confused_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 24,
+                "attack_name": "Flame",
+                "attack_type": "Purple",
+                "attack_value": "\u2605\u2605\u2605",
+                "attack_ability": "The battle opponent becomes burned",
+                "attack_start_angle_deg": 30.0,
+                "attack_end_angle_deg": 119.9999,
+                "attack_wheel_file_name": "Charmeleon_C_1_confused_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 8,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 120.0,
+                "attack_end_angle_deg": 149.9999,
+                "attack_wheel_file_name": "Charmeleon_C_1_confused_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 56,
+                "attack_name": "Iron Tail",
+                "attack_type": "White",
+                "attack_value": 60,
+                "attack_ability": "",
+                "attack_start_angle_deg": 150.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Charmeleon_C_1_confused_attack_wheel.png"
+            }
+        ],
+        "paralyzed_list": [
+            {
+                "paralyzed_0": [
+                    {
+                        "attack_wheel_size": 8,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 0,
+                        "attack_end_angle_deg": 29.9999,
+                        "attack_wheel_file_name": "Charmeleon_C_1_paralyzed_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 24,
+                        "attack_name": "Flame",
+                        "attack_type": "Purple",
+                        "attack_value": "\u2605\u2605\u2605",
+                        "attack_ability": "The battle opponent becomes burned",
+                        "attack_start_angle_deg": 30.0,
+                        "attack_end_angle_deg": 119.9999,
+                        "attack_wheel_file_name": "Charmeleon_C_1_paralyzed_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 8,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 120.0,
+                        "attack_end_angle_deg": 149.9999,
+                        "attack_wheel_file_name": "Charmeleon_C_1_paralyzed_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 56,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 150.0,
+                        "attack_end_angle_deg": 359.9999,
+                        "attack_wheel_file_name": "Charmeleon_C_1_paralyzed_0_attack_wheel.png"
+                    }
+                ]
+            }
+        ],
+        "asleep": [
+            {
+                "attack_wheel_size": 8,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 29.9999,
+                "attack_wheel_file_name": "Charmeleon_C_1_asleep_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 24,
+                "attack_name": "Flame",
+                "attack_type": "Purple",
+                "attack_value": "\u2605\u2605\u2605",
+                "attack_ability": "The battle opponent becomes burned",
+                "attack_start_angle_deg": 30.0,
+                "attack_end_angle_deg": 119.9999,
+                "attack_wheel_file_name": "Charmeleon_C_1_asleep_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 8,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 120.0,
+                "attack_end_angle_deg": 149.9999,
+                "attack_wheel_file_name": "Charmeleon_C_1_asleep_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 56,
+                "attack_name": "Iron Tail",
+                "attack_type": "White",
+                "attack_value": 60,
+                "attack_ability": "",
+                "attack_start_angle_deg": 150.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Charmeleon_C_1_asleep_attack_wheel.png"
+            }
+        ],
+        "frozen": [
+            {
+                "attack_wheel_size": 8,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 29.9999,
+                "attack_wheel_file_name": "Charmeleon_C_1_frozen_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 24,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 30.0,
+                "attack_end_angle_deg": 119.9999,
+                "attack_wheel_file_name": "Charmeleon_C_1_frozen_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 8,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 120.0,
+                "attack_end_angle_deg": 149.9999,
+                "attack_wheel_file_name": "Charmeleon_C_1_frozen_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 56,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 150.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Charmeleon_C_1_frozen_attack_wheel.png"
+            }
+        ],
+        "burned_list": [
+            {
+                "burned_0": [
+                    {
+                        "attack_wheel_size": 8,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 0,
+                        "attack_end_angle_deg": 29.9999,
+                        "attack_wheel_file_name": "Charmeleon_C_1_burned_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 24,
+                        "attack_name": "Flame",
+                        "attack_type": "Purple",
+                        "attack_value": "\u2605\u2605\u2605",
+                        "attack_ability": "The battle opponent becomes burned",
+                        "attack_start_angle_deg": 30.0,
+                        "attack_end_angle_deg": 119.9999,
+                        "attack_wheel_file_name": "Charmeleon_C_1_burned_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 8,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 120.0,
+                        "attack_end_angle_deg": 149.9999,
+                        "attack_wheel_file_name": "Charmeleon_C_1_burned_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 56,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 150.0,
+                        "attack_end_angle_deg": 359.9999,
+                        "attack_wheel_file_name": "Charmeleon_C_1_burned_0_attack_wheel.png"
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,315 @@
+{
+    "pokemon_name": "Dragonair",
+    "pokemon_sprite_image": "dragonair_sprite.png",
+    "attack_table_file_name": "Dragonair_R_1_attack_table.png",
+    "base_movement_points": 2,
+    "rarity": "R",
+    "pokemon_type": "Dragon",
+    "evolution": "Dragonite",
+    "evolved_from": "Dratini",
+    "evolution_num": 1,
+    "attack_lists_by_type": {
+        "basic": [
+            {
+                "attack_wheel_size": 4,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 14.9999,
+                "attack_wheel_file_name": "Dragonair_R_0_basic_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 32,
+                "attack_name": "Magnetic Storm",
+                "attack_type": "Purple",
+                "attack_value": "\u2606\u2606",
+                "attack_ability": "This Pok\u00e9mon and all neigbour Pok\u00e9mon become Paralyzed",
+                "attack_start_angle_deg": 15.0,
+                "attack_end_angle_deg": 134.9999,
+                "attack_wheel_file_name": "Dragonair_R_0_basic_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 12,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 135.0,
+                "attack_end_angle_deg": 179.9999,
+                "attack_wheel_file_name": "Dragonair_R_0_basic_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 48,
+                "attack_name": "Dragon Tail",
+                "attack_type": "White",
+                "attack_value": "80",
+                "attack_ability": "Benches your battle opponent (except when opponent has fainted). Your battle opponent must then Wait.",
+                "attack_start_angle_deg": 180.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Dragonair_R_0_basic_attack_wheel.png"
+            }
+        ],
+        "poisoned": [
+            {
+                "attack_wheel_size": 4,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 14.9999,
+                "attack_wheel_file_name": "Dragonair_R_0_poisoned_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 32,
+                "attack_name": "Magnetic Storm",
+                "attack_type": "Purple",
+                "attack_value": "\u2606\u2606",
+                "attack_ability": "This Pok\u00e9mon and all neigbour Pok\u00e9mon become Paralyzed",
+                "attack_start_angle_deg": 15.0,
+                "attack_end_angle_deg": 134.9999,
+                "attack_wheel_file_name": "Dragonair_R_0_poisoned_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 12,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 135.0,
+                "attack_end_angle_deg": 179.9999,
+                "attack_wheel_file_name": "Dragonair_R_0_poisoned_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 48,
+                "attack_name": "Dragon Tail",
+                "attack_type": "White",
+                "attack_value": "80",
+                "attack_ability": "Benches your battle opponent (except when opponent has fainted). Your battle opponent must then Wait.",
+                "attack_start_angle_deg": 180.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Dragonair_R_0_poisoned_attack_wheel.png"
+            }
+        ],
+        "confused": [
+            {
+                "attack_wheel_size": 4,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 14.9999,
+                "attack_wheel_file_name": "Dragonair_R_0_confused_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 32,
+                "attack_name": "Magnetic Storm",
+                "attack_type": "Purple",
+                "attack_value": "\u2606\u2606",
+                "attack_ability": "This Pok\u00e9mon and all neigbour Pok\u00e9mon become Paralyzed",
+                "attack_start_angle_deg": 15.0,
+                "attack_end_angle_deg": 134.9999,
+                "attack_wheel_file_name": "Dragonair_R_0_confused_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 12,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 135.0,
+                "attack_end_angle_deg": 179.9999,
+                "attack_wheel_file_name": "Dragonair_R_0_confused_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 48,
+                "attack_name": "Dragon Tail",
+                "attack_type": "White",
+                "attack_value": "80",
+                "attack_ability": "Benches your battle opponent (except when opponent has fainted). Your battle opponent must then Wait.",
+                "attack_start_angle_deg": 180.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Dragonair_R_0_confused_attack_wheel.png"
+            }
+        ],
+        "paralyzed_list": [
+            {
+                "paralyzed_0": [
+                    {
+                        "attack_wheel_size": 4,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 0,
+                        "attack_end_angle_deg": 14.9999,
+                        "attack_wheel_file_name": "Dragonair_R_0_paralyzed_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 32,
+                        "attack_name": "Magnetic Storm",
+                        "attack_type": "Purple",
+                        "attack_value": "\u2606\u2606",
+                        "attack_ability": "This Pok\u00e9mon and all neigbour Pok\u00e9mon become Paralyzed",
+                        "attack_start_angle_deg": 15.0,
+                        "attack_end_angle_deg": 134.9999,
+                        "attack_wheel_file_name": "Dragonair_R_0_paralyzed_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 12,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 135.0,
+                        "attack_end_angle_deg": 179.9999,
+                        "attack_wheel_file_name": "Dragonair_R_0_paralyzed_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 48,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 180.0,
+                        "attack_end_angle_deg": 359.9999,
+                        "attack_wheel_file_name": "Dragonair_R_0_paralyzed_0_attack_wheel.png"
+                    }
+                ]
+            }
+        ],
+        "asleep": [
+            {
+                "attack_wheel_size": 4,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 14.9999,
+                "attack_wheel_file_name": "Dragonair_R_0_asleep_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 32,
+                "attack_name": "Magnetic Storm",
+                "attack_type": "Purple",
+                "attack_value": "\u2606\u2606",
+                "attack_ability": "This Pok\u00e9mon and all neigbour Pok\u00e9mon become Paralyzed",
+                "attack_start_angle_deg": 15.0,
+                "attack_end_angle_deg": 134.9999,
+                "attack_wheel_file_name": "Dragonair_R_0_asleep_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 12,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 135.0,
+                "attack_end_angle_deg": 179.9999,
+                "attack_wheel_file_name": "Dragonair_R_0_asleep_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 48,
+                "attack_name": "Dragon Tail",
+                "attack_type": "White",
+                "attack_value": "80",
+                "attack_ability": "Benches your battle opponent (except when opponent has fainted). Your battle opponent must then Wait.",
+                "attack_start_angle_deg": 180.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Dragonair_R_0_asleep_attack_wheel.png"
+            }
+        ],
+        "frozen": [
+            {
+                "attack_wheel_size": 4,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 14.9999,
+                "attack_wheel_file_name": "Dragonair_R_0_frozen_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 32,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 15.0,
+                "attack_end_angle_deg": 134.9999,
+                "attack_wheel_file_name": "Dragonair_R_0_frozen_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 12,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 135.0,
+                "attack_end_angle_deg": 179.9999,
+                "attack_wheel_file_name": "Dragonair_R_0_frozen_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 48,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 180.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Dragonair_R_0_frozen_attack_wheel.png"
+            }
+        ],
+        "burned_list": [
+            {
+                "burned_0": [
+                    {
+                        "attack_wheel_size": 4,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 0,
+                        "attack_end_angle_deg": 14.9999,
+                        "attack_wheel_file_name": "Dragonair_R_0_burned_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 32,
+                        "attack_name": "Magnetic Storm",
+                        "attack_type": "Purple",
+                        "attack_value": "\u2606\u2606",
+                        "attack_ability": "This Pok\u00e9mon and all neigbour Pok\u00e9mon become Paralyzed",
+                        "attack_start_angle_deg": 15.0,
+                        "attack_end_angle_deg": 134.9999,
+                        "attack_wheel_file_name": "Dragonair_R_0_burned_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 12,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 135.0,
+                        "attack_end_angle_deg": 179.9999,
+                        "attack_wheel_file_name": "Dragonair_R_0_burned_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 48,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 180.0,
+                        "attack_end_angle_deg": 359.9999,
+                        "attack_wheel_file_name": "Dragonair_R_0_burned_0_attack_wheel.png"
+                    }
+                ]
+            }
+        ]
+    }
+}

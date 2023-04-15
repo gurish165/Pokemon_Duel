@@ -1,0 +1,315 @@
+{
+    "pokemon_name": "Kangaskhan",
+    "pokemon_sprite_image": "kangaskhan_sprite.png",
+    "attack_table_file_name": "Kangaskhan_EX_0_attack_table.png",
+    "base_movement_points": 2,
+    "rarity": "EX",
+    "pokemon_type": "Normal",
+    "evolution": "",
+    "evolved_from": "",
+    "evolution_num": 0,
+    "attack_lists_by_type": {
+        "basic": [
+            {
+                "attack_wheel_size": 28,
+                "attack_name": "Sucker Punch",
+                "attack_type": "Gold",
+                "attack_value": "100",
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 104.9999,
+                "attack_wheel_file_name": "Kangaskhan_EX_0_basic_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 8,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 105.0,
+                "attack_end_angle_deg": 134.9999,
+                "attack_wheel_file_name": "Kangaskhan_EX_0_basic_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 32,
+                "attack_name": "Facade",
+                "attack_type": "White",
+                "attack_value": "150",
+                "attack_ability": "If this Pok\u00e9mon is affected by a special condition, it deals x2 damage",
+                "attack_start_angle_deg": 135.0,
+                "attack_end_angle_deg": 254.9999,
+                "attack_wheel_file_name": "Kangaskhan_EX_0_basic_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 28,
+                "attack_name": "Double-Edge",
+                "attack_type": "Purple",
+                "attack_value": "\u2606\u2606",
+                "attack_ability": "This Pok\u00e9mon and the battle opponent are knocked out",
+                "attack_start_angle_deg": 255.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Kangaskhan_EX_0_basic_attack_wheel.png"
+            }
+        ],
+        "poisoned": [
+            {
+                "attack_wheel_size": 28,
+                "attack_name": "Sucker Punch",
+                "attack_type": "Gold",
+                "attack_value": "100",
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 104.9999,
+                "attack_wheel_file_name": "Kangaskhan_EX_0_poisoned_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 8,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 105.0,
+                "attack_end_angle_deg": 134.9999,
+                "attack_wheel_file_name": "Kangaskhan_EX_0_poisoned_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 32,
+                "attack_name": "Facade",
+                "attack_type": "White",
+                "attack_value": "150",
+                "attack_ability": "If this Pok\u00e9mon is affected by a special condition, it deals x2 damage",
+                "attack_start_angle_deg": 135.0,
+                "attack_end_angle_deg": 254.9999,
+                "attack_wheel_file_name": "Kangaskhan_EX_0_poisoned_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 28,
+                "attack_name": "Double-Edge",
+                "attack_type": "Purple",
+                "attack_value": "\u2606\u2606",
+                "attack_ability": "This Pok\u00e9mon and the battle opponent are knocked out",
+                "attack_start_angle_deg": 255.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Kangaskhan_EX_0_poisoned_attack_wheel.png"
+            }
+        ],
+        "confused": [
+            {
+                "attack_wheel_size": 28,
+                "attack_name": "Sucker Punch",
+                "attack_type": "Gold",
+                "attack_value": "100",
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 104.9999,
+                "attack_wheel_file_name": "Kangaskhan_EX_0_confused_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 8,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 105.0,
+                "attack_end_angle_deg": 134.9999,
+                "attack_wheel_file_name": "Kangaskhan_EX_0_confused_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 32,
+                "attack_name": "Facade",
+                "attack_type": "White",
+                "attack_value": "150",
+                "attack_ability": "If this Pok\u00e9mon is affected by a special condition, it deals x2 damage",
+                "attack_start_angle_deg": 135.0,
+                "attack_end_angle_deg": 254.9999,
+                "attack_wheel_file_name": "Kangaskhan_EX_0_confused_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 28,
+                "attack_name": "Double-Edge",
+                "attack_type": "Purple",
+                "attack_value": "\u2606\u2606",
+                "attack_ability": "This Pok\u00e9mon and the battle opponent are knocked out",
+                "attack_start_angle_deg": 255.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Kangaskhan_EX_0_confused_attack_wheel.png"
+            }
+        ],
+        "paralyzed_list": [
+            {
+                "paralyzed_0": [
+                    {
+                        "attack_wheel_size": 28,
+                        "attack_name": "Sucker Punch",
+                        "attack_type": "Gold",
+                        "attack_value": "100",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 0,
+                        "attack_end_angle_deg": 104.9999,
+                        "attack_wheel_file_name": "Kangaskhan_EX_0_paralyzed_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 8,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 105.0,
+                        "attack_end_angle_deg": 134.9999,
+                        "attack_wheel_file_name": "Kangaskhan_EX_0_paralyzed_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 32,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 135.0,
+                        "attack_end_angle_deg": 254.9999,
+                        "attack_wheel_file_name": "Kangaskhan_EX_0_paralyzed_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 28,
+                        "attack_name": "Double-Edge",
+                        "attack_type": "Purple",
+                        "attack_value": "\u2606\u2606",
+                        "attack_ability": "This Pok\u00e9mon and the battle opponent are knocked out",
+                        "attack_start_angle_deg": 255.0,
+                        "attack_end_angle_deg": 359.9999,
+                        "attack_wheel_file_name": "Kangaskhan_EX_0_paralyzed_0_attack_wheel.png"
+                    }
+                ]
+            }
+        ],
+        "asleep": [
+            {
+                "attack_wheel_size": 28,
+                "attack_name": "Sucker Punch",
+                "attack_type": "Gold",
+                "attack_value": "100",
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 104.9999,
+                "attack_wheel_file_name": "Kangaskhan_EX_0_asleep_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 8,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 105.0,
+                "attack_end_angle_deg": 134.9999,
+                "attack_wheel_file_name": "Kangaskhan_EX_0_asleep_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 32,
+                "attack_name": "Facade",
+                "attack_type": "White",
+                "attack_value": "150",
+                "attack_ability": "If this Pok\u00e9mon is affected by a special condition, it deals x2 damage",
+                "attack_start_angle_deg": 135.0,
+                "attack_end_angle_deg": 254.9999,
+                "attack_wheel_file_name": "Kangaskhan_EX_0_asleep_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 28,
+                "attack_name": "Double-Edge",
+                "attack_type": "Purple",
+                "attack_value": "\u2606\u2606",
+                "attack_ability": "This Pok\u00e9mon and the battle opponent are knocked out",
+                "attack_start_angle_deg": 255.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Kangaskhan_EX_0_asleep_attack_wheel.png"
+            }
+        ],
+        "frozen": [
+            {
+                "attack_wheel_size": 28,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 104.9999,
+                "attack_wheel_file_name": "Kangaskhan_EX_0_frozen_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 8,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 105.0,
+                "attack_end_angle_deg": 134.9999,
+                "attack_wheel_file_name": "Kangaskhan_EX_0_frozen_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 32,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 135.0,
+                "attack_end_angle_deg": 254.9999,
+                "attack_wheel_file_name": "Kangaskhan_EX_0_frozen_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 28,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 255.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Kangaskhan_EX_0_frozen_attack_wheel.png"
+            }
+        ],
+        "burned_list": [
+            {
+                "burned_0": [
+                    {
+                        "attack_wheel_size": 28,
+                        "attack_name": "Sucker Punch",
+                        "attack_type": "Gold",
+                        "attack_value": "100",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 0,
+                        "attack_end_angle_deg": 104.9999,
+                        "attack_wheel_file_name": "Kangaskhan_EX_0_burned_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 8,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 105.0,
+                        "attack_end_angle_deg": 134.9999,
+                        "attack_wheel_file_name": "Kangaskhan_EX_0_burned_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 32,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 135.0,
+                        "attack_end_angle_deg": 254.9999,
+                        "attack_wheel_file_name": "Kangaskhan_EX_0_burned_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 28,
+                        "attack_name": "Double-Edge",
+                        "attack_type": "Purple",
+                        "attack_value": "\u2606\u2606",
+                        "attack_ability": "This Pok\u00e9mon and the battle opponent are knocked out",
+                        "attack_start_angle_deg": 255.0,
+                        "attack_end_angle_deg": 359.9999,
+                        "attack_wheel_file_name": "Kangaskhan_EX_0_burned_0_attack_wheel.png"
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,315 @@
+{
+    "pokemon_name": "Venusaur",
+    "pokemon_sprite_image": "venusaur_sprite.png",
+    "attack_table_file_name": "Venusaur_EX_2_attack_table.png",
+    "base_movement_points": 1,
+    "rarity": "EX",
+    "pokemon_type": "Grass / Poison",
+    "evolution": "",
+    "evolved_from": "Ivysaur",
+    "evolution_num": 2,
+    "attack_lists_by_type": {
+        "basic": [
+            {
+                "attack_wheel_size": 20,
+                "attack_name": "Protect",
+                "attack_type": "Blue",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 74.9999,
+                "attack_wheel_file_name": "Venusaur_EX_0_basic_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 36,
+                "attack_name": "Solar Beam",
+                "attack_type": "White",
+                "attack_value": "150",
+                "attack_ability": "",
+                "attack_start_angle_deg": 75.0,
+                "attack_end_angle_deg": 209.9999,
+                "attack_wheel_file_name": "Venusaur_EX_0_basic_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 32,
+                "attack_name": "Sleep Powder",
+                "attack_type": "Purple",
+                "attack_value": "\u2606",
+                "attack_ability": "The battle opponent falls asleep.",
+                "attack_start_angle_deg": 210.0,
+                "attack_end_angle_deg": 329.9999,
+                "attack_wheel_file_name": "Venusaur_EX_0_basic_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 8,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 330.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Venusaur_EX_0_basic_attack_wheel.png"
+            }
+        ],
+        "poisoned": [
+            {
+                "attack_wheel_size": 20,
+                "attack_name": "Protect",
+                "attack_type": "Blue",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 74.9999,
+                "attack_wheel_file_name": "Venusaur_EX_0_poisoned_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 36,
+                "attack_name": "Solar Beam",
+                "attack_type": "White",
+                "attack_value": "150",
+                "attack_ability": "",
+                "attack_start_angle_deg": 75.0,
+                "attack_end_angle_deg": 209.9999,
+                "attack_wheel_file_name": "Venusaur_EX_0_poisoned_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 32,
+                "attack_name": "Sleep Powder",
+                "attack_type": "Purple",
+                "attack_value": "\u2606",
+                "attack_ability": "The battle opponent falls asleep.",
+                "attack_start_angle_deg": 210.0,
+                "attack_end_angle_deg": 329.9999,
+                "attack_wheel_file_name": "Venusaur_EX_0_poisoned_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 8,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 330.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Venusaur_EX_0_poisoned_attack_wheel.png"
+            }
+        ],
+        "confused": [
+            {
+                "attack_wheel_size": 20,
+                "attack_name": "Protect",
+                "attack_type": "Blue",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 74.9999,
+                "attack_wheel_file_name": "Venusaur_EX_0_confused_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 36,
+                "attack_name": "Solar Beam",
+                "attack_type": "White",
+                "attack_value": "150",
+                "attack_ability": "",
+                "attack_start_angle_deg": 75.0,
+                "attack_end_angle_deg": 209.9999,
+                "attack_wheel_file_name": "Venusaur_EX_0_confused_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 32,
+                "attack_name": "Sleep Powder",
+                "attack_type": "Purple",
+                "attack_value": "\u2606",
+                "attack_ability": "The battle opponent falls asleep.",
+                "attack_start_angle_deg": 210.0,
+                "attack_end_angle_deg": 329.9999,
+                "attack_wheel_file_name": "Venusaur_EX_0_confused_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 8,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 330.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Venusaur_EX_0_confused_attack_wheel.png"
+            }
+        ],
+        "paralyzed_list": [
+            {
+                "paralyzed_0": [
+                    {
+                        "attack_wheel_size": 20,
+                        "attack_name": "Protect",
+                        "attack_type": "Blue",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 0,
+                        "attack_end_angle_deg": 74.9999,
+                        "attack_wheel_file_name": "Venusaur_EX_0_paralyzed_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 36,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 75.0,
+                        "attack_end_angle_deg": 209.9999,
+                        "attack_wheel_file_name": "Venusaur_EX_0_paralyzed_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 32,
+                        "attack_name": "Sleep Powder",
+                        "attack_type": "Purple",
+                        "attack_value": "\u2606",
+                        "attack_ability": "The battle opponent falls asleep.",
+                        "attack_start_angle_deg": 210.0,
+                        "attack_end_angle_deg": 329.9999,
+                        "attack_wheel_file_name": "Venusaur_EX_0_paralyzed_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 8,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 330.0,
+                        "attack_end_angle_deg": 359.9999,
+                        "attack_wheel_file_name": "Venusaur_EX_0_paralyzed_0_attack_wheel.png"
+                    }
+                ]
+            }
+        ],
+        "asleep": [
+            {
+                "attack_wheel_size": 20,
+                "attack_name": "Protect",
+                "attack_type": "Blue",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 74.9999,
+                "attack_wheel_file_name": "Venusaur_EX_0_asleep_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 36,
+                "attack_name": "Solar Beam",
+                "attack_type": "White",
+                "attack_value": "150",
+                "attack_ability": "",
+                "attack_start_angle_deg": 75.0,
+                "attack_end_angle_deg": 209.9999,
+                "attack_wheel_file_name": "Venusaur_EX_0_asleep_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 32,
+                "attack_name": "Sleep Powder",
+                "attack_type": "Purple",
+                "attack_value": "\u2606",
+                "attack_ability": "The battle opponent falls asleep.",
+                "attack_start_angle_deg": 210.0,
+                "attack_end_angle_deg": 329.9999,
+                "attack_wheel_file_name": "Venusaur_EX_0_asleep_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 8,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 330.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Venusaur_EX_0_asleep_attack_wheel.png"
+            }
+        ],
+        "frozen": [
+            {
+                "attack_wheel_size": 20,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 74.9999,
+                "attack_wheel_file_name": "Venusaur_EX_0_frozen_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 36,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 75.0,
+                "attack_end_angle_deg": 209.9999,
+                "attack_wheel_file_name": "Venusaur_EX_0_frozen_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 32,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 210.0,
+                "attack_end_angle_deg": 329.9999,
+                "attack_wheel_file_name": "Venusaur_EX_0_frozen_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 8,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 330.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Venusaur_EX_0_frozen_attack_wheel.png"
+            }
+        ],
+        "burned_list": [
+            {
+                "burned_0": [
+                    {
+                        "attack_wheel_size": 20,
+                        "attack_name": "Protect",
+                        "attack_type": "Blue",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 0,
+                        "attack_end_angle_deg": 74.9999,
+                        "attack_wheel_file_name": "Venusaur_EX_0_burned_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 36,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 75.0,
+                        "attack_end_angle_deg": 209.9999,
+                        "attack_wheel_file_name": "Venusaur_EX_0_burned_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 32,
+                        "attack_name": "Sleep Powder",
+                        "attack_type": "Purple",
+                        "attack_value": "\u2606",
+                        "attack_ability": "The battle opponent falls asleep.",
+                        "attack_start_angle_deg": 210.0,
+                        "attack_end_angle_deg": 329.9999,
+                        "attack_wheel_file_name": "Venusaur_EX_0_burned_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 8,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 330.0,
+                        "attack_end_angle_deg": 359.9999,
+                        "attack_wheel_file_name": "Venusaur_EX_0_burned_0_attack_wheel.png"
+                    }
+                ]
+            }
+        ]
+    }
+}

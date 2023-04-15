@@ -1,0 +1,385 @@
+{
+    "pokemon_name": "Kadabra",
+    "pokemon_sprite_image": "kadabra_sprite.png",
+    "attack_table_file_name": "Kadabra_R_1_attack_table.png",
+    "base_movement_points": 2,
+    "rarity": "R",
+    "pokemon_type": "Psychic",
+    "evolution": "Alakazam",
+    "evolved_from": "Abra",
+    "evolution_num": 1,
+    "attack_lists_by_type": {
+        "basic": [
+            {
+                "attack_wheel_size": 20,
+                "attack_name": "Teleport Beam",
+                "attack_type": "Purple",
+                "attack_value": "\u2605\u2605\u2605",
+                "attack_ability": "Moves the battle opponent to a point 3 steps away. The battle opponent also becomes confused.",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 74.9999,
+                "attack_wheel_file_name": "Kadabra_R_1_basic_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 4,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 75.0,
+                "attack_end_angle_deg": 89.9999,
+                "attack_wheel_file_name": "Kadabra_R_1_basic_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 36,
+                "attack_name": "Super Psy",
+                "attack_type": "White",
+                "attack_value": 70,
+                "attack_ability": "If this Pok\u00e9mon is knocked out, the battle opponent becomes confused.",
+                "attack_start_angle_deg": 90.0,
+                "attack_end_angle_deg": 224.9999,
+                "attack_wheel_file_name": "Kadabra_R_1_basic_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 20,
+                "attack_name": "Teleport Beam",
+                "attack_type": "Purple",
+                "attack_value": "\u2605\u2605\u2605",
+                "attack_ability": "Moves the battle opponent to a point 3 steps away. The battle opponent also becomes confused.",
+                "attack_start_angle_deg": 225.0,
+                "attack_end_angle_deg": 299.9999,
+                "attack_wheel_file_name": "Kadabra_R_1_basic_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 16,
+                "attack_name": "Annihilate",
+                "attack_type": "Blue",
+                "attack_value": "",
+                "attack_ability": "This Pok\u00e9mon moves 2 steps away.",
+                "attack_start_angle_deg": 300.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Kadabra_R_1_basic_attack_wheel.png"
+            }
+        ],
+        "poisoned": [
+            {
+                "attack_wheel_size": 20,
+                "attack_name": "Teleport Beam",
+                "attack_type": "Purple",
+                "attack_value": "\u2605\u2605\u2605",
+                "attack_ability": "Moves the battle opponent to a point 3 steps away. The battle opponent also becomes confused.",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 74.9999,
+                "attack_wheel_file_name": "Kadabra_R_1_poisoned_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 4,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 75.0,
+                "attack_end_angle_deg": 89.9999,
+                "attack_wheel_file_name": "Kadabra_R_1_poisoned_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 36,
+                "attack_name": "Super Psy",
+                "attack_type": "White",
+                "attack_value": 70,
+                "attack_ability": "If this Pok\u00e9mon is knocked out, the battle opponent becomes confused.",
+                "attack_start_angle_deg": 90.0,
+                "attack_end_angle_deg": 224.9999,
+                "attack_wheel_file_name": "Kadabra_R_1_poisoned_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 20,
+                "attack_name": "Teleport Beam",
+                "attack_type": "Purple",
+                "attack_value": "\u2605\u2605\u2605",
+                "attack_ability": "Moves the battle opponent to a point 3 steps away. The battle opponent also becomes confused.",
+                "attack_start_angle_deg": 225.0,
+                "attack_end_angle_deg": 299.9999,
+                "attack_wheel_file_name": "Kadabra_R_1_poisoned_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 16,
+                "attack_name": "Annihilate",
+                "attack_type": "Blue",
+                "attack_value": "",
+                "attack_ability": "This Pok\u00e9mon moves 2 steps away.",
+                "attack_start_angle_deg": 300.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Kadabra_R_1_poisoned_attack_wheel.png"
+            }
+        ],
+        "confused": [
+            {
+                "attack_wheel_size": 20,
+                "attack_name": "Teleport Beam",
+                "attack_type": "Purple",
+                "attack_value": "\u2605\u2605\u2605",
+                "attack_ability": "Moves the battle opponent to a point 3 steps away. The battle opponent also becomes confused.",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 74.9999,
+                "attack_wheel_file_name": "Kadabra_R_1_confused_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 4,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 75.0,
+                "attack_end_angle_deg": 89.9999,
+                "attack_wheel_file_name": "Kadabra_R_1_confused_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 36,
+                "attack_name": "Super Psy",
+                "attack_type": "White",
+                "attack_value": 70,
+                "attack_ability": "If this Pok\u00e9mon is knocked out, the battle opponent becomes confused.",
+                "attack_start_angle_deg": 90.0,
+                "attack_end_angle_deg": 224.9999,
+                "attack_wheel_file_name": "Kadabra_R_1_confused_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 20,
+                "attack_name": "Teleport Beam",
+                "attack_type": "Purple",
+                "attack_value": "\u2605\u2605\u2605",
+                "attack_ability": "Moves the battle opponent to a point 3 steps away. The battle opponent also becomes confused.",
+                "attack_start_angle_deg": 225.0,
+                "attack_end_angle_deg": 299.9999,
+                "attack_wheel_file_name": "Kadabra_R_1_confused_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 16,
+                "attack_name": "Annihilate",
+                "attack_type": "Blue",
+                "attack_value": "",
+                "attack_ability": "This Pok\u00e9mon moves 2 steps away.",
+                "attack_start_angle_deg": 300.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Kadabra_R_1_confused_attack_wheel.png"
+            }
+        ],
+        "paralyzed_list": [
+            {
+                "paralyzed_0": [
+                    {
+                        "attack_wheel_size": 20,
+                        "attack_name": "Teleport Beam",
+                        "attack_type": "Purple",
+                        "attack_value": "\u2605\u2605\u2605",
+                        "attack_ability": "Moves the battle opponent to a point 3 steps away. The battle opponent also becomes confused.",
+                        "attack_start_angle_deg": 0,
+                        "attack_end_angle_deg": 74.9999,
+                        "attack_wheel_file_name": "Kadabra_R_1_paralyzed_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 4,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 75.0,
+                        "attack_end_angle_deg": 89.9999,
+                        "attack_wheel_file_name": "Kadabra_R_1_paralyzed_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 36,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 90.0,
+                        "attack_end_angle_deg": 224.9999,
+                        "attack_wheel_file_name": "Kadabra_R_1_paralyzed_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 20,
+                        "attack_name": "Teleport Beam",
+                        "attack_type": "Purple",
+                        "attack_value": "\u2605\u2605\u2605",
+                        "attack_ability": "Moves the battle opponent to a point 3 steps away. The battle opponent also becomes confused.",
+                        "attack_start_angle_deg": 225.0,
+                        "attack_end_angle_deg": 299.9999,
+                        "attack_wheel_file_name": "Kadabra_R_1_paralyzed_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 16,
+                        "attack_name": "Annihilate",
+                        "attack_type": "Blue",
+                        "attack_value": "",
+                        "attack_ability": "This Pok\u00e9mon moves 2 steps away.",
+                        "attack_start_angle_deg": 300.0,
+                        "attack_end_angle_deg": 359.9999,
+                        "attack_wheel_file_name": "Kadabra_R_1_paralyzed_0_attack_wheel.png"
+                    }
+                ]
+            }
+        ],
+        "asleep": [
+            {
+                "attack_wheel_size": 20,
+                "attack_name": "Teleport Beam",
+                "attack_type": "Purple",
+                "attack_value": "\u2605\u2605\u2605",
+                "attack_ability": "Moves the battle opponent to a point 3 steps away. The battle opponent also becomes confused.",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 74.9999,
+                "attack_wheel_file_name": "Kadabra_R_1_asleep_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 4,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 75.0,
+                "attack_end_angle_deg": 89.9999,
+                "attack_wheel_file_name": "Kadabra_R_1_asleep_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 36,
+                "attack_name": "Super Psy",
+                "attack_type": "White",
+                "attack_value": 70,
+                "attack_ability": "If this Pok\u00e9mon is knocked out, the battle opponent becomes confused.",
+                "attack_start_angle_deg": 90.0,
+                "attack_end_angle_deg": 224.9999,
+                "attack_wheel_file_name": "Kadabra_R_1_asleep_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 20,
+                "attack_name": "Teleport Beam",
+                "attack_type": "Purple",
+                "attack_value": "\u2605\u2605\u2605",
+                "attack_ability": "Moves the battle opponent to a point 3 steps away. The battle opponent also becomes confused.",
+                "attack_start_angle_deg": 225.0,
+                "attack_end_angle_deg": 299.9999,
+                "attack_wheel_file_name": "Kadabra_R_1_asleep_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 16,
+                "attack_name": "Annihilate",
+                "attack_type": "Blue",
+                "attack_value": "",
+                "attack_ability": "This Pok\u00e9mon moves 2 steps away.",
+                "attack_start_angle_deg": 300.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Kadabra_R_1_asleep_attack_wheel.png"
+            }
+        ],
+        "frozen": [
+            {
+                "attack_wheel_size": 20,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 74.9999,
+                "attack_wheel_file_name": "Kadabra_R_1_frozen_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 4,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 75.0,
+                "attack_end_angle_deg": 89.9999,
+                "attack_wheel_file_name": "Kadabra_R_1_frozen_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 36,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 90.0,
+                "attack_end_angle_deg": 224.9999,
+                "attack_wheel_file_name": "Kadabra_R_1_frozen_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 20,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 225.0,
+                "attack_end_angle_deg": 299.9999,
+                "attack_wheel_file_name": "Kadabra_R_1_frozen_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 16,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 300.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Kadabra_R_1_frozen_attack_wheel.png"
+            }
+        ],
+        "burned_list": [
+            {
+                "burned_0": [
+                    {
+                        "attack_wheel_size": 20,
+                        "attack_name": "Teleport Beam",
+                        "attack_type": "Purple",
+                        "attack_value": "\u2605\u2605\u2605",
+                        "attack_ability": "Moves the battle opponent to a point 3 steps away. The battle opponent also becomes confused.",
+                        "attack_start_angle_deg": 0,
+                        "attack_end_angle_deg": 74.9999,
+                        "attack_wheel_file_name": "Kadabra_R_1_burned_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 4,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 75.0,
+                        "attack_end_angle_deg": 89.9999,
+                        "attack_wheel_file_name": "Kadabra_R_1_burned_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 36,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 90.0,
+                        "attack_end_angle_deg": 224.9999,
+                        "attack_wheel_file_name": "Kadabra_R_1_burned_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 20,
+                        "attack_name": "Teleport Beam",
+                        "attack_type": "Purple",
+                        "attack_value": "\u2605\u2605\u2605",
+                        "attack_ability": "Moves the battle opponent to a point 3 steps away. The battle opponent also becomes confused.",
+                        "attack_start_angle_deg": 225.0,
+                        "attack_end_angle_deg": 299.9999,
+                        "attack_wheel_file_name": "Kadabra_R_1_burned_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 16,
+                        "attack_name": "Annihilate",
+                        "attack_type": "Blue",
+                        "attack_value": "",
+                        "attack_ability": "This Pok\u00e9mon moves 2 steps away.",
+                        "attack_start_angle_deg": 300.0,
+                        "attack_end_angle_deg": 359.9999,
+                        "attack_wheel_file_name": "Kadabra_R_1_burned_0_attack_wheel.png"
+                    }
+                ]
+            }
+        ]
+    }
+}

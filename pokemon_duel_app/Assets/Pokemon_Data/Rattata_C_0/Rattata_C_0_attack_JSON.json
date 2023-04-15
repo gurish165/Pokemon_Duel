@@ -1,0 +1,245 @@
+{
+    "pokemon_name": "Rattata",
+    "pokemon_sprite_image": "rattata_sprite.png",
+    "attack_table_file_name": "Rattata_C_0_attack_table.png",
+    "base_movement_points": 2,
+    "rarity": "C",
+    "pokemon_type": "Normal",
+    "evolution": "Raticate",
+    "evolved_from": "",
+    "evolution_num": 0,
+    "attack_lists_by_type": {
+        "basic": [
+            {
+                "attack_wheel_size": 24,
+                "attack_name": "Quick Attack",
+                "attack_type": "Gold",
+                "attack_value": "40",
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 89.9999,
+                "attack_wheel_file_name": "Rattata_C_0_basic_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 68,
+                "attack_name": "Tackle",
+                "attack_type": "White",
+                "attack_value": "10",
+                "attack_ability": "",
+                "attack_start_angle_deg": 90.0,
+                "attack_end_angle_deg": 344.9999,
+                "attack_wheel_file_name": "Rattata_C_0_basic_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 4,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 345.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Rattata_C_0_basic_attack_wheel.png"
+            }
+        ],
+        "poisoned": [
+            {
+                "attack_wheel_size": 24,
+                "attack_name": "Quick Attack",
+                "attack_type": "Gold",
+                "attack_value": "40",
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 89.9999,
+                "attack_wheel_file_name": "Rattata_C_0_poisoned_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 68,
+                "attack_name": "Tackle",
+                "attack_type": "White",
+                "attack_value": "10",
+                "attack_ability": "",
+                "attack_start_angle_deg": 90.0,
+                "attack_end_angle_deg": 344.9999,
+                "attack_wheel_file_name": "Rattata_C_0_poisoned_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 4,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 345.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Rattata_C_0_poisoned_attack_wheel.png"
+            }
+        ],
+        "confused": [
+            {
+                "attack_wheel_size": 24,
+                "attack_name": "Quick Attack",
+                "attack_type": "Gold",
+                "attack_value": "40",
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 89.9999,
+                "attack_wheel_file_name": "Rattata_C_0_confused_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 68,
+                "attack_name": "Tackle",
+                "attack_type": "White",
+                "attack_value": "10",
+                "attack_ability": "",
+                "attack_start_angle_deg": 90.0,
+                "attack_end_angle_deg": 344.9999,
+                "attack_wheel_file_name": "Rattata_C_0_confused_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 4,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 345.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Rattata_C_0_confused_attack_wheel.png"
+            }
+        ],
+        "paralyzed_list": [
+            {
+                "paralyzed_0": [
+                    {
+                        "attack_wheel_size": 24,
+                        "attack_name": "Quick Attack",
+                        "attack_type": "Gold",
+                        "attack_value": "40",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 0,
+                        "attack_end_angle_deg": 89.9999,
+                        "attack_wheel_file_name": "Rattata_C_0_paralyzed_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 68,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 90.0,
+                        "attack_end_angle_deg": 344.9999,
+                        "attack_wheel_file_name": "Rattata_C_0_paralyzed_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 4,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 345.0,
+                        "attack_end_angle_deg": 359.9999,
+                        "attack_wheel_file_name": "Rattata_C_0_paralyzed_0_attack_wheel.png"
+                    }
+                ]
+            }
+        ],
+        "asleep": [
+            {
+                "attack_wheel_size": 24,
+                "attack_name": "Quick Attack",
+                "attack_type": "Gold",
+                "attack_value": "40",
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 89.9999,
+                "attack_wheel_file_name": "Rattata_C_0_asleep_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 68,
+                "attack_name": "Tackle",
+                "attack_type": "White",
+                "attack_value": "10",
+                "attack_ability": "",
+                "attack_start_angle_deg": 90.0,
+                "attack_end_angle_deg": 344.9999,
+                "attack_wheel_file_name": "Rattata_C_0_asleep_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 4,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 345.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Rattata_C_0_asleep_attack_wheel.png"
+            }
+        ],
+        "frozen": [
+            {
+                "attack_wheel_size": 24,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 89.9999,
+                "attack_wheel_file_name": "Rattata_C_0_frozen_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 68,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 90.0,
+                "attack_end_angle_deg": 344.9999,
+                "attack_wheel_file_name": "Rattata_C_0_frozen_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 4,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 345.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Rattata_C_0_frozen_attack_wheel.png"
+            }
+        ],
+        "burned_list": [
+            {
+                "burned_0": [
+                    {
+                        "attack_wheel_size": 24,
+                        "attack_name": "Quick Attack",
+                        "attack_type": "Gold",
+                        "attack_value": "40",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 0,
+                        "attack_end_angle_deg": 89.9999,
+                        "attack_wheel_file_name": "Rattata_C_0_burned_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 68,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 90.0,
+                        "attack_end_angle_deg": 344.9999,
+                        "attack_wheel_file_name": "Rattata_C_0_burned_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 4,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 345.0,
+                        "attack_end_angle_deg": 359.9999,
+                        "attack_wheel_file_name": "Rattata_C_0_burned_0_attack_wheel.png"
+                    }
+                ]
+            }
+        ]
+    }
+}

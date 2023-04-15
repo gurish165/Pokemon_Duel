@@ -1,0 +1,245 @@
+{
+    "pokemon_name": "Electrode",
+    "pokemon_sprite_image": "electrode_sprite.png",
+    "attack_table_file_name": "Electrode_R_1_attack_table.png",
+    "base_movement_points": 3,
+    "rarity": "R",
+    "pokemon_type": "Electric",
+    "evolution": "",
+    "evolved_from": "Voltorb",
+    "evolution_num": 1,
+    "attack_lists_by_type": {
+        "basic": [
+            {
+                "attack_wheel_size": 4,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 14.9999,
+                "attack_wheel_file_name": "Electrode_R_0_basic_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 44,
+                "attack_name": "Shock Blast",
+                "attack_type": "White",
+                "attack_value": "40",
+                "attack_ability": "If the battle opponent spins an Attack of 101 or more damage, the battle opponent is knocked out",
+                "attack_start_angle_deg": 15.0,
+                "attack_end_angle_deg": 179.9999,
+                "attack_wheel_file_name": "Electrode_R_0_basic_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 48,
+                "attack_name": "Thunder Wave",
+                "attack_type": "Purple",
+                "attack_value": "\u2606\u2606",
+                "attack_ability": "The battle opponent becomes paralyzed",
+                "attack_start_angle_deg": 180.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Electrode_R_0_basic_attack_wheel.png"
+            }
+        ],
+        "poisoned": [
+            {
+                "attack_wheel_size": 4,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 14.9999,
+                "attack_wheel_file_name": "Electrode_R_0_poisoned_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 44,
+                "attack_name": "Shock Blast",
+                "attack_type": "White",
+                "attack_value": "40",
+                "attack_ability": "If the battle opponent spins an Attack of 101 or more damage, the battle opponent is knocked out",
+                "attack_start_angle_deg": 15.0,
+                "attack_end_angle_deg": 179.9999,
+                "attack_wheel_file_name": "Electrode_R_0_poisoned_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 48,
+                "attack_name": "Thunder Wave",
+                "attack_type": "Purple",
+                "attack_value": "\u2606\u2606",
+                "attack_ability": "The battle opponent becomes paralyzed",
+                "attack_start_angle_deg": 180.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Electrode_R_0_poisoned_attack_wheel.png"
+            }
+        ],
+        "confused": [
+            {
+                "attack_wheel_size": 4,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 14.9999,
+                "attack_wheel_file_name": "Electrode_R_0_confused_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 44,
+                "attack_name": "Shock Blast",
+                "attack_type": "White",
+                "attack_value": "40",
+                "attack_ability": "If the battle opponent spins an Attack of 101 or more damage, the battle opponent is knocked out",
+                "attack_start_angle_deg": 15.0,
+                "attack_end_angle_deg": 179.9999,
+                "attack_wheel_file_name": "Electrode_R_0_confused_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 48,
+                "attack_name": "Thunder Wave",
+                "attack_type": "Purple",
+                "attack_value": "\u2606\u2606",
+                "attack_ability": "The battle opponent becomes paralyzed",
+                "attack_start_angle_deg": 180.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Electrode_R_0_confused_attack_wheel.png"
+            }
+        ],
+        "paralyzed_list": [
+            {
+                "paralyzed_0": [
+                    {
+                        "attack_wheel_size": 4,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 0,
+                        "attack_end_angle_deg": 14.9999,
+                        "attack_wheel_file_name": "Electrode_R_0_paralyzed_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 44,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 15.0,
+                        "attack_end_angle_deg": 179.9999,
+                        "attack_wheel_file_name": "Electrode_R_0_paralyzed_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 48,
+                        "attack_name": "Thunder Wave",
+                        "attack_type": "Purple",
+                        "attack_value": "\u2606\u2606",
+                        "attack_ability": "The battle opponent becomes paralyzed",
+                        "attack_start_angle_deg": 180.0,
+                        "attack_end_angle_deg": 359.9999,
+                        "attack_wheel_file_name": "Electrode_R_0_paralyzed_0_attack_wheel.png"
+                    }
+                ]
+            }
+        ],
+        "asleep": [
+            {
+                "attack_wheel_size": 4,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 14.9999,
+                "attack_wheel_file_name": "Electrode_R_0_asleep_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 44,
+                "attack_name": "Shock Blast",
+                "attack_type": "White",
+                "attack_value": "40",
+                "attack_ability": "If the battle opponent spins an Attack of 101 or more damage, the battle opponent is knocked out",
+                "attack_start_angle_deg": 15.0,
+                "attack_end_angle_deg": 179.9999,
+                "attack_wheel_file_name": "Electrode_R_0_asleep_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 48,
+                "attack_name": "Thunder Wave",
+                "attack_type": "Purple",
+                "attack_value": "\u2606\u2606",
+                "attack_ability": "The battle opponent becomes paralyzed",
+                "attack_start_angle_deg": 180.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Electrode_R_0_asleep_attack_wheel.png"
+            }
+        ],
+        "frozen": [
+            {
+                "attack_wheel_size": 4,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 14.9999,
+                "attack_wheel_file_name": "Electrode_R_0_frozen_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 44,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 15.0,
+                "attack_end_angle_deg": 179.9999,
+                "attack_wheel_file_name": "Electrode_R_0_frozen_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 48,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 180.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Electrode_R_0_frozen_attack_wheel.png"
+            }
+        ],
+        "burned_list": [
+            {
+                "burned_0": [
+                    {
+                        "attack_wheel_size": 4,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 0,
+                        "attack_end_angle_deg": 14.9999,
+                        "attack_wheel_file_name": "Electrode_R_0_burned_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 44,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 15.0,
+                        "attack_end_angle_deg": 179.9999,
+                        "attack_wheel_file_name": "Electrode_R_0_burned_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 48,
+                        "attack_name": "Thunder Wave",
+                        "attack_type": "Purple",
+                        "attack_value": "\u2606\u2606",
+                        "attack_ability": "The battle opponent becomes paralyzed",
+                        "attack_start_angle_deg": 180.0,
+                        "attack_end_angle_deg": 359.9999,
+                        "attack_wheel_file_name": "Electrode_R_0_burned_0_attack_wheel.png"
+                    }
+                ]
+            }
+        ]
+    }
+}

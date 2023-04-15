@@ -1,0 +1,315 @@
+{
+    "pokemon_name": "Spearow",
+    "pokemon_sprite_image": "spearow_sprite.png",
+    "attack_table_file_name": "Spearow_C_0_attack_table.png",
+    "base_movement_points": 2,
+    "rarity": "C",
+    "pokemon_type": "Normal / Flying",
+    "evolution": "Fearow",
+    "evolved_from": "",
+    "evolution_num": 0,
+    "attack_lists_by_type": {
+        "basic": [
+            {
+                "attack_wheel_size": 20,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 74.9999,
+                "attack_wheel_file_name": "Spearow_C_0_basic_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 16,
+                "attack_name": "Peck",
+                "attack_type": "White",
+                "attack_value": "40",
+                "attack_ability": "",
+                "attack_start_angle_deg": 75.0,
+                "attack_end_angle_deg": 134.9999,
+                "attack_wheel_file_name": "Spearow_C_0_basic_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 16,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 135.0,
+                "attack_end_angle_deg": 194.9999,
+                "attack_wheel_file_name": "Spearow_C_0_basic_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 44,
+                "attack_name": "Fly Away",
+                "attack_type": "Purple",
+                "attack_value": "\u2606\u2606\u2606",
+                "attack_ability": "This Pok\u00e9mon jumps over the battle opponent and lands on a surrounding point.",
+                "attack_start_angle_deg": 195.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Spearow_C_0_basic_attack_wheel.png"
+            }
+        ],
+        "poisoned": [
+            {
+                "attack_wheel_size": 20,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 74.9999,
+                "attack_wheel_file_name": "Spearow_C_0_poisoned_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 16,
+                "attack_name": "Peck",
+                "attack_type": "White",
+                "attack_value": "40",
+                "attack_ability": "",
+                "attack_start_angle_deg": 75.0,
+                "attack_end_angle_deg": 134.9999,
+                "attack_wheel_file_name": "Spearow_C_0_poisoned_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 16,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 135.0,
+                "attack_end_angle_deg": 194.9999,
+                "attack_wheel_file_name": "Spearow_C_0_poisoned_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 44,
+                "attack_name": "Fly Away",
+                "attack_type": "Purple",
+                "attack_value": "\u2606\u2606\u2606",
+                "attack_ability": "This Pok\u00e9mon jumps over the battle opponent and lands on a surrounding point.",
+                "attack_start_angle_deg": 195.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Spearow_C_0_poisoned_attack_wheel.png"
+            }
+        ],
+        "confused": [
+            {
+                "attack_wheel_size": 20,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 74.9999,
+                "attack_wheel_file_name": "Spearow_C_0_confused_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 16,
+                "attack_name": "Peck",
+                "attack_type": "White",
+                "attack_value": "40",
+                "attack_ability": "",
+                "attack_start_angle_deg": 75.0,
+                "attack_end_angle_deg": 134.9999,
+                "attack_wheel_file_name": "Spearow_C_0_confused_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 16,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 135.0,
+                "attack_end_angle_deg": 194.9999,
+                "attack_wheel_file_name": "Spearow_C_0_confused_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 44,
+                "attack_name": "Fly Away",
+                "attack_type": "Purple",
+                "attack_value": "\u2606\u2606\u2606",
+                "attack_ability": "This Pok\u00e9mon jumps over the battle opponent and lands on a surrounding point.",
+                "attack_start_angle_deg": 195.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Spearow_C_0_confused_attack_wheel.png"
+            }
+        ],
+        "paralyzed_list": [
+            {
+                "paralyzed_0": [
+                    {
+                        "attack_wheel_size": 20,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 0,
+                        "attack_end_angle_deg": 74.9999,
+                        "attack_wheel_file_name": "Spearow_C_0_paralyzed_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 16,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 75.0,
+                        "attack_end_angle_deg": 134.9999,
+                        "attack_wheel_file_name": "Spearow_C_0_paralyzed_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 16,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 135.0,
+                        "attack_end_angle_deg": 194.9999,
+                        "attack_wheel_file_name": "Spearow_C_0_paralyzed_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 44,
+                        "attack_name": "Fly Away",
+                        "attack_type": "Purple",
+                        "attack_value": "\u2606\u2606\u2606",
+                        "attack_ability": "This Pok\u00e9mon jumps over the battle opponent and lands on a surrounding point.",
+                        "attack_start_angle_deg": 195.0,
+                        "attack_end_angle_deg": 359.9999,
+                        "attack_wheel_file_name": "Spearow_C_0_paralyzed_0_attack_wheel.png"
+                    }
+                ]
+            }
+        ],
+        "asleep": [
+            {
+                "attack_wheel_size": 20,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 74.9999,
+                "attack_wheel_file_name": "Spearow_C_0_asleep_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 16,
+                "attack_name": "Peck",
+                "attack_type": "White",
+                "attack_value": "40",
+                "attack_ability": "",
+                "attack_start_angle_deg": 75.0,
+                "attack_end_angle_deg": 134.9999,
+                "attack_wheel_file_name": "Spearow_C_0_asleep_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 16,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 135.0,
+                "attack_end_angle_deg": 194.9999,
+                "attack_wheel_file_name": "Spearow_C_0_asleep_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 44,
+                "attack_name": "Fly Away",
+                "attack_type": "Purple",
+                "attack_value": "\u2606\u2606\u2606",
+                "attack_ability": "This Pok\u00e9mon jumps over the battle opponent and lands on a surrounding point.",
+                "attack_start_angle_deg": 195.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Spearow_C_0_asleep_attack_wheel.png"
+            }
+        ],
+        "frozen": [
+            {
+                "attack_wheel_size": 20,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 74.9999,
+                "attack_wheel_file_name": "Spearow_C_0_frozen_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 16,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 75.0,
+                "attack_end_angle_deg": 134.9999,
+                "attack_wheel_file_name": "Spearow_C_0_frozen_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 16,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 135.0,
+                "attack_end_angle_deg": 194.9999,
+                "attack_wheel_file_name": "Spearow_C_0_frozen_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 44,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 195.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Spearow_C_0_frozen_attack_wheel.png"
+            }
+        ],
+        "burned_list": [
+            {
+                "burned_0": [
+                    {
+                        "attack_wheel_size": 20,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 0,
+                        "attack_end_angle_deg": 74.9999,
+                        "attack_wheel_file_name": "Spearow_C_0_burned_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 16,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 75.0,
+                        "attack_end_angle_deg": 134.9999,
+                        "attack_wheel_file_name": "Spearow_C_0_burned_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 16,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 135.0,
+                        "attack_end_angle_deg": 194.9999,
+                        "attack_wheel_file_name": "Spearow_C_0_burned_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 44,
+                        "attack_name": "Fly Away",
+                        "attack_type": "Purple",
+                        "attack_value": "\u2606\u2606\u2606",
+                        "attack_ability": "This Pok\u00e9mon jumps over the battle opponent and lands on a surrounding point.",
+                        "attack_start_angle_deg": 195.0,
+                        "attack_end_angle_deg": 359.9999,
+                        "attack_wheel_file_name": "Spearow_C_0_burned_0_attack_wheel.png"
+                    }
+                ]
+            }
+        ]
+    }
+}

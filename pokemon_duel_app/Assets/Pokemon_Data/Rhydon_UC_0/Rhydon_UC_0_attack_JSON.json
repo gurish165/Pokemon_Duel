@@ -1,0 +1,315 @@
+{
+    "pokemon_name": "Rhydon",
+    "pokemon_sprite_image": "rhydon_sprite.png",
+    "attack_table_file_name": "Rhydon_UC_0_attack_table.png",
+    "base_movement_points": 1,
+    "rarity": "UC",
+    "pokemon_type": "Ground / Rock",
+    "evolution": "",
+    "evolved_from": "Rhyhorn",
+    "evolution_num": 0,
+    "attack_lists_by_type": {
+        "basic": [
+            {
+                "attack_wheel_size": 12,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 44.9999,
+                "attack_wheel_file_name": "Rhydon_UC_0_basic_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 28,
+                "attack_name": "Horn Drill",
+                "attack_type": "Purple",
+                "attack_value": "\u2606",
+                "attack_ability": "The battle opponent is Knocked Out",
+                "attack_start_angle_deg": 45.0,
+                "attack_end_angle_deg": 149.9999,
+                "attack_wheel_file_name": "Rhydon_UC_0_basic_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 8,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 150.0,
+                "attack_end_angle_deg": 179.9999,
+                "attack_wheel_file_name": "Rhydon_UC_0_basic_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 48,
+                "attack_name": "Stomp",
+                "attack_type": "White",
+                "attack_value": "100",
+                "attack_ability": "",
+                "attack_start_angle_deg": 180.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Rhydon_UC_0_basic_attack_wheel.png"
+            }
+        ],
+        "poisoned": [
+            {
+                "attack_wheel_size": 12,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 44.9999,
+                "attack_wheel_file_name": "Rhydon_UC_0_poisoned_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 28,
+                "attack_name": "Horn Drill",
+                "attack_type": "Purple",
+                "attack_value": "\u2606",
+                "attack_ability": "The battle opponent is Knocked Out",
+                "attack_start_angle_deg": 45.0,
+                "attack_end_angle_deg": 149.9999,
+                "attack_wheel_file_name": "Rhydon_UC_0_poisoned_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 8,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 150.0,
+                "attack_end_angle_deg": 179.9999,
+                "attack_wheel_file_name": "Rhydon_UC_0_poisoned_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 48,
+                "attack_name": "Stomp",
+                "attack_type": "White",
+                "attack_value": "100",
+                "attack_ability": "",
+                "attack_start_angle_deg": 180.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Rhydon_UC_0_poisoned_attack_wheel.png"
+            }
+        ],
+        "confused": [
+            {
+                "attack_wheel_size": 12,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 44.9999,
+                "attack_wheel_file_name": "Rhydon_UC_0_confused_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 28,
+                "attack_name": "Horn Drill",
+                "attack_type": "Purple",
+                "attack_value": "\u2606",
+                "attack_ability": "The battle opponent is Knocked Out",
+                "attack_start_angle_deg": 45.0,
+                "attack_end_angle_deg": 149.9999,
+                "attack_wheel_file_name": "Rhydon_UC_0_confused_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 8,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 150.0,
+                "attack_end_angle_deg": 179.9999,
+                "attack_wheel_file_name": "Rhydon_UC_0_confused_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 48,
+                "attack_name": "Stomp",
+                "attack_type": "White",
+                "attack_value": "100",
+                "attack_ability": "",
+                "attack_start_angle_deg": 180.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Rhydon_UC_0_confused_attack_wheel.png"
+            }
+        ],
+        "paralyzed_list": [
+            {
+                "paralyzed_0": [
+                    {
+                        "attack_wheel_size": 12,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 0,
+                        "attack_end_angle_deg": 44.9999,
+                        "attack_wheel_file_name": "Rhydon_UC_0_paralyzed_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 28,
+                        "attack_name": "Horn Drill",
+                        "attack_type": "Purple",
+                        "attack_value": "\u2606",
+                        "attack_ability": "The battle opponent is Knocked Out",
+                        "attack_start_angle_deg": 45.0,
+                        "attack_end_angle_deg": 149.9999,
+                        "attack_wheel_file_name": "Rhydon_UC_0_paralyzed_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 8,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 150.0,
+                        "attack_end_angle_deg": 179.9999,
+                        "attack_wheel_file_name": "Rhydon_UC_0_paralyzed_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 48,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 180.0,
+                        "attack_end_angle_deg": 359.9999,
+                        "attack_wheel_file_name": "Rhydon_UC_0_paralyzed_0_attack_wheel.png"
+                    }
+                ]
+            }
+        ],
+        "asleep": [
+            {
+                "attack_wheel_size": 12,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 44.9999,
+                "attack_wheel_file_name": "Rhydon_UC_0_asleep_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 28,
+                "attack_name": "Horn Drill",
+                "attack_type": "Purple",
+                "attack_value": "\u2606",
+                "attack_ability": "The battle opponent is Knocked Out",
+                "attack_start_angle_deg": 45.0,
+                "attack_end_angle_deg": 149.9999,
+                "attack_wheel_file_name": "Rhydon_UC_0_asleep_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 8,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 150.0,
+                "attack_end_angle_deg": 179.9999,
+                "attack_wheel_file_name": "Rhydon_UC_0_asleep_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 48,
+                "attack_name": "Stomp",
+                "attack_type": "White",
+                "attack_value": "100",
+                "attack_ability": "",
+                "attack_start_angle_deg": 180.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Rhydon_UC_0_asleep_attack_wheel.png"
+            }
+        ],
+        "frozen": [
+            {
+                "attack_wheel_size": 12,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 44.9999,
+                "attack_wheel_file_name": "Rhydon_UC_0_frozen_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 28,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 45.0,
+                "attack_end_angle_deg": 149.9999,
+                "attack_wheel_file_name": "Rhydon_UC_0_frozen_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 8,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 150.0,
+                "attack_end_angle_deg": 179.9999,
+                "attack_wheel_file_name": "Rhydon_UC_0_frozen_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 48,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 180.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Rhydon_UC_0_frozen_attack_wheel.png"
+            }
+        ],
+        "burned_list": [
+            {
+                "burned_0": [
+                    {
+                        "attack_wheel_size": 12,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 0,
+                        "attack_end_angle_deg": 44.9999,
+                        "attack_wheel_file_name": "Rhydon_UC_0_burned_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 28,
+                        "attack_name": "Horn Drill",
+                        "attack_type": "Purple",
+                        "attack_value": "\u2606",
+                        "attack_ability": "The battle opponent is Knocked Out",
+                        "attack_start_angle_deg": 45.0,
+                        "attack_end_angle_deg": 149.9999,
+                        "attack_wheel_file_name": "Rhydon_UC_0_burned_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 8,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 150.0,
+                        "attack_end_angle_deg": 179.9999,
+                        "attack_wheel_file_name": "Rhydon_UC_0_burned_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 48,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 180.0,
+                        "attack_end_angle_deg": 359.9999,
+                        "attack_wheel_file_name": "Rhydon_UC_0_burned_0_attack_wheel.png"
+                    }
+                ]
+            }
+        ]
+    }
+}

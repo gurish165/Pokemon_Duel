@@ -1,0 +1,245 @@
+{
+    "pokemon_name": "Butterfree",
+    "pokemon_sprite_image": "butterfree_sprite.png",
+    "attack_table_file_name": "Butterfree_UC_2_attack_table.png",
+    "base_movement_points": 2,
+    "rarity": "UC",
+    "pokemon_type": "Bug / Flying",
+    "evolution": "",
+    "evolved_from": "Metapod",
+    "evolution_num": 2,
+    "attack_lists_by_type": {
+        "basic": [
+            {
+                "attack_wheel_size": 28,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 104.9999,
+                "attack_wheel_file_name": "Butterfree_UC_2_basic_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 32,
+                "attack_name": "Psybeam",
+                "attack_type": "White",
+                "attack_value": 90,
+                "attack_ability": "If this Pok\u00e9mon is knocked out, the opponent Pok\u00e9mon is Confused",
+                "attack_start_angle_deg": 105.0,
+                "attack_end_angle_deg": 224.9999,
+                "attack_wheel_file_name": "Butterfree_UC_2_basic_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 36,
+                "attack_name": "Startling Powder",
+                "attack_type": "Purple",
+                "attack_value": "\u2605\u2605\u2605",
+                "attack_ability": "The battle opponent either becomes poisoned, paralyzed, or fals asleep.",
+                "attack_start_angle_deg": 225.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Butterfree_UC_2_basic_attack_wheel.png"
+            }
+        ],
+        "poisoned": [
+            {
+                "attack_wheel_size": 28,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 104.9999,
+                "attack_wheel_file_name": "Butterfree_UC_2_poisoned_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 32,
+                "attack_name": "Psybeam",
+                "attack_type": "White",
+                "attack_value": 90,
+                "attack_ability": "If this Pok\u00e9mon is knocked out, the opponent Pok\u00e9mon is Confused",
+                "attack_start_angle_deg": 105.0,
+                "attack_end_angle_deg": 224.9999,
+                "attack_wheel_file_name": "Butterfree_UC_2_poisoned_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 36,
+                "attack_name": "Startling Powder",
+                "attack_type": "Purple",
+                "attack_value": "\u2605\u2605\u2605",
+                "attack_ability": "The battle opponent either becomes poisoned, paralyzed, or fals asleep.",
+                "attack_start_angle_deg": 225.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Butterfree_UC_2_poisoned_attack_wheel.png"
+            }
+        ],
+        "confused": [
+            {
+                "attack_wheel_size": 28,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 104.9999,
+                "attack_wheel_file_name": "Butterfree_UC_2_confused_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 32,
+                "attack_name": "Psybeam",
+                "attack_type": "White",
+                "attack_value": 90,
+                "attack_ability": "If this Pok\u00e9mon is knocked out, the opponent Pok\u00e9mon is Confused",
+                "attack_start_angle_deg": 105.0,
+                "attack_end_angle_deg": 224.9999,
+                "attack_wheel_file_name": "Butterfree_UC_2_confused_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 36,
+                "attack_name": "Startling Powder",
+                "attack_type": "Purple",
+                "attack_value": "\u2605\u2605\u2605",
+                "attack_ability": "The battle opponent either becomes poisoned, paralyzed, or fals asleep.",
+                "attack_start_angle_deg": 225.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Butterfree_UC_2_confused_attack_wheel.png"
+            }
+        ],
+        "paralyzed_list": [
+            {
+                "paralyzed_0": [
+                    {
+                        "attack_wheel_size": 28,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 0,
+                        "attack_end_angle_deg": 104.9999,
+                        "attack_wheel_file_name": "Butterfree_UC_2_paralyzed_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 32,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 105.0,
+                        "attack_end_angle_deg": 224.9999,
+                        "attack_wheel_file_name": "Butterfree_UC_2_paralyzed_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 36,
+                        "attack_name": "Startling Powder",
+                        "attack_type": "Purple",
+                        "attack_value": "\u2605\u2605\u2605",
+                        "attack_ability": "The battle opponent either becomes poisoned, paralyzed, or fals asleep.",
+                        "attack_start_angle_deg": 225.0,
+                        "attack_end_angle_deg": 359.9999,
+                        "attack_wheel_file_name": "Butterfree_UC_2_paralyzed_0_attack_wheel.png"
+                    }
+                ]
+            }
+        ],
+        "asleep": [
+            {
+                "attack_wheel_size": 28,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 104.9999,
+                "attack_wheel_file_name": "Butterfree_UC_2_asleep_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 32,
+                "attack_name": "Psybeam",
+                "attack_type": "White",
+                "attack_value": 90,
+                "attack_ability": "If this Pok\u00e9mon is knocked out, the opponent Pok\u00e9mon is Confused",
+                "attack_start_angle_deg": 105.0,
+                "attack_end_angle_deg": 224.9999,
+                "attack_wheel_file_name": "Butterfree_UC_2_asleep_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 36,
+                "attack_name": "Startling Powder",
+                "attack_type": "Purple",
+                "attack_value": "\u2605\u2605\u2605",
+                "attack_ability": "The battle opponent either becomes poisoned, paralyzed, or fals asleep.",
+                "attack_start_angle_deg": 225.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Butterfree_UC_2_asleep_attack_wheel.png"
+            }
+        ],
+        "frozen": [
+            {
+                "attack_wheel_size": 28,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 104.9999,
+                "attack_wheel_file_name": "Butterfree_UC_2_frozen_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 32,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 105.0,
+                "attack_end_angle_deg": 224.9999,
+                "attack_wheel_file_name": "Butterfree_UC_2_frozen_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 36,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 225.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Butterfree_UC_2_frozen_attack_wheel.png"
+            }
+        ],
+        "burned_list": [
+            {
+                "burned_0": [
+                    {
+                        "attack_wheel_size": 28,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 0,
+                        "attack_end_angle_deg": 104.9999,
+                        "attack_wheel_file_name": "Butterfree_UC_2_burned_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 32,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 105.0,
+                        "attack_end_angle_deg": 224.9999,
+                        "attack_wheel_file_name": "Butterfree_UC_2_burned_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 36,
+                        "attack_name": "Startling Powder",
+                        "attack_type": "Purple",
+                        "attack_value": "\u2605\u2605\u2605",
+                        "attack_ability": "The battle opponent either becomes poisoned, paralyzed, or fals asleep.",
+                        "attack_start_angle_deg": 225.0,
+                        "attack_end_angle_deg": 359.9999,
+                        "attack_wheel_file_name": "Butterfree_UC_2_burned_0_attack_wheel.png"
+                    }
+                ]
+            }
+        ]
+    }
+}

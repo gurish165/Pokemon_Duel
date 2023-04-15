@@ -1,0 +1,403 @@
+{
+    "pokemon_name": "Poliwhirl",
+    "pokemon_sprite_image": "poliwhirl_sprite.png",
+    "attack_table_file_name": "Poliwhirl_UC_1_attack_table.png",
+    "base_movement_points": 2,
+    "rarity": "UC",
+    "pokemon_type": "Water",
+    "evolution": "Poliwrath",
+    "evolved_from": "Poliwag",
+    "evolution_num": 1,
+    "attack_lists_by_type": {
+        "basic": [
+            {
+                "attack_wheel_size": 8,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 29.9999,
+                "attack_wheel_file_name": "Poliwhirl_UC_0_basic_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 16,
+                "attack_name": "Water Gun",
+                "attack_type": "White",
+                "attack_value": "50",
+                "attack_ability": "",
+                "attack_start_angle_deg": 30.0,
+                "attack_end_angle_deg": 89.9999,
+                "attack_wheel_file_name": "Poliwhirl_UC_0_basic_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 48,
+                "attack_name": "Water Gun",
+                "attack_type": "White",
+                "attack_value": "70",
+                "attack_ability": "",
+                "attack_start_angle_deg": 90.0,
+                "attack_end_angle_deg": 269.9999,
+                "attack_wheel_file_name": "Poliwhirl_UC_0_basic_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 24,
+                "attack_name": "Hypnosis",
+                "attack_type": "Purple",
+                "attack_value": "\u2606\u2606",
+                "attack_ability": "The battle opponent falls asleep",
+                "attack_start_angle_deg": 270.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Poliwhirl_UC_0_basic_attack_wheel.png"
+            }
+        ],
+        "poisoned": [
+            {
+                "attack_wheel_size": 8,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 29.9999,
+                "attack_wheel_file_name": "Poliwhirl_UC_0_poisoned_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 16,
+                "attack_name": "Water Gun",
+                "attack_type": "White",
+                "attack_value": "50",
+                "attack_ability": "",
+                "attack_start_angle_deg": 30.0,
+                "attack_end_angle_deg": 89.9999,
+                "attack_wheel_file_name": "Poliwhirl_UC_0_poisoned_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 48,
+                "attack_name": "Water Gun",
+                "attack_type": "White",
+                "attack_value": "70",
+                "attack_ability": "",
+                "attack_start_angle_deg": 90.0,
+                "attack_end_angle_deg": 269.9999,
+                "attack_wheel_file_name": "Poliwhirl_UC_0_poisoned_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 24,
+                "attack_name": "Hypnosis",
+                "attack_type": "Purple",
+                "attack_value": "\u2606\u2606",
+                "attack_ability": "The battle opponent falls asleep",
+                "attack_start_angle_deg": 270.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Poliwhirl_UC_0_poisoned_attack_wheel.png"
+            }
+        ],
+        "confused": [
+            {
+                "attack_wheel_size": 8,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 29.9999,
+                "attack_wheel_file_name": "Poliwhirl_UC_0_confused_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 16,
+                "attack_name": "Water Gun",
+                "attack_type": "White",
+                "attack_value": "50",
+                "attack_ability": "",
+                "attack_start_angle_deg": 30.0,
+                "attack_end_angle_deg": 89.9999,
+                "attack_wheel_file_name": "Poliwhirl_UC_0_confused_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 48,
+                "attack_name": "Water Gun",
+                "attack_type": "White",
+                "attack_value": "70",
+                "attack_ability": "",
+                "attack_start_angle_deg": 90.0,
+                "attack_end_angle_deg": 269.9999,
+                "attack_wheel_file_name": "Poliwhirl_UC_0_confused_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 24,
+                "attack_name": "Hypnosis",
+                "attack_type": "Purple",
+                "attack_value": "\u2606\u2606",
+                "attack_ability": "The battle opponent falls asleep",
+                "attack_start_angle_deg": 270.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Poliwhirl_UC_0_confused_attack_wheel.png"
+            }
+        ],
+        "paralyzed_list": [
+            {
+                "paralyzed_0": [
+                    {
+                        "attack_wheel_size": 8,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 0,
+                        "attack_end_angle_deg": 29.9999,
+                        "attack_wheel_file_name": "Poliwhirl_UC_0_paralyzed_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 16,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 30.0,
+                        "attack_end_angle_deg": 89.9999,
+                        "attack_wheel_file_name": "Poliwhirl_UC_0_paralyzed_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 48,
+                        "attack_name": "Water Gun",
+                        "attack_type": "White",
+                        "attack_value": "70",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 90.0,
+                        "attack_end_angle_deg": 269.9999,
+                        "attack_wheel_file_name": "Poliwhirl_UC_0_paralyzed_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 24,
+                        "attack_name": "Hypnosis",
+                        "attack_type": "Purple",
+                        "attack_value": "\u2606\u2606",
+                        "attack_ability": "The battle opponent falls asleep",
+                        "attack_start_angle_deg": 270.0,
+                        "attack_end_angle_deg": 359.9999,
+                        "attack_wheel_file_name": "Poliwhirl_UC_0_paralyzed_0_attack_wheel.png"
+                    }
+                ]
+            },
+            {
+                "paralyzed_1": [
+                    {
+                        "attack_wheel_size": 8,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 0,
+                        "attack_end_angle_deg": 29.9999,
+                        "attack_wheel_file_name": "Poliwhirl_UC_0_paralyzed_1_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 16,
+                        "attack_name": "Water Gun",
+                        "attack_type": "White",
+                        "attack_value": "50",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 30.0,
+                        "attack_end_angle_deg": 89.9999,
+                        "attack_wheel_file_name": "Poliwhirl_UC_0_paralyzed_1_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 48,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 90.0,
+                        "attack_end_angle_deg": 269.9999,
+                        "attack_wheel_file_name": "Poliwhirl_UC_0_paralyzed_1_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 24,
+                        "attack_name": "Hypnosis",
+                        "attack_type": "Purple",
+                        "attack_value": "\u2606\u2606",
+                        "attack_ability": "The battle opponent falls asleep",
+                        "attack_start_angle_deg": 270.0,
+                        "attack_end_angle_deg": 359.9999,
+                        "attack_wheel_file_name": "Poliwhirl_UC_0_paralyzed_1_attack_wheel.png"
+                    }
+                ]
+            }
+        ],
+        "asleep": [
+            {
+                "attack_wheel_size": 8,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 29.9999,
+                "attack_wheel_file_name": "Poliwhirl_UC_0_asleep_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 16,
+                "attack_name": "Water Gun",
+                "attack_type": "White",
+                "attack_value": "50",
+                "attack_ability": "",
+                "attack_start_angle_deg": 30.0,
+                "attack_end_angle_deg": 89.9999,
+                "attack_wheel_file_name": "Poliwhirl_UC_0_asleep_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 48,
+                "attack_name": "Water Gun",
+                "attack_type": "White",
+                "attack_value": "70",
+                "attack_ability": "",
+                "attack_start_angle_deg": 90.0,
+                "attack_end_angle_deg": 269.9999,
+                "attack_wheel_file_name": "Poliwhirl_UC_0_asleep_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 24,
+                "attack_name": "Hypnosis",
+                "attack_type": "Purple",
+                "attack_value": "\u2606\u2606",
+                "attack_ability": "The battle opponent falls asleep",
+                "attack_start_angle_deg": 270.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Poliwhirl_UC_0_asleep_attack_wheel.png"
+            }
+        ],
+        "frozen": [
+            {
+                "attack_wheel_size": 8,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 29.9999,
+                "attack_wheel_file_name": "Poliwhirl_UC_0_frozen_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 16,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 30.0,
+                "attack_end_angle_deg": 89.9999,
+                "attack_wheel_file_name": "Poliwhirl_UC_0_frozen_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 48,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 90.0,
+                "attack_end_angle_deg": 269.9999,
+                "attack_wheel_file_name": "Poliwhirl_UC_0_frozen_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 24,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 270.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Poliwhirl_UC_0_frozen_attack_wheel.png"
+            }
+        ],
+        "burned_list": [
+            {
+                "burned_0": [
+                    {
+                        "attack_wheel_size": 8,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 0,
+                        "attack_end_angle_deg": 29.9999,
+                        "attack_wheel_file_name": "Poliwhirl_UC_0_burned_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 16,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 30.0,
+                        "attack_end_angle_deg": 89.9999,
+                        "attack_wheel_file_name": "Poliwhirl_UC_0_burned_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 48,
+                        "attack_name": "Water Gun",
+                        "attack_type": "White",
+                        "attack_value": "70",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 90.0,
+                        "attack_end_angle_deg": 269.9999,
+                        "attack_wheel_file_name": "Poliwhirl_UC_0_burned_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 24,
+                        "attack_name": "Hypnosis",
+                        "attack_type": "Purple",
+                        "attack_value": "\u2606\u2606",
+                        "attack_ability": "The battle opponent falls asleep",
+                        "attack_start_angle_deg": 270.0,
+                        "attack_end_angle_deg": 359.9999,
+                        "attack_wheel_file_name": "Poliwhirl_UC_0_burned_0_attack_wheel.png"
+                    }
+                ]
+            },
+            {
+                "burned_1": [
+                    {
+                        "attack_wheel_size": 8,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 0,
+                        "attack_end_angle_deg": 29.9999,
+                        "attack_wheel_file_name": "Poliwhirl_UC_0_burned_1_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 16,
+                        "attack_name": "Water Gun",
+                        "attack_type": "White",
+                        "attack_value": "50",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 30.0,
+                        "attack_end_angle_deg": 89.9999,
+                        "attack_wheel_file_name": "Poliwhirl_UC_0_burned_1_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 48,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 90.0,
+                        "attack_end_angle_deg": 269.9999,
+                        "attack_wheel_file_name": "Poliwhirl_UC_0_burned_1_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 24,
+                        "attack_name": "Hypnosis",
+                        "attack_type": "Purple",
+                        "attack_value": "\u2606\u2606",
+                        "attack_ability": "The battle opponent falls asleep",
+                        "attack_start_angle_deg": 270.0,
+                        "attack_end_angle_deg": 359.9999,
+                        "attack_wheel_file_name": "Poliwhirl_UC_0_burned_1_attack_wheel.png"
+                    }
+                ]
+            }
+        ]
+    }
+}

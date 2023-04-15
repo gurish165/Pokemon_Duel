@@ -1,0 +1,491 @@
+{
+    "pokemon_name": "Golem",
+    "pokemon_sprite_image": "golem_sprite.png",
+    "attack_table_file_name": "Golem_UC_1_attack_table.png",
+    "base_movement_points": 1,
+    "rarity": "UC",
+    "pokemon_type": "Rock / Ground",
+    "evolution": "",
+    "evolved_from": "Graveler",
+    "evolution_num": 1,
+    "attack_lists_by_type": {
+        "basic": [
+            {
+                "attack_wheel_size": 24,
+                "attack_name": "Rock Throw",
+                "attack_type": "White",
+                "attack_value": 50,
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 89.9999,
+                "attack_wheel_file_name": "Golem_UC_1_basic_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 40,
+                "attack_name": "Rock Blast",
+                "attack_type": "White",
+                "attack_value": "70x",
+                "attack_ability": "Spin again until Rock Blast does not land - damage is multiplied by the number of Rock Blast spins",
+                "attack_start_angle_deg": 90.0,
+                "attack_end_angle_deg": 239.9999,
+                "attack_wheel_file_name": "Golem_UC_1_basic_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 24,
+                "attack_name": "Rockwall",
+                "attack_type": "White",
+                "attack_value": 40,
+                "attack_ability": "If the battle opponent's Attack is below 120 damage, this Pok\u00e9mon cannot be Knocked out.",
+                "attack_start_angle_deg": 240.0,
+                "attack_end_angle_deg": 329.9999,
+                "attack_wheel_file_name": "Golem_UC_1_basic_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 8,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 330.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Golem_UC_1_basic_attack_wheel.png"
+            }
+        ],
+        "poisoned": [
+            {
+                "attack_wheel_size": 24,
+                "attack_name": "Rock Throw",
+                "attack_type": "White",
+                "attack_value": 50,
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 89.9999,
+                "attack_wheel_file_name": "Golem_UC_1_poisoned_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 40,
+                "attack_name": "Rock Blast",
+                "attack_type": "White",
+                "attack_value": "70x",
+                "attack_ability": "Spin again until Rock Blast does not land - damage is multiplied by the number of Rock Blast spins",
+                "attack_start_angle_deg": 90.0,
+                "attack_end_angle_deg": 239.9999,
+                "attack_wheel_file_name": "Golem_UC_1_poisoned_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 24,
+                "attack_name": "Rockwall",
+                "attack_type": "White",
+                "attack_value": 40,
+                "attack_ability": "If the battle opponent's Attack is below 120 damage, this Pok\u00e9mon cannot be Knocked out.",
+                "attack_start_angle_deg": 240.0,
+                "attack_end_angle_deg": 329.9999,
+                "attack_wheel_file_name": "Golem_UC_1_poisoned_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 8,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 330.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Golem_UC_1_poisoned_attack_wheel.png"
+            }
+        ],
+        "confused": [
+            {
+                "attack_wheel_size": 24,
+                "attack_name": "Rock Throw",
+                "attack_type": "White",
+                "attack_value": 50,
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 89.9999,
+                "attack_wheel_file_name": "Golem_UC_1_confused_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 40,
+                "attack_name": "Rock Blast",
+                "attack_type": "White",
+                "attack_value": "70x",
+                "attack_ability": "Spin again until Rock Blast does not land - damage is multiplied by the number of Rock Blast spins",
+                "attack_start_angle_deg": 90.0,
+                "attack_end_angle_deg": 239.9999,
+                "attack_wheel_file_name": "Golem_UC_1_confused_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 24,
+                "attack_name": "Rockwall",
+                "attack_type": "White",
+                "attack_value": 40,
+                "attack_ability": "If the battle opponent's Attack is below 120 damage, this Pok\u00e9mon cannot be Knocked out.",
+                "attack_start_angle_deg": 240.0,
+                "attack_end_angle_deg": 329.9999,
+                "attack_wheel_file_name": "Golem_UC_1_confused_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 8,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 330.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Golem_UC_1_confused_attack_wheel.png"
+            }
+        ],
+        "paralyzed_list": [
+            {
+                "paralyzed_0": [
+                    {
+                        "attack_wheel_size": 24,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 0,
+                        "attack_end_angle_deg": 89.9999,
+                        "attack_wheel_file_name": "Golem_UC_1_paralyzed_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 40,
+                        "attack_name": "Rock Blast",
+                        "attack_type": "White",
+                        "attack_value": "70x",
+                        "attack_ability": "Spin again until Rock Blast does not land - damage is multiplied by the number of Rock Blast spins",
+                        "attack_start_angle_deg": 90.0,
+                        "attack_end_angle_deg": 239.9999,
+                        "attack_wheel_file_name": "Golem_UC_1_paralyzed_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 24,
+                        "attack_name": "Rockwall",
+                        "attack_type": "White",
+                        "attack_value": 40,
+                        "attack_ability": "If the battle opponent's Attack is below 120 damage, this Pok\u00e9mon cannot be Knocked out.",
+                        "attack_start_angle_deg": 240.0,
+                        "attack_end_angle_deg": 329.9999,
+                        "attack_wheel_file_name": "Golem_UC_1_paralyzed_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 8,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 330.0,
+                        "attack_end_angle_deg": 359.9999,
+                        "attack_wheel_file_name": "Golem_UC_1_paralyzed_0_attack_wheel.png"
+                    }
+                ]
+            },
+            {
+                "paralyzed_1": [
+                    {
+                        "attack_wheel_size": 24,
+                        "attack_name": "Rock Throw",
+                        "attack_type": "White",
+                        "attack_value": 50,
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 0,
+                        "attack_end_angle_deg": 89.9999,
+                        "attack_wheel_file_name": "Golem_UC_1_paralyzed_1_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 40,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 90.0,
+                        "attack_end_angle_deg": 239.9999,
+                        "attack_wheel_file_name": "Golem_UC_1_paralyzed_1_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 24,
+                        "attack_name": "Rockwall",
+                        "attack_type": "White",
+                        "attack_value": 40,
+                        "attack_ability": "If the battle opponent's Attack is below 120 damage, this Pok\u00e9mon cannot be Knocked out.",
+                        "attack_start_angle_deg": 240.0,
+                        "attack_end_angle_deg": 329.9999,
+                        "attack_wheel_file_name": "Golem_UC_1_paralyzed_1_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 8,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 330.0,
+                        "attack_end_angle_deg": 359.9999,
+                        "attack_wheel_file_name": "Golem_UC_1_paralyzed_1_attack_wheel.png"
+                    }
+                ]
+            },
+            {
+                "paralyzed_2": [
+                    {
+                        "attack_wheel_size": 24,
+                        "attack_name": "Rock Throw",
+                        "attack_type": "White",
+                        "attack_value": 50,
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 0,
+                        "attack_end_angle_deg": 89.9999,
+                        "attack_wheel_file_name": "Golem_UC_1_paralyzed_2_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 40,
+                        "attack_name": "Rock Blast",
+                        "attack_type": "White",
+                        "attack_value": "70x",
+                        "attack_ability": "Spin again until Rock Blast does not land - damage is multiplied by the number of Rock Blast spins",
+                        "attack_start_angle_deg": 90.0,
+                        "attack_end_angle_deg": 239.9999,
+                        "attack_wheel_file_name": "Golem_UC_1_paralyzed_2_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 24,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 240.0,
+                        "attack_end_angle_deg": 329.9999,
+                        "attack_wheel_file_name": "Golem_UC_1_paralyzed_2_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 8,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 330.0,
+                        "attack_end_angle_deg": 359.9999,
+                        "attack_wheel_file_name": "Golem_UC_1_paralyzed_2_attack_wheel.png"
+                    }
+                ]
+            }
+        ],
+        "asleep": [
+            {
+                "attack_wheel_size": 24,
+                "attack_name": "Rock Throw",
+                "attack_type": "White",
+                "attack_value": 50,
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 89.9999,
+                "attack_wheel_file_name": "Golem_UC_1_asleep_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 40,
+                "attack_name": "Rock Blast",
+                "attack_type": "White",
+                "attack_value": "70x",
+                "attack_ability": "Spin again until Rock Blast does not land - damage is multiplied by the number of Rock Blast spins",
+                "attack_start_angle_deg": 90.0,
+                "attack_end_angle_deg": 239.9999,
+                "attack_wheel_file_name": "Golem_UC_1_asleep_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 24,
+                "attack_name": "Rockwall",
+                "attack_type": "White",
+                "attack_value": 40,
+                "attack_ability": "If the battle opponent's Attack is below 120 damage, this Pok\u00e9mon cannot be Knocked out.",
+                "attack_start_angle_deg": 240.0,
+                "attack_end_angle_deg": 329.9999,
+                "attack_wheel_file_name": "Golem_UC_1_asleep_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 8,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 330.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Golem_UC_1_asleep_attack_wheel.png"
+            }
+        ],
+        "frozen": [
+            {
+                "attack_wheel_size": 24,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 89.9999,
+                "attack_wheel_file_name": "Golem_UC_1_frozen_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 40,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 90.0,
+                "attack_end_angle_deg": 239.9999,
+                "attack_wheel_file_name": "Golem_UC_1_frozen_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 24,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 240.0,
+                "attack_end_angle_deg": 329.9999,
+                "attack_wheel_file_name": "Golem_UC_1_frozen_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 8,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 330.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Golem_UC_1_frozen_attack_wheel.png"
+            }
+        ],
+        "burned_list": [
+            {
+                "burned_0": [
+                    {
+                        "attack_wheel_size": 24,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 0,
+                        "attack_end_angle_deg": 89.9999,
+                        "attack_wheel_file_name": "Golem_UC_1_burned_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 40,
+                        "attack_name": "Rock Blast",
+                        "attack_type": "White",
+                        "attack_value": "70x",
+                        "attack_ability": "Spin again until Rock Blast does not land - damage is multiplied by the number of Rock Blast spins",
+                        "attack_start_angle_deg": 90.0,
+                        "attack_end_angle_deg": 239.9999,
+                        "attack_wheel_file_name": "Golem_UC_1_burned_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 24,
+                        "attack_name": "Rockwall",
+                        "attack_type": "White",
+                        "attack_value": 40,
+                        "attack_ability": "If the battle opponent's Attack is below 120 damage, this Pok\u00e9mon cannot be Knocked out.",
+                        "attack_start_angle_deg": 240.0,
+                        "attack_end_angle_deg": 329.9999,
+                        "attack_wheel_file_name": "Golem_UC_1_burned_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 8,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 330.0,
+                        "attack_end_angle_deg": 359.9999,
+                        "attack_wheel_file_name": "Golem_UC_1_burned_0_attack_wheel.png"
+                    }
+                ]
+            },
+            {
+                "burned_1": [
+                    {
+                        "attack_wheel_size": 24,
+                        "attack_name": "Rock Throw",
+                        "attack_type": "White",
+                        "attack_value": 50,
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 0,
+                        "attack_end_angle_deg": 89.9999,
+                        "attack_wheel_file_name": "Golem_UC_1_burned_1_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 40,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 90.0,
+                        "attack_end_angle_deg": 239.9999,
+                        "attack_wheel_file_name": "Golem_UC_1_burned_1_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 24,
+                        "attack_name": "Rockwall",
+                        "attack_type": "White",
+                        "attack_value": 40,
+                        "attack_ability": "If the battle opponent's Attack is below 120 damage, this Pok\u00e9mon cannot be Knocked out.",
+                        "attack_start_angle_deg": 240.0,
+                        "attack_end_angle_deg": 329.9999,
+                        "attack_wheel_file_name": "Golem_UC_1_burned_1_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 8,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 330.0,
+                        "attack_end_angle_deg": 359.9999,
+                        "attack_wheel_file_name": "Golem_UC_1_burned_1_attack_wheel.png"
+                    }
+                ]
+            },
+            {
+                "burned_2": [
+                    {
+                        "attack_wheel_size": 24,
+                        "attack_name": "Rock Throw",
+                        "attack_type": "White",
+                        "attack_value": 50,
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 0,
+                        "attack_end_angle_deg": 89.9999,
+                        "attack_wheel_file_name": "Golem_UC_1_burned_2_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 40,
+                        "attack_name": "Rock Blast",
+                        "attack_type": "White",
+                        "attack_value": "70x",
+                        "attack_ability": "Spin again until Rock Blast does not land - damage is multiplied by the number of Rock Blast spins",
+                        "attack_start_angle_deg": 90.0,
+                        "attack_end_angle_deg": 239.9999,
+                        "attack_wheel_file_name": "Golem_UC_1_burned_2_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 24,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 240.0,
+                        "attack_end_angle_deg": 329.9999,
+                        "attack_wheel_file_name": "Golem_UC_1_burned_2_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 8,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 330.0,
+                        "attack_end_angle_deg": 359.9999,
+                        "attack_wheel_file_name": "Golem_UC_1_burned_2_attack_wheel.png"
+                    }
+                ]
+            }
+        ]
+    }
+}

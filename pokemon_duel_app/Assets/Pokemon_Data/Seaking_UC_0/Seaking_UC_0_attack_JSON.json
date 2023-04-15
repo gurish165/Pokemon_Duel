@@ -1,0 +1,403 @@
+{
+    "pokemon_name": "Seaking",
+    "pokemon_sprite_image": "seaking_sprite.png",
+    "attack_table_file_name": "Seaking_UC_1_attack_table.png",
+    "base_movement_points": 2,
+    "rarity": "UC",
+    "pokemon_type": "Water",
+    "evolution": "",
+    "evolved_from": "Goldeen",
+    "evolution_num": 1,
+    "attack_lists_by_type": {
+        "basic": [
+            {
+                "attack_wheel_size": 12,
+                "attack_name": "Dodge",
+                "attack_type": "Blue",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 44.9999,
+                "attack_wheel_file_name": "Seaking_UC_0_basic_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 28,
+                "attack_name": "Megahorn",
+                "attack_type": "White",
+                "attack_value": "80",
+                "attack_ability": "",
+                "attack_start_angle_deg": 45.0,
+                "attack_end_angle_deg": 149.9999,
+                "attack_wheel_file_name": "Seaking_UC_0_basic_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 12,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 150.0,
+                "attack_end_angle_deg": 194.9999,
+                "attack_wheel_file_name": "Seaking_UC_0_basic_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 44,
+                "attack_name": "Fury Attack",
+                "attack_type": "White",
+                "attack_value": "20x",
+                "attack_ability": "Spin again until Fury Attack does not land - damage is multiplied by the number of Fury Attack spins",
+                "attack_start_angle_deg": 195.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Seaking_UC_0_basic_attack_wheel.png"
+            }
+        ],
+        "poisoned": [
+            {
+                "attack_wheel_size": 12,
+                "attack_name": "Dodge",
+                "attack_type": "Blue",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 44.9999,
+                "attack_wheel_file_name": "Seaking_UC_0_poisoned_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 28,
+                "attack_name": "Megahorn",
+                "attack_type": "White",
+                "attack_value": "80",
+                "attack_ability": "",
+                "attack_start_angle_deg": 45.0,
+                "attack_end_angle_deg": 149.9999,
+                "attack_wheel_file_name": "Seaking_UC_0_poisoned_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 12,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 150.0,
+                "attack_end_angle_deg": 194.9999,
+                "attack_wheel_file_name": "Seaking_UC_0_poisoned_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 44,
+                "attack_name": "Fury Attack",
+                "attack_type": "White",
+                "attack_value": "20x",
+                "attack_ability": "Spin again until Fury Attack does not land - damage is multiplied by the number of Fury Attack spins",
+                "attack_start_angle_deg": 195.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Seaking_UC_0_poisoned_attack_wheel.png"
+            }
+        ],
+        "confused": [
+            {
+                "attack_wheel_size": 12,
+                "attack_name": "Dodge",
+                "attack_type": "Blue",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 44.9999,
+                "attack_wheel_file_name": "Seaking_UC_0_confused_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 28,
+                "attack_name": "Megahorn",
+                "attack_type": "White",
+                "attack_value": "80",
+                "attack_ability": "",
+                "attack_start_angle_deg": 45.0,
+                "attack_end_angle_deg": 149.9999,
+                "attack_wheel_file_name": "Seaking_UC_0_confused_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 12,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 150.0,
+                "attack_end_angle_deg": 194.9999,
+                "attack_wheel_file_name": "Seaking_UC_0_confused_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 44,
+                "attack_name": "Fury Attack",
+                "attack_type": "White",
+                "attack_value": "20x",
+                "attack_ability": "Spin again until Fury Attack does not land - damage is multiplied by the number of Fury Attack spins",
+                "attack_start_angle_deg": 195.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Seaking_UC_0_confused_attack_wheel.png"
+            }
+        ],
+        "paralyzed_list": [
+            {
+                "paralyzed_0": [
+                    {
+                        "attack_wheel_size": 12,
+                        "attack_name": "Dodge",
+                        "attack_type": "Blue",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 0,
+                        "attack_end_angle_deg": 44.9999,
+                        "attack_wheel_file_name": "Seaking_UC_0_paralyzed_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 28,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 45.0,
+                        "attack_end_angle_deg": 149.9999,
+                        "attack_wheel_file_name": "Seaking_UC_0_paralyzed_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 12,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 150.0,
+                        "attack_end_angle_deg": 194.9999,
+                        "attack_wheel_file_name": "Seaking_UC_0_paralyzed_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 44,
+                        "attack_name": "Fury Attack",
+                        "attack_type": "White",
+                        "attack_value": "20x",
+                        "attack_ability": "Spin again until Fury Attack does not land - damage is multiplied by the number of Fury Attack spins",
+                        "attack_start_angle_deg": 195.0,
+                        "attack_end_angle_deg": 359.9999,
+                        "attack_wheel_file_name": "Seaking_UC_0_paralyzed_0_attack_wheel.png"
+                    }
+                ]
+            },
+            {
+                "paralyzed_1": [
+                    {
+                        "attack_wheel_size": 12,
+                        "attack_name": "Dodge",
+                        "attack_type": "Blue",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 0,
+                        "attack_end_angle_deg": 44.9999,
+                        "attack_wheel_file_name": "Seaking_UC_0_paralyzed_1_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 28,
+                        "attack_name": "Megahorn",
+                        "attack_type": "White",
+                        "attack_value": "80",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 45.0,
+                        "attack_end_angle_deg": 149.9999,
+                        "attack_wheel_file_name": "Seaking_UC_0_paralyzed_1_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 12,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 150.0,
+                        "attack_end_angle_deg": 194.9999,
+                        "attack_wheel_file_name": "Seaking_UC_0_paralyzed_1_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 44,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 195.0,
+                        "attack_end_angle_deg": 359.9999,
+                        "attack_wheel_file_name": "Seaking_UC_0_paralyzed_1_attack_wheel.png"
+                    }
+                ]
+            }
+        ],
+        "asleep": [
+            {
+                "attack_wheel_size": 12,
+                "attack_name": "Dodge",
+                "attack_type": "Blue",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 44.9999,
+                "attack_wheel_file_name": "Seaking_UC_0_asleep_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 28,
+                "attack_name": "Megahorn",
+                "attack_type": "White",
+                "attack_value": "80",
+                "attack_ability": "",
+                "attack_start_angle_deg": 45.0,
+                "attack_end_angle_deg": 149.9999,
+                "attack_wheel_file_name": "Seaking_UC_0_asleep_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 12,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 150.0,
+                "attack_end_angle_deg": 194.9999,
+                "attack_wheel_file_name": "Seaking_UC_0_asleep_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 44,
+                "attack_name": "Fury Attack",
+                "attack_type": "White",
+                "attack_value": "20x",
+                "attack_ability": "Spin again until Fury Attack does not land - damage is multiplied by the number of Fury Attack spins",
+                "attack_start_angle_deg": 195.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Seaking_UC_0_asleep_attack_wheel.png"
+            }
+        ],
+        "frozen": [
+            {
+                "attack_wheel_size": 12,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 44.9999,
+                "attack_wheel_file_name": "Seaking_UC_0_frozen_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 28,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 45.0,
+                "attack_end_angle_deg": 149.9999,
+                "attack_wheel_file_name": "Seaking_UC_0_frozen_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 12,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 150.0,
+                "attack_end_angle_deg": 194.9999,
+                "attack_wheel_file_name": "Seaking_UC_0_frozen_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 44,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 195.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Seaking_UC_0_frozen_attack_wheel.png"
+            }
+        ],
+        "burned_list": [
+            {
+                "burned_0": [
+                    {
+                        "attack_wheel_size": 12,
+                        "attack_name": "Dodge",
+                        "attack_type": "Blue",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 0,
+                        "attack_end_angle_deg": 44.9999,
+                        "attack_wheel_file_name": "Seaking_UC_0_burned_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 28,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 45.0,
+                        "attack_end_angle_deg": 149.9999,
+                        "attack_wheel_file_name": "Seaking_UC_0_burned_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 12,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 150.0,
+                        "attack_end_angle_deg": 194.9999,
+                        "attack_wheel_file_name": "Seaking_UC_0_burned_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 44,
+                        "attack_name": "Fury Attack",
+                        "attack_type": "White",
+                        "attack_value": "20x",
+                        "attack_ability": "Spin again until Fury Attack does not land - damage is multiplied by the number of Fury Attack spins",
+                        "attack_start_angle_deg": 195.0,
+                        "attack_end_angle_deg": 359.9999,
+                        "attack_wheel_file_name": "Seaking_UC_0_burned_0_attack_wheel.png"
+                    }
+                ]
+            },
+            {
+                "burned_1": [
+                    {
+                        "attack_wheel_size": 12,
+                        "attack_name": "Dodge",
+                        "attack_type": "Blue",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 0,
+                        "attack_end_angle_deg": 44.9999,
+                        "attack_wheel_file_name": "Seaking_UC_0_burned_1_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 28,
+                        "attack_name": "Megahorn",
+                        "attack_type": "White",
+                        "attack_value": "80",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 45.0,
+                        "attack_end_angle_deg": 149.9999,
+                        "attack_wheel_file_name": "Seaking_UC_0_burned_1_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 12,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 150.0,
+                        "attack_end_angle_deg": 194.9999,
+                        "attack_wheel_file_name": "Seaking_UC_0_burned_1_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 44,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 195.0,
+                        "attack_end_angle_deg": 359.9999,
+                        "attack_wheel_file_name": "Seaking_UC_0_burned_1_attack_wheel.png"
+                    }
+                ]
+            }
+        ]
+    }
+}

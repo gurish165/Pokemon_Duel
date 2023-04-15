@@ -1,0 +1,403 @@
+{
+    "pokemon_name": "Golbat",
+    "pokemon_sprite_image": "golbat_sprite.png",
+    "attack_table_file_name": "Golbat_UC_1_attack_table.png",
+    "base_movement_points": 2,
+    "rarity": "UC",
+    "pokemon_type": "Poison / Flying",
+    "evolution": "",
+    "evolved_from": "Zubat",
+    "evolution_num": 1,
+    "attack_lists_by_type": {
+        "basic": [
+            {
+                "attack_wheel_size": 28,
+                "attack_name": "Leech Life",
+                "attack_type": "White",
+                "attack_value": 40,
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 104.9999,
+                "attack_wheel_file_name": "Golbat_UC_1_basic_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 24,
+                "attack_name": "Bite",
+                "attack_type": "White",
+                "attack_value": 70,
+                "attack_ability": "",
+                "attack_start_angle_deg": 105.0,
+                "attack_end_angle_deg": 194.9999,
+                "attack_wheel_file_name": "Golbat_UC_1_basic_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 24,
+                "attack_name": "Confuse Ray",
+                "attack_type": "Purple",
+                "attack_value": "\u2605\u2605\u2605\u2605",
+                "attack_ability": "",
+                "attack_start_angle_deg": 195.0,
+                "attack_end_angle_deg": 284.9999,
+                "attack_wheel_file_name": "Golbat_UC_1_basic_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 20,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 285.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Golbat_UC_1_basic_attack_wheel.png"
+            }
+        ],
+        "poisoned": [
+            {
+                "attack_wheel_size": 28,
+                "attack_name": "Leech Life",
+                "attack_type": "White",
+                "attack_value": 40,
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 104.9999,
+                "attack_wheel_file_name": "Golbat_UC_1_poisoned_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 24,
+                "attack_name": "Bite",
+                "attack_type": "White",
+                "attack_value": 70,
+                "attack_ability": "",
+                "attack_start_angle_deg": 105.0,
+                "attack_end_angle_deg": 194.9999,
+                "attack_wheel_file_name": "Golbat_UC_1_poisoned_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 24,
+                "attack_name": "Confuse Ray",
+                "attack_type": "Purple",
+                "attack_value": "\u2605\u2605\u2605\u2605",
+                "attack_ability": "",
+                "attack_start_angle_deg": 195.0,
+                "attack_end_angle_deg": 284.9999,
+                "attack_wheel_file_name": "Golbat_UC_1_poisoned_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 20,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 285.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Golbat_UC_1_poisoned_attack_wheel.png"
+            }
+        ],
+        "confused": [
+            {
+                "attack_wheel_size": 28,
+                "attack_name": "Leech Life",
+                "attack_type": "White",
+                "attack_value": 40,
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 104.9999,
+                "attack_wheel_file_name": "Golbat_UC_1_confused_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 24,
+                "attack_name": "Bite",
+                "attack_type": "White",
+                "attack_value": 70,
+                "attack_ability": "",
+                "attack_start_angle_deg": 105.0,
+                "attack_end_angle_deg": 194.9999,
+                "attack_wheel_file_name": "Golbat_UC_1_confused_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 24,
+                "attack_name": "Confuse Ray",
+                "attack_type": "Purple",
+                "attack_value": "\u2605\u2605\u2605\u2605",
+                "attack_ability": "",
+                "attack_start_angle_deg": 195.0,
+                "attack_end_angle_deg": 284.9999,
+                "attack_wheel_file_name": "Golbat_UC_1_confused_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 20,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 285.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Golbat_UC_1_confused_attack_wheel.png"
+            }
+        ],
+        "paralyzed_list": [
+            {
+                "paralyzed_0": [
+                    {
+                        "attack_wheel_size": 28,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 0,
+                        "attack_end_angle_deg": 104.9999,
+                        "attack_wheel_file_name": "Golbat_UC_1_paralyzed_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 24,
+                        "attack_name": "Bite",
+                        "attack_type": "White",
+                        "attack_value": 70,
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 105.0,
+                        "attack_end_angle_deg": 194.9999,
+                        "attack_wheel_file_name": "Golbat_UC_1_paralyzed_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 24,
+                        "attack_name": "Confuse Ray",
+                        "attack_type": "Purple",
+                        "attack_value": "\u2605\u2605\u2605\u2605",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 195.0,
+                        "attack_end_angle_deg": 284.9999,
+                        "attack_wheel_file_name": "Golbat_UC_1_paralyzed_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 20,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 285.0,
+                        "attack_end_angle_deg": 359.9999,
+                        "attack_wheel_file_name": "Golbat_UC_1_paralyzed_0_attack_wheel.png"
+                    }
+                ]
+            },
+            {
+                "paralyzed_1": [
+                    {
+                        "attack_wheel_size": 28,
+                        "attack_name": "Leech Life",
+                        "attack_type": "White",
+                        "attack_value": 40,
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 0,
+                        "attack_end_angle_deg": 104.9999,
+                        "attack_wheel_file_name": "Golbat_UC_1_paralyzed_1_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 24,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 105.0,
+                        "attack_end_angle_deg": 194.9999,
+                        "attack_wheel_file_name": "Golbat_UC_1_paralyzed_1_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 24,
+                        "attack_name": "Confuse Ray",
+                        "attack_type": "Purple",
+                        "attack_value": "\u2605\u2605\u2605\u2605",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 195.0,
+                        "attack_end_angle_deg": 284.9999,
+                        "attack_wheel_file_name": "Golbat_UC_1_paralyzed_1_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 20,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 285.0,
+                        "attack_end_angle_deg": 359.9999,
+                        "attack_wheel_file_name": "Golbat_UC_1_paralyzed_1_attack_wheel.png"
+                    }
+                ]
+            }
+        ],
+        "asleep": [
+            {
+                "attack_wheel_size": 28,
+                "attack_name": "Leech Life",
+                "attack_type": "White",
+                "attack_value": 40,
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 104.9999,
+                "attack_wheel_file_name": "Golbat_UC_1_asleep_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 24,
+                "attack_name": "Bite",
+                "attack_type": "White",
+                "attack_value": 70,
+                "attack_ability": "",
+                "attack_start_angle_deg": 105.0,
+                "attack_end_angle_deg": 194.9999,
+                "attack_wheel_file_name": "Golbat_UC_1_asleep_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 24,
+                "attack_name": "Confuse Ray",
+                "attack_type": "Purple",
+                "attack_value": "\u2605\u2605\u2605\u2605",
+                "attack_ability": "",
+                "attack_start_angle_deg": 195.0,
+                "attack_end_angle_deg": 284.9999,
+                "attack_wheel_file_name": "Golbat_UC_1_asleep_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 20,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 285.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Golbat_UC_1_asleep_attack_wheel.png"
+            }
+        ],
+        "frozen": [
+            {
+                "attack_wheel_size": 28,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 104.9999,
+                "attack_wheel_file_name": "Golbat_UC_1_frozen_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 24,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 105.0,
+                "attack_end_angle_deg": 194.9999,
+                "attack_wheel_file_name": "Golbat_UC_1_frozen_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 24,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 195.0,
+                "attack_end_angle_deg": 284.9999,
+                "attack_wheel_file_name": "Golbat_UC_1_frozen_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 20,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 285.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Golbat_UC_1_frozen_attack_wheel.png"
+            }
+        ],
+        "burned_list": [
+            {
+                "burned_0": [
+                    {
+                        "attack_wheel_size": 28,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 0,
+                        "attack_end_angle_deg": 104.9999,
+                        "attack_wheel_file_name": "Golbat_UC_1_burned_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 24,
+                        "attack_name": "Bite",
+                        "attack_type": "White",
+                        "attack_value": 70,
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 105.0,
+                        "attack_end_angle_deg": 194.9999,
+                        "attack_wheel_file_name": "Golbat_UC_1_burned_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 24,
+                        "attack_name": "Confuse Ray",
+                        "attack_type": "Purple",
+                        "attack_value": "\u2605\u2605\u2605\u2605",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 195.0,
+                        "attack_end_angle_deg": 284.9999,
+                        "attack_wheel_file_name": "Golbat_UC_1_burned_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 20,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 285.0,
+                        "attack_end_angle_deg": 359.9999,
+                        "attack_wheel_file_name": "Golbat_UC_1_burned_0_attack_wheel.png"
+                    }
+                ]
+            },
+            {
+                "burned_1": [
+                    {
+                        "attack_wheel_size": 28,
+                        "attack_name": "Leech Life",
+                        "attack_type": "White",
+                        "attack_value": 40,
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 0,
+                        "attack_end_angle_deg": 104.9999,
+                        "attack_wheel_file_name": "Golbat_UC_1_burned_1_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 24,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 105.0,
+                        "attack_end_angle_deg": 194.9999,
+                        "attack_wheel_file_name": "Golbat_UC_1_burned_1_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 24,
+                        "attack_name": "Confuse Ray",
+                        "attack_type": "Purple",
+                        "attack_value": "\u2605\u2605\u2605\u2605",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 195.0,
+                        "attack_end_angle_deg": 284.9999,
+                        "attack_wheel_file_name": "Golbat_UC_1_burned_1_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 20,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 285.0,
+                        "attack_end_angle_deg": 359.9999,
+                        "attack_wheel_file_name": "Golbat_UC_1_burned_1_attack_wheel.png"
+                    }
+                ]
+            }
+        ]
+    }
+}

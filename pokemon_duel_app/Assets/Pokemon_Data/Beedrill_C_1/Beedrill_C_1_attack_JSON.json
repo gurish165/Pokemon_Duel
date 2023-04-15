@@ -1,0 +1,315 @@
+{
+    "pokemon_name": "Beedrill",
+    "pokemon_sprite_image": "beedrill_sprite.png",
+    "attack_table_file_name": "Beedrill_C_2_attack_table.png",
+    "base_movement_points": 3,
+    "rarity": "C",
+    "pokemon_type": "Bug / Poison",
+    "evolution": "",
+    "evolved_from": "Kakuna",
+    "evolution_num": 2,
+    "attack_lists_by_type": {
+        "basic": [
+            {
+                "attack_wheel_size": 16,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 59.9999,
+                "attack_wheel_file_name": "Beedrill_C_1_basic_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 44,
+                "attack_name": "Pin Missile",
+                "attack_type": "White",
+                "attack_value": "50x",
+                "attack_ability": "Spin again until Pin Missile does not land - damage is multiplied by the number of Pin Missile spins",
+                "attack_start_angle_deg": 60.0,
+                "attack_end_angle_deg": 224.9999,
+                "attack_wheel_file_name": "Beedrill_C_1_basic_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 12,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 225.0,
+                "attack_end_angle_deg": 269.9999,
+                "attack_wheel_file_name": "Beedrill_C_1_basic_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 24,
+                "attack_name": "Toxic",
+                "attack_type": "Purple",
+                "attack_value": "\u2605\u2605",
+                "attack_ability": "The battle opponent becomes noxious.",
+                "attack_start_angle_deg": 270.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Beedrill_C_1_basic_attack_wheel.png"
+            }
+        ],
+        "poisoned": [
+            {
+                "attack_wheel_size": 16,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 59.9999,
+                "attack_wheel_file_name": "Beedrill_C_1_poisoned_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 44,
+                "attack_name": "Pin Missile",
+                "attack_type": "White",
+                "attack_value": "50x",
+                "attack_ability": "Spin again until Pin Missile does not land - damage is multiplied by the number of Pin Missile spins",
+                "attack_start_angle_deg": 60.0,
+                "attack_end_angle_deg": 224.9999,
+                "attack_wheel_file_name": "Beedrill_C_1_poisoned_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 12,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 225.0,
+                "attack_end_angle_deg": 269.9999,
+                "attack_wheel_file_name": "Beedrill_C_1_poisoned_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 24,
+                "attack_name": "Toxic",
+                "attack_type": "Purple",
+                "attack_value": "\u2605\u2605",
+                "attack_ability": "The battle opponent becomes noxious.",
+                "attack_start_angle_deg": 270.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Beedrill_C_1_poisoned_attack_wheel.png"
+            }
+        ],
+        "confused": [
+            {
+                "attack_wheel_size": 16,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 59.9999,
+                "attack_wheel_file_name": "Beedrill_C_1_confused_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 44,
+                "attack_name": "Pin Missile",
+                "attack_type": "White",
+                "attack_value": "50x",
+                "attack_ability": "Spin again until Pin Missile does not land - damage is multiplied by the number of Pin Missile spins",
+                "attack_start_angle_deg": 60.0,
+                "attack_end_angle_deg": 224.9999,
+                "attack_wheel_file_name": "Beedrill_C_1_confused_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 12,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 225.0,
+                "attack_end_angle_deg": 269.9999,
+                "attack_wheel_file_name": "Beedrill_C_1_confused_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 24,
+                "attack_name": "Toxic",
+                "attack_type": "Purple",
+                "attack_value": "\u2605\u2605",
+                "attack_ability": "The battle opponent becomes noxious.",
+                "attack_start_angle_deg": 270.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Beedrill_C_1_confused_attack_wheel.png"
+            }
+        ],
+        "paralyzed_list": [
+            {
+                "paralyzed_0": [
+                    {
+                        "attack_wheel_size": 16,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 0,
+                        "attack_end_angle_deg": 59.9999,
+                        "attack_wheel_file_name": "Beedrill_C_1_paralyzed_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 44,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 60.0,
+                        "attack_end_angle_deg": 224.9999,
+                        "attack_wheel_file_name": "Beedrill_C_1_paralyzed_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 12,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 225.0,
+                        "attack_end_angle_deg": 269.9999,
+                        "attack_wheel_file_name": "Beedrill_C_1_paralyzed_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 24,
+                        "attack_name": "Toxic",
+                        "attack_type": "Purple",
+                        "attack_value": "\u2605\u2605",
+                        "attack_ability": "The battle opponent becomes noxious.",
+                        "attack_start_angle_deg": 270.0,
+                        "attack_end_angle_deg": 359.9999,
+                        "attack_wheel_file_name": "Beedrill_C_1_paralyzed_0_attack_wheel.png"
+                    }
+                ]
+            }
+        ],
+        "asleep": [
+            {
+                "attack_wheel_size": 16,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 59.9999,
+                "attack_wheel_file_name": "Beedrill_C_1_asleep_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 44,
+                "attack_name": "Pin Missile",
+                "attack_type": "White",
+                "attack_value": "50x",
+                "attack_ability": "Spin again until Pin Missile does not land - damage is multiplied by the number of Pin Missile spins",
+                "attack_start_angle_deg": 60.0,
+                "attack_end_angle_deg": 224.9999,
+                "attack_wheel_file_name": "Beedrill_C_1_asleep_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 12,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 225.0,
+                "attack_end_angle_deg": 269.9999,
+                "attack_wheel_file_name": "Beedrill_C_1_asleep_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 24,
+                "attack_name": "Toxic",
+                "attack_type": "Purple",
+                "attack_value": "\u2605\u2605",
+                "attack_ability": "The battle opponent becomes noxious.",
+                "attack_start_angle_deg": 270.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Beedrill_C_1_asleep_attack_wheel.png"
+            }
+        ],
+        "frozen": [
+            {
+                "attack_wheel_size": 16,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 59.9999,
+                "attack_wheel_file_name": "Beedrill_C_1_frozen_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 44,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 60.0,
+                "attack_end_angle_deg": 224.9999,
+                "attack_wheel_file_name": "Beedrill_C_1_frozen_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 12,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 225.0,
+                "attack_end_angle_deg": 269.9999,
+                "attack_wheel_file_name": "Beedrill_C_1_frozen_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 24,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 270.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Beedrill_C_1_frozen_attack_wheel.png"
+            }
+        ],
+        "burned_list": [
+            {
+                "burned_0": [
+                    {
+                        "attack_wheel_size": 16,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 0,
+                        "attack_end_angle_deg": 59.9999,
+                        "attack_wheel_file_name": "Beedrill_C_1_burned_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 44,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 60.0,
+                        "attack_end_angle_deg": 224.9999,
+                        "attack_wheel_file_name": "Beedrill_C_1_burned_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 12,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 225.0,
+                        "attack_end_angle_deg": 269.9999,
+                        "attack_wheel_file_name": "Beedrill_C_1_burned_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 24,
+                        "attack_name": "Toxic",
+                        "attack_type": "Purple",
+                        "attack_value": "\u2605\u2605",
+                        "attack_ability": "The battle opponent becomes noxious.",
+                        "attack_start_angle_deg": 270.0,
+                        "attack_end_angle_deg": 359.9999,
+                        "attack_wheel_file_name": "Beedrill_C_1_burned_0_attack_wheel.png"
+                    }
+                ]
+            }
+        ]
+    }
+}

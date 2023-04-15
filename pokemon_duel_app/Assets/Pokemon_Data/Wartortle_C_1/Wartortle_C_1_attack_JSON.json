@@ -1,0 +1,493 @@
+{
+    "pokemon_name": "Wartortle",
+    "pokemon_sprite_image": "wartortle_sprite.png",
+    "attack_table_file_name": "Wartortle_C_1_attack_table.png",
+    "base_movement_points": 2,
+    "rarity": "C",
+    "pokemon_type": "Water",
+    "evolution": "Blastoise",
+    "evolved_from": "Squirtle",
+    "evolution_num": 1,
+    "attack_lists_by_type": {
+        "basic": [
+            {
+                "attack_wheel_size": 4,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 14.9999,
+                "attack_wheel_file_name": "Wartortle_C_1_basic_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 8,
+                "attack_name": "Dodge",
+                "attack_type": "Blue",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 15.0,
+                "attack_end_angle_deg": 44.9999,
+                "attack_wheel_file_name": "Wartortle_C_1_basic_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 40,
+                "attack_name": "Water Gun",
+                "attack_type": "White",
+                "attack_value": 50,
+                "attack_ability": "",
+                "attack_start_angle_deg": 45.0,
+                "attack_end_angle_deg": 194.9999,
+                "attack_wheel_file_name": "Wartortle_C_1_basic_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 8,
+                "attack_name": "Dodge",
+                "attack_type": "Blue",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 195.0,
+                "attack_end_angle_deg": 224.9999,
+                "attack_wheel_file_name": "Wartortle_C_1_basic_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 36,
+                "attack_name": "Rapid Spin",
+                "attack_type": "White",
+                "attack_value": "30x",
+                "attack_ability": "Spin again until Rapid Spin does not land - damage is multiplied by the number of Rapid Spin spins",
+                "attack_start_angle_deg": 225.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Wartortle_C_1_basic_attack_wheel.png"
+            }
+        ],
+        "poisoned": [
+            {
+                "attack_wheel_size": 4,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 14.9999,
+                "attack_wheel_file_name": "Wartortle_C_1_poisoned_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 8,
+                "attack_name": "Dodge",
+                "attack_type": "Blue",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 15.0,
+                "attack_end_angle_deg": 44.9999,
+                "attack_wheel_file_name": "Wartortle_C_1_poisoned_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 40,
+                "attack_name": "Water Gun",
+                "attack_type": "White",
+                "attack_value": 50,
+                "attack_ability": "",
+                "attack_start_angle_deg": 45.0,
+                "attack_end_angle_deg": 194.9999,
+                "attack_wheel_file_name": "Wartortle_C_1_poisoned_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 8,
+                "attack_name": "Dodge",
+                "attack_type": "Blue",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 195.0,
+                "attack_end_angle_deg": 224.9999,
+                "attack_wheel_file_name": "Wartortle_C_1_poisoned_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 36,
+                "attack_name": "Rapid Spin",
+                "attack_type": "White",
+                "attack_value": "30x",
+                "attack_ability": "Spin again until Rapid Spin does not land - damage is multiplied by the number of Rapid Spin spins",
+                "attack_start_angle_deg": 225.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Wartortle_C_1_poisoned_attack_wheel.png"
+            }
+        ],
+        "confused": [
+            {
+                "attack_wheel_size": 4,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 14.9999,
+                "attack_wheel_file_name": "Wartortle_C_1_confused_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 8,
+                "attack_name": "Dodge",
+                "attack_type": "Blue",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 15.0,
+                "attack_end_angle_deg": 44.9999,
+                "attack_wheel_file_name": "Wartortle_C_1_confused_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 40,
+                "attack_name": "Water Gun",
+                "attack_type": "White",
+                "attack_value": 50,
+                "attack_ability": "",
+                "attack_start_angle_deg": 45.0,
+                "attack_end_angle_deg": 194.9999,
+                "attack_wheel_file_name": "Wartortle_C_1_confused_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 8,
+                "attack_name": "Dodge",
+                "attack_type": "Blue",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 195.0,
+                "attack_end_angle_deg": 224.9999,
+                "attack_wheel_file_name": "Wartortle_C_1_confused_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 36,
+                "attack_name": "Rapid Spin",
+                "attack_type": "White",
+                "attack_value": "30x",
+                "attack_ability": "Spin again until Rapid Spin does not land - damage is multiplied by the number of Rapid Spin spins",
+                "attack_start_angle_deg": 225.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Wartortle_C_1_confused_attack_wheel.png"
+            }
+        ],
+        "paralyzed_list": [
+            {
+                "paralyzed_0": [
+                    {
+                        "attack_wheel_size": 4,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 0,
+                        "attack_end_angle_deg": 14.9999,
+                        "attack_wheel_file_name": "Wartortle_C_1_paralyzed_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 8,
+                        "attack_name": "Dodge",
+                        "attack_type": "Blue",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 15.0,
+                        "attack_end_angle_deg": 44.9999,
+                        "attack_wheel_file_name": "Wartortle_C_1_paralyzed_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 40,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 45.0,
+                        "attack_end_angle_deg": 194.9999,
+                        "attack_wheel_file_name": "Wartortle_C_1_paralyzed_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 8,
+                        "attack_name": "Dodge",
+                        "attack_type": "Blue",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 195.0,
+                        "attack_end_angle_deg": 224.9999,
+                        "attack_wheel_file_name": "Wartortle_C_1_paralyzed_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 36,
+                        "attack_name": "Rapid Spin",
+                        "attack_type": "White",
+                        "attack_value": "30x",
+                        "attack_ability": "Spin again until Rapid Spin does not land - damage is multiplied by the number of Rapid Spin spins",
+                        "attack_start_angle_deg": 225.0,
+                        "attack_end_angle_deg": 359.9999,
+                        "attack_wheel_file_name": "Wartortle_C_1_paralyzed_0_attack_wheel.png"
+                    }
+                ]
+            },
+            {
+                "paralyzed_1": [
+                    {
+                        "attack_wheel_size": 4,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 0,
+                        "attack_end_angle_deg": 14.9999,
+                        "attack_wheel_file_name": "Wartortle_C_1_paralyzed_1_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 8,
+                        "attack_name": "Dodge",
+                        "attack_type": "Blue",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 15.0,
+                        "attack_end_angle_deg": 44.9999,
+                        "attack_wheel_file_name": "Wartortle_C_1_paralyzed_1_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 40,
+                        "attack_name": "Water Gun",
+                        "attack_type": "White",
+                        "attack_value": 50,
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 45.0,
+                        "attack_end_angle_deg": 194.9999,
+                        "attack_wheel_file_name": "Wartortle_C_1_paralyzed_1_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 8,
+                        "attack_name": "Dodge",
+                        "attack_type": "Blue",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 195.0,
+                        "attack_end_angle_deg": 224.9999,
+                        "attack_wheel_file_name": "Wartortle_C_1_paralyzed_1_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 36,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 225.0,
+                        "attack_end_angle_deg": 359.9999,
+                        "attack_wheel_file_name": "Wartortle_C_1_paralyzed_1_attack_wheel.png"
+                    }
+                ]
+            }
+        ],
+        "asleep": [
+            {
+                "attack_wheel_size": 4,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 14.9999,
+                "attack_wheel_file_name": "Wartortle_C_1_asleep_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 8,
+                "attack_name": "Dodge",
+                "attack_type": "Blue",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 15.0,
+                "attack_end_angle_deg": 44.9999,
+                "attack_wheel_file_name": "Wartortle_C_1_asleep_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 40,
+                "attack_name": "Water Gun",
+                "attack_type": "White",
+                "attack_value": 50,
+                "attack_ability": "",
+                "attack_start_angle_deg": 45.0,
+                "attack_end_angle_deg": 194.9999,
+                "attack_wheel_file_name": "Wartortle_C_1_asleep_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 8,
+                "attack_name": "Dodge",
+                "attack_type": "Blue",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 195.0,
+                "attack_end_angle_deg": 224.9999,
+                "attack_wheel_file_name": "Wartortle_C_1_asleep_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 36,
+                "attack_name": "Rapid Spin",
+                "attack_type": "White",
+                "attack_value": "30x",
+                "attack_ability": "Spin again until Rapid Spin does not land - damage is multiplied by the number of Rapid Spin spins",
+                "attack_start_angle_deg": 225.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Wartortle_C_1_asleep_attack_wheel.png"
+            }
+        ],
+        "frozen": [
+            {
+                "attack_wheel_size": 4,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 0,
+                "attack_end_angle_deg": 14.9999,
+                "attack_wheel_file_name": "Wartortle_C_1_frozen_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 8,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 15.0,
+                "attack_end_angle_deg": 44.9999,
+                "attack_wheel_file_name": "Wartortle_C_1_frozen_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 40,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 45.0,
+                "attack_end_angle_deg": 194.9999,
+                "attack_wheel_file_name": "Wartortle_C_1_frozen_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 8,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 195.0,
+                "attack_end_angle_deg": 224.9999,
+                "attack_wheel_file_name": "Wartortle_C_1_frozen_attack_wheel.png"
+            },
+            {
+                "attack_wheel_size": 36,
+                "attack_name": "Miss",
+                "attack_type": "Red",
+                "attack_value": "",
+                "attack_ability": "",
+                "attack_start_angle_deg": 225.0,
+                "attack_end_angle_deg": 359.9999,
+                "attack_wheel_file_name": "Wartortle_C_1_frozen_attack_wheel.png"
+            }
+        ],
+        "burned_list": [
+            {
+                "burned_0": [
+                    {
+                        "attack_wheel_size": 4,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 0,
+                        "attack_end_angle_deg": 14.9999,
+                        "attack_wheel_file_name": "Wartortle_C_1_burned_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 8,
+                        "attack_name": "Dodge",
+                        "attack_type": "Blue",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 15.0,
+                        "attack_end_angle_deg": 44.9999,
+                        "attack_wheel_file_name": "Wartortle_C_1_burned_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 40,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 45.0,
+                        "attack_end_angle_deg": 194.9999,
+                        "attack_wheel_file_name": "Wartortle_C_1_burned_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 8,
+                        "attack_name": "Dodge",
+                        "attack_type": "Blue",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 195.0,
+                        "attack_end_angle_deg": 224.9999,
+                        "attack_wheel_file_name": "Wartortle_C_1_burned_0_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 36,
+                        "attack_name": "Rapid Spin",
+                        "attack_type": "White",
+                        "attack_value": "30x",
+                        "attack_ability": "Spin again until Rapid Spin does not land - damage is multiplied by the number of Rapid Spin spins",
+                        "attack_start_angle_deg": 225.0,
+                        "attack_end_angle_deg": 359.9999,
+                        "attack_wheel_file_name": "Wartortle_C_1_burned_0_attack_wheel.png"
+                    }
+                ]
+            },
+            {
+                "burned_1": [
+                    {
+                        "attack_wheel_size": 4,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 0,
+                        "attack_end_angle_deg": 14.9999,
+                        "attack_wheel_file_name": "Wartortle_C_1_burned_1_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 8,
+                        "attack_name": "Dodge",
+                        "attack_type": "Blue",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 15.0,
+                        "attack_end_angle_deg": 44.9999,
+                        "attack_wheel_file_name": "Wartortle_C_1_burned_1_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 40,
+                        "attack_name": "Water Gun",
+                        "attack_type": "White",
+                        "attack_value": 50,
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 45.0,
+                        "attack_end_angle_deg": 194.9999,
+                        "attack_wheel_file_name": "Wartortle_C_1_burned_1_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 8,
+                        "attack_name": "Dodge",
+                        "attack_type": "Blue",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 195.0,
+                        "attack_end_angle_deg": 224.9999,
+                        "attack_wheel_file_name": "Wartortle_C_1_burned_1_attack_wheel.png"
+                    },
+                    {
+                        "attack_wheel_size": 36,
+                        "attack_name": "Miss",
+                        "attack_type": "Red",
+                        "attack_value": "",
+                        "attack_ability": "",
+                        "attack_start_angle_deg": 225.0,
+                        "attack_end_angle_deg": 359.9999,
+                        "attack_wheel_file_name": "Wartortle_C_1_burned_1_attack_wheel.png"
+                    }
+                ]
+            }
+        ]
+    }
+}
