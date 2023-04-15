@@ -65,3 +65,8 @@ From the `Java_Game` directory run the following:
 ```bash
 cp -rf Assets pokemon_duel_app/Assets
 ```
+
+## Development
+Start your Express server by running `node server/app.js` (or `node server/index.js`) from the `Java_Game` directory. Make sure it's running on the same port you specified in the proxy field in `package.json`.
+
+Start your React development server by running `npm start` from the `Java_Game/pokemon_duel_app` directory.
