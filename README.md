@@ -17,7 +17,7 @@ Another way to create a killer team in Pokemon Duel is by looking at figures' st
 ### Attack System
 Pokemon Duel has a unique attack system, and it's based entirely on colors. Where in past Pokémon games, players could choose their attacks, Pokemon Duel utilizes the spin-the-wheel randomness similar to roulette. If you choose to attack an opponent, you spin and your opponent spins, If you have the upper hand, you win and damage your opponent.
 
-![Attack Wheel Example](README_Images/Duel_spinner.jpg)
+![Attack Wheel Example](README_Images/Zapdos_EX_0_basic_attack_wheel.png)
 
 In the attack system, certain colors can beat out others similar to rock-paper-scissors. There are five colored attacks on the wheel. 
 * Red attacks are a miss. 
@@ -69,8 +69,20 @@ The PC, denoted by the ‘+’ sign, is where your Pokemon go after they lose a 
 
 ## FAQs
 
-## Version History
+## Repository Contents
 
-### Version 1.0.1
+### /Assets
+Where all of the attack tables and wheels for Pokemon are stored. Each pokemon has one attack table and multiple wheels, each with a different condition. Each Pokemon also has a JSON file describing the contents of the assets.
 
-This is the first rendition of Pokemon Duel.
+### /Pie_Chart_Generator
+Website that can be used to generate attack wheels for Pokemon. Wheels can be downloaded one at a time, or the script from Tooling/Pokemon_Attack_Downloader.py can be ran to automatically generate attack wheels from a CSV.
+
+### /pokemon_duel_app
+App that is in progress and will be ran on Heroku for public use.
+
+### /server
+Websocket server for two players to communicate and play the game. In progress.
+
+### /Tooling
+Contains multiple Python scripts to scrape Pokemon attacks from online, format and store information in CSV format, and then generate assets from the CSV.
+
